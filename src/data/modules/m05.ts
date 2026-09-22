@@ -2,46 +2,43 @@ import type { AdvancedTopic } from '../types';
 
 export const m05: AdvancedTopic = {
   id: "m05",
-  title: "5. Preservação e Conservação de Acervos Físicos e Digitais",
-  authorsAndFrameworks: `Autores-Chave e Guias:
-• Cassares e Moi (2000): "Como fazer conservação preventiva" (Bíblia absoluta em concursos no Brasil).
-• Spinelli e Pedersoli (2009): Conservação de acervos documentais.
-• Padrão ISO 14721 (OAIS - Open Archival Information System): Modelo de referência obrigatório para preservação digital de longo prazo.`,
-  advancedTheory: `1. A Tríade da Salvaguarda Física (Cassares)
-Em concursos de alto nível, os termos não são sinônimos.
-• Preservação: É a "Política" (Macroeconômico/Administrativo). Ações de prevenção, políticas de segurança, controle ambiental e planejamento financeiro para garantir a sobrevida do acervo.
-• Conservação: São as "Ações Diretas". Intervenções feitas para paralisar ou retardar a degradação (ex: higienização, acondicionamento em caixas desacidificadas). É preventiva.
-• Restauração: É a "Medicina/Cirurgia". Intervenção técnica invasiva para recuperar a integridade física de um dano já ocorrido (ex: enxerto de papel, obturação, banho de desacidificação). Só feita por especialistas.
+  title: "5. Redes e Sistemas de Informação",
+  authorsAndFrameworks: `Autores e Órgãos Relacionados:
+• IBICT (Instituto Brasileiro de Informação em Ciência e Tecnologia): Órgão Magno das Redes de Informação no Brasil.
+• Murilo Bastos da Cunha (1999): Teórico clássico sobre Consórcios de Bibliotecas e Compartilhamento de Recursos.
+• RNP (Rede Nacional de Ensino e Pesquisa): A espinha dorsal da internet acadêmica que interliga a Unicamp.`,
+  advancedTheory: `1. Epistemologia das Redes (Por que cooperar?)
+As bibliotecas abandonaram a autossuficiência. Nenhuma biblioteca (nem Harvard, nem Unicamp) consegue ter orçamentos para comprar 100% da produção mundial (Problema da Explosão Documental). 
+A solução foi a Rede de Informação. 
+• Rede de Informação: Conjunto de unidades interagindo formalmente para trocar dados, reduzir custos e evitar trabalho duplicado. O princípio basilar é o "Tratamento Cooperativo" e a "Sinergia".
 
-2. Agentes de Degradação (Acervo Físico)
-• Físicos: Temperatura (T) e Umidade Relativa (UR). O controle é a chave. Oscilações bruscas (higroscopia) destroem o papel.
-• Químicos: Poluição, poeira e acidez intrínseca do papel (lignina presente na polpa de madeira pós-séc. XIX causa amarelecimento e fragilização).
-• Biológicos: Insetos (traças, cupins, brocas), roedores e fungos (proliferam acima de 65% UR).
-• Antrópicos (Humanos): Furto, vandalismo, dobras, uso de fitas adesivas ácidas (durex), clipes metálicos (ferrugem) e manuseio inadequado (saliva no dedo para virar página).
+2. Sistemas Tradicionais do IBICT
+O governo federal sustenta o ecossistema nacional. Os concursos cobram a decoreba cruel das siglas criadas pelo IBICT (Sempre sediado em Brasília):
+• BDTD (Biblioteca Digital Brasileira de Teses e Dissertações): Rede nacional que agrega, em um único portal (coletor OAI-PMH), as teses dos Repositórios Institucionais de todas as universidades federais e estaduais do Brasil (inclusive da Unicamp).
+• CCN (Catálogo Coletivo Nacional de Publicações Seriadas): Um dinossauro importantíssimo. Um catálogo mestre que diz "qual biblioteca no Brasil tem a revista física/eletrônica X daquele ano específico". O pesquisador olha o CCN e pede o artigo via COMUT.
+• COMUT (Programa de Comutação Bibliográfica): É o "Uber" da informação antes da internet. A biblioteca que não tem o artigo, solicita uma cópia escaneada/xerox da biblioteca que tem (via correio ou rede). Ainda vivo e caindo em prova.
 
-3. Preservação Digital (Paradigma do Longo Prazo)
-A grande ameaça não é o inseto, mas a obsolescência tecnológica e a degradação do suporte físico (bit rot).
-Estratégias de Preservação Digital:
-• Refrescamento (Refreshing): Copiar os dados de um suporte velho para um novo, mantendo o formato exato (ex: copiar um PDF de um CD para um SSD). Previne a degradação física do suporte.
-• Migração: Transformar o arquivo de um formato obsoleto para um formato padrão contemporâneo (ex: de um arquivo .doc do Word 95 para .pdf/A ou .xml). Previne a obsolescência de software.
-• Emulação: Preservar o dado original bit a bit, mas criar um software (emulador) que simula o sistema operacional antigo na máquina nova (muito usado para games e softwares interativos antigos).
-• Encapsulamento: Juntar o objeto digital e todos os metadados necessários para interpretá-lo no futuro em um único "pacote".
+3. Portal de Periódicos CAPES
+Não é do IBICT! É da fundação CAPES (MEC). É o maior consórcio de assinaturas eletrônicas governamental do planeta. 
+Funciona na lógica "Top-Down" de assinaturas pagas pelo governo federal. Libera o acesso a bases caríssimas (Scopus, Web of Science, IEEE) via IP das universidades autorizadas (Rede CAFe - Comunidade Acadêmica Federada, operada pela RNP).
 
-4. Modelo OAIS (Open Archival Information System)
-Pacotes de Informação (Packages): SIP (Submissão - o que entra), AIP (Arquivamento - o que é preservado a longo prazo com metadados PREMIS) e DIP (Disseminação - o formato leve que o usuário acessa).`,
-  unicampContext: `A Unicamp abriga centros de memória imensos como o Arquivo Edgard Leuenroth (AEL) no IFCH e as Obras Raras da BCE (Biblioteca Central Cesar Lattes). As questões da FUNCAMP que envolvem o AEL cobrarão conhecimentos rígidos sobre controle de temperatura e umidade, além de estratégias avançadas de restauração de manuscritos, desacidificação em massa e digitalização de acervos históricos sob diretrizes do CONARQ.`,
+4. Consórcios x Redes Tradicionais
+• Redes tradicionais focam em compartilhar TRABALHO (ex: Catalogação cooperativa - uma biblioteca cataloga o livro, as outras 50 copiam o registro MARC).
+• Consórcios focam em compartilhar PODER DE COMPRA (Acquisition Consortia). Várias bibliotecas se juntam para comprar um pacote de e-books da Springer com 40% de desconto.`,
+  unicampContext: `A Unicamp está pendurada fortemente na Rede CAFe (da RNP). Quando o aluno da Unicamp está em casa, ele precisa configurar a "VPN da Unicamp" no computador dele (ou usar o proxy via CAFe) para que a Elsevier e a Clarivate "pensem" que o PC dele está fisicamente no campus de Barão Geraldo, liberando o acesso ao Portal CAPES.`,
   boardAnalysis: {
-    trends: `CEBRASPE (2018-2026): A banca foca fortemente na distinção entre Conservação, Preservação e Restauração, extraindo os textos literalmente do livro da Cassares. Em preservação digital, testam frequentemente a diferença técnica entre Migração e Emulação.
-    
-VUNESP / FUNCAMP: Costumam pedir os valores de temperatura e umidade ideais para acervos em papel (geralmente T = 18 a 22ºC e UR = 45 a 55%), e as ações proibidas (uso de fitas adesivas comerciais).`,
+    trends: `CEBRASPE (2018-2026): A banca costuma focar no COMUT e no CCN. A questão canônica afirma que "o CCN garante o acesso integral e online a todos os textos completos das revistas que cadastra" (ERRADO! O CCN é apenas um CATÁLOGO localizador. Ele diz "A USP tem", quem traz o texto é o COMUT ou a ida física do usuário).
+VUNESP / FUNCAMP: Gostam de cobrar as responsabilidades orgânicas: Saber que a BDTD e o CCN são do IBICT (Ministério de Ciência e Tecnologia), e o Portal de Periódicos é da CAPES (Ministério da Educação).`,
     commonTraps: `🚨 Pegadinha Clássica CEBRASPE: 
-"A Emulação consiste na transferência periódica de dados de um suporte físico em risco de degradação para um suporte novo, sem alterar o formato dos dados originais."
-(ERRADO: Isso é a definição de Refrescamento (Refreshing). Emulação é simular o hardware/software obsoleto.)`
+"A catalogação cooperativa em redes descentralizadas eleva o custo de processamento técnico individual, visto que os catalogadores locais precisam adaptar os registros aos padrões internacionais rígidos da rede."
+(ERRADO: O objetivo da rede cooperativa é justamente DERUBAR OS CUSTOS. A catalogação cooperativa reduz drasticamente o custo financeiro e o tempo da equipe técnica, pois erradica a duplicação de esforços - uma pessoa faz, as outras 1.000 apenas baixam e usam o registro).`
   },
-  memorizationMatrix: `FÓRMULA DA PRESERVAÇÃO DIGITAL
-| Estratégia | O que combate? | Ação |
-|------------|----------------|------|
-| Refrescamento | Suporte velho (CD arranhado) | Copiar igual para um HD novo |
-| Migração | Software obsoleto (.wpd) | Converter para formato aberto (.pdf/A) |
-| Emulação | Software/SO morto | Simular o Windows 95 no Windows 11 |`
+  memorizationMatrix: `SISTEMAS NACIONAIS BRASILEIROS
+| Sigla | Orgão Pai | Função Mágica |
+|-------|-----------|---------------|
+| BDTD | IBICT (MCTI) | Concentrar as Teses e Dissertações do BR. |
+| CCN | IBICT (MCTI) | Dizer em qual biblioteca tá uma revista. |
+| COMUT | IBICT (MCTI) | Pedir cópia de artigo pra outra biblioteca. |
+| Portal | CAPES (MEC) | Dar acesso VIP a bases de dados pagas ($$). |
+| CAFe | RNP | Autenticar o aluno fora do campus (VPN). |`
 };

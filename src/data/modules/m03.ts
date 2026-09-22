@@ -2,44 +2,41 @@ import type { AdvancedTopic } from '../types';
 
 export const m03: AdvancedTopic = {
   id: "m03",
-  title: "3. Ciência Aberta (Open Science) e o Acesso Aberto (Open Access)",
-  authorsAndFrameworks: `Autores-Chave e Marcos Históricos:
-• Peter Suber (2012): O maior expoente global sobre Acesso Aberto (Open Access).
-• Kuramoto (2006): Introdução do manifesto de acesso aberto no IBICT e Manifesto Brasileiro.
-• Marcos Históricos (BBBs): Budapeste (2002), Bethesda (2003) e Berlim (2003). As três declarações fundamentais que cunharam o conceito de OA.
-• OCDE e UNESCO (2021): Recomendação sobre Ciência Aberta, definindo-a como um constructo inclusivo que vai muito além de artigos gratuitos.`,
-  advancedTheory: `1. O Guarda-Chuva da Ciência Aberta (Open Science)
-A Ciência Aberta não é um fim em si mesmo, mas um movimento de mudança estrutural no ethos científico. O Acesso Aberto (Open Access - OA) é APENAS UM dos pilares. A taxonomia (escola de FOSTER) define a Ciência Aberta englobando:
-• Acesso Aberto (Literatura)
-• Dados Abertos (Open Data / FAIR)
-• Pesquisa Reprodutível Aberta (Open Source / Open Notebooks)
-• Avaliação Aberta pelos Pares (Open Peer Review)
-• Ciência Cidadã (Citizen Science)
-• Recursos Educacionais Abertos (OER)
+  title: "3. Movimento de Acesso Aberto (Open Access)",
+  authorsAndFrameworks: `Marcos Históricos (As 3 Grandes Iniciativas "B"):
+• Budapeste (2002): Budapest Open Access Initiative (BOAI). O documento fundador que cunhou o termo "Open Access".
+• Bethesda (2003): Declaração sobre a publicação de acesso aberto. Focou no apoio institucional e agências de fomento.
+• Berlim (2003): Declaração de Berlim (A mais famosa). O acesso deve ser livre a toda e qualquer pesquisa científica no mundo, expandindo a definição legal do Acesso Aberto.
+• Peter Suber: O principal filósofo moderno do Acesso Aberto.
+• SciELO / IBICT: A vanguarda do Acesso Aberto na América Latina (A Via Dourada).`,
+  advancedTheory: `1. O Que Exatamente é "Acesso Aberto"?
+Não significa apenas "gratuito" (gratis). O Acesso Aberto real (Libre OA) exige a quebra de duas barreiras:
+- Barreira de Preço (Price barrier): O usuário não paga assinatura nem paywall para ler.
+- Barreira de Permissão (Permission barrier): Os direitos autorais são flexibilizados (geralmente via licenças Creative Commons, como CC-BY), permitindo baixar, copiar, distribuir e minerar texto, desde que citado o autor. 
+Se um artigo está grátis no site, mas protegido por copyright estrito impedindo distribuição, ele é apenas "Gratis", não "Libre Open Access".
 
-2. Acesso Aberto (Open Access - OA): Definição Técnica (BBBs)
-OA não significa apenas "gratuito para ler" (Gratis OA). O verdadeiro Open Access (Libre OA) exige remoção das barreiras de PREÇO (não há paywalls) e de PERMISSÃO (uso de licenças abertas, como Creative Commons, permitindo adaptação e reuso comercial ou não). 
+2. As Cores (Vias) do Acesso Aberto
+A espinha dorsal para qualquer concurso público. Como o autor libera o artigo?
+• Via Verde (Green Road): O autor publica o artigo em uma revista fechada (paga/Elsevier), MAS ele tem o direito de autoarquivar uma versão do artigo (geralmente o Preprint ou o Postprint sem a diagramação da editora) no REPOSITÓRIO INSTITUCIONAL da sua universidade. Custo: Zero. Instrumento técnico: O Repositório (DSpace).
+• Via Dourada / Ouro (Gold Road): O artigo NASCE livre. A revista inteira é aberta. Custo: O autor (ou a agência de fomento) paga uma APC (Article Processing Charge) caríssima para a editora (cerca de 3 mil dólares). A editora libera pro mundo no site dela.
+• Via Diamante / Platina (Diamond Road): A evolução latino-americana da via dourada. A revista é aberta, O LEITOR NÃO PAGA PARA LER, E O AUTOR NÃO PAGA APC PARA PUBLICAR. Quem banca a revista? Universidades, governos federais (via CAPES/CNPq) e ONGs. É o modelo do SciELO.
+• Via Bronze (Bronze Road): A editora libera a leitura no site, mas não anexa uma licença Creative Commons clara (pode fechar o paywall amanhã). É um acesso aberto falho.
 
-3. As Vias do Acesso Aberto
-• Via Verde (Green Road): Autoarquivamento (self-archiving). O autor publica num periódico (pago ou não) e deposita uma versão (geralmente o post-print / versão aceita) num Repositório Institucional. Tem custo zero para ler, zero para publicar. Baseia-se no protocolo OAI-PMH e em mandatos institucionais.
-• Via Dourada (Gold Road): Publicação em periódicos nativamente abertos (Open Access Journals). Muitas vezes o custo financeiro é transferido do leitor para o autor através da taxa APC (Article Processing Charge). 
-• Outras vias cobradas em prova: 
-  - Via Diamante (Platina): Periódicos abertos que NÃO cobram APC do autor (subsidiados por instituições). 
-  - Via Bronze: Artigos gratuitos para leitura nos sites das editoras comerciais (ex: Elsevier), mas SEM licença aberta (direitos continuam fechados). Não é considerado OA verdadeiro.
-  - Vias Híbridas: Revistas pagas onde o autor paga APC apenas para o seu artigo específico ficar aberto. (Historicamente criticado por "double-dipping").`,
-  unicampContext: `A Unicamp aderiu oficialmente à Ciência Aberta. Portal de Periódicos Eletrônicos (PPEC) para a Via Diamante/Dourada e o Repositório Institucional para a Via Verde. A CONSU-A-050/2020 regulamenta que a Unicamp incentiva fortemente a Ciência Aberta e a retenção de direitos autorais.`,
+3. O Paradoxo do Prestígio
+Pesquisadores queriam o Acesso Aberto, mas seus currículos acadêmicos exigiam publicação em revistas de alto Fator de Impacto (JIF), que historicamente eram fechadas. A solução das agências de fomento (como o Plan S na Europa) foi proibir pesquisadores que recebem dinheiro público de publicar em revistas totalmente fechadas.`,
+  unicampContext: `No SBU/Unicamp, o suporte ao Movimento de Acesso Aberto é gigantesco. A Unicamp usa fortemente a "Via Verde" obrigando os professores a colocarem suas pesquisas no Repositório da Unicamp. Ao mesmo tempo, atua na "Via Diamante" ao sediar e financiar revistas científicas locais através do Portal de Periódicos Eletrônicos (PPEC) usando o sistema OJS (Open Journal Systems), sem cobrar taxas APC dos pesquisadores brasileiros.`,
   boardAnalysis: {
-    trends: `CEBRASPE (2018-2026): Tem fixação pela taxonomia das Vias (Verde, Dourada, Diamante). Eles testam ferozmente a confusão entre Via Dourada e Via Diamante, e se a Via Verde depende da vontade da editora. O CEBRASPE exige saber que o autoarquivamento da Via Verde lida com políticas de Embargo das editoras (período onde o arquivo fica fechado no RI antes de abrir).
-    
-VUNESP/FCC: Focam frequentemente no Manifesto de Budapeste (2002) e no conceito de "Gratis OA x Libre OA" de Peter Suber.`,
-    commonTraps: `🚨 Pegadinha Clássica CEBRASPE/VUNESP: 
-"A Via Dourada caracteriza-se pela publicação em periódicos em que o custo recai obrigatoriamente sobre o autor (modelo pay-to-publish)."
-(ERRADO: O fato de ser Via Dourada não exige obrigatoriamente que o autor pague do bolso; a APC pode ser paga pela agência de fomento, e existem as revistas Diamante/Platina, que são um subconjunto da Dourada e NÃO possuem APC.)`
+    trends: `CEBRASPE (2018-2026): A banca esmigalha o candidato na definição das vias. Eles sempre invertem as cores. O padrão do Cebraspe é dizer que a "Via Verde exige pagamento de altíssimas taxas APC pelo autor" (ERRADO, Via Verde é o depósito grátis no RI. Quem cobra APC é a Via Dourada de editoras comerciais).
+VUNESP / FUNCAMP: Costumam pedir as Declarações dos "3 B's" (Budapeste, Bethesda, Berlim). Se a prova perguntar onde o termo "Open Access" foi inventado legalmente, a resposta é Budapeste (2002).`,
+    commonTraps: `🚨 Pegadinha Clássica CEBRASPE: 
+"A Via Dourada (Gold Road) caracteriza-se pelo depósito da versão pré-print do artigo no repositório institucional da universidade do pesquisador, dispensando a revisão por pares oficial."
+(ERRADO: Isso é a Via Verde. A Via Dourada ocorre quando o artigo é publicado e finalizado na própria revista, e o autor geralmente paga a APC para a revista liberá-lo no site da editora.)`
   },
-  memorizationMatrix: `ROTEIRO TÁTICO DAS VIAS (OA)
-| Via | Onde Publica? | Custa para Ler? | Custa para Publicar (APC)? | Foco Bibliotecário |
-|-----|---------------|----------------|----------------------------|--------------------|
-| Verde | Qualquer Revista + Repositório | Não | Não | Gerenciar Embargos (Sherpa/Romeo) |
-| Ouro | Revista OA (Comercial) | Não | Sim (APC alta) | Negociar Acordos Transformativos |
-| Diamante| Revista OA (Universitária) | Não | Não (Subsidio estatal) | OJS / SEER |`
+  memorizationMatrix: `A AQUARELA DO ACESSO ABERTO (AS VIAS)
+| Via / Cor | Onde fica o arquivo? | Quem paga a conta? | Custo pro Leitor? |
+|-----------|-----------------------|--------------------|-------------------|
+| VERDE (Green)| Repositório da Uni (RI) | Ninguém (É grátis) | Zero |
+| OURO (Gold) | Site da Revista | Autor paga a APC | Zero |
+| DIAMANTE | Site da Revista (SciELO)| A Universidade/Governo banca | Zero |
+| BRONZE | Site da Revista | Ninguém, mas sem licença clara | Zero (Temporário)|`
 };

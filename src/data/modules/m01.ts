@@ -2,41 +2,40 @@ import type { AdvancedTopic } from '../types';
 
 export const m01: AdvancedTopic = {
   id: "m01",
-  title: "1. Biblioteca Digital e Repositório Digital",
-  authorsAndFrameworks: `Autores-Chave:
-• F. W. Lancaster (1994): Precursor da transição do papel para o eletrônico, cunhando as tensões de acesso versus propriedade.
-• Christine Borgman (1999): Definiu Bibliotecas Digitais (BD) não apenas como coleções organizadas, mas como extensões do ciclo de pesquisa e aprendizagem.
-• Hélio Kuramoto (2006) & Fernando Leite (2009): Pioneiros no Brasil sobre a introdução dos Repositórios Institucionais (RI) e o movimento de Acesso Aberto (Via Verde).
-  
-Padrões: OAIS (ISO 14721) para preservação, Dublin Core (DC) para metadados, OAI-PMH para coleta.`,
-  advancedTheory: `1. A Complexidade da Biblioteca Digital (BD)
-Diferente da noção primária de "acervo digitalizado", a BD moderna é um ecossistema complexo (Borgman). Ela independe da proveniência do acervo: pode conter e-books assinados de editoras comerciais (ex: EBSCO, ProQuest), materiais em domínio público, ou coleções especiais digitalizadas. 
-Seu foco principal é o USUÁRIO e os serviços agregados (busca avançada, descoberta, referência virtual). Não existe obrigatoriedade de depósito.
+  title: "1. Biblioteca Digital e Repositório Institucional",
+  authorsAndFrameworks: `Autores e Marcos:
+• F.W. Lancaster (1978): "Toward Paperless Information Systems". O visionário da desmaterialização do acervo.
+• Christine Borgman (2000): "From Gutenberg to the Global Information Infrastructure". Distingue bibliotecas digitais como coleções X bibliotecas digitais como instituições.
+• Clifford Lynch (2003): Manifesto fundador dos Repositórios Institucionais.
+• Hélio Kuramoto (2006): Pioneiro da implantação do Movimento de Acesso Aberto e dos RIs no Brasil (IBICT).
+• Protocolo OAI-PMH (Open Archives Initiative Protocol for Metadata Harvesting): O sangue que corre nas veias dos RIs.`,
+  advancedTheory: `1. A Fronteira entre Biblioteca Digital (BD) e Repositório Institucional (RI)
+O erro fatal é achar que RI é apenas uma BD menor. A diferença é de MISSÃO, não de tamanho.
+• Biblioteca Digital (BD): Atua na ponta do CONSUMO. Sua missão é servir ao usuário (leitor). O acervo vem de fora: livros eletrônicos comprados (licenciados de editoras como EBSCO, ProQuest), bases assinadas. Foco: O que meu usuário quer ler?
+• Repositório Institucional (RI): Atua na ponta da PRODUÇÃO (Memória). Sua missão é servir à instituição e à sociedade (Acesso Aberto). O acervo vem DE DENTRO: teses, dissertações, preprints dos docentes da casa. O RI nunca compra material externo. Foco: O que minha instituição produziu?
 
-2. Repositório Institucional (RI): O Cofre da Memória
-O RI possui uma filosofia completamente distinta (Kuramoto). Ele não "compra" livros comerciais. O RI é construído a partir da produção intelectual GERADA pela própria instituição matriz (teses, dissertações, preprints dos docentes).
-• Mandato: A maioria das universidades federais e estaduais (incluindo a Unicamp) possui uma Política Mandatória (obrigatória) de depósito.
-• Arquitetura Aberta: O RI é a base tecnológica da Via Verde do Acesso Aberto. Seu objetivo é interoperar com o mundo através do protocolo OAI-PMH (Open Archives Initiative Protocol for Metadata Harvesting).
-• Tipologia: Pode ser Institucional (produção da própria universidade) ou Temático (focado em uma área, independente da instituição, como o arXiv ou E-LIS).
+2. O Protocolo OAI-PMH e a Interoperabilidade
+Um RI isolado é inútil. Ele precisa ser "colhido" por buscadores (como o OasisBR).
+O OAI-PMH divide o mundo em dois agentes:
+• Provedores de Dados (Data Providers): O Repositório Institucional local que expõe seus metadados (Dublin Core).
+• Provedores de Serviço (Service Providers): O "coletor" (Harvester) que varre os RIs, coleta os metadados e cria um mega-índice global (ex: NDLTD, Google Scholar).
+O padrão mínimo e obrigatório de metadados exigido pelo OAI-PMH é o Dublin Core (15 elementos básicos).
 
-3. Interoperabilidade (Z39.50 vs OAI-PMH)
-BDs clássicas focadas em catálogos (OPACs) utilizam o protocolo Z39.50 (busca distribuída em bancos relacionais MARC). Já os RIs utilizam o OAI-PMH, cujo papel não é a busca em tempo real, mas o "harvesting" (coleta) em massa de metadados padrão (geralmente Dublin Core).`,
-  unicampContext: `A Unicamp possui um ecossistema bifurcado:
-1. Repositório Institucional: O Repositório da Produção Científica e Intelectual (Acervus), onde a IN CCPG nº 001/2024 exige o depósito compulsório das dissertações e teses.
-2. Biblioteca Digital da Unicamp (BBU): Plataformas gerenciadas pelo Sistema de Bibliotecas (SBU) integrando serviços assinados (CAPES, Minha Biblioteca) num ambiente de Discovery (Primo/Alma).`,
+3. Mandato de Depósito e a Resistência Docente
+Para um RI sobreviver, ele precisa de "Mandatos" (políticas institucionais que obrigam o pesquisador a depositar sua obra lá). Sem o mandato, o depósito voluntário fica em torno de 15%.`,
+  unicampContext: `A Unicamp possui um dos maiores RIs do Brasil, gerido sob a plataforma DSpace. O Sistema de Bibliotecas (SBU) lida com a auto-submissão e o "mandato de depósito" de Teses e Dissertações, que é estritamente obrigatório para obtenção do diploma na Unicamp. A biblioteca atua validando os metadados antes de expor a obra para o mundo via OAI-PMH.`,
   boardAnalysis: {
-    trends: `CEBRASPE (2018-2026): A banca adora explorar a diferença entre Repositório Temático e Institucional. Também insiste em cobrar a estrutura técnica: OAI-PMH é o sangue dos repositórios, e o formato de metadados obrigatório por excelência para que a coleta (harvesting) funcione é o Dublin Core (DC) sem qualificação.
-    
-VUNESP/FCC: Focam frequentemente no "Acesso Aberto", tentando dizer que bibliotecas digitais necessariamente exigem gratuidade de tudo. Errado. BDs possuem controle de acesso (DRM, senhas) para acervos assinados. RIs é que são focados no Open Access.`,
+    trends: `CEBRASPE (2018-2026): A banca esmigalha o candidato na diferença entre Z39.50 (usado para catálogo cooperativo antigo) e OAI-PMH (usado para RIs modernos). Eles adoram afirmar que um RI deve comprar acervos externos para suprir as demandas bibliográficas dos calouros (ERRADO!).
+VUNESP / FUNCAMP: Costumam focar no padrão de metadados obrigatório dos repositórios (Dublin Core) e no conceito de Preservação Digital atrelado à missão do RI a longo prazo.`,
     commonTraps: `🚨 Pegadinha Clássica CEBRASPE: 
-"Tanto a biblioteca digital quanto o repositório institucional possuem como diretriz principal a aquisição de obras de terceiros por meio de consórcios para atender à demanda de graduação." 
-(ERRADO: Repositório não adquire obra de terceiro, ele arquiva a produção própria).`
+"Tanto a biblioteca digital quanto o repositório institucional possuem como diretriz principal a aquisição de obras de terceiros por meio de consórcios para atender à demanda de graduação."
+(ERRADO: Repositório NÃO adquire obra de terceiro, ele arquiva estritamente a produção própria da universidade para dar acesso livre.)`
   },
-  memorizationMatrix: `DIFERENÇA CRÍTICA
+  memorizationMatrix: `DIFERENÇA CRÍTICA: BD vs RI
 | Característica | Biblioteca Digital (BD) | Repositório Institucional (RI) |
-|----------------|--------------------------|--------------------------------|
-| Origem do Acervo | Externo (comprado/assinado) + Local | Estritamente Local (produzido na inst.) |
-| Foco Principal | O Usuário (Demanda de leitura) | O Produtor/Memória (Disseminação OA) |
-| Interoperabilidade | Z39.50 (Catálogos) / APIs | OAI-PMH (Harvesting) |
-| Mandato de Depósito | Não existe | Frequente (Obrigatório) |`
+|----------------|-------------------------|--------------------------------|
+| Origem do Acervo | Externo (comprado/assinado) | Estritamente Local (produzido na inst.) |
+| Foco Principal | O Consumidor (Leitor) | O Produtor e a Memória Inst. |
+| Interoperabilidade| Z39.50 / APIs Comerciais | OAI-PMH (Harvesting) + Dublin Core |
+| Política Legal | DRMs restritivos | Acesso Aberto (Open Access) |`
 };
