@@ -3,61 +3,89 @@ import type { AdvancedTopic } from '../types';
 export const m21: AdvancedTopic = {
   id: "m21",
   title: "21. Indexação, Resumos e Controle Vocabular (Thesaurus)",
-  authorsAndFrameworks: `Autores-Chave e Normas Essenciais:
-• F.W. Lancaster (1993): "Indexação e Resumos: Teoria e Prática". O deus da indexação e da Avaliação de Sistemas de Recuperação da Informação (Precisão x Revocação).
-• Maria Inês Pinto, Mariângela Fujita e Blanca Gil Urdiciain: Especialistas nacionais e ibéricas frequentemente citadas.
-• NBR 6028 (ABNT): Regras para elaboração de Resumos.
-• ISO 5963 (1985) / ISO 25964: Métodos de exame de documento para indexação.`,
-  advancedTheory: `1. A Indexação e a Norma ISO 5963 (Os Três Estágios)
-A indexação é a alma da representação temática. É a extração de conceitos que representam o assunto para que o leitor ache a obra.
-Segundo a ISO 5963 (amada pelas bancas), a indexação TEM QUE SEGUIR 3 etapas inquebráveis:
-• 1. Exame Analítico do Documento: O indexador lê partes vitais (título, sumário, introdução, conclusão). (Não se lê o livro inteiro!).
-• 2. Identificação dos Conceitos: O profissional pensa: "Sobre o que é isso?" (Em linguagem natural, na mente do catalogador).
-• 3. Tradução dos Conceitos para a Linguagem Documentária: Pegar os conceitos mentais e ir para o Tesauro, convertendo a palavra solta (Linguagem Natural) na palavra rígida aceita pelo sistema (Linguagem Controlada/Artificial).
+  authorsAndFrameworks: `### Autores e Normas Técnicas Estruturantes
 
-2. Tipos de Linguagem na Indexação
-• Linguagem Natural (Indexação Livre): Utiliza as palavras exatas do autor do texto.
-   - Vantagens: Rápido, barato, extremamente atualizado (o autor usa a gíria científica de 2026).
-   - Desvantagens: Recupera lixo semântico. Sofre com Sinônimos (Buscador procura "Cão", livro tá escrito "Cachorro") e Homônimos (Manga fruta x Manga camisa).
-• Linguagem Controlada (Vocabulário Controlado / Tesauro): Lista fechada de termos pré-aprovados.
-   - Vantagens: Evita o caos. Resolve o problema de Sinônimos e Homônimos. Recuperação cirúrgica.
-   - Desvantagens: Custoso (precisa de tesauro e profissional treinado), e sofre "Latência Temporal" (demora meses para a IFLA/LoC aprovar um novo termo científico, atrasando a indexação de artigos de ponta).
+- **F. W. Lancaster (1993):** *"Indexação e Resumos: Teoria e Prática"*. A obra clássica definitiva da Ciência da Informação para o processamento temático documental.
+- **Mariângela Spotti Lopes Fujita e Maria Inês Tomaél:** Principais pesquisadoras brasileiras na modelagem da leitura documentária e política de indexação.
+- **Normas ISO 5963 / ISO 25964:** Padrões internacionais para exame sistemático de documentos, seleção de termos e construção de tesauros interoperáveis.
+- **ABNT NBR 6028 (2021):** Norma brasileira para elaboração e apresentação de resumos documentais.`,
+  advancedTheory: `### 1. As Três Etapas da Indexação (Norma ISO 5963)
 
-3. O Paradoxo de Lancaster: Revocação x Precisão
-Lancaster prova que Revocação e Precisão são inversamente proporcionais. É a "Balança da Maldição" (Se um sobe, o outro fatalmente desce).
-• REVOCAÇÃO (Recall / Abrangência): É a capacidade do sistema trazer TODOS os documentos relevantes da base, não deixando nenhum para trás. Você recupera 100% da base, mas a balança desaba: Traz muito LIXO (ruído).
-   - Equação: (Doc. Relevantes Recuperados) / (Total de Relevantes na Base INTEIRA).
-• PRECISÃO (Precision): É a capacidade de NÃO trazer lixo (ruído). Você joga no sistema e ele traz SÓ O QUE É PERFEITO. Mas a balança desaba: Ele acaba deixando documentos bons para trás (Silêncio).
-   - Equação: (Doc. Relevantes Recuperados) / (Total de Documentos Recuperados na sua Busca).
+A indexação é a operação intelectual de representação temática pela qual o conteúdo semântico de um documento é identificado e vertido em pontos de acesso temáticos. 
 
-4. Taxonomia, Ontologia e Tesauros (O Eixo de Relacionamentos)
-O controle de vocabulário mais perfeito que existe é o Tesauro. Diferente de uma simples lista de assuntos (Lista de Cabeçalhos), o Tesauro estabelece TRÊS relações semânticas formais:
-• Relação de Equivalência (USE / UF - Used For): Combate sinônimos. (Ex: Cachorro -> USE -> Cães).
-• Relação Hierárquica (TG/BT - Termo Genérico / TE/NT - Termo Específico): Classe e Subclasse. (Ex: Animal (TG) -> Cão (TE)).
-• Relação Associativa ou Afim (TR/RT - Termo Relacionado): Assuntos que lembram o outro, mas não têm hierarquia. (Ex: Cão -> TR -> Osso, ou Veterinário).
+Segundo a **ISO 5963**, a indexação compõe-se de três etapas ordenadas e indissociáveis:
 
-5. Resumos (NBR 6028)
-Os resumos representam o documento e podem ser:
-• Indicativos: Apresenta só os pontos principais. (NÃO SUBSTITUI A LEITURA ORIGINAL).
-• Informativos: Traz objetivos, metodologia, resultados e conclusão detalhada. (Em certos casos de urgência, SUBSTITUI A LEITURA DO ORIGINAL).
-• Críticos (Resenha): Único resumo feito por terceira pessoa dando OPINIÃO valorativa do autor original.`,
-  unicampContext: `A Unicamp processa quantidades insanas de teses e artigos (RI). A indexação das teses usa, na maioria, o Vocabulário Controlado da USP (VocUSP) e DeCS/MeSH (para a fortíssima área médica e odontológica de Piracicaba). Entender a tradução entre as palavras exatas que o doutorando botou no resumo (Linguagem Natural) e o termo exato do tesauro (Linguagem Controlada) é o dia a dia do bibliotecário referenceiro.`,
+- **1. Exame Analítico do Documento (Leitura Documentária):**
+  O indexador não lê a obra integralmente; ele executa uma leitura técnica seletiva em seções de alta densidade semântica (título, subtítulo, resumo, introdução, conclusões, cabeçalhos de seções e legendas de ilustrações).
+- **2. Identificação dos Conceitos Essenciais:**
+  O profissional formula mentalmente, em **Linguagem Natural**, quais são os tópicos centrais e o foco disciplinar abordado pelo autor.
+- **3. Tradução dos Conceitos para a Linguagem Documentária:**
+  Os conceitos identificados são convertidos para termos padronizados e autorizados em uma **Linguagem Controlada** (Tesauro, Lista de Cabeçalhos de Assunto ou Tabela de Classificação).
+
+---
+
+### 2. Linguagem Natural vs. Linguagem Controlada
+
+- **Linguagem Natural (Indexação Livre / Texto Completo):**
+  Utiliza os termos exatos empregados pelo autor da publicação.
+  - *Vantagens:* Baixo custo, rapidez operacional e incorporação imediata de neologismos científicos de ponta.
+  - *Desvantagens:* Alto índice de ambiguidade semântica provocada por **sinônimos** (ex: *cão*, *cachorro*, *canino*) e **homônimos/polissemias** (ex: *manga* fruta vs. *manga* de camisa), gerando ruído e silêncio na recuperação.
+
+- **Linguagem Controlada (Vocabulário Controlado / Tesauro):**
+  Lista padronizada e unívoca de descritores autorizados pelo sistema.
+  - *Vantagens:* Erradica a dispersão sinonímica e a ambiguidade polissêmica; permite recuperação de alta precisão.
+  - *Desvantagens:* Custo financeiro de manutenção por equipes especializadas e **latência temporal** (demora para aprovar novos termos técnicos emergentes).
+
+---
+
+### 3. A Estrutura Semântica dos Tesauros Documentários
+
+O Tesauro é uma linguagem documentária dinâmica que se distingue de uma simples lista alfabética por estruturar formalmente **três relações semânticas**:
+
+- **1. Relação de Equivalência (Preferência / Sinônimos):**
+  Combate a sinonímia estabelecendo qual termo é autorizado e quais são remissivos:
+  - **USE:** Direciona do termo não autorizado para o descritor autorizado (*Ex: Automóvel ➔ USE ➔ Carro*).
+  - **UP (*Used For* / Usado Para):** Indica quais sinônimos foram substituídos pelo descritor oficial.
+- **2. Relação Hierárquica (Gênero e Espécie / Todo e Parte):**
+  Estrutura a taxonomia em níveis de subordinação conceitual:
+  - **TG / BT (*Broader Term* / Termo Genérico):** Conceito mais amplo (*Ex: Veículo é TG de Carro*).
+  - **TE / NT (*Narrower Term* / Termo Específico):** Conceito mais restrito (*Ex: Carro é TE de Veículo*).
+- **3. Relação Associativa (Afinidade Semântica):**
+  Conecta conceitos interdependentes que não possuem relação hierárquica nem são sinônimos:
+  - **TR / RT (*Related Term* / Termo Relacionado):** (*Ex: Carro ➔ TR ➔ Rodovia, Mecânica, Combustível*).
+
+---
+
+### 4. Tipologia dos Resumos (ABNT NBR 6028)
+
+- **Resumo Indicativo:** Indica apenas os pontos principais do documento de forma sucinta, sem apresentar dados quantitativos ou conclusões detalhadas. **NÃO dispensa a consulta ao documento original**.
+- **Resumo Informativo:** Informa com precisão finalidades, metodologia, resultados estatísticos e conclusões centrais. **Pode dispensar a leitura do texto integral** em pesquisas rápidas.
+- **Resumo Crítico (Resenha):** Elaborado por especialista independente, apresentando julgamento de valor, análise crítica e mérito da obra avaliada.`,
+  unicampContext: `Nas bibliotecas da **Unicamp**:
+
+- **Vocabulários Especializados:** O SBU utiliza o **DeCS/MeSH** (Descritores em Ciências da Saúde) para teses da Faculdade de Ciências Médicas (FCM) e Faculdade de Odontologia de Piracicaba (FOP), e vocabulários controlados interdisciplinares (como o VocUSP) nas Humanidades.
+- **Curadoria no DSpace:** O bibliotecário revisa as palavras-chave livres atribuídas pelo autor na auto-submissão e inclui descritores controlados normalizados nos metadados Dublin Core (\`dc.subject\`), garantindo interoperabilidade com o Oasisbr e BDTD.`,
   boardAnalysis: {
-    trends: `CEBRASPE (2018-2026): Banca perversa no binômio de Lancaster. Costumam inverter as equações ou afirmar absurdos como "Um sistema perfeito de inteligência artificial de buscas é capaz de maximizar a 100% tanto a Revocação quanto a Precisão simultaneamente". (FALSO E IMPOSSÍVEL. É um princípio matemático, se um sobe, o outro desce - Relação Inversamente Proporcional).
-VUNESP / FUNCAMP: Pedem frequentemente os estágios da ISO 5963. A pegadinha fatal deles é dizer que a ISO manda o bibliotecário "ler e resumir a obra integralmente" (Errado: É uma análise e exame rápido de partes vitais).`,
-    commonTraps: `🚨 Pegadinha Clássica CEBRASPE: 
-"A Linguagem de Indexação Livre (Natural) é aquela adotada por Tesauros modernizados com sistemas de inteligência artificial, onde os termos hierárquicos (TG/TE) são atualizados em tempo real."
-(ERRADO: Tesauros, independente de tecnologia, são SEMPRE exemplos de LINGUAGEM CONTROLADA (ou Artificial). Linguagem Natural/Livre não usa lista nenhuma, é a palavra crua da boca do autor ou leitor.)`
+    trends: `### Análise de Bancas (CEBRASPE, VUNESP e FUNCAMP)
+
+- **CEBRASPE:** Explora rigorosamente as **três etapas da ISO 5963** (Exame do documento ➔ Identificação dos conceitos ➔ Tradução para a linguagem documentária). Também cobra as siglas das relações do tesauro: **USE/UP** (equivalência), **TG/TE** (hierárquica) e **TR** (associativa).
+- **VUNESP / FUNCAMP:** Cobram com frequência a classificação da ABNT NBR 6028, com destaque para a distinção entre **Resumo Indicativo** (não substitui o original) e **Resumo Informativo** (pode substituir a leitura original).`,
+    commonTraps: `> 🚨 **Pegadinha Clássica CEBRASPE / VUNESP:**
+> *"Em um tesauro documentário, a relação entre o termo 'Medicina' e o termo 'Hospital' constitui uma relação hierárquica de gênero-espécie (TG/TE)."*
+>
+> **Gabarito: ERRADO!**
+> Hospital não é um "tipo" de Medicina (gênero/espécie), nem é uma parte anatômica da disciplina. A ligação entre eles decorre de associação funcional ou institucional, configurando uma **Relação Associativa (TR — Termo Relacionado)**.`
   },
-  memorizationMatrix: `BALANÇA DA RECUPERAÇÃO (LANCASTER)
-[REVOCAÇÃO ALTA] = Traz MUITA coisa. (Bônus: Nada escapa. Ônus: Muito Lixo/Ruído).
-[PRECISÃO ALTA] = Traz POUCA coisa. (Bônus: Zero lixo. Ônus: Deixa coisa boa pra trás/Silêncio).
+  memorizationMatrix: `### Relações Semânticas em Tesauros & Tipos de Resumos
 
-A SANTÍSSIMA TRINDADE DO TESAURO
-(USE / UF) = Relação de Equivalência (Ponte entre Sinônimos).
-(TG / TE) = Relação Hierárquica (Subir e Descer a Pirâmide).
-(TR) = Relação Associativa (Lembrança cruzada entre primos).
+| Tipo de Relação | Siglas (Português / Inglês) | Função Semântica | Exemplo Prático |
+| :--- | :--- | :--- | :--- |
+| **Equivalência** | **USE** / **UP** (*Used For*) | Controla sinônimos e grafias | Bicicleta ➔ USE ➔ Ciclismo |
+| **Hierárquica** | **TG** (*Broader*) / **TE** (*Narrower*) | Gênero-Espécie / Todo-Parte | Meio de Transporte (TG) ➔ Bicicleta (TE) |
+| **Associativa** | **TR** (*Related Term*) | Afinidade ou conexão temática | Bicicleta (TR) ➔ Ciclovia |
 
-AS TRÊS FASES (ISO 5963)
-1. Exame Físico > 2. Identifica na Mente > 3. Traduz no Tesauro.`
+#### ABNT NBR 6028: Resumos
+- **Indicativo:** Sintético, não traz resultados completos. **Não substitui o texto original**.
+- **Informativo:** Completo (metodologia, dados e conclusões). **Pode dispensar o original**.
+- **Crítico (Resenha):** Emite parecer e julgamento valorativo sobre a obra.`
 };

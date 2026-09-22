@@ -3,41 +3,71 @@ import type { AdvancedTopic } from '../types';
 export const m07: AdvancedTopic = {
   id: "m07",
   title: "7. Fontes de Informação e Bases de Dados",
-  authorsAndFrameworks: `Autores-Chave e Guias:
-• Campello (2003): "Fontes de informação para pesquisadores e profissionais". A taxonomia clássica no Brasil.
-• Cunha e Cavalcanti (2008): Dicionário de Biblioteconomia e Arquivologia (para definições exatas exigidas em provas).
-• Besterman: Considerado o "pai" da bibliografia moderna.`,
-  advancedTheory: `1. Tipologia Clássica das Fontes (Primárias, Secundárias, Terciárias)
-O CEBRASPE adota a visão de Denis Grogan (ou Lancaster, variando a tradução), baseada no grau de consolidação da informação original:
-• Primárias: Informação original, não interpretada. Resultados novos. 
-  Ex: Artigos originais (papers), Teses e Dissertações, Patentes, Relatórios Técnicos, Preprints, Normas Técnicas.
-• Secundárias: Organizam, indexam e facilitam o acesso às primárias. Não trazem conteúdo original inédito.
-  Ex: Bibliografias, Índices, Resumos (Abstracts), Bases de Dados de Indexação (Scopus, Web of Science), Revisões de Literatura (Review articles), Catálogos de Bibliotecas.
-• Terciárias: Condensação e consolidação final do conhecimento humano (geralmente derivadas das secundárias para busca rápida).
-  Ex: Enciclopédias, Dicionários, Anuários, Guias de Literatura, Diretorias.
+  authorsAndFrameworks: `### Autores e Taxonomias Teóricas de Referência
 
-2. Fontes Especiais e Sua Importância
-• Literatura Cinzenta (Grey Literature): Produção não convencional, publicada fora dos canais comerciais/editoriais (não tem ISBN/ISSN formal em editora). São cruciais para a vanguarda tecnológica. Ex: Relatórios governamentais, Teses, Anais de Congressos (Proceedings).
-• Patentes: Têm dupla função jurídica e técnica. São fontes riquíssimas porque exigem "novidade, atividade inventiva e aplicação industrial". O INPI é o repositório nacional brasileiro.
-• Revisões Sistemáticas (Systematic Reviews): Embora "artigos" sejam primários, o "artigo de revisão" é secundário, pois compila e analisa resultados primários anteriores. (Isso é uma pegadinha mortal em prova).
+- **Denis Grogan e F. W. Lancaster:** Formuladores do modelo tripartite paradigmático das fontes de informação (Primárias, Secundárias e Terciárias), balizado pelo grau de originalidade e proximidade com o fato documentado.
+- **Beatriz Valadares Cendón e Bernadete Santos Campello (2003):** *"Fontes de informação para pesquisadores e profissionais"*. A principal obra de referência taxonômica no Brasil sobre literatura especializada.
+- **Murilo Bastos da Cunha e Cordélia Robalinho Cavalcanti (2008):** *Dicionário de Biblioteconomia e Arquivologia*. Fonte lexicográfica padrão utilizada por bancas de concurso para conceitos e definições estritas.`,
+  advancedTheory: `### 1. A Tipologia Tripartite Clássica das Fontes de Informação
 
-3. Bases de Dados Multidisciplinares de Alto Impacto
-• Web of Science (WoS) / Clarivate: Tradicional, possui rígido processo de seleção (JIF). Possui a Coleção Principal (Core Collection).
-• Scopus (Elsevier): Maior base em cobertura de títulos que a WoS. Utiliza métricas baseadas no Scimago (CiteScore, SJR, SNIP).
-• SciELO (Scientific Electronic Library Online): A "Via Ouro/Diamante" Ibero-americana. Criada em 1998, é o principal projeto de fortalecimento de periódicos regionais de Acesso Aberto no mundo.`,
-  unicampContext: `A Unicamp é mantenedora de importantes bases, sendo signatária do Portal de Periódicos da CAPES. A universidade também abriga o IBICT na área de preservação de fontes secundárias estatais (como a BDTD - Biblioteca Digital de Teses e Dissertações).`,
+A literatura biblioteconômica divide as fontes documentais em três categorias estruturantes:
+
+- **1. Fontes Primárias (Informação Inédita e Original):**
+  Contêm conhecimento novo, descobertas recentes ou relatos em primeira mão que ainda não foram filtrados, sintetizados ou avaliados por terceiros.
+  *Exemplos clássicos de concurso:* Artigos científicos originais (*papers* de pesquisa), Teses e Dissertações acadêmicas, Patentes de invenção, Relatórios Técnicos de projetos, Normas Técnicas (ABNT, ISO), Anais de Congressos (*Proceedings*), Correspondências epistolares e Diários oficiais.
+
+- **2. Fontes Secundárias (Organização, Filtro e Apontamento):**
+  Não trazem conhecimento inédito; sua função precípua é **organizar, indexar, resumir ou facilitar o acesso** às fontes primárias.
+  *Exemplos clássicos de concurso:* Bases de dados bibliográficas e referenciais (Scopus, Web of Science, PubMed), Catálogos em linha de bibliotecas (OPACs), Bibliografias especializadas, Revistas de resumos (*Abstracts*), Índices de citação e **Artigos de Revisão de Literatura** (*Review Articles*).
+
+- **3. Fontes Terciárias (Consolidação e Consulta Rápida):**
+  Apresentam a informação em estágio final de consolidação enciclopédica ou atuam como guias direcionadores para as fontes secundárias e primárias.
+  *Exemplos clássicos de concurso:* Dicionários da língua e técnicos, Enciclopédias gerais e especializadas, Anuários estatísticos, Manuais técnicos (*Handbooks*), Diretórios institucionais e Guias de fontes bibliográficas.
+
+> ⚠️ **Atenção Máxima em Prova (Artigos de Revisão):**
+> Embora publicados em revistas científicas, os **Artigos de Revisão Sistemática ou Integrativa** são classificados como **FONTES SECUNDÁRIAS**, pois não relatam um experimento novo de bancada, mas sim compilam e sintetizam estudos primários pré-existentes.
+
+---
+
+### 2. Categorias Especiais de Documentos
+
+- **Literatura Cinzenta (*Grey Literature*):**
+  Compreende a produção intelectual não convencional, gerada no âmbito governamental, acadêmico, industrial e comercial, **que não é disponibilizada através dos canais comerciais formais de edição e venda** (sem registro editorial padrão ou distribuição comercial em livrarias).
+  *Exemplos típicos:* Teses, relatórios técnicos confidenciais ou institucionais, atas de conferências, traduções não publicadas e regulamentos internos.
+
+- **Patentes de Invenção:**
+  Documentos com dupla dimensão (jurídica e tecnológica). Revelam detalhadamente o estado da arte e soluções industriais inéditas antes que cheguem aos artigos científicos. No Brasil, o órgão regulador e depositário é o **INPI** (Instituto Nacional da Propriedade Industrial).
+
+---
+
+### 3. Grandes Bases Multidisciplinares Internacionais
+
+- **Web of Science (Clarivate Analytics):**
+  A mais tradicional base de indexação seletiva do mundo. Reúne a *Core Collection* e fundamenta o cálculo do Fator de Impacto (JIF) via *Journal Citation Reports (JCR)*.
+- **Scopus (Elsevier):**
+  Maior cobertura quantitativa de títulos e conferências globais que a Web of Science. Baseia seus índices no SCImago (*SJR — SCImago Journal Rank* e *CiteScore*).
+- **LILACS (Literatura Latino-Americana em Ciências da Saúde):**
+  Coordenada pela BIREME/OPAS/OMS, indexa a literatura em saúde da América Latina e Caribe, incluindo artigos, teses e monografias não capturadas pelas bases anglo-saxãs.`,
+  unicampContext: `O **Sistema de Bibliotecas da Unicamp (SBU)** atua como ponte mediadora para o ecossistema de fontes:
+
+- **Treinamento Especializado:** O SBU mantém programas contínuos de capacitação de discentes e docentes no uso avançado de bases como PubMed/MEDLINE, Scopus, Web of Science, SciFinder e IEEE Xplore.
+- **Normalização e Suporte a Patentes:** Em articulação com a **Inova Unicamp** (Agência de Inovação da Unicamp), os bibliotecários prestam apoio técnico a pesquisadores na busca de anterioridade em bases de patentes (Espacenet, Derwent, INPI).`,
   boardAnalysis: {
-    trends: `CEBRASPE (2018-2026): A banca AMA a fronteira turva entre Primárias e Secundárias. Eles costumam usar as Patentes e Anais de Congressos como itens primários e os Artigos de Revisão (Review) como secundários. Também cobram a definição de Literatura Cinzenta (frequentemente usando o Relatório Técnico como exemplo canônico).
-    
-VUNESP / FUNCAMP: Cobram o conhecimento básico de bases estatais e acadêmicas, como LILACS, SciELO, e BDTD. Sabem questionar se LILACS inclui TCCs (Sim, monografias, teses, dissertações e artigos da área da saúde).`,
-    commonTraps: `🚨 Pegadinha Clássica CEBRASPE: 
-"Anais de congressos e periódicos científicos são fontes secundárias, pois já passaram pelo processo de revisão por pares e formatação editorial, não sendo mais considerados rascunhos de bancada."
-(ERRADO: Anais de congresso e artigos originais em periódicos são as vias régias da ciência NOVA, portanto, são fontes PRIMÁRIAS absolutas.)`
+    trends: `### Análise de Bancas (CEBRASPE, VUNESP e FUNCAMP)
+
+- **CEBRASPE:** A banca é implacável na classificação hierárquica das fontes. As armadilhas mais recorrentes tentam classificar **Patentes** e **Anais de Congressos** como secundárias (ERRADO, são primárias) ou **Artigos de Revisão** como primárias (ERRADO, são secundárias).
+- **VUNESP / FUNCAMP:** Exigem com frequência a definição canônica de **Literatura Cinzenta** e o reconhecimento de bases estatais em saúde e educação (LILACS, SciELO, Eric, PubMed).`,
+    commonTraps: `> 🚨 **Pegadinha Clássica CEBRASPE / VUNESP:**
+> *"Os anais de eventos científicos (proceedings) constituem fontes secundárias de informação, uma vez que decorrem de apresentações públicas já filtradas pela comissão avaliadora do congresso."*
+>
+> **Gabarito: ERRADO!**
+> Os trabalhos publicados em anais de congressos trazem comunicações e pesquisas científicas de primeira mão; são, portanto, **fontes PRIMÁRIAS** por excelência.`
   },
-  memorizationMatrix: `MATRIZ TRIPARTITE DE FONTES
-| Nível | Nível de Originalidade | Exemplos Curinga (Prova) |
-|-------|------------------------|--------------------------|
-| 1ª (Primária) | Criação / Inédito | Artigo Original, Patente, Tese, Relatório Técnico |
-| 2ª (Secundária)| Indexação / Organização| Web of Science, Catálogo da Biblioteca, Artigo de Revisão |
-| 3ª (Terciária) | Consenso / Fato Frio | Enciclopédia, Dicionário, Wikipedia |`
+  memorizationMatrix: `### Matriz Tripartite das Fontes de Informação
+
+| Nível | Função Conceitual | Natureza do Conteúdo | Exemplos Irrefutáveis de Concurso |
+| :--- | :--- | :--- | :--- |
+| **Primária** | Geração e Registro | Inédito / Direto / Original | Artigos originais, Teses, Patentes, Normas ABNT, Anais, Relatórios Técnicos |
+| **Secundária** | Mediação e Acesso | Filtro / Indexação / Síntese | Bases de dados (Scopus/WoS), Catálogos (OPACs), Bibliografias, **Artigos de Revisão** |
+| **Terciária** | Consulta e Localização| Consolidado / Fato Estabelecido | Dicionários, Enciclopédias, Guias de fontes, Diretórios, Anuários |`
 };

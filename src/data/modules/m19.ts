@@ -3,61 +3,93 @@ import type { AdvancedTopic } from '../types';
 export const m19: AdvancedTopic = {
   id: "m19",
   title: "19. Classificação Decimal de Dewey (CDD) e CDU",
-  authorsAndFrameworks: `Autores-Chave e Histórico Crítico:
-• Melvil Dewey (1876): Publicou a 1ª edição da CDD anonimamente. Famoso por sua obsessão por eficiência (que originou as tabelas auxiliares).
-• Paul Otlet e Henri La Fontaine (1895): Consideraram a CDD gessada para classificar artigos de revistas, então pediram permissão a Dewey para criar a CDU (Classificação Decimal Universal), injetando facetas e sinais gráficos para maior especificidade.
-• OCLC (Online Computer Library Center): O detentor dos direitos e publicador da CDD hoje. Mantém o WebDewey ativo.`,
-  advancedTheory: `1. A Arquitetura Decimal de Dewey (CDD)
-A CDD é uma classificação do tipo "Hierárquica e Enumerativa" (tenta listar quase todos os assuntos do mundo nas classes principais, mas é semi-facetada hoje).
-Toda a base do conhecimento humano foi dividida em 10 Grandes Classes (000 a 900). A base de tudo (O Trivial, O Conhecimento Geral) fica no 000 (Ciência da Computação, Biblioteconomia, Obras Gerais).
-• Regra Ouro do Tamanho: Um número CDD nunca tem menos que 3 dígitos (Ex: 500, não 5). Um ponto (.) é OBRIGATÓRIO após o terceiro dígito para qualquer expansão matemática (Ex: 530.1).
-• Notação da CDD: É Pura (Utiliza exclusivamente algarismos indo-arábicos). No máximo usa o ponto, mas não mescla com letras (A-Z).
-• Índices Relativos: Ao final da CDD, há um índice alfabético espetacular. Ele avisa que "Ferrovias" aparece em várias classes dependendo da faceta: pode ser Engenharia (625), Economia de Transportes (385), ou Sociologia (300).
+  authorsAndFrameworks: `### Autores e Marcos Históricos dos Sistemas Decimais
 
-2. As Tabelas Auxiliares da CDD (A Alma da Expansão)
-Existem 6 Tabelas Auxiliares atualmente. Elas NUNCA podem ser usadas sozinhas! Sempre grudam em um número principal. A Funcamp vai perguntar o que elas são:
-• T1 (Subdivisões Padrão): Podem ser aplicadas a QUALQUER número base do sistema (Ex: -03 Dicionários, -05 Revistas, -09 História).
-• T2 (Áreas Geográficas): Para dividir por países, rios e regiões.
-• T3 (Subdivisões para Artes/Literatura).
-• T4 (Subdivisões para Idiomas).
-• T5 (Grupos Étnicos e Nacionais).
-• T6 (Línguas / Idiomas Falados).
+- **Melvil Dewey (1876):** Criador da *Dewey Decimal Classification* (**CDD**), introduzindo a estrutura decimal de 10 classes, o índice relativo e o sistema de tabelas auxiliares.
+- **Paul Otlet e Henri La Fontaine (1895):** Fundadores do *Institut International de Bibliographie* (IIB). Adaptaram a CDD para a documentação analítica de artigos de periódicos, concebendo a **Classificação Decimal Universal (CDU)** com facetas e operadores relacionais.
+- **OCLC (Online Computer Library Center):** Proprietária dos direitos da CDD e mantenedora da plataforma digital *WebDewey*.
+- **UDC Consortium:** Consórcio internacional sediado em Haia, gestor da manutenção e evolução da CDU.`,
+  advancedTheory: `### 1. A Arquitetura Decimal de Dewey (CDD)
 
-3. Regras Complexas de Decisão (A Ordem de Preferência de Dewey)
-Quando um livro aborda dois ou três temas fortíssimos (Ex: "A Ética na Política", "Filosofia e Religião"), o catalogador precisa saber a regra oficial para a escolha:
-• Regra do Zero (Rule of Zero): Subdivisões mais específicas que começam sem zero (ou com números regulares) têm preferência sobre aquelas que começam com zero (0), e as com (0) ganham das que começam com duplo zero (00).
-• Regra do Primeiro na Ordem: Se o livro foca IGUALMENTE em duas disciplinas (ex: "Física e Química"), você classifica na que vem primeiro no esquema da CDD (Física 530 vence Química 540).
-• Regra do 3: Se o livro engloba TRES OU MAIS disciplinas distintas... PARE. Mova o livro para a Classe Geral Acima delas, ou para 000 (Obras Gerais).
+A **CDD** é um sistema de classificação predominantemente **hierárquico e enumerativo** (com elementos facetados modernos). Divide o universo do saber humano em **10 Grandes Classes decimais (000 a 900)**:
 
-4. A CDU (A Mutação Otletiana)
-A CDU é uma classificação "Semi-Facetada / Analítico-Sintética". Diferente da CDD, ela ABOLIU a exigência de 3 dígitos (Classe Geral = 0, Religião = 2). A notação é MISTA (Usa letras, números e vários símbolos astrofísicos).
-• Sinais Críticos (Cobrados em Concurso):
-   + (Sinal de Adição / Coordenação): Obras que unem assuntos desconexos que não têm uma classe mãe (ex: "Matemática E Direito" = 51+34).
-   / (Barra Oblíqua / Extensão): Assuntos contíguos na árvore (ex: "Religião Cristã do Antigo ao Novo Testamento" = 221/225).
-   : (Dois Pontos / Relação Simples): O mais amado da CDU. Relaciona coisas (ex: 17:32 = Ética em relação à Política).
-   :: (Dois Pontos Duplo / Fixação de Ordem): Igual o simples, mas proíbe o computador/usuário de inverter a ordem no catálogo.
-   [] (Colchetes / Subagrupamento algébrico): Resolve problemas matemáticos de ambiguidade nas relações.
-   = (Sinal de Igual / Idioma): Ex: =111 (Em inglês).
-   ( ) (Parênteses Geográficos): Ex: (81) (No Brasil).`,
-  unicampContext: `A Unicamp, assim como quase todas as mega-universidades estaduais e federais paulistas (USP, Unesp), é território hegemônico da CDD. Manuais de Processamento Técnico internos seguem a Tabela Cutter-Sanborn combinada com a CDD. Saber a T1 e T2 da CDD e o descarte da regra do 3 é essencial para quem vai trabalhar em Barão Geraldo.`,
+- \`000\`: Ciência da Computação, Informação e Obras Gerais
+- \`100\`: Filosofia e Psicologia
+- \`200\`: Religião e Teologia
+- \`300\`: Ciências Sociais
+- \`400\`: Línguas e Linguística
+- \`500\`: Ciências Puras (Matemática, Física, Química, Biologia)
+- \`600\`: Tecnologia e Ciências Aplicadas (Medicina, Engenharia)
+- \`700\`: Artes e Recreação
+- \`800\`: Literatura e Retórica
+- \`900\`: História, Geografia e Biografias
+
+> 💡 **Regras Notacionais Rígidas da CDD:**
+> - **Mínimo de 3 Dígitos:** Uma notação de classe na CDD nunca possui menos que três algarismos (ex: Ciência não é \`5\`, mas compulsoriamente \`500\`).
+> - **O Ponto Decimal Obrigatório:** Após o terceiro dígito, insere-se obrigatoriamente um ponto \`.\` antes de qualquer subdivisão analítica (ex: \`530.1\` para Física Teórica).
+> - **Notação Pura:** A CDD utiliza exclusivamente números arábicos (não mistura letras ou símbolos matemáticos complexos em suas notações básicas).
+
+---
+
+### 2. As 6 Tabelas Auxiliares da CDD
+
+As tabelas auxiliares da CDD **NUNCA podem ser utilizadas isoladamente** como números de chamada na estante; elas devem ser acopladas a uma classe da tabela principal:
+
+- **Tabela 1 (Subdivisões Padrão):** A única tabela que pode ser anexada a **QUALQUER** número da CDD sem requerer instrução específica prévia (ex: \`-03\` Dicionários e Enciclopédias, \`-05\` Publicações Seriadas, \`-09\` Tratamento Histórico e Geográfico).
+- **Tabela 2:** Áreas Geográficas, Períodos Históricos e Pessoas.
+- **Tabela 3:** Subdivisões para Literaturas Individuais e Formas Literárias.
+- **Tabela 4:** Subdivisões para Línguas Individuais.
+- **Tabela 5:** Grupos Étnicos e Nacionais.
+- **Tabela 6:** Línguas / Idiomas.
+
+---
+
+### 3. Regras Oficiais de Decisão na Classificação por Dewey
+
+- **Regra do Primeiro na Ordem de Classificação:** Se uma obra trata com igual profundidade de dois tópicos sem uma relação de influência recíproca, classifica-se sob o assunto que aparece **primeiro** na numeração das tabelas da CDD (ex: obra sobre Física \`530\` e Química \`540\` ➔ classifica-se em \`530\`).
+- **Regra do Três:** Se a obra aborda **três ou mais** disciplinas que se subordinam a uma classe mais ampla, deve-se classificá-la na **classe imediatamente superior** que engloba todas elas (ex: se trata de Álgebra, Geometria e Cálculo, classifica-se em Matemática \`510\`).
+- **Regra do Zero (*Rule of Zero*):** Subdivisões sem zero têm preferência sobre subdivisões iniciadas por \`0\`, e estas têm preferência sobre as iniciadas por \`00\`.
+
+---
+
+### 4. A Classificação Decimal Universal (CDU): A Abordagem Analítico-Sintética
+
+Diferente da CDD, a **CDU** é um sistema **semi-facetado e analítico-sintético**:
+- Não exige o preenchimento artificial de 3 dígitos (ex: Religião na CDU é simplesmente \`2\`).
+- Apresenta **notação mista** e um rico conjunto de operadores e sinais auxiliares:
+  - \`+\` (Adição / Coordenação): Liga assuntos não consecutivos (ex: \`51+53\` = Matemática e Física).
+  - \`/\` (Barra Oblíqua / Extensão Consecutiva): Abrange uma faixa de classes sequenciais (ex: \`221/225\` = Da Bíblia Hebraica aos Evangelhos).
+  - \`:\` (Dois Pontos / Relação Simples): Indica relação ou influência entre dois conceitos (ex: \`17:32\` = Ética relacionada à Política). É o sinal mais emblemático da CDU.
+  - \`::\` (Dois Pontos Duplo / Ordem Fixa): Relação irreversível no sistema automatizado.
+  - \`( )\` (Parênteses de Lugar): Designa localidade geográfica (ex: \`(81)\` = Brasil).
+  - \`" "\` (Aspas / Tempo): Designa data ou época histórica (ex: \`"2024"\`).
+  - \`=\` (Sinal de Igual / Língua): Designa o idioma do documento (ex: \`=111\` = em inglês).`,
+  unicampContext: `Na **Unicamp**, a quase totalidade das bibliotecas do Sistema SBU adota a **CDD (Classificação Decimal de Dewey)** conjugada com a **Tabela de Cutter-Sanborn** para ordenação física das estantes. O conhecimento profundo das Tabelas 1 e 2 da CDD é exigência prática cotidiana no processamento técnico de livros importados e teses defendidas no campus de Campinas.`,
   boardAnalysis: {
-    trends: `CEBRASPE (2018-2026): Ama brincar com a Regra do Primeiro na Ordem e a Regra do 3 (CDD). Na CDU, testam sinais, frequentemente trocando a função da Barra Oblíqua (/) com a da Adição (+). 
-VUNESP / FUNCAMP: Costumam focar na Tabela Auxiliar 1 da CDD (Eles vão perguntar qual tabela pode ser acoplada em qualquer classe sem precisar de instrução prévia - Resposta: Tabela 1 - Subdivisões Padrão).`,
-    commonTraps: `🚨 Pegadinha Clássica CEBRASPE: 
-"A Classificação Decimal Universal (CDU) exige, assim como seu antecessor CDD, um mínimo de três algarismos em sua notação para representar qualquer classe principal (Ex: a classe geral é registrada como 000 e Religião como 200)."
-(ERRADO: Isso é estrito da CDD. A CDU aboliu essa regra e compacta ao máximo. Na CDU, a classe geral é apenas "0", Religião é "2", sem zeros de preenchimento inútil.)`
-  },
-  memorizationMatrix: `FÓRMULA DECIMAL BÁSICA E SINAIS CDU
-[CDD]:
-Tamanho Mínimo = 3 dígitos. (000, 100, 200...).
-T1 = Pode aplicar em tudo (Dicionário, História).
-Notação = Pura (só números arábicos).
+    trends: `### Análise de Bancas (CEBRASPE, VUNESP e FUNCAMP)
 
-[CDU Sinais Gráficos de Sangue]:
-[ + ] : Adição/Coordenação (X e Y que não têm nada a ver).
-[ / ] : Extensão (Assuntos vizinhos de X até Y).
-[ : ] : Relacionamento (A influência de X em Y).
-[ = ] : Idioma (Escrito em francês, alemão...).
-[ () ] : Lugar Geográfico (Acontece no Brasil, SP).
-[ " " ] : Tempo/Cronologia (Século XX).`
+- **CEBRASPE:** Explora rigorosamente as **Regras de Preferência da CDD** (a regra do primeiro na ordem e a regra do três). Na CDU, as questões focam nos sinais auxiliares, tentando inverter a função da Barra Oblíqua \`/\` (extensão consecutiva) com o sinal de Adição \`+\` (coordenação não consecutiva).
+- **VUNESP / FUNCAMP:** Cobram recorrentemente a **Tabela 1 da CDD** (Subdivisões Padrão), perguntando qual tabela auxiliar pode ser aplicada de forma autônoma a qualquer notação de assunto sem necessidade de instrução de "adicione a".`,
+    commonTraps: `> 🚨 **Pegadinha Clássica CEBRASPE / VUNESP:**
+> *"Na Classificação Decimal de Dewey (CDD), caso uma monografia aborde com igual profundidade a Sociologia (301) e a Economia (330), o catalogador deve classificá-la obrigatoriamente na classe de maior especificidade numérica (330)."*
+>
+> **Gabarito: ERRADO!**
+> Pela regra do primeiro na ordem (*First-of-two rule*), quando dois tópicos recebem igual ênfase e não pertencem à mesma família hierárquica imediata, o classificador deve escolher a notação que vem **primeiro numericamente no esquema** (portanto, \`301\` Sociologia tem preferência sobre \`330\` Economia).`
+  },
+  memorizationMatrix: `### Síntese Comparativa: CDD vs. CDU
+
+| Dimensão Notacional | CDD (Dewey) | CDU (Universal) |
+| :--- | :--- | :--- |
+| **Tipo de Sistema** | Hierárquico Enumerativo | Analítico-Sintético / Semi-facetado |
+| **Número Mínimo de Dígitos** | **3 Dígitos** (ex: \`500\`) | Sem mínimo (ex: \`5\`) |
+| **Tipo de Notação** | Pura (Exclusivamente algarismos) | Mista (Números + Sinais gráficos + Letras) |
+| **Tabela Auxiliar Universal**| **Tabela 1 (Subdivisões Padrão)** | Auxiliares Comuns e Especiais |
+
+#### Tabela de Sinais Emblemáticos da CDU
+- \`+\` : Adição / Conexão não sequencial (\`51+53\`)
+- \`/\` : Extensão sequencial contínua (\`51/53\`)
+- \`:\` : Relação / Influência entre assuntos (\`17:32\`)
+- \`( )\`: Lugar geográfico (\`(81)\` = Brasil)
+- \`" "\` : Tempo / Época (\`"2026"\`)
+- \`=\` : Idioma (\`=134.3\` = Português)`
 };

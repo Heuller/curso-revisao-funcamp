@@ -3,40 +3,65 @@ import type { AdvancedTopic } from '../types';
 export const m17: AdvancedTopic = {
   id: "m17",
   title: "17. RDA (Resource Description and Access)",
-  authorsAndFrameworks: `Autores-Chave e Histórico:
-• JSC (Joint Steering Committee for Development of RDA): Órgão que substituiu os velhos comitês do AACR. Agora rebatizado para RSC (RDA Steering Committee).
-• IFLA: Criadora do FRBR, FRAD e FRSAD, que foram fundidos no modelo IFLA LRM (2017) - a alma filosófica e ontológica pura por trás do RDA.
-• Lançamento Oficial: 2010 (Substituição progressiva e final do AACR2 em grandes agências mundiais a partir de 2013, como a Library of Congress).`,
-  advancedTheory: `1. O Abandono do Papel e o Foco no Usuário (LRM)
-O AACR2 assumia que o produto final da catalogação era uma Ficha de Papel impressa. O RDA (Resource Description and Access) foi concebido EXCLUSIVAMENTE para o ambiente digital (Web, catálogos online, Linked Data).
-A essência do RDA é estruturada totalmente nos modelos da IFLA (FRBR/LRM). O RDA não vê um livro; ele vê a "Obra" (a abstração), a "Expressão" (o texto/idioma), e a "Manifestação" (o livro impresso, o epub). 
-As regras do RDA servem para registrar "Atributos" e construir "Relacionamentos" entre essas entidades.
+  authorsAndFrameworks: `### Autores e Marcos Históricos do RDA
 
-2. A Queda dos Dogmas do AACR2 (As Grandes Diferenças)
-• 1º Dogma Derrubado: A "Regra de 3". O AACR2 escondia autores sob a manta do "et al." e forçava a entrada no Título se a obra tivesse mais de 3 autores. O RDA baniu a Regra de 3. Recomenda-se registrar TODOS os autores (favorecendo a busca do usuário), mas há a opção de registrar apenas o primeiro e indicar de forma clara que há outros, SEM usar a famigerada abreviação [et al.].
-• 2º Dogma Derrubado: O Latim e as Abreviações Padrão. O RDA aboliu "s.n.", "S.l.", "ca.", "il.". O princípio máximo do RDA é: Take what you see, accept what you get (Aceite o que vier). Transcreve-se o que está no item! O usuário não fala latim. Portanto, usa-se [editor não identificado], [local não identificado], "ilustrações". (Tudo na língua do catalogador).
-• 3º Dogma Derrubado: O Fim do GMD (General Material Designation). Aquela nota entre colchetes logo após o título (Ex: Machado de Assis [gravação de som]) morreu! O RDA estilhaçou o velho GMD (tag 245 $h) em três novos campos flexíveis (As tags 336, 337 e 338 do MARC):
-   - Tipo de Conteúdo (Content Type - Tag 336): O que está lá dentro? (Ex: texto, imagem em movimento).
-   - Tipo de Mídia (Media Type - Tag 337): Precisa de intermediário? (Ex: computador, não mediado).
-   - Tipo de Suporte (Carrier Type - Tag 338): Como está gravado? (Ex: volume, disco de áudio, recurso online).
+- **RSC (RDA Steering Committee):** Comitê internacional mantenedor responsável pela governança do padrão, em substituição ao antigo *Joint Steering Committee for Revision of AACR (JSC)*.
+- **IFLA e os Modelos Conceituais (FRBR, FRAD, FRSAD e IFLA LRM):** A estrutura ontológica e filosófica profunda do RDA fundamenta-se nos Requisitos Funcionais para Registros Bibliográficos e no moderno **IFLA LRM (2017)**.
+- **Library of Congress e Bibliotecas Nacionais (2010/2013):** Lançamento do *RDA Toolkit* (2010) e adoção oficial generalizada a partir de 2013 pelas agências nacionais dos EUA, Reino Unido, Canadá e Austrália.`,
+  advancedTheory: `### 1. A Ruptura Paradigmática: Da Ficha Impressa aos Dados Conectados (*Linked Data*)
 
-3. Core Elements (Elementos Centrais Obrigatórios)
-O RDA abandonou os 3 níveis de descrição rígidos do AACR2. Ele introduziu os "Core Elements" (Elementos Mínimos Obrigatórios para qualquer registro não virar um fantasma na base). Se algo for um Core Element (como Título Principal, Identificador/ISBN, Primeiro Criador), o catalogador TEM que colocar. 
-Também trouxe opções pesadas de "Catalogador Julga" (Cataloger's Judgment) - onde o profissional tem liberdade para decidir se a informação extra beneficia a comunidade local ou não.
+O AACR2 foi desenhado para o ecossistema linear das fichas de papel em gaveteiros de madeira. O **RDA (*Resource Description and Access*)** foi concebido como um **código flexível para a web semântica e ambientes digitais**.
 
-4. A Preparação para a Web Semântica (Linked Data)
-O RDA quebra as correntes do "Texto". Ele prefere "URIs" (Uniform Resource Identifiers). Em vez de escrever o texto cego "Companhia das Letras", o RDA prefere que o catálogo insira a URI exata (um link perene) para a identidade da "Cia das Letras" na web. Isso permite que sistemas globais integrem catálogos brasileiros com americanos em milissegundos sem esbarrar na barreira do idioma.`,
-  unicampContext: `A Unicamp aderiu globalmente ao RDA. Uma das mudanças drásticas que um catalogador novato enfrenta na Unicamp hoje é preencher os novos campos 336, 337 e 338 do MARC21 que substituíram a indicação geral de material. O uso de [s.n.] é proibido e gera correção pelo controle de qualidade da coordenação, devendo o estagiário substituir por [publisher not identified] ou [editor não identificado].`,
+- **Agnóstico em Relação ao Suporte:** O RDA não privilegia o livro em papel. Suas diretrizes aplicam-se com a mesma naturalidade a tábuas sumérias de argila, livros impressos, coleções de e-books, repositórios de dados brutos de pesquisa ou hologramas interativos.
+- **Orientação a Entidades e Relações:** O RDA mapeia a realidade bibliográfica em termos de **Entidades**, seus **Atributos** e suas **Relações**, seguindo o modelo entidade-relacionamento da IFLA.
+
+---
+
+### 2. As Quatro Grandes Rupturas: Como o RDA Sepultou os Dogmas do AACR2
+
+- **1ª Ruptura — A Abolição da "Regra dos Três" e do \`[et al.]\`:**
+  O RDA revogou a regra punitiva do AACR2 que forçava a entrada pelo título quando a obra possuía mais de 3 autores. No RDA, **recomenda-se registrar todos os criadores**, valorizando a autoria plena e permitindo que o leitor recupere o livro buscando por qualquer um dos autores.
+- **2ª Ruptura — O Fim das Abreviações Latinas \`[s.l.]\` e \`[s.n.]\`:**
+  O usuário moderno não domina expressões latinas arcaicas como *sine loco* e *sine nomine*. O RDA determina o uso de termos transparentes no idioma do catálogo:
+  - No lugar de \`[S.l.]\` ➔ Registra-se \`[local de publicação não identificado]\`;
+  - No lugar de \`[s.n.]\` ➔ Registra-se \`[editor não identificado]\`.
+- **3ª Ruptura — O Princípio "Take What You See" (Aceite o que vê):**
+  Redução de intervenções artificiais do catalogador. Transcreve-se o título exatamente como grafado no documento original (inclusive com eventuais erros ortográficos patentes, documentados em nota se necessário).
+- **4ª Ruptura — A Fragmentação do GMD (Designação Geral de Material):**
+  O termo restritivo entre colchetes aposto ao título no AACR2 (ex: \`[recurso eletrônico]\`, \`[gravação de som]\`) foi extinto. O RDA substituiu o GMD por **três dimensões independentes**, mapeadas nas tags MARC 21:
+  - **Tipo de Conteúdo (*Content Type* - Tag \`336\`):** Forma da comunicação mental (ex: \`texto\`, \`música notada\`, \`imagem estática\`).
+  - **Tipo de Mídia (*Media Type* - Tag \`337\`):** Aparelho intermediário necessário para reprodução (ex: \`computador\`, \`áudio\`, \`não mediado\`).
+  - **Tipo de Suporte (*Carrier Type* - Tag \`338\`):** O invólucro físico do recurso (ex: \`volume\`, \`disco de áudio\`, \`recurso online\`).
+
+---
+
+### 3. Elementos Centrais (*Core Elements*) vs. Julgamento do Catalogador
+
+O RDA extinguiu os três níveis rígidos de descrição do AACR2, adotando:
+- **Core Elements (Elementos Centrais):** Conjunto mínimo obrigatório de dados que deve constar em qualquer registro (ex: Título Principal, Menção de Responsabilidade do Primeiro Autor, Data de Publicação, Identificador Normalizado).
+- **Cataloger's Judgment (Julgamento Profissional):** Concede autonomia formal ao bibliotecário para incluir elementos adicionais sempre que estes agregarem valor informacional à comunidade local atendida.`,
+  unicampContext: `A **Unicamp** adota formalmente o RDA em sua rede de bibliotecas:
+
+- **Normatização no SBU:** O preenchimento das tags \`336\`, \`337\` e \`338\` é mandatório em todo processamento de novas teses, dissertações e e-books.
+- **Erradicação do Latim:** O controle de qualidade do catálogo unificado da Unicamp invalida registros contendo \`[s.l.]\` ou \`[s.n.]\`, padronizando termos vernáculos claros que facilitam a descoberta pelos alunos nos portais web.`,
   boardAnalysis: {
-    trends: `CEBRASPE (2018-2026): A banca costuma fazer uma teia entre AACR2, MARC e RDA. Eles vão tentar forçar a ideia de que o RDA foi criado apenas para "Recursos Digitais" ou E-books. (FALSO! RDA cataloga tudo, desde tábuas de argila até hologramas de realidade virtual, ele é AGNÓSTICO em relação ao suporte físico). 
-VUNESP / FUNCAMP: Gosta das diferenças cruas e diretas. Saber de cor a abolição da "Regra de 3", a abolição do GMD (Designação Geral de Material) pelas três tags 33x, e o abandono de todas as abreviações não intuitivas da ISBD.`,
-    commonTraps: `🚨 Pegadinha Clássica CEBRASPE: 
-"Por ser uma atualização filosófica focada nas entidades do FRBR, o RDA eliminou a necessidade de se utilizar o formato MARC 21 nas bibliotecas, adotando nativamente um formato XML puro que impossibilita a transição legada."
-(ERRADO: O RDA não substitui o MARC! Eles são independentes. O MARC 21 se adaptou e sofreu dezenas de atualizações para suportar o RDA (como a criação das tags 336, 337, 338 e o uso da 264 para imprenta). Você aplica regras do RDA e escreve *dentro* do formato MARC.)`
+    trends: `### Análise de Bancas (CEBRASPE, VUNESP e FUNCAMP)
+
+- **CEBRASPE:** Tenta induzir o candidato ao erro afirmando que o RDA substituiu e invalidou o formato MARC 21 (FALSO! O RDA é código descritivo, e o MARC 21 é formato de intercâmbio; o MARC foi atualizado para acomodar nativamente o RDA). Outra pegadinha clássica é dizer que o RDA aplica-se exclusivamente a recursos digitais e virtuais (FALSO: aplica-se a qualquer suporte).
+- **VUNESP / FUNCAMP:** Cobram as novidades práticas diretas: a extinção da "Regra dos Três", o fim das abreviações latinas e a tríade de tags **336 (Conteúdo), 337 (Mídia) e 338 (Suporte)**.`,
+    commonTraps: `> 🚨 **Pegadinha Clássica CEBRASPE / VUNESP:**
+> *"Ao adotar o RDA, a biblioteca deve descontinuar a utilização do formato MARC 21, transferindo sua base obrigatoriamente para um esquema XML exclusivo que impossibilita a leitura de registros antigos do AACR2."*
+>
+> **Gabarito: ERRADO!**
+> O RDA e o MARC 21 são **independentes e complementares**. O padrão MARC 21 adaptou-se perfeitamente ao RDA por meio da introdução de novos campos (como \`264\`, \`336\`, \`337\` e \`338\`), coexistindo harmoniosamente em sistemas integrados de bibliotecas.`
   },
-  memorizationMatrix: `OS CÓDIGOS DE HAMURABI DO RDA
-Regra 1: [Take what you see]. Pare de corrigir o livro, transcreva o erro tipográfico se ele for real e importante.
-Regra 2: [Morte ao Latim]. Sai "[S.l.]", entra "[Local não identificado]".
-Regra 3: [A Queda da Trindade]. Pode ter 10 autores, registra todos se a agência local quiser (morte do et al.).
-Regra 4: [A Partilha do GMD]. O antigo "Designador Geral" do AACR2 virou a Santa Trindade do RDA (Conteúdo, Mídia e Suporte - Tags 336, 337, 338).`
+  memorizationMatrix: `### Confronto Direto: AACR2 vs. RDA
+
+| Dimensão Técnica | Como era no AACR2 (Legado) | Como é no RDA (Moderno) |
+| :--- | :--- | :--- |
+| **Mais de 3 Autores** | Entrada pelo Título com \`[et al.]\` | Entrada pelo 1º Autor e registro de **TODOS** |
+| **Local / Editor Faltando** | Abreviações latinas \`[S.l.]\` e \`[s.n.]\` | Vernáculo: \`[local não identificado]\` / \`[editor não identificado]\` |
+| **Designação de Material**| GMD no campo \`245 $h\` (ex: \`[vídeo]\`) | **Tríade MARC:** \`336\` (Conteúdo), \`337\` (Mídia), \`338\` (Suporte) |
+| **Padrão de Imprenta** | Campo \`260\` genérico | Campo \`264\` com indicador de função (Publicação vs. Copyright) |
+| **Filosofia Central** | Transcrição prescritiva para ficha física | Entidades e Relações (**IFLA LRM**) para a Web Semântica |`
 };

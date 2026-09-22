@@ -1,7 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
-import ReactMarkdown from 'react-markdown';
-import remarkGfm from 'remark-gfm';
+import { MarkdownViewer } from './components/MarkdownViewer';
 import { modulesData } from './data';
 import type { AdvancedTopic } from './data/types';
 import Simulado from './components/Simulado';
@@ -213,7 +212,7 @@ function App() {
 
                     <Accordion type="multiple" defaultValue={["theory"]} className="w-full space-y-4 relative z-10">
                       
-                      <AccordionItem value="theory" className="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50/50 data-[state=open]:shadow-sm transition-all data-[state=open]:bg-white">
+                      <AccordionItem value="theory" className="border border-slate-200 rounded-2xl overflow-hidden bg-white shadow-xs transition-all">
                         <AccordionTrigger className="px-6 py-5 hover:bg-slate-50 hover:no-underline transition-colors">
                           <div className="flex items-center gap-3">
                             <div className="p-2 bg-indigo-100 rounded-lg text-indigo-700">
@@ -223,16 +222,13 @@ function App() {
                           </div>
                         </AccordionTrigger>
                         <AccordionContent className="px-6 pb-8 pt-2">
-                          <div className="prose prose-slate prose-headings:font-black prose-headings:text-slate-800 prose-headings:mb-4 prose-p:text-slate-600 prose-p:leading-relaxed prose-p:mb-6 max-w-[80ch] text-[16px]">
-                            {/* Rendering Theory with ReactMarkdown for better formatting */}
-                            <ReactMarkdown remarkPlugins={[remarkGfm]}>
-                              {activeModule.advancedTheory}
-                            </ReactMarkdown>
+                          <div className="max-w-[85ch]">
+                            <MarkdownViewer content={activeModule.advancedTheory} />
                           </div>
                         </AccordionContent>
                       </AccordionItem>
 
-                      <AccordionItem value="authors" className="border border-slate-200 rounded-2xl overflow-hidden bg-slate-50/50 data-[state=open]:shadow-sm transition-all data-[state=open]:bg-white">
+                      <AccordionItem value="authors" className="border border-slate-200 rounded-2xl overflow-hidden bg-white shadow-xs transition-all">
                         <AccordionTrigger className="px-6 py-5 hover:bg-slate-50 hover:no-underline transition-colors">
                           <div className="flex items-center gap-3">
                             <div className="p-2 bg-emerald-100 rounded-lg text-emerald-700">
@@ -242,8 +238,8 @@ function App() {
                           </div>
                         </AccordionTrigger>
                         <AccordionContent className="px-6 pb-6 pt-2">
-                          <div className="prose prose-slate max-w-[80ch] text-slate-600 whitespace-pre-wrap leading-relaxed text-[15px]">
-                            {activeModule.authorsAndFrameworks}
+                          <div className="max-w-[85ch]">
+                            <MarkdownViewer content={activeModule.authorsAndFrameworks} />
                           </div>
                         </AccordionContent>
                       </AccordionItem>
@@ -252,8 +248,8 @@ function App() {
                   </div>
 
                   <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-                    <Card className="border-slate-200 shadow-sm hover:shadow-md transition-shadow">
-                      <CardHeader className="pb-4 bg-slate-50/50 border-b border-slate-100">
+                    <Card className="border-slate-200 bg-white shadow-sm hover:shadow-md transition-shadow">
+                      <CardHeader className="pb-4 bg-slate-50/70 border-b border-slate-100">
                         <CardTitle className="flex items-center gap-2 text-slate-800 text-xl">
                           <div className="p-2 bg-indigo-100 rounded-lg text-indigo-700">
                             <Crosshair className="w-5 h-5" />
@@ -263,14 +259,14 @@ function App() {
                         <CardDescription className="text-slate-500 font-medium pl-11">Como o SBU aplica na prática</CardDescription>
                       </CardHeader>
                       <CardContent className="pt-6">
-                        <p className="text-slate-600 whitespace-pre-wrap leading-relaxed text-[15px]">
-                          {activeModule.unicampContext}
-                        </p>
+                        <div className="max-w-none">
+                          <MarkdownViewer content={activeModule.unicampContext} />
+                        </div>
                       </CardContent>
                     </Card>
 
-                    <Card className="border-amber-200/60 bg-gradient-to-br from-white to-amber-50/30 shadow-sm hover:shadow-md transition-shadow">
-                      <CardHeader className="pb-4 bg-amber-50/50 border-b border-amber-100/50">
+                    <Card className="border-amber-200/70 bg-gradient-to-br from-white to-amber-50/40 shadow-sm hover:shadow-md transition-shadow">
+                      <CardHeader className="pb-4 bg-amber-50/60 border-b border-amber-100/60">
                         <CardTitle className="flex items-center gap-2 text-amber-900 text-xl">
                           <div className="p-2 bg-amber-100 rounded-lg text-amber-700">
                             <ShieldAlert className="w-5 h-5" />
@@ -280,19 +276,17 @@ function App() {
                         <CardDescription className="text-amber-700/70 font-medium pl-11">Tendências Funcamp/Vunesp</CardDescription>
                       </CardHeader>
                       <CardContent className="pt-6 space-y-5">
-                        <div className="text-amber-900/90 whitespace-pre-wrap leading-relaxed text-[15px]">
-                          {activeModule.boardAnalysis.trends}
-                        </div>
-                        <div className="bg-amber-100/50 p-5 rounded-2xl border border-amber-200 text-amber-950 whitespace-pre-wrap font-medium text-[15px] shadow-sm relative overflow-hidden">
-                          <AlertTriangle className="absolute top-0 right-0 w-24 h-24 text-amber-500/10 -translate-y-4 translate-x-4" />
+                        <MarkdownViewer content={activeModule.boardAnalysis.trends} />
+                        <div className="bg-amber-100/60 p-5 rounded-2xl border border-amber-200 text-amber-950 font-medium text-[15px] shadow-xs relative overflow-hidden">
+                          <AlertTriangle className="absolute top-0 right-0 w-24 h-24 text-amber-500/10 -translate-y-4 translate-x-4 pointer-events-none" />
                           <div className="relative z-10">
-                            {activeModule.boardAnalysis.commonTraps}
+                            <MarkdownViewer content={activeModule.boardAnalysis.commonTraps} />
                           </div>
                         </div>
                       </CardContent>
                     </Card>
 
-                    <Card className="lg:col-span-2 border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden">
+                    <Card className="lg:col-span-2 border-slate-200 shadow-sm hover:shadow-md transition-shadow overflow-hidden bg-white">
                       <CardHeader className="pb-4 bg-slate-900 text-white">
                         <CardTitle className="flex items-center gap-2 text-white text-xl">
                           <div className="p-2 bg-white/10 rounded-lg text-indigo-300">
@@ -301,21 +295,8 @@ function App() {
                           Matriz de Memorização
                         </CardTitle>
                       </CardHeader>
-                      <CardContent className="p-0">
-                        <div className="bg-white overflow-x-auto">
-                          <ReactMarkdown 
-                            remarkPlugins={[remarkGfm]}
-                            components={{
-                              table: ({node, ...props}) => <table className="w-full text-sm text-left border-collapse min-w-[600px]" {...props} />,
-                              th: ({node, ...props}) => <th className="px-6 py-4 bg-slate-50 text-slate-800 font-bold border-b border-slate-200 uppercase tracking-wider text-xs whitespace-nowrap" {...props} />,
-                              td: ({node, ...props}) => <td className="px-6 py-4 border-b border-slate-100 text-slate-600 align-top" {...props} />,
-                              tr: ({node, ...props}) => <tr className="hover:bg-slate-50/80 transition-colors" {...props} />,
-                              p: ({node, ...props}) => <p className="p-6 pb-2 text-indigo-600 font-bold tracking-wide uppercase text-sm bg-indigo-50/50" {...props} />,
-                            }}
-                          >
-                            {activeModule.memorizationMatrix}
-                          </ReactMarkdown>
-                        </div>
+                      <CardContent className="p-6">
+                        <MarkdownViewer content={activeModule.memorizationMatrix} />
                       </CardContent>
                     </Card>
                   </div>

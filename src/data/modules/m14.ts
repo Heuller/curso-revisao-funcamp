@@ -3,52 +3,75 @@ import type { AdvancedTopic } from '../types';
 export const m14: AdvancedTopic = {
   id: "m14",
   title: "14. Representação Descritiva e Temática (Controle Bibliográfico)",
-  authorsAndFrameworks: `Autores-Chave e Instrumentos Clássicos:
-• Mey (1995) e Mey e Silveira (2009): A Bíblia nacional. "A catalogação é o mapa do universo bibliográfico". Enfatizam que a catalogação existe não para o livro, mas para o *usuário*.
-• IFLA (International Federation of Library Associations): O oráculo global. Responsável pelas normativas-mãe (ISBD, ICP).
-• Charles Ammi Cutter (1876): Rules for a Dictionary Catalog. O criador da fundação do catálogo moderno, estipulando os primeiros objetivos (Autor, Título, Assunto).
-• Seymour Lubetzky (1953): O gênio que criticou as velhas regras da ALA, pregando que o catálogo deveria focar nas "Condições de Autoria" em vez de criar regras pontuais para cada caso anômalo, dando base aos Princípios de Paris (1961).`,
-  advancedTheory: `1. A Epistemologia Bipartida da Catalogação (Forma x Conteúdo)
-No Brasil (diferente da tradição anglo-saxônica, onde "Cataloging" engloba tudo), costumamos dividir o Controle Bibliográfico rigorosamente:
-• Representação Descritiva (Catalogação Descritiva): Foca nas características EXTRÍNSECAS / FÍSICAS da manifestação. Quem a criou? Quando? Onde? Quantas páginas? (Instrumentos: AACR2, RDA, ISBD, MARC 21). 
-• Representação Temática (Classificação e Indexação): Foca nas características INTRÍNSECAS / SEMÂNTICAS. Do que trata a obra? (Instrumentos: CDD, CDU, Tesauros, Vocabulários Controlados).
+  authorsAndFrameworks: `### Autores e Marcos Teóricos Estruturantes
 
-2. Os Princípios Internacionais de Catalogação (ICP 2016)
-Historicamente, os Princípios de Paris (1961) ditavam o ritmo. Eles foram revogados pela IFLA em 2009 (com atualização forte em 2016) pelos "Novos Princípios Internacionais de Catalogação" (ICP).
-Eles estabelecem a "Missão" (Tarefas) de qualquer catálogo no planeta. O catálogo não deve ser um depósito morto, ele deve permitir que o usuário atinja 5 verbos:
-• ENCONTRAR (Find): Trazer um ou vários recursos em uma busca.
-• IDENTIFICAR (Identify): Confirmar se o recurso encontrado é realmente aquele que o usuário quer (não confundir a edição de 1990 com a de 2020).
-• SELECIONAR (Select): Escolher o material adequado às suas necessidades (ex: escolher a versão em áudio em vez da impressa por ser cego).
-• OBTER (Obtain): Adquirir acesso ao item físico ou digital (saber onde está na estante ou clicar no link).
-• NAVEGAR (Navigate): [Novidade do LRM]. Mover-se pela rede de catálogos e descobrir relacionamentos (ex: Clicar em "Machado de Assis" e ver a rede de todas as obras dele).
+- **Eliane Serrão Alves Mey e Nair Yumiko Silveira (2009):** *"Catalogação no plural"*. A principal referência doutrinária brasileira. Postulam que a catalogação não existe para o livro nem para satisfazer o bibliotecário, mas exclusivamente para atender à **conveniência do usuário**.
+- **IFLA (International Federation of Library Associations):** Entidade internacional máxima responsável pela formulação das normativas estruturantes (**ISBD**, **Declaração de Princípios Internacionais de Catalogação - ICP** e a família de modelos conceituais **FRBR/LRM**).
+- **Charles Ammi Cutter (1876):** *"Rules for a Dictionary Catalog"*. Estabeleceu os objetivos pioneiros do catálogo moderno: permitir encontrar um livro por Autor, Título ou Assunto; mostrar o que a biblioteca possui; e auxiliar na escolha do livro.
+- **Seymour Lubetzky (1953):** *"Cataloging Rules and Principles"*. Crítico visceral do emaranhado casuístico de regras antigas, defendeu a simplificação baseada em princípios universais de condições de autoria, servindo de base filosófica para os Princípios de Paris (1961).`,
+  advancedTheory: `### 1. A Divisão Epistemológica do Controle Bibliográfico
 
-O Princípio Maior do ICP: A CONVENIÊNCIA DO USUÁRIO (User Convenience). Se os princípios entrarem em choque ou a regra do código for absurda, o bibliotecário deve escolher a forma mais óbvia e simples para o leitor, ignorando purismos.
+No Brasil, o tratamento técnico documental estrutura-se em duas vertentes complementares:
 
-3. Pontos de Acesso e o Sagrado Controle de Autoridade
-Se a catalogação descritiva fosse apenas transcrever o título, qualquer robô faria. A alma da catalogação é a escolha dos "Pontos de Acesso" (Chaves de recuperação).
-• Main Entry (Ponto de Acesso Principal): O Cabeçalho (geralmente o autor).
-• Added Entries (Secundários): Título, Tradutor, Ilustrador.
-Para evitar o "Caos da Recuperação" (onde um livro de "G. Garcia Marquez" se perde dos outros 10 cadastrados como "Gabriel García Márquez"), cria-se o Controle de Autoridade.
-O Controle fixa UM ÚNICO NOME AUTORIZADO (Cabeçalho de Autoridade) e cria:
-- Remissivas VER (SEE): "Márquez, G. -> VER -> García Márquez, Gabriel". (Corrige erro/sinônimo).
-- Remissivas VER TAMBÉM (SEE ALSO): Liga conceitos e nomes que mudaram (Ex: "Ministério da Educação -> VER TAMBÉM -> Ministério da Educação e Cultura"). Relaciona parentescos, não sinônimos diretos.`,
-  unicampContext: `A Unicamp processa mais de 1 milhão de registros. Manter a "Autoridade" limpa é a missão mais cara da Divisão de Processamento Técnico (DPT). Se a Unicamp cadastra "Instituto de Filosofia" e "IFCH" como coisas separadas sem controle de autoridade (VER TAMBÉM), metade da memória acadêmica da instituição fica "invisível" para o usuário final no sistema de busca.`,
+- **Representação Descritiva (Catalogação Descritiva):**
+  Registra as características **extrínsecas (físicas e de publicação)** do recurso bibliográfico. Identifica: Quem criou a obra? Qual o título exato? Em que ano e cidade foi editada? Quantas páginas e ilustrações possui?
+  *Instrumentos normativos:* **ISBD**, **AACR2**, **RDA** e o formato de intercâmbio **MARC 21 Bibliográfico**.
+
+- **Representação Temática (Classificação e Indexação):**
+  Identifica e sistematiza as características **intrínsecas (conteúdo semântico)** da obra. Responde: De que assunto trata o documento? Qual o seu foco disciplinar?
+  *Instrumentos normativos:* Sistemas de Classificação Decimal (**CDD**, **CDU**), Tabelas de Notação de Autor (**Cutter-Sanborn**), **Tesauros** e **Listas de Cabeçalhos de Assunto**.
+
+---
+
+### 2. Os Novos Princípios Internacionais de Catalogação (ICP - IFLA 2016)
+
+Aprovados originariamente em 2009 e atualizados em 2016 em substituição aos Princípios de Paris (1961), os **ICPs** consagram as cinco **Tarefas do Usuário** perante qualquer catálogo bibliográfico do planeta:
+
+- **1. ENCONTRAR (*Find*):** Localizar recursos bibliográficos no catálogo usando qualquer atributo ou relação relevante (autor, título, assunto, data).
+- **2. IDENTIFICAR (*Identify*):** Confirmar com exatidão que o recurso recuperado corresponde à entidade procurada, distinguindo entre duas edições ou recursos semelhantes.
+- **3. SELECIONAR (*Select*):** Escolher o recurso que atende precisamente às necessidades do usuário (ex: selecionar a edição em língua portuguesa, ou formato acessível em audiolivro).
+- **4. OBTER (*Obtain*):** Efetivar o acesso ao recurso (localizar o exemplar físico na estante, solicitar empréstimo entre bibliotecas ou baixar o arquivo digital via link).
+- **5. NAVEGAR (*Navigate*):** Explorar a teia de relações bibliográficas dentro do catálogo (ex: navegar da obra de um autor para seus adaptadores, tradutores ou assuntos correlatos).
+
+> 💡 **O Princípio Supremo do ICP: A CONVENIÊNCIA DO USUÁRIO:**
+> Ao formular regras descritivas ou resolver ambiguidades catalográficas, as necessidades e a linguagem comum dos leitores devem **sempre prevalecer** sobre o rigor burocrático e purismos técnicos do catalogador.
+
+---
+
+### 3. Pontos de Acesso e o Sagrado Controle de Autoridade
+
+A catalogação não se resume à transcrição literal do livro. Sua eficiência reside na padronização dos **Pontos de Acesso** (chaves de busca normalizadas):
+- **Ponto de Acesso Principal (*Main Entry*):** Entrada mandatória primária (geralmente sob o nome do autor pessoal ou entidade responsável).
+- **Pontos de Acesso Secundários (*Added Entries*):** Entradas adicionais sob títulos, coautores, tradutores, ilustradores e séries.
+- **Controle de Autoridade:** Padroniza a forma única aceita de um nome de autor pessoal, entidade ou assunto no catálogo:
+  - **Remissiva VER (*See*):** Direciona de uma forma NÃO-autorizada/sinônimo para a forma oficial adotada (*Ex: Garcia Marquez, G. ➔ VER ➔ García Márquez, Gabriel*).
+  - **Remissiva VER TAMBÉM (*See Also*):** Liga dois cabeçalhos autorizados que possuem relação de parentesco conceitual ou mudança histórica (*Ex: Ministério da Educação ➔ VER TAMBÉM ➔ Ministério da Educação e Cultura*).`,
+  unicampContext: `Na **Unicamp**, o Catálogo Acervos do SBU mantém bases de autoridade rigorosas gerenciadas pela Divisão de Tratamento da Informação:
+
+- **Desafio das Entidades Coletivas:** Em universidades com institutos complexos (ex: FCM, IFGW, FEEC), a correta aplicação das remissivas *VER* e *VER TAMBÉM* impede a dispersão da produção científica de departamentos que mudaram de denominação ao longo das décadas.
+- **Exportação OAI-PMH:** Os registros com pontos de acesso normalizados garantem que as buscas no Repositório da Produção Científica e Intelectual da Unicamp recuperem a totalidade dos artigos de um pesquisador, independentemente de como seu nome foi assinado na revista.`,
   boardAnalysis: {
-    trends: `CEBRASPE (2018-2026): A banca é absolutamente sádica com a diferença entre "Representação Descritiva" e "Temática". Se a prova fala em "Tradução de Conceitos", é Temática (Indexação). Se fala em "Transcrição de Atributos da Publicação", é Descritiva (Catalogação). Também cobram massivamente Lubetzky e os Princípios de Cutter.
-VUNESP / FUNCAMP: Cobram exaustivamente os 5 verbos do ICP. Memorize o "Navegar" (Navigate), pois é a adição mais moderna do modelo FRBR/LRM que não existia nos Princípios de Paris.`,
-    commonTraps: `🚨 Pegadinha Clássica CEBRASPE: 
-"Segundo os Princípios Internacionais de Catalogação (ICP, IFLA), o princípio da Conveniência do Usuário estabelece que os dados devem ser padronizados internacionalmente para beneficiar o intercâmbio de dados entre as bibliotecas e sistemas comerciais, ainda que isso contrarie a lógica local do leitor."
-(ERRADO: TOTALMENTE ERRADO. A Conveniência do Usuário diz o oposto: As decisões na construção das descrições e formas devem ser focadas primeiramente no USUÁRIO. O intercâmbio comercial e as regras internacionais devem se submeter a isso, e não o contrário.)`
+    trends: `### Análise de Bancas (CEBRASPE, VUNESP e FUNCAMP)
+
+- **CEBRASPE:** Explora rigorosamente a dicotomia entre **Representação Descritiva** (atributos extrínsecos da manifestação) e **Representação Temática** (conteúdo semântico intrínseco). Também formula itens sobre o princípio basilar da **Conveniência do Usuário**.
+- **VUNESP / FUNCAMP:** Exigem a memorização dos **5 verbos das tarefas do usuário do ICP** (Encontrar, Identificar, Selecionar, Obter e **Navegar**), bem como a distinção entre remissivas *VER* (forma não autorizada para autorizada) e *VER TAMBÉM* (entre duas formas autorizadas correlatas).`,
+    commonTraps: `> 🚨 **Pegadinha Clássica CEBRASPE / VUNESP:**
+> *"Conforme a Declaração de Princípios Internacionais de Catalogação (ICP), o princípio da Conveniência do Usuário subordina-se à padronização das redes bibliográficas internacionais, de modo que os costumes locais dos leitores não podem influenciar a escolha dos pontos de acesso."*
+>
+> **Gabarito: ERRADO!**
+> O princípio da **Conveniência do Usuário é o PRINCÍPIO SUPREMO** de toda a catalogação. Todas as decisões de padronização devem servir primariamente ao usuário, e não à conveniência dos sistemas de automação ou normas internacionais estéreis.`
   },
-  memorizationMatrix: `TRILOGIA DE CUTTER (1876)
-1. Capacitar o usuário a [ENCONTRAR] (Autor, Tít, Ass).
-2. Mostrar o que a biblioteca [TEM] (Do autor, do Ass).
-3. Auxiliar na [ESCOLHA] do livro (Por edição ou caráter).
+  memorizationMatrix: `### Síntese: Os 5 Verbos do ICP & Os Objetivos de Cutter
 
-AS TAREFAS MODERNAS (LRM / ICP)
-E I S O N -> (Encontrar, Identificar, Selecionar, Obter, Navegar).
+| Tarefa do Usuário (ICP 2016) | Ação Prática no Catálogo |
+| :--- | :--- |
+| **1. ENCONTRAR (*Find*)** | Fazer uma busca e trazer resultados relevantes |
+| **2. IDENTIFICAR (*Identify*)** | Diferenciar uma edição específica de outras semelhantes |
+| **3. SELECIONAR (*Select*)** | Escolher o formato ou suporte adequado (ex: audiolivro vs. impresso) |
+| **4. OBTER (*Obtain*)** | Acessar o recurso (localizar na estante ou baixar o PDF) |
+| **5. NAVEGAR (*Navigate*)** | Explorar relações entre autores, obras e assuntos correlatos |
 
-CONTROLE DE AUTORIDADE
-VER = É lixo, aponta pro Ouro. (Assis, J.M. -> Machado de Assis).
-VER TAMBÉM = É ouro, aponta pra ouro "parente" (MEC <-> Ministério da Ed).`
+#### Tipologia das Remissivas de Autoridade
+- **VER (See):** De uma forma **errada/sinônimo** para a forma **oficial autorizada**.
+- **VER TAMBÉM (See Also):** Entre duas formas **oficiais autorizadas** relacionadas historicamente.`
 };

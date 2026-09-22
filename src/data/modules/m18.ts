@@ -3,47 +3,84 @@ import type { AdvancedTopic } from '../types';
 export const m18: AdvancedTopic = {
   id: "m18",
   title: "18. Modelos Conceituais: FRBR e IFLA LRM",
-  authorsAndFrameworks: `Autores-Chave e Guias:
-• IFLA (1998): Relatório original e histórico sobre Requisitos Funcionais de Registros Bibliográficos (FRBR).
-• Barbara Tillett e Gordon Dunsire: Mentores intelectuais na formulação e expansão do universo FR (FRAD para Autoridades, FRSAD para Assuntos).
-• Pat Riva, Patrick Le Boeuf e Maja Žumer (2017): Os criadores finais do IFLA LRM (Library Reference Model), a revolução definitiva.`,
-  advancedTheory: `1. O Abismo Inicial: O que é um "Modelo Conceitual"?
-Uma das piores deficiências de estudantes de Biblioteconomia. O FRBR ou LRM **NÃO É** uma lista de regras, **NÃO É** um código como o RDA, e **NÃO É** um formato computacional como o MARC. 
-Ele é um "Modelo Entidade-Relacionamento" abstrato, formulado no campo da Ciência da Computação (Ontologia), para modelar o cérebro do banco de dados da biblioteca. Ele diz "O mundo é composto por entidades, que possuem atributos, e se relacionam entre si".
+  authorsAndFrameworks: `### Autores e Marcos Históricos dos Modelos Conceituais
 
-2. O Grupo 1 (Produtos do Esforço Intelectual/Artístico) - A Decoreba O.E.M.I
-A mais cobrada divisão do FRBR clássico que destrinchou o "Livro" em quatro facetas gravitacionais:
-• OBRA (Work): Altamente abstrato. A concepção imaterial da ideia original. É a criação artística em seu ápice conceitual, independente da linguagem. Ex: "A ideia da jornada do herói em O Senhor dos Anéis".
-• EXPRESSÃO (Expression): Intelectual/Linguístico. É a Obra ganhando sua primeira materialização sensorial (alfanumérica, coreográfica, musical). Diferentes traduções, revisões severas de texto e versões instrumentais geram *novas Expressões* da mesma obra.
-• MANIFESTAÇÃO (Manifestation): Físico-Produção. O que a editora empacota e distribui em massa. Engloba as características físicas (PDF, capa dura, 300 páginas, ISBN). Uma tradução (Expressão X) pode ter sido impressa em capa mole pela Cia. das Letras (Manifestação 1) e depois reeditada em capa dura comemorativa, sem alterar o texto (Manifestação 2).
-• ITEM (Item): Instância Singular. A corporificação física da manifestação. Aquele exemplar específico que está na Biblioteca da Unicamp, com um risco de marca-texto na página 12 e código de barras nº 987654. É o que você efetivamente "toca" ou "perde".
+- **IFLA (1998):** Publicação do estudo canônico *Functional Requirements for Bibliographic Records* (**FRBR**), introduzindo a modelagem entidade-relacionamento na Biblioteconomia.
+- **Barbara Tillett e Gordon Dunsire:** Teóricos e líderes internacionais na expansão dos modelos funcionais para autoridades (**FRAD**, 2009) e dados de assunto (**FRSAD**, 2010).
+- **Pat Riva, Patrick Le Bœuf e Maja Žumer (2017):** Formuladores e editores do **IFLA LRM (*Library Reference Model*)**, modelo conceitual consolidado que unificou e substituiu a trilogia FRBR/FRAD/FRSAD.`,
+  advancedTheory: `### 1. A Natureza Ontológica de um "Modelo Conceitual"
 
-3. Grupo 2 e Grupo 3 do FRBR Clássico
-• Grupo 2 (Responsabilidade): Quem criou ou alterou? Pessoa (Humano) e Entidade Coletiva (Corporação/Governo). A Pessoa *cria* a Obra; *realiza* a Expressão; *produz* a Manifestação; *possui* o Item.
-• Grupo 3 (Assunto/Temática): Do que trata? Conceito, Objeto, Evento e Lugar. (Obs: Toda entidade do Grupo 1 e 2 também pode servir de assunto. Posso fazer um livro sobre "Olavo Bilac" [Pessoa] ou sobre o próprio "O Senhor dos Anéis" [Obra]).
+O FRBR e o IFLA LRM **NÃO são códigos de regras prescritivas** (função do RDA) e **NÃO são formatos computacionais** (função do MARC 21). 
 
-4. O Salto para o IFLA LRM (Library Reference Model - 2017)
-O mundo estava caótico (FRBR para livros, FRAD para nomes/autoridades, FRSAD para assuntos). Em 2017, a IFLA uniu a Santíssima Trindade em um único metamodelo (LRM), muito mais alinhado com tecnologias de Linked Open Data.
-Mudanças Brutais do LRM (Cai na FUNCAMP!):
-• Resolveu um grande buraco do FRBR: A criação da entidade unificadora "Agente" (Agent) e seus dois "subtipos" (Pessoa e Agente Coletivo).
-• As entidades Grupo 3 originais (Objeto, Evento...) sumiram da superfície principal! No LRM, para simplificar a ontologia, tudo o que pode ser objeto de discurso humano (um rio, uma ideia abstrata) é agrupado debaixo de uma super-entidade suprema chamada apenas de "RES" (Coisa, no Latim).
-• Trouxe uma 5ª tarefa do usuário: NAVEGAR (Navigate), complementando os velhos EIS (Encontrar, Identificar, Selecionar, Obter).`,
-  unicampContext: `Os sistemas Discovery modernos implementados pelas Universidades Paulistas (como o Primo da ExLibris, usado na Unicamp) tentam simular o modelo FRBR/LRM (chamado de FRBRização de catálogos). Em vez de você buscar por "A Origem das Espécies" e o sistema te dar 40 links repetidos de 40 edições de anos diferentes (causando poluição visual pesada), a IA do catálogo tenta agrupar todas essas Manifestações debaixo de apenas UMA Obra na tela (O "Work-Level grouping").`,
+Eles constituem **modelos conceituais abstratos de Entidade-Relacionamento**, desenhados para mapear a lógica profunda do universo bibliográfico em prol das necessidades do usuário.
+
+---
+
+### 2. O Grupo 1 do FRBR: A Tétrade WEMI (O.E.M.I.)
+
+O núcleo mais cobrado em provas divide o recurso informacional em quatro estratos ontológicos fundamentais:
+
+- **1. OBRA (*Work* / Abstração Intelectual Máxima):**
+  A criação intelectual ou artística em seu nível mais puro e imaterial, independente de suporte ou linguagem.
+  *Exemplo:* A ideia filosófica e o enredo imaterial de *"Dom Casmurro"*, concebidos pelo intelecto de Machado de Assis.
+
+- **2. EXPRESSÃO (*Expression* / Realização Semiótica e Linguística):**
+  A corporificação intelectual da Obra em forma de texto alfanumérico, som, imagem, notação matemática ou coreografia.
+  *Regra Crítica de Concurso:* **Traduções**, revisões substanciais de texto, roteiros adaptados e arranjos musicais criam **NOVAS EXPRESSÕES** da mesma Obra.
+  *Exemplo:* O texto original em português de 1899 é uma Expressão; a tradução para o inglês de 1953 por Helen Caldwell é uma **nova Expressão** da mesma Obra.
+
+- **3. MANIFESTAÇÃO (*Manifestation* / Produção Física ou Digital em Massa):**
+  O conjunto comercial de todos os exemplares físicos ou pacotes digitais que compartilham as mesmas características de produção editorial e distribuição mercadológica.
+  *Regra Crítica de Concurso:* Mudança de editora, de diagramação, de ISBN ou de formato (capa dura vs. brochura, PDF vs. e-Pub) constitui uma **NOVA MANIFESTAÇÃO**.
+  *Exemplo:* A edição comemorativa em capa dura da Companhia das Letras com ISBN específico lançada em 2019.
+
+- **4. ITEM (*Item* / Exemplar Singular Concreto):**
+  Uma cópia física ou instância digital específica e individualizada de uma Manifestação. É o exemplar tangível que o usuário efetivamente segura na mão ou empresta no balcão.
+  *Exemplo:* O livro tombado com código de barras nº 104582 na Biblioteca Central da Unicamp, contendo um carimbo da universidade e anotações a lápis na margem da página 30.
+
+---
+
+### 3. Grupos 2 e 3 do FRBR Clássico
+
+- **Grupo 2 (Responsabilidade):** As entidades encarregadas da criação e custódia: **Pessoa** e **Entidade Coletiva**. (Uma Pessoa *cria* a Obra; *realiza* a Expressão; *produz* a Manifestação; *possui* o Item).
+- **Grupo 3 (Assuntos):** Do que a Obra trata: **Conceito** (*Concept*), **Objeto** (*Object*), **Evento** (*Event*) e **Lugar** (*Place*).
+
+---
+
+### 4. A Unificação pelo IFLA LRM (Library Reference Model - 2017)
+
+O modelo **LRM** harmonizou os modelos fragmentados anteriores em uma ontologia única de alto nível (*Linked Open Data*):
+
+- **A Superentidade "RES" (Coisa):** O topo absoluto da hierarquia ontológica. Qualquer entidade no universo do catálogo (seja um livro, um conceito abstrato ou um rio geográfico) é uma instância de **RES**.
+- **A Entidade Unificada "AGENTE" (*Agent*):** Substituiu a divisão rígida do Grupo 2, subdividindo-se em:
+  - **Pessoa (*Person*):** Um indivíduo humano real;
+  - **Agente Coletivo (*Collective Agent*):** Agrupamento formal de pessoas com nome próprio (corporações, governos, famílias).
+- **A 5ª Tarefa do Usuário:** Além de Encontrar, Identificar, Selecionar e Obter, o LRM oficializou o verbo **NAVEGAR (*Navigate*)** como objetivo do catálogo.`,
+  unicampContext: `Nos sistemas de descoberta do **SBU/Unicamp** (plataformas de catálogo tipo Discovery):
+
+- **FRBRização dos Resultados:** O catálogo aplica algoritmos semânticos de agregação no nível de Obra (*Work-Level Grouping*). Se um aluno pesquisa por *"Os Lusíadas"*, em vez de exibir centenas de linhas dispersas para cada edição impressa desde o século XVI, a interface exibe **uma única Obra centralizada**, permitindo ao consulente desdobrar as Expressões (traduções/versões) e Manifestações (impressos/e-books).`,
   boardAnalysis: {
-    trends: `CEBRASPE (2018-2026): A banca é aficionada nas fronteiras sutis entre Expressão e Manifestação. Lembre da regra de ouro do Cebraspe: "Tradução" NUNCA é mudança de Manifestação, Tradução é criação de uma NOVA EXPRESSÃO de uma Obra pré-existente.
-VUNESP / FUNCAMP: Costuma se prender ao LRM. Vão cobrar o que significa "Res" no LRM, ou como a entidade "Agente" substituiu a distinção confusa entre pessoa e instituição no modelo antigo.`,
-    commonTraps: `🚨 Pegadinha Clássica CEBRASPE: 
-"Segundo o modelo conceitual FRBR (e mantido no LRM), o formato de publicação (como capa dura, e-book PDF e e-book Epub) pertencem ao estrato da 'Expressão', visto que expressam materialidades distintas da mesma obra acadêmica."
-(ERRADO: Mudança de suporte físico, formato de pacote eletrônico (PDF pra EPUB) ou características tipográficas são mudanças no nível de MANIFESTAÇÃO. A 'Expressão' liga-se estritamente ao aspecto linguístico e sensível - música, notas, texto.)`
-  },
-  memorizationMatrix: `ANATOMIA O.E.M.I E LRM
-[OBRA] -> A Alma Intocável (Ideia).
-[EXPRESSÃO] -> O Sangue e Voz (Texto / Tradução / Revisão).
-[MANIFESTAÇÃO] -> O Corpo da Editora (ISBN / Capa / PDF / Epub).
-[ITEM] -> O Exemplar Único (Com o carimbo da Biblioteca / Sujo de café).
+    trends: `### Análise de Bancas (CEBRASPE, VUNESP e FUNCAMP)
 
-[IFLA LRM]:
-Novo Chefão dos Assuntos -> "RES" (A Coisa-Toda).
-Novo Chefão de Autoria -> "Agente" (engloba Pessoa e Coletivo).
-Novo Verbo -> "NAVEGAR" (no mar dos Linked Data).`
+- **CEBRASPE:** Faz reiteradas questões de fronteira entre **Expressão** e **Manifestação**. A pegadinha infalível: afirma que a tradução de um livro em espanhol para o português gera uma nova "Manifestação" (ERRADO: Tradução é linguística, portanto gera uma nova **EXPRESSÃO**). Já a troca de formato (impresso para PDF) gera uma nova **MANIFESTAÇÃO**.
+- **VUNESP / FUNCAMP:** Cobram a hierarquia conceitual do **IFLA LRM**, perguntando o significado da entidade topo **RES** e a consolidação da entidade **Agente**.`,
+    commonTraps: `> 🚨 **Pegadinha Clássica CEBRASPE / VUNESP:**
+> *"Conforme o modelo conceitual FRBR da IFLA, quando uma editora publica a versão em audiolivro (MP3) de um romance literário previamente editado em papel, cria-se uma nova Obra no catálogo da biblioteca."*
+>
+> **Gabarito: ERRADO!**
+> A ideia e o enredo intelectual permanecem idênticos, logo a **Obra é a mesma**. A transposição para a linguagem falada/áudio gera uma **nova EXPRESSÃO**, e o arquivo em CD ou MP3 constitui uma **nova MANIFESTAÇÃO**.`
+  },
+  memorizationMatrix: `### A Hierarquia WEMI (O.E.M.I.) e IFLA LRM
+
+| Entidade WEMI | Dimensão Ontológica | O que ela representa? | Caso Prático |
+| :--- | :--- | :--- | :--- |
+| **OBRA (*Work*)** | Abstrata / Intelectual | A ideia, o conceito imaterial | *"Dom Casmurro"* (a ideia machadiana) |
+| **EXPRESSÃO** | Linguística / Semiótica | A linguagem, a forma, o texto | A tradução para o inglês por Helen Caldwell |
+| **MANIFESTAÇÃO**| Físico-Editorial | O suporte, o ISBN, o formato | A edição capa dura da Cia das Letras de 2019 |
+| **ITEM** | Concreta / Exemplar | O objeto único existente no mundo | O livro com código de barras nº 104582 na Unicamp |
+
+#### Revoluções do IFLA LRM (2017)
+- **RES:** A superentidade universal (*"tudo o que existe"*).
+- **AGENTE:** Unifica Pessoa física e Agente Coletivo.
+- **NAVEGAR:** A quinta tarefa funcional do catálogo.`
 };

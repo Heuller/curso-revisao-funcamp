@@ -3,40 +3,82 @@ import type { AdvancedTopic } from '../types';
 export const m02: AdvancedTopic = {
   id: "m02",
   title: "2. Preservação Digital (Estratégias e Metadados)",
-  authorsAndFrameworks: `Autores e Marcos:
-• Digital Curation Centre (DCC): Criador do Ciclo de Vida da Curadoria Digital.
-• OAIS (Open Archival Information System - ISO 14721): O modelo de referência padrão-ouro para qualquer arquivo digital no planeta.
-• PREMIS (Preservation Metadata: Implementation Strategies): O padrão de metadados focado estritamente na preservação (a "caixa preta" do arquivo).
-• Projeto INTERPARES (Luciana Duranti): Foco na autenticidade de documentos arquivísticos digitais.`,
-  advancedTheory: `1. O Paradoxo da Preservação Digital
-Documentos de papel se preservam de forma PASSIVA (coloque numa sala escura, sem umidade, e ele durará 500 anos). Documentos digitais exigem preservação ATIVA. Se você gravar um arquivo hoje e largá-lo por 20 anos, ele sofrerá "Degradação de Bits" (Bit rot) ou Obsolescência Tecnológica (o hardware/software não existe mais para abri-lo).
+  authorsAndFrameworks: `### Autores e Marcos Teóricos Fundamentais
 
-2. As 3 Estratégias Clássicas de Preservação
-Para combater a obsolescência de hardware e software, a Biblioteconomia adota 3 táticas fundamentais:
-• Refrescamento (Refreshing): Atualização da mídia física. Copiar do disquete para o CD, do CD para o Pendrive, do Pendrive para a Nuvem. O arquivo (os zeros e uns) NÃO MUDA, apenas o suporte físico é trocado. Combate a falha de hardware.
-• Migração (Migration): Atualização do formato lógico. Converter um arquivo .DOC de 1995 para .DOCX, e depois para .PDF/A (formato de arquivamento a longo prazo). O documento sofre leves mutações. Combate a obsolescência de software. É a técnica mais usada no mundo.
-• Emulação (Emulation): Criar um "software que finge ser o computador antigo" dentro do computador novo. Em vez de converter o arquivo velho, você emula o sistema operacional de 1990 para rodar o arquivo original. Usado muito em preservação de videogames e softwares complexos (CD-ROMs interativos).
+- **Digital Curation Centre (DCC):** Desenvolvedor do *DCC Curation Lifecycle Model* (Ciclo de Vida da Curadoria Digital), referência para curadoria ativa de dados de pesquisa.
+- **Modelo OAIS (Open Archival Information System - ISO 14721):** O modelo conceitual padrão-ouro internacional para repositórios digitais confiáveis e arquivos de longo prazo.
+- **Padrão PREMIS (Preservation Metadata: Implementation Strategies):** Dicionário de dados internacional mantido pela Library of Congress, focado estritamente em metadados de preservação (a "caixa-preta" e proveniência do objeto digital).
+- **Projeto InterPARES (Luciana Duranti):** Pesquisa multinacional sobre a manutenção da autenticidade, integridade e confiabilidade de registros arquivísticos em sistemas eletrônicos.`,
+  advancedTheory: `### 1. O Paradoxo da Preservação Digital: Ativa vs. Passiva
 
-3. O Modelo OAIS (SIP, AIP e DIP)
-Todo sistema de preservação digital robusto segue a norma OAIS, que divide o fluxo informacional (Pacotes de Informação - IP) em três fases:
-• SIP (Submission IP): É o que o autor/pesquisador envia para a biblioteca. (Ex: um arquivo do Word não padronizado).
-• AIP (Archival IP): É a "caixa-forte". O sistema converte o SIP, adiciona metadados PREMIS pesados, sela tudo e guarda no servidor. O usuário NÃO tem acesso ao AIP.
-• DIP (Dissemination IP): É o arquivo levinho e otimizado gerado a partir do AIP para ser mostrado ao usuário final na tela do computador (Ex: um PDF otimizado para web).`,
-  unicampContext: `A Unicamp abriga documentos históricos inestimáveis no Arquivo Edgard Leuenroth (AEL) e na BCC (Biblioteca Central). A transição desses acervos sonoros, iconográficos e textuais para o digital exige uso estrito da MIGRACÃO para o formato PDF/A (textos) e TIFF não comprimido (imagens mestre - AIP), disponibilizando JPGs (DIP) para a consulta pública.`,
+Documentos analógicos em suporte papel preservam-se de forma **passiva**: basta mantê-los em ambiente estável, ao abrigo da luz e da umidade, para que sobrevivam por séculos. 
+
+Em contrapartida, os documentos digitais exigem **preservação ativa e contínua**:
+
+- **Degradação de Bits (*Bit Rot*):** Corrupção física imperceptível dos setores magnéticos ou ópticos ao longo do tempo.
+- **Obsolescência Tecnológica:** A maior vilã da era da informação. O arquivo binário permanece intacto, mas o hardware, os sistemas operacionais ou os programas necessários para decodificá-lo deixam de existir.
+
+> 💡 **Conceito Essencial:**
+> Preservar o objeto digital não é guardar o suporte físico (CDs, HDs), mas sim garantir que a **informação inteligível e autêntica** continue acessível através de sucessivas gerações tecnológicas.
+
+---
+
+### 2. A Tríade das Estratégias Clássicas de Preservação
+
+Para combater a obsolescência de suportes lógicos e físicos, a Ciência da Informação estabelece três táticas fundamentais:
+
+- **1. Refrescamento (*Refreshing*):**
+  Transferência dos dados de um suporte físico antigo para outro mais moderno (ex: copiar dados de disquetes para discos rígidos, ou de HDs locais para a nuvem). 
+  *Regra de Ouro:* O código binário e o formato lógico **NÃO mudam**. Troca-se apenas o meio físico.
+
+- **2. Migração (*Migration*):**
+  Conversão periódica do objeto digital de um formato em obsolescência para um formato padronizado e aberto de longo prazo (ex: converter arquivos antigos proprietários \`.doc\` para \`.pdf/a\`, ou imagens proprietárias para \`.tiff\` não compactado).
+  *Regra de Ouro:* É a técnica mais amplamente empregada no mundo, embora envolva risco de pequenas perdas na diagramação original.
+
+- **3. Emulação (*Emulation*):**
+  Recriação virtual, em hardware moderno, do ambiente de software original do documento. O arquivo antigo permanece intacto e é executado por um emulador que simula o sistema operacional e os softwares originais.
+  *Regra de Ouro:* Ideal para softwares interativos, bases de dados complexas e arte digital, mas possui alto custo computacional de desenvolvimento.
+
+---
+
+### 3. A Arquitetura do Modelo OAIS: Pacotes de Informação (IPs)
+
+A norma **ISO 14721 (OAIS)** estrutura o ciclo de vida da custódia documental em três pacotes de informação (*Information Packages*):
+
+- **SIP (*Submission Information Package*):**
+  O pacote de submissão entregue pelo autor/produtor ao repositório (ex: documento de texto ou dados brutos de pesquisa ainda sem padronização).
+
+- **AIP (*Archival Information Package*):**
+  O pacote mestre de arquivamento preservado no "cofre digital". É composto pelo conteúdo original convertido para padrão de guarda permanente, acompanhado de metadados robustos de proveniência e integridade (**PREMIS**). O usuário final **não tem acesso direto** a este arquivo.
+
+- **DIP (*Dissemination Information Package*):**
+  O pacote de disseminação derivado do AIP, formatado em tamanho otimizado para navegação web e download rápido pelo usuário final (ex: PDF com OCR otimizado para tela).`,
+  unicampContext: `Na **Unicamp**, centros de memória renomados internacionalmente como o **Arquivo Edgard Leuenroth (AEL)** e a **Biblioteca Central Cesar Lattes (BCC)** lidam com acervos históricos digitalizados e natodigitais.
+
+- **Fluxo OAIS Prático:** As matrizes originais de digitalização em altíssima resolução (TIFF sem compressão a 600 DPI) são seladas com metadados PREMIS no nível de **AIP**, enquanto cópias de acesso e consulta pública são disponibilizadas como **DIP** nos portais web.
+- **Padrão PDF/A:** Todas as teses e dissertações passam por rotinas de conversão e validação para o padrão **ISO 19005 (PDF/A)**, garantindo auto-suficiência dos arquivos (fontes embutidas e proibição de scripts executáveis).`,
   boardAnalysis: {
-    trends: `CEBRASPE (2018-2026): O CEBRASPE tem fetiche por confundir Refrescamento e Migração. Sempre lembre: Refrescamento = Troca de Mídia Física (Disquete para Nuvem). Migração = Troca de Formato (DOC para PDF/A). Eles também amam as siglas SIP, AIP e DIP do modelo OAIS.
-    
-VUNESP / FUNCAMP: Gostam de cobrar o conceito PREMIS. Testam se o candidato sabe que Dublin Core é para "descoberta" (achar o documento) e PREMIS é para a "saúde a longo prazo" (rastrear quem alterou, quando e como - proveniência).`,
-    commonTraps: `🚨 Pegadinha Clássica CEBRASPE: 
-"A Emulação, por converter permanentemente os arquivos de formatos antigos para formatos contemporâneos, é a estratégia mais barata e utilizada em bibliotecas universitárias."
-(ERRADO: Isso é a descrição da MIGRACÃO. A emulação NÃO converte o arquivo, ela recria o ambiente original. Além disso, a emulação é caríssima e complexa de se manter).`
-  },
-  memorizationMatrix: `MACETE DAS ESTRATÉGIAS & OAIS
-| Ameaça | Estratégia de Combate | O que muda? |
-|--------|-----------------------|-------------|
-| Ferrugem / Quebra (Mídia)| Refrescamento | O PenDrive (Suporte físico). |
-| Software Antigo | Migração | O formato do arquivo (.DOC -> .PDF). |
-| Sistema Inteiro Morto | Emulação | Cria-se uma "máquina do tempo" virtual.|
+    trends: `### Análise de Bancas (CEBRASPE, VUNESP e FUNCAMP)
 
-OAIS Flow: Autor manda [SIP] -> Cofre guarda [AIP] -> Usuário lê [DIP].`
+- **CEBRASPE:** Faz questão de tentar induzir o candidato ao erro trocando os conceitos de **Refrescamento** (troca de mídia física) e **Migração** (conversão de formato de arquivo). Também cobra de forma incisiva a sequência lógica do OAIS: **SIP ➔ AIP ➔ DIP**.
+- **VUNESP / FUNCAMP:** Cobram a finalidade dos metadados **PREMIS** versus **Dublin Core**. O examinador testa se o candidato compreende que o Dublin Core visa à **descoberta** (*discovery*), enquanto o PREMIS é o padrão estruturado para documentar **proveniência, autenticidade e eventos de preservação**.`,
+    commonTraps: `> 🚨 **Pegadinha Clássica CEBRASPE / VUNESP:**
+> *"A estratégia de emulação caracteriza-se pela conversão contínua do formato dos arquivos proprietários para formatos abertos padronizados, constituindo a alternativa de menor custo financeiro para bibliotecas universitárias."*
+>
+> **Gabarito: ERRADO!**
+> A conversão de formatos de arquivos é o conceito de **MIGRAÇÃO**. A emulação não altera os arquivos originais; ela programa um emulador para recriar o ambiente operacional antigo. Ademais, a emulação tem custo elevado e engenharia altamente especializada.`
+  },
+  memorizationMatrix: `### Síntese Prática: Estratégias de Preservação & Fluxo OAIS
+
+| Estratégia / Conceito | Alvo da Ação | O que ocorre com o arquivo? |
+| :--- | :--- | :--- |
+| **Refrescamento** | Mídia Física (Suporte) | O arquivo binário permanece idêntico; apenas a mídia é trocada |
+| **Migração** | Formato Lógico | O arquivo é convertido para formato mais novo ou aberto (ex: PDF/A) |
+| **Emulação** | Ambiente Computacional | O arquivo não muda; cria-se um emulador que simula o sistema antigo |
+| **Encapsulamento**| Autossuficiência | Agrupa o objeto digital e todos os detalhes técnicos necessários para lê-lo |
+
+#### Fluxo dos Pacotes OAIS
+- **SIP (Submission):** O autor entrega à biblioteca.
+- **AIP (Archival):** A biblioteca guarda a 7 chaves com PREMIS (Pacote Mestre).
+- **DIP (Dissemination):** O público visualiza e baixa no navegador.`
 };

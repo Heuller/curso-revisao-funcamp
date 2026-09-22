@@ -3,40 +3,87 @@ import type { AdvancedTopic } from '../types';
 export const m06: AdvancedTopic = {
   id: "m06",
   title: "6. Fluxos Informacionais, Comunicação Científica e Bibliometria",
-  authorsAndFrameworks: `Autores-Chave e Guias:
-• Garvey e Griffith (1972): Modelo clássico de comunicação científica (canais formais e informais).
-• Derek de Solla Price (1963): "Little Science, Big Science" - Lei do crescimento exponencial da ciência.
-• Lotka (1926), Bradford (1934), Zipf (1949): As três leis clássicas da Bibliometria.
-• Eugene Garfield (1955): Criação do Science Citation Index (SCI) e do Fator de Impacto (JIF).`,
-  advancedTheory: `1. O Fluxo da Comunicação Científica
-O modelo de Garvey-Griffith estipula que a informação científica flui em dois canais principais:
-• Informal: Ocorre ANTES da publicação oficial (congressos, preprints, colégios invisíveis). É rápido, restrito, focado na vanguarda.
-• Formal: Ocorre DEPOIS da revisão por pares (artigos de periódicos, livros acadêmicos). É lento, permanente, público e confere autoria/prestígio. 
-Hoje, as redes sociais acadêmicas (ResearchGate) e repositórios de preprints (arXiv) tensionam e mesclam as fronteiras entre o formal e o informal.
+  authorsAndFrameworks: `### Autores e Marcos Epistemológicos
 
-2. A Trindade da Bibliometria Clássica
-• Lei de Lotka (Produtividade de Autores): Apenas uma pequena minoria de autores produz a esmagadora maioria da literatura em um campo. A proporção é do quadrado inverso (se 100 publicam 1 artigo, 25 publicam 2...). Foco: Autores.
-• Lei de Bradford (Dispersão do Conhecimento): Um pequeno "núcleo" (core) de periódicos concentra a maior parte dos artigos de uma disciplina, enquanto o resto se dispersa numa longa cauda de muitas revistas. Foco: Periódicos.
-• Lei de Zipf (Frequência de Palavras): Uma pequena quantidade de palavras ocorre com muita frequência num texto, enquanto a maioria ocorre raramente. Foco: Palavras/Termos (usado em indexação automática).
+- **William D. Garvey e Belver C. Griffith (1972):** Modelo clássico e contínuo do fluxo de comunicação científica, mapeando a transição entre canais informais e canais formais.
+- **Derek J. de Solla Price (1963):** *"Little Science, Big Science"*. O pai da Cienciometria, autor da teoria do crescimento exponencial da literatura científica e do conceito dos *"Colégios Invisíveis"*.
+- **Alfred J. Lotka (1926), Samuel C. Bradford (1934), George K. Zipf (1949):** A tríade sagrada das leis empíricas fundamentais da Bibliometria.
+- **Eugene Garfield (1955):** Fundador do *Institute for Scientific Information (ISI)*, arquiteto do *Science Citation Index* e formulador do **Fator de Impacto (JIF)**.
+- **Jorge E. Hirsch (2005):** Criador do **Índice H** (*h-index*).`,
+  advancedTheory: `### 1. O Fluxo da Comunicação Científica: Canais Informais vs. Formais
 
-3. Indicadores de Citação e o Fator de Impacto (Garfield)
-O Fator de Impacto de uma revista = Citações recebidas no ano 'X' por artigos publicados em 'X-1' e 'X-2' DIVIDIDO pelo total de artigos publicáveis nesses mesmos dois anos.
-Crítica Moderna: O JIF mede o prestígio da *revista*, não do *artigo*.
-• Índice H (Hirsch, 2005): Mede simultaneamente produtividade e impacto do AUTOR. Um índice h=10 significa que o autor tem 10 artigos que receberam pelo menos 10 citações cada.
+Segundo o modelo paradigmático de **Garvey e Griffith**, a produção da ciência desdobra-se em duas esferas complementares:
 
-4. Altmetria (Métricas Alternativas)
-Mede o impacto da pesquisa nas mídias sociais (menções no Twitter, downloads no Mendeley, citações na Wikipedia). É rápida, captura impacto social (não apenas acadêmico), mas é suscetível a "likes" ou publicidade negativa.`,
-  unicampContext: `A Unicamp utiliza a Bibliometria intensamente para auto-avaliação através da Coordenadoria Geral da Universidade (CGU) e do Núcleo de Avaliação Institucional. Indicadores do SciVal (Elsevier) e InCites (Clarivate) são usados para ranqueamento internacional e prestação de contas dos orçamentos da FAPESP. A biblioteca apoia os pesquisadores a limparem seus perfis no ORCID e ResearcherID para não perderem citações.`,
+- **Canais Informais (Comunicação Preliminar):**
+  Ocorrem **antes** do registro formal e da revisão por pares (*peer review*). Abrangem conversas de laboratório, correspondências, participação em congressos, reuniões dos "Colégios Invisíveis" e circulação de *Preprints*.
+  *Atributos:* Agilidade extrema, restrição de público, interatividade direta e ausência de garantia formal de autoria.
+
+- **Canais Formais (Comunicação Registrada):**
+  Ocorrem **após** o crivo editorial e a revisão por pares. Compreendem artigos publicados em periódicos indexados, monografias, livros acadêmicos e patentes concedidas.
+  *Atributos:* Lentidão temporal no ciclo editorial, permanência documental definitiva, ampla visibilidade pública e atribuição formal de crédito/propriedade intelectual.
+
+---
+
+### 2. A Tríade das Leis Bibliométricas Clássicas
+
+A quantificação da atividade científica baseia-se em três regularidades matemáticas:
+
+- **Lei de Lotka (Produtividade dos Autores / Quadrado Inverso):**
+  Estabelece que um número reduzido de autores muito prolíficos produz uma parcela substancial da literatura, enquanto uma grande massa de autores publica apenas um ou dois trabalhos ao longo da carreira.
+  *Foco analítico:* **Autores e produtividade científica individual**.
+
+- **Lei de Bradford (Dispersão dos Periódicos / Zonas de Bradford):**
+  Demonstra que os artigos sobre determinado assunto concentram-se em um núcleo estrito de periódicos altamente especializados (*core journals*), seguidos por zonas sucessivas contendo um número cada vez maior de revistas que abordam o tema de forma marginal.
+  *Foco analítico:* **Periódicos e desenvolvimento/descarte racional de coleções**.
+
+- **Lei de Zipf (Frequência e Ocorrência de Palavras / Mínimo Esforço):**
+  Demonstra a relação inversa entre a frequência de uma palavra em um texto e a sua ordem de classificação (*ranking*). Um vocabulário reduzido é repetido exaustivamente, enquanto a vasta maioria das palavras ocorre raramente.
+  *Foco analítico:* **Linguagem natural, indexação automática e recuperação de dados**.
+
+---
+
+### 3. Indicadores de Citação: Fator de Impacto vs. Índice H
+
+- **Fator de Impacto (JIF - Garfield / Journal Citation Reports):**
+  Métrica que avalia o prestígio e a visibilidade de um **periódico científico**, e não de um artigo ou autor isolado.
+  $$\\text{JIF (Ano X)} = \\frac{\\text{Total de citações em X de artigos publicados em X-1 e X-2}}{\\text{Total de artigos citáveis publicados pela revista em X-1 e X-2}}$$
+
+- **Índice H (*h-index* - Hirsch):**
+  Indicador que sintetiza concomitantemente a **produtividade** (quantidade) e o **impacto** (qualidade/citações) de um **pesquisador**.
+  *Definição formal:* Um cientista possui índice $h$ se tem $h$ artigos publicados, e cada um deles recebeu pelo menos $h$ citações. (Ex: um autor com $h=15$ possui no mínimo 15 trabalhos com 15 ou mais citações).
+
+---
+
+### 4. Altmetria (*Altmetrics* / Métricas Alternativas)
+
+Com a evolução da web social, surgiram métricas que complementam a contagem tradicional de citações acadêmicas:
+- Monitoram o engajamento imediato em redes sociais (menções no X/Twitter, visualizações no YouTube, menções em políticas públicas e matérias jornalísticas).
+- Vantagem: Rapidez de aferição e captura do impacto social extramuros da universidade.`,
+  unicampContext: `Na **Unicamp**, os estudos bibliométricos subsidiam o planejamento estratégico institucional e a alocação de recursos da reitoria:
+
+- **Bases de Referência:** O Sistema de Bibliotecas da Unicamp (SBU) orienta docentes no manuseio de ferramentas de análise bibliométrica como **InCites (Clarivate/Web of Science)** e **SciVal (Elsevier/Scopus)**.
+- **Normalização de Identificadores:** As bibliotecas da Unicamp conduzem campanhas contínuas de cadastramento e unificação do **ORCID** dos pesquisadores, evitando a fragmentação de citações gerada por variações do nome do autor ou grafias incorretas da filiação institucional.`,
   boardAnalysis: {
-    trends: `CEBRASPE (2018-2026): A banca possui um repertório de questões clássicas que trocam o conceito das três leis. A pegadinha nº 1 é inverter Lotka com Bradford. O CEBRASPE também cobra o Índice H profundamente, perguntando se ele favorece pesquisadores em início de carreira (FALSO, favorece pesquisadores veteranos por ser cumulativo).
-    
-VUNESP/FUNCAMP: O foco frequentemente recai sobre a Comunicação Científica (Garvey). Adoram usar o termo "Colégios Invisíveis" (rede informal de pesquisadores colaborando antes da publicação) e diferenciar canais formais de informais.`,
-    commonTraps: `🚨 Pegadinha Clássica CEBRASPE: 
-"O índice H é o melhor indicador bibliométrico para comparar o impacto de dois pesquisadores de áreas científicas diferentes, como Matemática e Medicina."
-(ERRADO: O índice H e o Fator de Impacto não podem ser usados para comparar áreas diferentes, pois os padrões de citação divergem drasticamente - na Medicina publica-se e cita-se muito mais rápido).`
+    trends: `### Análise de Bancas (CEBRASPE, VUNESP e FUNCAMP)
+
+- **CEBRASPE:** Faz reiteradas pegadinhas permutando os objetos de estudo das três leis bibliométricas: afirma que Bradford mede produtividade de autores (falso, é Lotka) ou que Lotka mede a dispersão de termos em um vocabulário (falso, é Zipf).
+- **VUNESP / FUNCAMP:** Cobram enfaticamente os **Colégios Invisíveis** (redes informais que debatem a ciência antes da publicação oficial) e a fórmula conceitual do **Índice H**.`,
+    commonTraps: `> 🚨 **Pegadinha Clássica CEBRASPE / VUNESP:**
+> *"O índice H constitui a ferramenta bibliométrica mais confiável para confrontar diretamente o mérito científico individual de pesquisadores pertencentes a diferentes áreas do conhecimento, tais como a Matemática Pura e a Bioquímica Clínica."*
+>
+> **Gabarito: ERRADO!**
+> Indicadores de citação (tanto o Fator de Impacto quanto o Índice H) **NÃO podem ser comparados diretamente entre áreas distintas**, visto que as disciplinas científicas possuem ritmos de publicação e hábitos de citação radicalmente díspares.`
   },
-  memorizationMatrix: `Mnemônico das 3 Leis (L-B-Z)
-[L]otka = [L]íderes (Autores que mais publicam).
-[B]radford = [B]ases / [B]ibliotecas (Revistas núcleo para corte de orçamento).
-[Z]ipf = [Z]emântica (Frequência de palavras no texto).`
+  memorizationMatrix: `### Mnemônico Imbatível: A Tríade Bibliométrica (L - B - Z)
+
+| Lei | Criador | Objeto da Lei | Aplicação Prática na Biblioteca |
+| :--- | :--- | :--- | :--- |
+| **[L]otka** | Alfred J. Lotka | **[L]íderes / Autores** | Identificar os autores mais produtivos de um domínio |
+| **[B]radford** | Samuel C. Bradford | **[B]ases / Periódicos** | Definir o núcleo prioritário de revistas para assinatura/corte |
+| **[Z]ipf** | George K. Zipf | **[Z]emântica / Palavras** | Indexação automática e cálculo de relevância textual |
+
+#### Métricas de Impacto
+- **Fator de Impacto (JIF):** Mede a **revista**.
+- **Índice H:** Mede o **pesquisador** (produtividade + citações).
+- **Altmetria:** Mede a **repercussão social imediata** na internet.`
 };

@@ -3,42 +3,73 @@ import type { AdvancedTopic } from '../types';
 export const m05: AdvancedTopic = {
   id: "m05",
   title: "5. Redes e Sistemas de Informação",
-  authorsAndFrameworks: `Autores e Órgãos Relacionados:
-• IBICT (Instituto Brasileiro de Informação em Ciência e Tecnologia): Órgão Magno das Redes de Informação no Brasil.
-• Murilo Bastos da Cunha (1999): Teórico clássico sobre Consórcios de Bibliotecas e Compartilhamento de Recursos.
-• RNP (Rede Nacional de Ensino e Pesquisa): A espinha dorsal da internet acadêmica que interliga a Unicamp.`,
-  advancedTheory: `1. Epistemologia das Redes (Por que cooperar?)
-As bibliotecas abandonaram a autossuficiência. Nenhuma biblioteca (nem Harvard, nem Unicamp) consegue ter orçamentos para comprar 100% da produção mundial (Problema da Explosão Documental). 
-A solução foi a Rede de Informação. 
-• Rede de Informação: Conjunto de unidades interagindo formalmente para trocar dados, reduzir custos e evitar trabalho duplicado. O princípio basilar é o "Tratamento Cooperativo" e a "Sinergia".
+  authorsAndFrameworks: `### Autores, Órgãos Centrais e Marcos Estruturais
 
-2. Sistemas Tradicionais do IBICT
-O governo federal sustenta o ecossistema nacional. Os concursos cobram a decoreba cruel das siglas criadas pelo IBICT (Sempre sediado em Brasília):
-• BDTD (Biblioteca Digital Brasileira de Teses e Dissertações): Rede nacional que agrega, em um único portal (coletor OAI-PMH), as teses dos Repositórios Institucionais de todas as universidades federais e estaduais do Brasil (inclusive da Unicamp).
-• CCN (Catálogo Coletivo Nacional de Publicações Seriadas): Um dinossauro importantíssimo. Um catálogo mestre que diz "qual biblioteca no Brasil tem a revista física/eletrônica X daquele ano específico". O pesquisador olha o CCN e pede o artigo via COMUT.
-• COMUT (Programa de Comutação Bibliográfica): É o "Uber" da informação antes da internet. A biblioteca que não tem o artigo, solicita uma cópia escaneada/xerox da biblioteca que tem (via correio ou rede). Ainda vivo e caindo em prova.
+- **IBICT (Instituto Brasileiro de Informação em Ciência e Tecnologia):** Órgão de referência vinculado ao Ministério da Ciência, Tecnologia e Inovação (MCTI), responsável pela concepção e manutenção das redes e sistemas cooperativos de informação no país.
+- **Murilo Bastos da Cunha (1999):** Autor clássico sobre redes, consórcios de bibliotecas universitárias e compartilhamento cooperativo de recursos documentais.
+- **RNP (Rede Nacional de Ensino e Pesquisa):** Organização social responsável pela infraestrutura de conectividade avançada da academia brasileira e pela gestão da **Comunidade Acadêmica Federada (CAFe)**.
+- **CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior):** Fundação ligada ao MEC, gestora do **Portal de Periódicos CAPES**, um dos maiores consórcios mundiais de compras de assinaturas científicas.`,
+  advancedTheory: `### 1. Fundamentos Epistemológicos das Redes de Informação
 
-3. Portal de Periódicos CAPES
-Não é do IBICT! É da fundação CAPES (MEC). É o maior consórcio de assinaturas eletrônicas governamental do planeta. 
-Funciona na lógica "Top-Down" de assinaturas pagas pelo governo federal. Libera o acesso a bases caríssimas (Scopus, Web of Science, IEEE) via IP das universidades autorizadas (Rede CAFe - Comunidade Acadêmica Federada, operada pela RNP).
+Com o fenômeno da **Explosão Documental** pós-Segunda Guerra Mundial, o mito da biblioteca autossuficiente ruiu. Nenhuma instituição — nem mesmo os maiores orçamentos de Harvard ou Oxford — tem capacidade financeira para adquirir a totalidade da produção científica mundial.
 
-4. Consórcios x Redes Tradicionais
-• Redes tradicionais focam em compartilhar TRABALHO (ex: Catalogação cooperativa - uma biblioteca cataloga o livro, as outras 50 copiam o registro MARC).
-• Consórcios focam em compartilhar PODER DE COMPRA (Acquisition Consortia). Várias bibliotecas se juntam para comprar um pacote de e-books da Springer com 40% de desconto.`,
-  unicampContext: `A Unicamp está pendurada fortemente na Rede CAFe (da RNP). Quando o aluno da Unicamp está em casa, ele precisa configurar a "VPN da Unicamp" no computador dele (ou usar o proxy via CAFe) para que a Elsevier e a Clarivate "pensem" que o PC dele está fisicamente no campus de Barão Geraldo, liberando o acesso ao Portal CAPES.`,
+- **Conceito de Rede:** Conjunto formal de unidades de informação interconectadas por canais padronizados para intercâmbio de recursos, dados e competências técnicas.
+- **Objetivo Central:** Erradicar a duplicação desnecessária de tarefas, maximizar o poder orçamentário de compra e democratizar o acesso à informação em escala territorial ampla.
+
+---
+
+### 2. A Constelação de Sistemas Cooperativos Nacionais (IBICT)
+
+O ecossistema federal brasileiro estruturado pelo **IBICT** baseia-se em pilares essenciais frequentemente explorados em provas de concurso:
+
+- **BDTD (Biblioteca Digital Brasileira de Teses e Dissertações):**
+  Mega-agregador nacional que coleta, mediante o protocolo **OAI-PMH**, os metadados das teses e dissertações depositadas nos repositórios institucionais de mais de uma centena de universidades brasileiras. Permite ao cidadão pesquisar a produção pós-graduada nacional em um único ponto focal.
+
+- **CCN (Catálogo Coletivo Nacional de Publicações Seriadas):**
+  Instrumento referencial que localiza a posse de periódicos científicos (físicos e eletrônicos) no Brasil. O CCN responde à pergunta: *"Qual biblioteca do país possui o fascículo 3 do volume 12 da revista X publicado em 1978?"*. 
+  *Atenção:* O CCN é um catálogo de **localização**, e não um provedor de texto integral.
+
+- **COMUT (Programa de Comutação Bibliográfica):**
+  Mecanismo de cooperação interbibliotecária que operacionaliza o envio de cópias de documentos (artigos de periódicos, teses, anais de congressos e partes de livros) entre bibliotecas cooperantes no Brasil e no exterior.
+
+---
+
+### 3. O Portal de Periódicos da CAPES e a Rede CAFe
+
+Diferente dos sistemas do IBICT (focados em agregação e intercâmbio), o **Portal de Periódicos CAPES** atua como uma central de compras e licenciamento de literatura internacional de alto impacto:
+
+- **Financiamento Centralizado:** O governo brasileiro desembolsa anualmente dezenas de milhões de dólares para adquirir assinaturas das maiores editoras comerciais do mundo (Elsevier, Springer-Nature, Wiley, IEEE, Web of Science, Scopus).
+- **Rede CAFe (Comunidade Acadêmica Federada):** Gerida pela RNP, permite a autenticação federada unificada. O pesquisador ou estudante conecta-se de sua residência usando suas credenciais institucionais e obtém acesso remoto aos periódicos assinados como se estivesse fisicamente no campus universitário.
+
+---
+
+### 4. Redes Tradicionais vs. Consórcios de Aquisição
+
+- **Redes Tradicionais de Cooperação:** Priorizam o **compartilhamento de trabalho técnico** (ex: catalogação cooperativa, onde uma única biblioteca processa o item bibliográfico e todas as demais unidades copiam o registro MARC).
+- **Consórcios de Aquisição (*Library Consortia*):** Priorizam o **compartilhamento do poder de compra** para negociar preços em bloco com grandes corporações editoriais com descontos de escala.`,
+  unicampContext: `A **Unicamp** integra plenamente as redes nacionais:
+
+- **Conexão CAFe e VPN:** A comunidade da Unicamp acessa o Portal CAPES remotamente por autenticação federada da **Rede CAFe** ou pela VPN institucional gerenciada pelo Centro de Computação (CCUEC), validando os acessos corporativos por faixa de IP institucional.
+- **BDTD e Oasisbr:** Todas as teses e dissertações defendidas na Unicamp e arquivadas no Repositório Institucional são automaticamente indexadas na BDTD e no Oasisbr através da colheita OAI-PMH.
+- **COMUT no SBU:** O Sistema de Bibliotecas da Unicamp conta com postos de atendimento COMUT em suas bibliotecas setoriais para solicitar documentos raros não disponíveis nas assinaturas digitais correntes.`,
   boardAnalysis: {
-    trends: `CEBRASPE (2018-2026): A banca costuma focar no COMUT e no CCN. A questão canônica afirma que "o CCN garante o acesso integral e online a todos os textos completos das revistas que cadastra" (ERRADO! O CCN é apenas um CATÁLOGO localizador. Ele diz "A USP tem", quem traz o texto é o COMUT ou a ida física do usuário).
-VUNESP / FUNCAMP: Gostam de cobrar as responsabilidades orgânicas: Saber que a BDTD e o CCN são do IBICT (Ministério de Ciência e Tecnologia), e o Portal de Periódicos é da CAPES (Ministério da Educação).`,
-    commonTraps: `🚨 Pegadinha Clássica CEBRASPE: 
-"A catalogação cooperativa em redes descentralizadas eleva o custo de processamento técnico individual, visto que os catalogadores locais precisam adaptar os registros aos padrões internacionais rígidos da rede."
-(ERRADO: O objetivo da rede cooperativa é justamente DERUBAR OS CUSTOS. A catalogação cooperativa reduz drasticamente o custo financeiro e o tempo da equipe técnica, pois erradica a duplicação de esforços - uma pessoa faz, as outras 1.000 apenas baixam e usam o registro).`
+    trends: `### Análise de Bancas (CEBRASPE, VUNESP e FUNCAMP)
+
+- **CEBRASPE:** Testa frequentemente pegadinhas sobre o **CCN**. Afirma com frequência que *"o Catálogo Coletivo Nacional (CCN) franqueia acesso direto e online ao texto completo de todas as revistas cadastradas"*. Isso é **FALSO** — o CCN apenas indica qual instituição é detentora física ou digital da coleção.
+- **VUNESP / FUNCAMP:** Cobram a distinção institucional entre órgãos: **IBICT** (vinculado ao MCTI — responsável por BDTD, CCN e COMUT) versus **CAPES** (vinculada ao MEC — responsável pelo Portal de Periódicos).`,
+    commonTraps: `> 🚨 **Pegadinha Clássica CEBRASPE / VUNESP:**
+> *"A participação em redes de catalogação cooperativa encarece a gestão técnica da biblioteca, em razão dos custos gerados pelas constantes adequações locais dos registros bibliográficos importados."*
+>
+> **Gabarito: ERRADO!**
+> O escopo fulcral da catalogação cooperativa é **reduzir drasticamente os custos e o tempo** despendido pelo processamento técnico, eliminando a redundância de catalogar o mesmo livro centenas de vezes em bibliotecas diferentes.`
   },
-  memorizationMatrix: `SISTEMAS NACIONAIS BRASILEIROS
-| Sigla | Orgão Pai | Função Mágica |
-|-------|-----------|---------------|
-| BDTD | IBICT (MCTI) | Concentrar as Teses e Dissertações do BR. |
-| CCN | IBICT (MCTI) | Dizer em qual biblioteca tá uma revista. |
-| COMUT | IBICT (MCTI) | Pedir cópia de artigo pra outra biblioteca. |
-| Portal | CAPES (MEC) | Dar acesso VIP a bases de dados pagas ($$). |
-| CAFe | RNP | Autenticar o aluno fora do campus (VPN). |`
+  memorizationMatrix: `### Mapeamento dos Sistemas Nacionais de Informação
+
+| Sistema / Rede | Entidade Gestora | Ministério | Função Estratégica Principal |
+| :--- | :--- | :--- | :--- |
+| **BDTD** | IBICT | MCTI | Agregação e visibilidade das Teses e Dissertações do país |
+| **CCN** | IBICT | MCTI | Catálogo de localização das coleções de periódicos |
+| **COMUT** | IBICT | MCTI | Intercâmbio de cópias de artigos entre bibliotecas |
+| **Portal de Periódicos**| CAPES | MEC | Assinatura centralizada de bases de dados e e-journals |
+| **Rede CAFe** | RNP | MCTI / MEC | Autenticação remota federada (acesso fora do campus) |`
 };

@@ -3,41 +3,67 @@ import type { AdvancedTopic } from '../types';
 export const m09: AdvancedTopic = {
   id: "m09",
   title: "9. Competência Informacional (Information Literacy)",
-  authorsAndFrameworks: `Autores-Chave e Guias:
-• Paul Zurkowski (1974): Cunhou o termo "Information Literacy" (Competência em Informação) nos EUA.
-• Patricia Knapp (1966): Pioneira do "Monteith College Library Experiment", base da integração da biblioteca no currículo escolar.
-• Dudziak (2003) e Campello (2003): Principais estudiosas no Brasil. Dudziak trouxe a transição de "treinamento de usuário" para a "educação do usuário".
-• ACRL (Association of College and Research Libraries): Criadora do "Framework for Information Literacy for Higher Education" (2015) e dos antigos Padrões de 2000.`,
-  advancedTheory: `1. O Salto Evolutivo (De Treinamento à Competência)
-O maior erro histórico (e em provas) é confundir treinamento de usuário com competência informacional (CoInfo).
-• Instrução Bibliográfica / Treinamento de Usuário: Modelo antigo, mecanicista, centrado na biblioteca e no bibliotecário. O objetivo era ensinar o usuário a "usar a biblioteca" (como achar um livro na estante, como usar o catálogo da época). 
-• Competência Informacional (Information Literacy): Modelo construtivista (Sócio-Interacionista), centrado no aprendiz. O objetivo é formar o "Aprendiz ao longo da vida" (Lifelong Learner). Ele deve saber reconhecer a necessidade, buscar (onde quer que esteja, Google ou SciELO), avaliar criticamente a fonte (fake news) e usar eticamente a informação.
+  authorsAndFrameworks: `### Autores e Marcos Epistemológicos Fundamentais
 
-2. Framework ACRL (2015)
-O framework norte-americano revolucionou a CoInfo ao substituir os antigos "Padrões" prescritivos por 6 conceitos-limiares (Threshold Concepts):
-1. A Autoridade é construída e contextual.
-2. Criação de Informação como um processo.
-3. Informação possui valor (ética, direitos autorais).
-4. Pesquisa como investigação.
-5. A academia como uma conversa (Academic as a conversation - citações são vozes dialogando).
-6. Busca como exploração estratégica.
+- **Paul Zurkowski (1974):** Presidente da *Information Industry Association*, cunhou pioneiramente a expressão **Information Literacy** nos Estados Unidos, correlacionando-a à capacidade de resolver problemas do cotidiano profissional com o suporte informacional.
+- **Patricia Knapp (1966):** Conduziu o seminal *"Monteith College Library Experiment"*, demonstrando a necessidade imperiosa de integrar a biblioteca diretamente ao planejamento pedagógico curricular dos cursos de graduação.
+- **Elisabeth Adriana Dudziak (2003) e Bernadete Santos Campello (2003):** Principais pesquisadoras brasileiras. Dudziak estruturou a transição epistemológica do antigo modelo mecanicista de "treinamento de usuários" para o paradigma socioconstrutivista da "competência em informação".
+- **ACRL (Association of College and Research Libraries):** Divisão da ALA, formuladora dos clássicos padrões de 2000 e do inovador **Framework for Information Literacy for Higher Education (2015)**.`,
+  advancedTheory: `### 1. O Salto Paradigmático: Do Treinamento de Usuários à Competência Informacional
 
-3. Transversalidade e Inserção Curricular
-Para ser efetiva nas universidades, a Competência em Informação NÃO pode ser um cursinho isolado (extracurricular). Ela deve ser *transversal*, embutida no currículo acadêmico, exigindo parceria extrema entre Bibliotecário e Professor (Docente).`,
-  unicampContext: `O Sistema de Bibliotecas da Unicamp (SBU) tem um Programa de Competência Informacional altamente estruturado. Em provas da FUNCAMP, espere questões sobre a transição do papel do bibliotecário de "guardião" para "mediador pedagógico", em consonância com as Diretrizes Curriculares Nacionais e os modelos de ensino híbrido/ativo que a Unicamp aplica.`,
+Um dos erros mais recorrentes em concursos públicos é equiparar o conceito moderno de **Competência em Informação (CoInfo)** ao modelo tradicional de **Treinamento de Usuários / Instrução Bibliográfica**:
+
+- **Paradigma Tradicional (Instrução Bibliográfica):**
+  Modelo mecanicista e tecnicista, centrado na biblioteca física e na autoridade do bibliotecário. Seu objetivo limitava-se a ensinar o usuário a "usar a biblioteca" (manusear fichários, decodificar a catalogação local e localizar estantes).
+- **Paradigma Contemporâneo (Competência em Informação):**
+  Modelo de base socioconstrutivista centrado na emancipação crítica do aprendiz (*Lifelong Learning*). Capacita o indivíduo a:
+  1. Identificar com exatidão a natureza de sua necessidade de informação;
+  2. Localizar as fontes em qualquer meio (físico, digital, web aberta ou bases assinadas);
+  3. **Avaliar criticamente a idoneidade, autoridade e viés das fontes** (combate à pós-verdade e desinformação);
+  4. Sintetizar e comunicar a informação de forma ética e legal (respeito aos direitos autorais e integridade acadêmica).
+
+---
+
+### 2. O Framework da ACRL (2015) e os Conceitos-Limiares (*Threshold Concepts*)
+
+Em 2015, a ACRL abandonou a visão linear e tecnicista dos padrões anteriores, introduzindo um ecossistema flexível fundado em **6 Conceitos-Limiares**:
+
+- **1. A Autoridade é Construída e Contextual:** A credibilidade de uma fonte depende do contexto disciplinar e da comunidade que a consagra.
+- **2. A Criação de Informação como um Processo:** A forma de publicação (artigo, tweet, patente) reflete os diferentes processos de validação do conteúdo.
+- **3. A Informação Possui Valor:** Reconhecimento das dimensões éticas, legais, socioeconômicas e do poder inerente ao acesso e produção informacional.
+- **4. A Pesquisa como Investigação Aberta:** O aprendizado não é estático; investigar é um processo iterativo e questionador em busca de novas soluções.
+- **5. A Academia como uma Conversação:** O conhecimento científico progride mediante o diálogo dialético contínuo entre pesquisadores (citações são vozes em debate).
+- **6. A Busca como Exploração Estratégica:** A pesquisa bibliográfica é flexível e exige adaptação mental constante diante dos resultados obtidos.
+
+---
+
+### 3. Transversalidade e Integração ao Currículo Universitário
+
+Para que os programas de Competência em Informação alcancem sucesso duradouro:
+- **Não podem ser ações extracurriculares isoladas:** Devem ser concebidos de forma **transversal**, incorporados às ementas das disciplinas em coparceria estreita entre bibliotecários e corpo docente.
+- **O Bibliotecário como Educador:** Transição do papel histórico de mero "guardião do acervo" para o de **mediador pedagógico**.`,
+  unicampContext: `Na **Unicamp**, o Sistema de Bibliotecas da Unicamp (SBU) é pioneiro na implantação institucional de ações de Competência Informacional:
+
+- **Oficinas e Disciplinas:** O SBU oferta disciplinas formais de graduação e pós-graduação sobre metodologia da pesquisa bibliográfica, uso ético da informação e prevenção de plágio acadêmico.
+- **Mediação Educativa:** Os bibliotecários participam diretamente da elaboração dos Planos de Desenvolvimento Institucional (PDI), fomentando o letramento digital e acadêmico dos ingressantes por meio do acolhimento estudantil.`,
   boardAnalysis: {
-    trends: `CEBRASPE (2018-2026): A banca gosta de cruzar Competência Informacional com Gestão do Conhecimento e Sociedade da Informação. As questões quase sempre testam se você acha que CoInfo é sinônimo de saber usar o computador (Alfabetização Computacional) – que é falso, CoInfo engloba pensamento crítico, não só clique no mouse.
-    
-VUNESP / FUNCAMP: Focam nos modelos de ensino. Gostam das palavras "construtivismo", "aprendizado ao longo da vida (lifelong learning)", e "letramento informacional".`,
-    commonTraps: `🚨 Pegadinha Clássica CEBRASPE: 
-"A competência informacional é alcançada quando o usuário da biblioteca adquire a alfabetização tecnológica e computacional plena, permitindo-o manusear softwares modernos de busca sem auxílio humano."
-(ERRADO: Competência informacional (Information Literacy) exige senso crítico sobre o conteúdo, avaliação ética e identificação da necessidade. Não é mera alfabetização digital/informática - isso é apenas a infraestrutura).`
+    trends: `### Análise de Bancas (CEBRASPE, VUNESP e FUNCAMP)
+
+- **CEBRASPE:** Insiste em tentar induzir o candidato ao erro igualando **Competência Informacional** à mera **Alfabetização Digital/Computacional**. A banca afirma que um indivíduo que domina softwares e sabe utilizar navegadores web já é plenamente competente em informação (FALSO, faltam o senso crítico e a ética).
+- **VUNESP / FUNCAMP:** Cobram os conceitos de **aprendizado contínuo ao longo da vida** (*Lifelong Learning*), a transição pedagógica de Dudziak e a importância da transversalidade curricular na biblioteca universitária.`,
+    commonTraps: `> 🚨 **Pegadinha Clássica CEBRASPE / VUNESP:**
+> *"A competência informacional encontra-se plenamente consolidada no indivíduo a partir do momento em que este adquire destreza técnica para manusear microcomputadores e executar comandos de busca no catálogo online sem requerer auxílio técnico."*
+>
+> **Gabarito: ERRADO!**
+> A destreza operacional no computador é apenas **alfabetização tecnológica (infraestrutura)**. A competência informacional exige capacidade intelectual de **avaliação crítica da veracidade**, percepção de viés ideológico, ética no uso de citações e autonomia de aprendizagem.`
   },
-  memorizationMatrix: `EVOLUÇÃO DOS PARADIGMAS (DUDZIAK)
-| Paradigma Antigo (Mecânico) | Paradigma Novo (Sócio-Construtivista) |
-|-----------------------------|---------------------------------------|
-| Treinamento de Usuário | Competência em Informação |
-| Ensinar a "usar a biblioteca" | Ensinar a "aprender a aprender" |
-| Foco na FERRAMENTA | Foco no PENSAMENTO CRÍTICO |
-| Isolado / Extracurricular | Transversal / Embutido no Currículo |`
+  memorizationMatrix: `### Evolução Epistemológica: Treinamento vs. Competência em Informação
+
+| Critério de Análise | Treinamento Tradicional de Usuários | Competência em Informação (CoInfo) |
+| :--- | :--- | :--- |
+| **Balanço Pedagógico** | Mecanicista / Condutivista | Socioconstrutivista / Crítico |
+| **Foco Central** | A Biblioteca e o Bibliotecário | O Aprendiz e o Processo Cognitivo |
+| **Meta Final** | Ensinar a "usar a biblioteca física" | Ensinar a "aprender a aprender criticamente" |
+| **Atitude do Usuário**| Passiva e receptiva | Ativa, investigativa e autônoma |
+| **Inserção Institucional**| Palestra isolada / Extracurricular | **Transversal** / Embutida no Currículo Universitário |`
 };

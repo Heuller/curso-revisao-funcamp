@@ -3,38 +3,68 @@ import type { AdvancedTopic } from '../types';
 export const m13: AdvancedTopic = {
   id: "m13",
   title: "13. Desenvolvimento de Coleções",
-  authorsAndFrameworks: `Autores-Chave e Guias:
-• Vergueiro (1989): O modelo canônico de Desenvolvimento de Coleções no Brasil. O clássico fluxograma circular de 6 etapas.
-• Evans (2000): Referência norte-americana para a evolução da área, mudando de "Seleção" para "Desenvolvimento" e depois para "Gestão" de Coleções.
-• Weeding (Desbastamento): Práticas focadas no modelo CREW (Continuous Review, Evaluation, and Weeding).`,
-  advancedTheory: `1. O Processo Contínuo (O Fluxograma de Vergueiro)
-O Desenvolvimento de Coleções NÃO é uma linha reta, é um processo CÍCLICO, dinâmico e ininterrupto, composto de 6 macroetapas:
-1. Estudo da Comunidade: O pilar zero. Identifica o perfil, necessidades institucionais (ensino, pesquisa, extensão).
-2. Políticas de Seleção: O cérebro. Documento escrito, aprovado institucionalmente, que rege "o que entra" e "o que sai". (Evita viés pessoal do bibliotecário e barra "doações de lixo").
-3. Seleção: A tomada de decisão. Escolher os itens baseado na Política. (Uso de listas de editores, pedidos de professores, catálogos).
-4. Aquisição: O braço comercial. Pode ser por Compra (licitação/inexigibilidade), Doação ou Permuta (troca).
-5. Avaliação da Coleção: Medir a saúde do acervo (qualitativa e quantitativamente). Os livros estão velhos? São consultados?
-6. Desbastamento (Weeding): Retirar itens do acervo ATIVO. Pode ser um Descarte (jogar fora/doar) ou um Remanejamento (ir para uma sala de obras raras ou depósito fechado). E então o ciclo recomeça (volta ao passo 1).
+  authorsAndFrameworks: `### Autores e Marcos Teóricos Estruturantes
 
-2. Transição Paradigmática
-Do "Acesso" vs "Propriedade" (Access vs Ownership). Nas décadas passadas, o valor da biblioteca era o tamanho físico (Ownership). Hoje, as coleções são híbridas. Compensa mais assinar o acesso a uma base de dados na nuvem (Access) do que comprar e estocar o livro impresso.
+- **Waldomiro de Castro Santos Vergueiro (1989):** Autor do livro clássico *"Desenvolvimento de Coleções"*, sistematizador do modelo circular e processual de 6 etapas adotado em quase a totalidade dos concursos brasileiros.
+- **G. Edward Evans (2000):** Teórico norte-americano fundamental na conceituação da mudança de foco de *"Seleção de Livros"* para *"Desenvolvimento de Coleções"* e, mais recentemente, para *"Gestão de Recursos Informacionais"*.
+- **Modelo CREW (*Continuous Review, Evaluation, and Weeding*):** Metodologia de referência prática internacional para rotinas sistemáticas de avaliação física e desbastamento de acervos.`,
+  advancedTheory: `### 1. O Processo Cíclico de Vergueiro (As 6 Macroetapas)
 
-3. Políticas e Doação
-A Política é a principal arma contra o "dumping bibliográfico" (quando a biblioteca vira depósito de lixo de professores aposentados). Toda doação deve passar pelo filtro rigoroso da Política de Seleção ANTES de ser integrada ao acervo.`,
-  unicampContext: `A SBU (Sistema de Bibliotecas da Unicamp) possui uma Política de Desenvolvimento de Coleções extremamente formal. Numa autarquia estadual, a fase de Aquisição (Compra) esbarra em rigorosos processos de Licitação (Lei 14.133) e, mais comumente para e-books estrangeiros, em Inexigibilidade de Licitação (fornecedor exclusivo).`,
+O Desenvolvimento de Coleções não é uma sequência linear e finita, mas sim um **processo ininterrupto, dinâmico e cíclico**. Segundo o modelo canônico de Waldomiro Vergueiro, compõe-se de seis etapas interdependentes:
+
+- **1. Estudo da Comunidade (Diagnóstico Inicial):**
+  Identificação prévia do perfil sociodemográfico, interesses de pesquisa, linhas de pós-graduação e demandas formativas da comunidade servida. É o pilar que ancora todas as decisões subsequentes.
+- **2. Políticas de Desenvolvimento de Coleções (O Instrumento Regulador):**
+  Documento formal, escrito e homologado pelas instâncias superiores da instituição. Define diretrizes claras sobre áreas prioritárias, critérios de seleção, limites orçamentários, idiomas aceitos e regras para barrar doações indesejadas (*dumping* bibliográfico).
+- **3. Seleção (A Tomada de Decisão Intelectual):**
+  Julgamento crítico de valor para decidir quais obras devem integrar o acervo, com base nas diretrizes da Política. Envolve comissões de seleção mistas (bibliotecários e docentes especialistas).
+- **4. Aquisição (A Concretização Material):**
+  Procedimentos administrativos e operacionais para a incorporação física ou contratação de acesso aos itens selecionados. Opera por três vias clássicas: **Compra**, **Doação** e **Permuta**.
+- **5. Avaliação da Coleção (O Diagnóstico Contínuo):**
+  Aferição da adequação do acervo aos objetivos institucionais por meio de métodos quantitativos (estatísticas de circulação, idade média, taxas de crescimento) e métodos qualitativos (avaliação de especialistas e análise de bibliografias recomendadas em planos de ensino).
+- **6. Desbastamento (*Weeding* / Gestão de Espaço):**
+  Retirada criteriosa de itens da coleção de livre acesso imediato. O desbastamento desdobra-se em dois destinos:
+  - **Remanejamento:** Transferência da obra para depósitos fechados, estantes compactas ou coleções de obras raras.
+  - **Descarte:** Exclusão definitiva do registro patrimonial (alienação, doação a outras entidades ou destruição física por dano irrecuperável).
+
+---
+
+### 2. A Virada Paradigmática: Acesso (*Access*) vs. Propriedade (*Ownership*)
+
+- **Paradigma Tradicional da Posse (*Ownership*):** A importância e o prestígio da biblioteca eram mensurados pelo volume físico de livros guardados em suas estantes.
+- **Paradigma Contemporâneo do Acesso (*Access*):** Com a explosão dos periódicos eletrônicos e pacotes de e-books na nuvem, o valor da biblioteca reside em garantir **acesso ágil e irrestrito**, desonerando o orçamento de custos de armazenamento e manutenção predial.
+
+---
+
+### 3. A Política de Seleção como Escudo Institucional
+
+A existência de uma Política de Seleção formal e aprovada é vital para:
+- Evitar o arbítrio e o viés ideológico individual de bibliotecários ou professores;
+- Proteger a instituição contra pressões de censura moral, religiosa ou partidária;
+- Justificar a recusa fundamentada de doações sem pertinência curricular.`,
+  unicampContext: `Na **Unicamp**, a gestão do acervo do SBU vincula-se a rígidos processos administrativos estatais:
+
+- **Aquisições e Lei de Licitações (Lei nº 14.133/2021):** Para compras no mercado nacional, adota-se o Pregão Eletrônico (Sistema de Registro de Preços). No caso de bases de dados e assinaturas internacionais de editoras científicas exclusivas, adota-se o rito formal de **Inexigibilidade de Licitação**.
+- **Comissões Setoriais:** Cada biblioteca de instituto conta com comissões de biblioteca com representação paritária para validação das listas de aquisição antes do empenho orçamentário.`,
   boardAnalysis: {
-    trends: `CEBRASPE (2018-2026): A banca EXPLORA agressivamente o conceito de Desbastamento (Weeding) x Descarte. Eles costumam jogar na prova que "desbastamento é o ato de destruir fisicamente um livro". Errado. Desbastar é retirar da coleção de livre acesso, o descarte é apenas uma de suas vias (a outra é remanejar). Também cobram que a Avaliação é dividida em Qualitativa (opinião dos experts) e Quantitativa (dados numéricos de empréstimo/tamanho).
-    
-VUNESP / FUNCAMP: Adoram focar na Política de Seleção, exigindo saber que ela DEVE SER ESCRITA, e que ela serve de escudo e defesa legal para a biblioteca na hora de negar a entrada de um material censurado ou inadequado.`,
-    commonTraps: `🚨 Pegadinha Clássica CEBRASPE: 
-"A etapa de Aquisição no modelo de Vergueiro restringe-se exclusivamente à compra de materiais, dada a exigência orçamentária das universidades."
-(ERRADO: A Aquisição compreende três meios universais na CI: Compra, Doação e Permuta.)`
+    trends: `### Análise de Bancas (CEBRASPE, VUNESP e FUNCAMP)
+
+- **CEBRASPE:** Explora agressivamente a distinção entre **Desbastamento** e **Descarte**. O examinador tenta confundir os termos afirmando que desbastar é sinônimo obrigatório de jogar o livro fora (ERRADO: o desbastamento é o gênero; o descarte é apenas uma de suas espécies, ao lado do remanejamento).
+- **VUNESP / FUNCAMP:** Cobram a ordem exata do ciclo de Vergueiro e as três vias universais da etapa de **Aquisição** (Compra, Doação e Permuta).`,
+    commonTraps: `> 🚨 **Pegadinha Clássica CEBRASPE / VUNESP:**
+> *"A etapa de desbastamento do acervo é concluída invariavelmente pela destruição física ou alienação dos livros obsoletos, sendo vedada sua manutenção no espaço da instituição."*
+>
+> **Gabarito: ERRADO!**
+> O desbastamento compreende tanto o **descarte** (exclusão definitiva) quanto o **remanejamento** (transferência para depósitos fechados de menor circulação ou salas especiais). O livro desbastado não é necessariamente destruído.`
   },
-  memorizationMatrix: `O HEXÁGONO DE VERGUEIRO (CICLO VITAL)
-1º Estudo da Comunidade -> Diagnóstico
-2º Políticas -> As Leis/Regras
-3º Seleção -> A Escolha Mental
-4º Aquisição -> A Obtenção Física (Compra/Doa/Permuta)
-5º Avaliação -> O Checkup (Medir se tá bom)
-6º Desbastamento -> A Faxina (Descarta ou Remaneja)`
+  memorizationMatrix: `### O Ciclo Hexagonal de Vergueiro: Etapas e Ações
+
+| Ordem | Etapa do Ciclo | Foco da Ação | Elementos Cruciais em Concurso |
+| :---: | :--- | :--- | :--- |
+| **1º** | **Estudo da Comunidade** | Diagnóstico de Necessidades | Conhecer os programas de ensino e os usuários |
+| **2º** | **Políticas de Coleções** | Elaboração Normativa | Documento escrito formal (Barra doações ruins e censura) |
+| **3º** | **Seleção** | Julgamento e Escolha | Critérios de valor intelectual e adequação temática |
+| **4º** | **Aquisição** | Concretização Operacional | **Compra**, **Doação** e **Permuta** (Tríade da aquisição) |
+| **5º** | **Avaliação da Coleção** | Mensuração da Saúde | Métodos quantitativos (estatísticas) e qualitativos (peritos) |
+| **6º** | **Desbastamento** | Gestão de Espaço | **Remanejamento** (guarda fechada) ou **Descarte** (saída) |`
 };
