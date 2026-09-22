@@ -1,7 +1,7 @@
 import React from 'react';
 import ReactMarkdown from 'react-markdown';
 import remarkGfm from 'remark-gfm';
-import { Lightbulb, AlertTriangle, Bookmark, BookOpen } from 'lucide-react';
+import { Lightbulb, AlertTriangle, Bookmark, BookOpen, CheckCircle2 } from 'lucide-react';
 
 interface MarkdownViewerProps {
   content: string;
@@ -30,7 +30,7 @@ export const MarkdownViewer: React.FC<MarkdownViewerProps> = ({
         remarkPlugins={[remarkGfm]}
         components={{
           h1: ({ children }) => (
-            <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-6 mb-4 pb-2 border-b border-slate-200">
+            <h1 className="text-2xl sm:text-3xl font-extrabold text-slate-900 tracking-tight mt-7 mb-4 pb-2 border-b border-slate-200">
               {children}
             </h1>
           ),
@@ -42,7 +42,7 @@ export const MarkdownViewer: React.FC<MarkdownViewerProps> = ({
           ),
           h3: ({ children }) => (
             <h3 className="text-base sm:text-lg font-extrabold text-slate-900 tracking-tight mt-6 mb-3 flex items-center gap-2.5 bg-gradient-to-r from-slate-100/90 to-slate-50 border border-slate-200 px-4 py-3 rounded-xl shadow-xs">
-              <Bookmark className="w-5 h-5 text-indigo-600 shrink-0" />
+              <Bookmark className="w-4 h-4 text-indigo-600 shrink-0" />
               <span className="leading-snug">{children}</span>
             </h3>
           ),
@@ -69,12 +69,12 @@ export const MarkdownViewer: React.FC<MarkdownViewerProps> = ({
           ),
           li: ({ children }) => (
             <li className="flex items-start gap-3 text-slate-700 text-[15px] leading-relaxed">
-              <span className="mt-2 w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0" />
+              <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-indigo-500 shrink-0" />
               <div className="flex-1 min-w-0">{children}</div>
             </li>
           ),
           strong: ({ children }) => (
-            <strong className="font-bold text-slate-950 text-indigo-950">
+            <strong className="font-bold text-slate-950">
               {children}
             </strong>
           ),
@@ -85,8 +85,9 @@ export const MarkdownViewer: React.FC<MarkdownViewerProps> = ({
           ),
           blockquote: ({ children }) => {
             const rawText = extractText(children);
-            const isWarning = rawText.includes('🚨') || rawText.includes('Atenção') || rawText.includes('ERRADO') || rawText.includes('⚠️') || rawText.includes('Pegadinha');
-            const isTip = rawText.includes('💡') || rawText.includes('Dica') || rawText.includes('Princípio') || rawText.includes('Macete') || rawText.includes('Obrigatório');
+            const isWarning = rawText.includes('🚨') || rawText.includes('Atenção') || rawText.includes('ERRADO') || rawText.includes('⚠️') || rawText.includes('Pegadinha') || rawText.includes('Cuidado');
+            const isTip = rawText.includes('💡') || rawText.includes('Dica') || rawText.includes('Princípio') || rawText.includes('Macete') || rawText.includes('Obrigatório') || rawText.includes('Regra de Ouro');
+            const isSuccess = rawText.includes('✅') || rawText.includes('Correto') || rawText.includes('Vencedor');
 
             if (isWarning) {
               return (
@@ -106,6 +107,19 @@ export const MarkdownViewer: React.FC<MarkdownViewerProps> = ({
                 <div className="my-5 p-4 sm:p-5 rounded-2xl bg-indigo-50/90 border-l-4 border-indigo-600 border border-indigo-200/70 shadow-xs flex items-start gap-3.5 text-indigo-950">
                   <div className="p-2 bg-indigo-100 rounded-xl text-indigo-700 shrink-0 mt-0.5">
                     <Lightbulb className="w-5 h-5" />
+                  </div>
+                  <div className="text-[14.5px] sm:text-[15px] leading-relaxed flex-1 prose-p:mb-2 last:prose-p:mb-0 font-medium">
+                    {children}
+                  </div>
+                </div>
+              );
+            }
+
+            if (isSuccess) {
+              return (
+                <div className="my-5 p-4 sm:p-5 rounded-2xl bg-emerald-50/90 border-l-4 border-emerald-600 border border-emerald-200/70 shadow-xs flex items-start gap-3.5 text-emerald-950">
+                  <div className="p-2 bg-emerald-100 rounded-xl text-emerald-700 shrink-0 mt-0.5">
+                    <CheckCircle2 className="w-5 h-5" />
                   </div>
                   <div className="text-[14.5px] sm:text-[15px] leading-relaxed flex-1 prose-p:mb-2 last:prose-p:mb-0 font-medium">
                     {children}
@@ -134,29 +148,29 @@ export const MarkdownViewer: React.FC<MarkdownViewerProps> = ({
             <hr className="my-6 border-slate-200/80" />
           ),
           table: ({ children }) => (
-            <div className="my-5 overflow-x-auto rounded-xl border border-slate-200 shadow-xs">
-              <table className="w-full text-sm text-left border-collapse min-w-[500px]">
+            <div className="my-5 overflow-x-auto rounded-2xl border border-slate-200 shadow-sm bg-white text-slate-900">
+              <table className="w-full text-sm text-left border-collapse min-w-[540px]">
                 {children}
               </table>
             </div>
           ),
           thead: ({ children }) => (
-            <thead className="bg-slate-100/90 text-slate-800 uppercase tracking-wider text-xs border-b border-slate-200">
+            <thead className="bg-slate-100 text-slate-900 uppercase tracking-wider text-xs border-b border-slate-200 font-extrabold">
               {children}
             </thead>
           ),
           th: ({ children }) => (
-            <th className="px-5 py-3.5 font-bold text-slate-900 border-r border-slate-200 last:border-r-0">
+            <th className="px-5 py-3.5 font-black text-slate-900 border-r border-slate-200 last:border-r-0">
               {children}
             </th>
           ),
           td: ({ children }) => (
-            <td className="px-5 py-3.5 border-b border-slate-100 text-slate-700 border-r border-slate-100 last:border-r-0 align-top">
+            <td className="px-5 py-3.5 border-b border-slate-100 text-slate-700 border-r border-slate-100 last:border-r-0 align-top text-xs sm:text-sm">
               {children}
             </td>
           ),
           tr: ({ children }) => (
-            <tr className="hover:bg-slate-50/80 transition-colors odd:bg-white even:bg-slate-50/40">
+            <tr className="hover:bg-slate-50/80 transition-colors odd:bg-white even:bg-slate-50/50">
               {children}
             </tr>
           ),
