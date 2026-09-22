@@ -1,6 +1,6 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import { modulesData } from './data';
-import { AdvancedTopic } from './data/types';
+import type { AdvancedTopic } from './data/types';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './components/ui/accordion';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card';
 import { BookOpen, AlertTriangle, Crosshair, Brain, GraduationCap, ChevronRight, Library } from 'lucide-react';

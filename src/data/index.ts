@@ -3,7 +3,7 @@ import { m02 } from './modules/m02';
 import { m03 } from './modules/m03';
 import { m04 } from './modules/m04';
 import { m05 } from './modules/m05';
-import { AdvancedTopic } from './types';
+import type { AdvancedTopic } from './types';
 
 export const modulesData: AdvancedTopic[] = [
   m01,

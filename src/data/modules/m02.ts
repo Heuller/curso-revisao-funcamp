@@ -1,4 +1,4 @@
-import { AdvancedTopic } from '../types';
+import type { AdvancedTopic } from '../types';
 
 export const m02: AdvancedTopic = {
   id: "m02",
