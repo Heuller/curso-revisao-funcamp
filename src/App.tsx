@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
+import ReactMarkdown from 'react-markdown';
+import remarkGfm from 'remark-gfm';
 import { modulesData } from './data';
 import type { AdvancedTopic } from './data/types';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './components/ui/accordion';
@@ -168,8 +170,19 @@ function App() {
                     </CardTitle>
                   </CardHeader>
                   <CardContent>
-                    <div className="font-mono text-[14px] bg-slate-900 p-6 rounded-2xl border border-slate-800 text-slate-50 whitespace-pre-wrap overflow-x-auto shadow-2xl leading-relaxed">
-                      {activeModule.memorizationMatrix}
+                    <div className="bg-slate-900 p-4 sm:p-6 rounded-2xl border border-slate-800 text-slate-50 shadow-2xl overflow-x-auto">
+                      <ReactMarkdown 
+                        remarkPlugins={[remarkGfm]}
+                        components={{
+                          table: ({node, ...props}) => <table className="w-full text-sm text-left border-collapse min-w-[600px]" {...props} />,
+                          th: ({node, ...props}) => <th className="px-4 py-4 bg-indigo-950/80 text-indigo-200 font-bold border-b border-indigo-500/50 uppercase tracking-wider text-xs whitespace-nowrap" {...props} />,
+                          td: ({node, ...props}) => <td className="px-4 py-3 border-b border-slate-800 text-slate-300 align-top" {...props} />,
+                          tr: ({node, ...props}) => <tr className="hover:bg-slate-800/50 transition-colors even:bg-slate-800/20" {...props} />,
+                          p: ({node, ...props}) => <p className="mb-4 text-indigo-100/90 font-medium tracking-wide uppercase text-sm" {...props} />,
+                        }}
+                      >
+                        {activeModule.memorizationMatrix}
+                      </ReactMarkdown>
                     </div>
                   </CardContent>
                 </Card>
