@@ -5,8 +5,8 @@ import type { Question } from '../data/questions';
 import { MODULE_CATEGORIES } from '../data/categories';
 import { 
   CheckCircle2, XCircle, Clock, Award, ArrowRight, ArrowLeft, 
-  RotateCcw, AlertTriangle, Bookmark, LayoutGrid, Check, 
-  X, Filter, Eye, Sparkles, BookOpen, AlertCircle
+  RotateCcw, Bookmark, LayoutGrid, Check, 
+  X, Sparkles, BookOpen, AlertCircle
 } from 'lucide-react';
 
 // Randomize array helper
@@ -408,7 +408,7 @@ export default function Simulado() {
           </div>
 
           <div className="space-y-6">
-            {filteredReviewQuestions.map((q, idx) => {
+            {filteredReviewQuestions.map((q) => {
               const userAns = userAnswers[q.id];
               const isCorrect = userAns === q.correctAnswer;
               const originalIndex = questions.findIndex(orig => orig.id === q.id);

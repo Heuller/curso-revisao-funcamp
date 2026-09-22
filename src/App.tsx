@@ -11,7 +11,7 @@ import {
   BookOpen, AlertTriangle, Crosshair, Brain, GraduationCap, 
   Library, ShieldAlert, CheckCircle2, PlayCircle, Target, 
   Trophy, Search, X, Clock, ChevronRight, ChevronLeft, 
-  RotateCcw, Sparkles, Compass, Check, Layers, ChevronDown
+  RotateCcw, Compass, Check, ChevronDown
 } from 'lucide-react';
 
 const STORAGE_KEY_COMPLETED = 'funcamp_completed_modules';
