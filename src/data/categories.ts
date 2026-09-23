@@ -208,12 +208,12 @@ export const MODULE_CATEGORIES: Record<string, ModuleCategory> = {
     badgeBorder: 'border-indigo-200',
     estimatedMinutes: 14 
   },
-  // 19. Classificação Decimal de Dewey (CDD) e CDU
+  // 19. Classificação Decimal de Dewey (CDD)
   m19: { 
     id: 'm19', 
     category: 'organizacao', 
-    categoryLabel: 'Classificação (CDD & CDU)', 
-    categoryShort: 'CDD & CDU',
+    categoryLabel: 'Classificação Decimal de Dewey (CDD)', 
+    categoryShort: 'CDD',
     badgeBg: 'bg-indigo-50', 
     badgeText: 'text-indigo-700', 
     badgeBorder: 'border-indigo-200',

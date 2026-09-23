@@ -169,8 +169,8 @@ export default function Simulado() {
     let answered = 0;
 
     const areaStats: Record<string, { total: number; correct: number; label: string }> = {
-      organizacao: { total: 0, correct: 0, label: 'Organização da Informação & Metadados (AACR2, RDA, MARC, CDD, CDU)' },
-      gestao: { total: 0, correct: 0, label: 'Gestão, Políticas, Normas ABNT & Legislação (SBU, LAI, Coleções)' },
+      organizacao: { total: 0, correct: 0, label: 'Organização da Informação & Metadados (AACR2, RDA, MARC, CDD)' },
+      gestao: { total: 0, correct: 0, label: 'Gestão, Políticas, Ética & Legislação (SBU, LAI, Coleções)' },
       tecnologia: { total: 0, correct: 0, label: 'Tecnologia, Repositórios Digitais & Acesso Aberto (DSpace, OAI-PMH)' },
     };
 

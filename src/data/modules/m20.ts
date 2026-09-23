@@ -5,59 +5,71 @@ export const m20: AdvancedTopic = {
   title: "20. Tecnologia de Softwares de Bibliotecas (SIGB / ILS)",
   authorsAndFrameworks: `### Autores e Terminologia Tecnológica Internacional
 
-- **Marshall Breeding:** A maior autoridade internacional contemporânea no monitoramento dos sistemas de automação de bibliotecas (*Library Technology Guides*).
-- **ILS / SIGB (*Integrated Library System* / Sistema Integrado de Gestão de Bibliotecas):** A designação clássica de softwares relacionais modulares para acervos físicos.
-- **LSP (*Library Services Platform*):** A nova geração de plataformas concebida nativamente em nuvem (*Cloud / SaaS*), unificando a gestão de acervos impressos e assinaturas de recursos eletrônicos em larga escala.
-- **Protocolo Z39.50 e SRU/SRW:** Padrões cliente-servidor para busca e recuperação remota de registros catalográficos entre servidores heterogêneos.`,
-  advancedTheory: `### 1. A Evolução Geracional dos Sistemas de Automação
+- **Marshall Breeding:** A maior autoridade internacional contemporânea no monitoramento do mercado global de automação de bibliotecas (*Library Technology Guides*).
+- **SIGB / ILS (*Integrated Library System* / Sistema Integrado de Gestão de Bibliotecas):** A designação clássica de softwares relacionais modulares para acervos físicos e patrimoniados.
+- **LSP (*Library Services Platform*):** A nova geração de plataformas concebida nativamente em nuvem (*Cloud / Multi-tenant SaaS*), unificando a gestão de acervos impressos e assinaturas de recursos eletrônicos em larga escala.
+- **Software Livre / Código Aberto (*Open Source*) vs. Proprietário:** Classificação jurídica e tecnológica recorrente em concursos públicos.`,
+  advancedTheory: `### 1. Classificação dos Softwares de Biblioteca para Concursos
 
-A tecnologia computacional aplicada às bibliotecas atravessou três grandes ciclos históricos:
+As bancas examinadoras cobram com grande regularidade (presente em 39.3% dos cadernos analisados) a categorização dos sistemas conforme o modelo de licenciamento e a origem:
 
-- **1ª Geração (Mainframes e Processamento em Lote - Décadas de 1960/70):**
-  Sistemas isolados e monolíticos, sem integração entre setores. O processamento era em lote (*batch*), com cartões perfurados ou fitas magnéticas, voltados estritamente ao controle de circulação ou impressão de fichas catalográficas.
-- **2ª Geração — O SIGB Clássico (Décadas de 1980 a 2000):**
-  Arquitetura cliente-servidor baseada em **Bancos de Dados Relacionais**. Caracteriza-se pela integração de módulos em torno de um **Arquivo Mestre Único**:
-  - Quando a Aquisição cadastra o pedido de um livro, o registro preliminar fica imediatamente acessível para a Catalogação, que apenas o complementa;
-  - A Circulação bloqueia o exemplar no balcão e o **OPAC** (*Online Public Access Catalog*) atualiza instantaneamente a disponibilidade para o usuário.
-  *Limitação severa:* Desenhados quase que exclusivamente para o controle de itens **físicos patrimoniados**.
-- **3ª Geração — LSP (*Library Services Platform*) e Descoberta (Era Atual):**
-  Plataformas operando integralmente na nuvem (*Multi-tenant SaaS*). Gerenciam de forma unificada acervos físicos, pacotes massivos de e-books, repositórios digitais e periódicos sob licença. O catálogo para o usuário desvincula-se do sistema de gestão, sendo substituído por **Ferramentas de Descoberta (*Discovery Tools*)**.
+#### A. Softwares Livres e de Código Aberto (Open Source):
+- **Koha:** Primeiro software livre de automação de bibliotecas do mundo (criado na Nova Zelândia em 1999). Baseado em web, padrão MARC 21 nativo, protocolo Z39.50, OAI-PMH e banco de dados MySQL/MariaDB.
+- **OpenBiblio:** Sistema livre simplificado para pequenas e médias bibliotecas.
+- **Biblio-teQ:** Software livre multiplataforma com suporte a protocolos de catalogação.
+- **Greenstone e DSpace:** Softwares de código aberto voltados a Bibliotecas Digitais e Repositórios Institucionais (não são SIGBs tradicionais, mas repositórios de objetos digitais).
+
+#### B. Softwares Comerciais / Proprietários Nacionais:
+- **Pergamum (PUCPR):** Um dos sistemas proprietários mais difundidos em universidades e órgãos públicos brasileiros.
+- **SophiA Biblioteca (Prima Informática):** Amplamente adotado em instituições públicas, privadas e escolares no Brasil.
+- **Alexandria, MultiAcervo e Biblioshop:** Outros sistemas comerciais de circulação nacional.
+
+#### C. Softwares Comerciais / Corporativos Internacionais:
+- **Aleph (Ex Libris):** SIGB clássico internacional de grande porte.
+- **Alma (Ex Libris):** Plataforma de Serviços de Biblioteca (LSP) de última geração em nuvem.
+- **Sierra / Millennium (Innovative Interfaces / Clarivate):** Sistemas amplamente utilizados em grandes redes mundiais.
 
 ---
 
-### 2. Ferramentas de Descoberta (*Discovery*) vs. Busca Federada Tradicional
+### 2. A Arquitetura Modular do SIGB e o Arquivo Mestre Único
 
-As bancas cobram com rigor a mecânica técnica que separa a Busca Federada do moderno *Discovery*:
+A característica definidora de um sistema "Integrado" é a ausência de redundância de dados:
+- **Módulos Centrais:**
+  1. **Aquisição:** Gerencia pedidos, fornecedores, empenhos, faturas e controle orçamentário. O registro inserido aqui já cria o pré-catálogo.
+  2. **Catalogação / Processamento Técnico:** Detalha a descrição bibliográfica completa (MARC 21), autoridades e atribui número de chamada e exemplares.
+  3. **Circulação:** Empréstimo, devolução, renovação, reservas, multas, suspensões e histórico de circulação de usuários.
+  4. **Controle de Periódicos (Seriados):** Registro de fascículos recebidos (*check-in*), alertas de falhas na coleção, remessas para encadernação e controle de assinaturas.
+  5. **OPAC (*Online Public Access Catalog*):** Interface pública de busca para o leitor.
+  6. **Relatórios e Estatísticas:** Emissão de indicadores de uso e inventário patrimonial.
 
-- **Busca Federada Tradicional (Transmissão em Tempo Real):**
-  Quando o usuário digita a consulta, o sistema dispara a busca simultaneamente para cada uma das dezenas de bases assinadas (Elsevier, IEEE, Springer).
-  *Problema crônico:* **Extrema lentidão** (o sistema fica travado aguardando o retorno da base mais lenta), timeouts constantes e impossibilidade de aplicar um ranqueamento de relevância unificado.
+---
 
-- **Ferramentas de Descoberta (*Index-Based Discovery* - Ex: Primo, EDS, Summon):**
-  O provedor do sistema pré-coleta e pré-indexa previamente os metadados de milhões de artigos científicos e e-books em um **Mega-Índice Centralizado na Nuvem**.
-  *Grande vantagem:* A pesquisa ocorre em milissegundos com experiência idêntica à do Google, oferecendo facetas dinâmicas e ranqueamento integrado por relevância.`,
-  unicampContext: `A **Unicamp** realizou uma das migrações tecnológicas mais complexas da universidade pública brasileira:
+### 3. Ferramentas de Descoberta (*Discovery*) vs. Busca Federada
 
-- **Adoção do Alma e Primo (ExLibris):** O Sistema de Bibliotecas da Unicamp (SBU) descontinuou sistemas legados locais e unificou todas as suas 28 bibliotecas setoriais na plataforma **Alma** (LSP em nuvem), integrando a consulta pública no **Primo** (Discovery Tool).
-- **Catálogo Integrado Único:** Na mesma barra de pesquisa, o aluno da Unicamp pesquisa o livro impresso na estante do IFCH e, simultaneamente, acessa em texto completo artigos científicos internacionais das bases CAPES.`,
+- **Busca Federada Tradicional (Tempo Real):** Dispara a consulta simultaneamente em dezenas de servidores externos (Elsevier, IEEE, Springer). Sofre com lentidão severa e incapacidade de ranquear relevância unificada.
+- **Ferramentas de Descoberta (*Discovery Tools* - Primo, EDS, Summon):** Coletam e normalizam antecipadamente metadados de milhões de itens mundiais em um **Mega-Índice Centralizado na Nuvem**, oferecendo busca em milissegundos com navegação por facetas dinâmicas.`,
+  unicampContext: `A **Unicamp** é referência em infraestrutura tecnológica bibliotecária:
+- **Migração para Alma e Primo (Ex Libris):** O Sistema de Bibliotecas da Unicamp (SBU) descontinuou sistemas legados e unificou suas 28 bibliotecas setoriais na plataforma **Alma** (LSP em nuvem).
+- **Interface Pública Unificada:** O **Primo** permite à comunidade da Unicamp pesquisar em uma única caixa de busca livros físicos locais, teses do repositório e artigos de periódicos internacionais assinados via CAPES.`,
   boardAnalysis: {
-    trends: `### Análise de Bancas (CEBRASPE, VUNESP e FUNCAMP)
-
-- **CEBRASPE:** Explora rigorosamente o conceito de **"Sistema Integrado"** fundamentado no compartilhamento de dados sem redundância (um dado inserido pela Aquisição é aproveitado pela Catalogação e lido pela Circulação). Também formula pegadinhas sobre a diferença entre Busca Federada e Discovery.
-- **VUNESP / FUNCAMP:** Cobram o papel do **Protocolo Z39.50** (protocolo de interoperabilidade para importação remota de registros MARC 21) e o funcionamento das ferramentas de Descoberta integradas a plataformas em nuvem.`,
-    commonTraps: `> 🚨 **Pegadinha Clássica CEBRASPE / VUNESP:**
-> *"As modernas ferramentas de descoberta (Discovery Tools) operam pelo mecanismo de busca federada instantânea, consultando individualmente e em tempo real os servidores de cada base de dados externa no momento exato em que o leitor digita sua consulta."*
+    trends: `### Padrões Extraídos das Provas Reais (OBJETIVA, CEBRASPE, VUNESP):
+- **Identificação de Softwares Livres:** Questões de múltipla escolha com listas de nomes exigem saber categoricamente que **Koha** e **OpenBiblio** são código aberto, enquanto **Pergamum**, **SophiA** e **Aleph** são sistemas proprietários comerciais.
+- **Conceito de Sistema Integrado:** As bancas exploram a relação entre os módulos: o leitor não consegue emprestar um livro se a catalogação não registrar o exemplar; a devolução no balcão atualiza imediatamente o OPAC sem necessidade de rotinas noturnas manuais.
+- **O papel do Z39.50 no SIGB:** Protocolo nativo que permite ao módulo de catalogação importar registros MARC 21 de bibliotecas externas.`,
+    commonTraps: `> 🚨 **Pegadinha Clássica de Prova (OBJETIVA / IBFC):**
+> *"O Pergamum e o SophiA são softwares de domínio público e código aberto (open source), desenvolvidos pelo IBICT para distribuição gratuita a todas as bibliotecas públicas brasileiras."*
 >
 > **Gabarito: ERRADO!**
-> Essa é a definição da antiga e lenta **Busca Federada**. As **Ferramentas de Descoberta** baseiam-se em um **Mega-Índice Central pré-indexado na nuvem**, garantindo recuperação instantânea de dados já colhidos previamente.`
+> Pergamum e SophiA são sistemas **proprietários e comerciais**, mantidos respectivamente pela PUCPR e pela Prima Informática, exigindo pagamento de licenças e contratos de suporte.`
   },
-  memorizationMatrix: `### Evolução dos Softwares de Biblioteca: SIGB Clássico vs. Discovery
+  memorizationMatrix: `### Matriz de Softwares para Bibliotecas em Concursos
 
-| Critério de Comparação | OPAC Tradicional (SIGB) | Ferramenta de Descoberta (Discovery / LSP) |
-| :--- | :--- | :--- |
-| **Escopo do Acervo** | Restrito ao Acervo Físico Local | **Universal:** Físico + E-books + Bases CAPES + Repositório |
-| **Arquitetura de Busca** | Consulta ao banco SQL local | **Mega-Índice Central pré-indexado** na nuvem |
-| **Velocidade de Retorno** | Rápida para o acervo físico | **Instantânea** para milhões de artigos globais |
-| **Ponto Único de Acesso** | Somente localização física | Texto completo em 1 clique (Link Resolver / OpenURL) |
-| **Exemplos de Mercado** | Koha, Sophia, Pergamum | **Primo (ExLibris)**, EDS (EBSCO), Summon |`
+| Software | Tipo de Licença | Origem | Categoria de Aplicação |
+| :--- | :--- | :--- | :--- |
+| **Koha** | **Software Livre (Open Source)** | Internacional (Nova Zelândia) | SIGB Completo com MARC 21 nativo |
+| **OpenBiblio** | **Software Livre (Open Source)** | Internacional | SIGB leve para bibliotecas pequenas |
+| **DSpace** | **Software Livre (Open Source)** | Internacional (MIT / HP) | Repositório Institucional Digital |
+| **Pergamum** | **Comercial / Proprietário** | Nacional (PUCPR - Brasil) | SIGB corporativo de grande porte |
+| **SophiA** | **Comercial / Proprietário** | Nacional (Prima Informática) | SIGB para bibliotecas e centros de doc. |
+| **Alma / Primo**| **Comercial / Cloud (SaaS)** | Internacional (Ex Libris) | Plataforma de Serviços (LSP) + Discovery |`
 };

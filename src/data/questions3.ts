@@ -158,16 +158,16 @@ export const q51_to_75: Question[] = [
   {
     id: "q62",
     moduleId: "m19",
-    text: "A CDU (Classificação Decimal Universal) aceita números de apenas 1 algarismo em sua classe principal, abolindo os zeros à direita. Assim, a classe de 'Religião e Teologia', que na CDD é 200, na CDU é apenas:",
+    text: "Uma das maiores inovações introduzidas por Melvil Dewey na Classificação Decimal de Dewey (CDD) foi o 'Índice Relativo' (Relative Index). A função essencial do Índice Relativo na CDD é:",
     options: {
-      A: "20.",
-      B: "2.",
-      C: "R.",
-      D: "2-0.",
-      E: "200."
+      A: "Listar os livros em ordem cronológica de publicação na biblioteca.",
+      B: "Reunir em ordem alfabética os múltiplos aspectos e contextos disciplinares sob os quais um mesmo assunto pode ser tratado no esquema decimal.",
+      C: "Indicar a localização física fixa dos livros nas estantes.",
+      D: "Calcular a probabilidade de empréstimo de cada exemplar.",
+      E: "Traduzir automaticamente os termos do inglês para o latim."
     },
     correctAnswer: "B",
-    justification: "A CDU aboliu os zeros engessados da CDD. O que é 200 virou 2. O que é 100 virou 1."
+    justification: "O Índice Relativo é o coração prático da CDD: reúne alfabeticamente um conceito (ex: 'Tabaco') e mostra todos os seus desdobramentos nas disciplinas (como planta 580, na agricultura 630, na economia 330, na medicina 610), evitando a dispersão disciplinar."
   },
   {
     id: "q63",
@@ -195,7 +195,7 @@ export const q51_to_75: Question[] = [
       E: "Impressão da Via Verde de Acesso Aberto."
     },
     correctAnswer: "A",
-    justification: "O plágio ocorre quando a autoria moral de uma ideia/texto é roubada e usada como se fosse do fraudador, não citando o verdadeiro autor (referências ABNT)."
+    justification: "O plágio ocorre quando a autoria moral de uma ideia/texto é usurpada e usada como se fosse do fraudador, não citando o verdadeiro autor e violando normas éticas e legais de citação e autoria."
   },
   {
     id: "q65",
@@ -304,7 +304,7 @@ export const q51_to_75: Question[] = [
       B: "Desbastamento (Weeding).",
       C: "Linked Data (Dados Conectados) e Web Semântica.",
       D: "Indexação Automática de Texto Falso.",
-      E: "Catalogação Classificada (CDU)."
+      E: "Catalogação Analítica em Fichas."
     },
     correctAnswer: "C",
     justification: "O Linked Data transforma strings (palavras) em Things (coisas/links/URIs), permitindo a conexão hiperlinkada semântica entre catálogos mundiais."

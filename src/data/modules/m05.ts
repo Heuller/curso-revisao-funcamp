@@ -5,71 +5,65 @@ export const m05: AdvancedTopic = {
   title: "5. Redes e Sistemas de Informação",
   authorsAndFrameworks: `### Autores, Órgãos Centrais e Marcos Estruturais
 
-- **IBICT (Instituto Brasileiro de Informação em Ciência e Tecnologia):** Órgão de referência vinculado ao Ministério da Ciência, Tecnologia e Inovação (MCTI), responsável pela concepção e manutenção das redes e sistemas cooperativos de informação no país.
-- **Murilo Bastos da Cunha (1999):** Autor clássico sobre redes, consórcios de bibliotecas universitárias e compartilhamento cooperativo de recursos documentais.
-- **RNP (Rede Nacional de Ensino e Pesquisa):** Organização social responsável pela infraestrutura de conectividade avançada da academia brasileira e pela gestão da **Comunidade Acadêmica Federada (CAFe)**.
-- **CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior):** Fundação ligada ao MEC, gestora do **Portal de Periódicos CAPES**, um dos maiores consórcios mundiais de compras de assinaturas científicas.`,
-  advancedTheory: `### 1. Fundamentos Epistemológicos das Redes de Informação
+- **IBICT (Instituto Brasileiro de Informação em Ciência e Tecnologia):** Unidade de pesquisa vinculada ao MCTI, órgão normatizador e gestor histórico dos sistemas integrados e cooperativos de informação científica no Brasil.
+- **Murilo Bastos da Cunha (1999):** Referência bibliográfica seminal sobre redes, consórcios de bibliotecas universitárias e compartilhamento cooperativo de recursos documentais.
+- **RNP (Rede Nacional de Ensino e Pesquisa):** Gestora da infraestrutura de telecomunicações acadêmicas avançadas do Brasil e da **Comunidade Acadêmica Federada (CAFe)**.
+- **CAPES (Coordenação de Aperfeiçoamento de Pessoal de Nível Superior):** Fundação vinculada ao MEC, responsável pela pós-graduação stricto sensu e gestora do **Portal de Periódicos CAPES**.
+- **Protocolos ANSI/NISO Z39.50 e ISO 23950:** Padrões internacionais para busca e recuperação de informações entre sistemas computacionais heterogêneos.`,
+  advancedTheory: `### 1. Fundamentos das Redes de Informação e Interoperabilidade
 
-Com o fenômeno da **Explosão Documental** pós-Segunda Guerra Mundial, o mito da biblioteca autossuficiente ruiu. Nenhuma instituição — nem mesmo os maiores orçamentos de Harvard ou Oxford — tem capacidade financeira para adquirir a totalidade da produção científica mundial.
-
-- **Conceito de Rede:** Conjunto formal de unidades de informação interconectadas por canais padronizados para intercâmbio de recursos, dados e competências técnicas.
-- **Objetivo Central:** Erradicar a duplicação desnecessária de tarefas, maximizar o poder orçamentário de compra e democratizar o acesso à informação em escala territorial ampla.
+Com o advento da explosão documental e os custos crescentes de assinaturas, a cooperação interbibliotecária tornou-se mandatória:
+- **Redes de Cooperação Técnica:** Focadas no compartilhamento de registros catalográficos e metadados para evitar a duplicidade de trabalho técnico (catalogação cooperativa).
+- **Consórcios de Aquisição (*Library Consortia*):** Focados no compartilhamento de recursos financeiros para negociação em bloco de contratos de licenciamento de bases de dados e pacotes de e-books com descontos de escala.
+- **Níveis de Interoperabilidade:**
+  - **Técnica/Sintática:** Capacidade de comunicação entre hardware e software mediante protocolos abertos (TCP/IP, HTTP, XML, JSON).
+  - **Semântica:** Capacidade dos sistemas de interpretar o significado dos dados de forma unívoca (vocabulários controlados, ontologias, esquemas padronizados de metadados como Dublin Core e MARC 21).
 
 ---
 
-### 2. A Constelação de Sistemas Cooperativos Nacionais (IBICT)
+### 2. Protocolos de Comunicação: Z39.50 vs. SRU/SRW vs. OAI-PMH
 
-O ecossistema federal brasileiro estruturado pelo **IBICT** baseia-se em pilares essenciais frequentemente explorados em provas de concurso:
+Cobrança clássica em concursos de bibliotecário (presente em 72.6% das provas):
+- **Z39.50 (ANSI/NISO):** Protocolo síncrono cliente-servidor tradicional criado para busca remota e recuperação de registros em catálogos eletrônicos (OPACs). Opera em portas dedicadas (porta 210) e permite ao bibliotecário consultar o catálogo de outra biblioteca (ex.: Biblioteca do Congresso) e copiar o registro MARC 21 diretamente para o seu software local.
+- **SRU (Search/Retrieve via URL) e SRW (Search/Retrieve Web Service):** A evolução moderna do Z39.50 sobre a World Wide Web, utilizando requisições REST/HTTP e retornos em XML/JSON, eliminando barreiras de firewall do protocolo original.
+- **OAI-PMH:** Protocolo assíncrono para colheita massiva de metadados (*harvesting*) entre repositórios digitais em XML.
+
+---
+
+### 3. A Constelação de Sistemas Cooperativos Nacionais (IBICT e CAPES)
 
 - **BDTD (Biblioteca Digital Brasileira de Teses e Dissertações):**
-  Mega-agregador nacional que coleta, mediante o protocolo **OAI-PMH**, os metadados das teses e dissertações depositadas nos repositórios institucionais de mais de uma centena de universidades brasileiras. Permite ao cidadão pesquisar a produção pós-graduada nacional em um único ponto focal.
-
+  Agregador nacional mantido pelo IBICT que colhe, via OAI-PMH, os metadados de teses e dissertações defendidas no Brasil e cadastradas nos repositórios institucionais locais, integrando a NDLTD (*Networked Digital Library of Theses and Dissertations*).
 - **CCN (Catálogo Coletivo Nacional de Publicações Seriadas):**
-  Instrumento referencial que localiza a posse de periódicos científicos (físicos e eletrônicos) no Brasil. O CCN responde à pergunta: *"Qual biblioteca do país possui o fascículo 3 do volume 12 da revista X publicado em 1978?"*. 
-  *Atenção:* O CCN é um catálogo de **localização**, e não um provedor de texto integral.
-
+  Rede cooperativa que cadastra e localiza a posse das coleções de periódicos científicos (impressos e eletrônicos) nas bibliotecas brasileiras.
+  *Atenção:* O CCN é um catálogo de **localização física/digital da coleção** e **NÃO** um repositório de texto integral.
 - **COMUT (Programa de Comutação Bibliográfica):**
-  Mecanismo de cooperação interbibliotecária que operacionaliza o envio de cópias de documentos (artigos de periódicos, teses, anais de congressos e partes de livros) entre bibliotecas cooperantes no Brasil e no exterior.
-
----
-
-### 3. O Portal de Periódicos da CAPES e a Rede CAFe
-
-Diferente dos sistemas do IBICT (focados em agregação e intercâmbio), o **Portal de Periódicos CAPES** atua como uma central de compras e licenciamento de literatura internacional de alto impacto:
-
-- **Financiamento Centralizado:** O governo brasileiro desembolsa anualmente dezenas de milhões de dólares para adquirir assinaturas das maiores editoras comerciais do mundo (Elsevier, Springer-Nature, Wiley, IEEE, Web of Science, Scopus).
-- **Rede CAFe (Comunidade Acadêmica Federada):** Gerida pela RNP, permite a autenticação federada unificada. O pesquisador ou estudante conecta-se de sua residência usando suas credenciais institucionais e obtém acesso remoto aos periódicos assinados como se estivesse fisicamente no campus universitário.
-
----
-
-### 4. Redes Tradicionais vs. Consórcios de Aquisição
-
-- **Redes Tradicionais de Cooperação:** Priorizam o **compartilhamento de trabalho técnico** (ex: catalogação cooperativa, onde uma única biblioteca processa o item bibliográfico e todas as demais unidades copiam o registro MARC).
-- **Consórcios de Aquisição (*Library Consortia*):** Priorizam o **compartilhamento do poder de compra** para negociar preços em bloco com grandes corporações editoriais com descontos de escala.`,
-  unicampContext: `A **Unicamp** integra plenamente as redes nacionais:
-
-- **Conexão CAFe e VPN:** A comunidade da Unicamp acessa o Portal CAPES remotamente por autenticação federada da **Rede CAFe** ou pela VPN institucional gerenciada pelo Centro de Computação (CCUEC), validando os acessos corporativos por faixa de IP institucional.
-- **BDTD e Oasisbr:** Todas as teses e dissertações defendidas na Unicamp e arquivadas no Repositório Institucional são automaticamente indexadas na BDTD e no Oasisbr através da colheita OAI-PMH.
-- **COMUT no SBU:** O Sistema de Bibliotecas da Unicamp conta com postos de atendimento COMUT em suas bibliotecas setoriais para solicitar documentos raros não disponíveis nas assinaturas digitais correntes.`,
+  Mecanismo coordenado pelo IBICT para solicitar e fornecer cópias oficiais de documentos (artigos, capítulos de livros, teses) entre bibliotecas cooperantes no Brasil e no exterior.
+- **Portal de Periódicos CAPES:**
+  Maior biblioteca virtual consorciada de pesquisa do país, com acesso a milhares de periódicos internacionais de alto impacto, bases de patentes e normas técnicas, acessível pelo IP de instituições participantes ou remotamente pela **Rede CAFe**.`,
+  unicampContext: `Na **Unicamp**, a atuação nas redes informacionais é estratégica:
+- **Rede CAFe e VPN:** Os alunos e docentes da Unicamp acessam o Portal CAPES e bases proprietárias fora do campus utilizando a autenticação corporativa única da Rede CAFe ou a VPN gerenciada pelo CCUEC.
+- **Integração BDTD e Oasisbr:** Todas as teses e dissertações do Repositório da Produção Científica da Unicamp são colhidas pelo IBICT para exibição nos portais nacionais BDTD e Oasisbr.
+- **Rede de Bibliotecas da Unicamp (SBU):** Opera com catalogação cooperativa interna centralizada no catálogo unificado Acervus, minimizando retrabalho entre as dezenas de bibliotecas setoriais.`,
   boardAnalysis: {
-    trends: `### Análise de Bancas (CEBRASPE, VUNESP e FUNCAMP)
-
-- **CEBRASPE:** Testa frequentemente pegadinhas sobre o **CCN**. Afirma com frequência que *"o Catálogo Coletivo Nacional (CCN) franqueia acesso direto e online ao texto completo de todas as revistas cadastradas"*. Isso é **FALSO** — o CCN apenas indica qual instituição é detentora física ou digital da coleção.
-- **VUNESP / FUNCAMP:** Cobram a distinção institucional entre órgãos: **IBICT** (vinculado ao MCTI — responsável por BDTD, CCN e COMUT) versus **CAPES** (vinculada ao MEC — responsável pelo Portal de Periódicos).`,
-    commonTraps: `> 🚨 **Pegadinha Clássica CEBRASPE / VUNESP:**
-> *"A participação em redes de catalogação cooperativa encarece a gestão técnica da biblioteca, em razão dos custos gerados pelas constantes adequações locais dos registros bibliográficos importados."*
+    trends: `### Padrões Extraídos das Provas Reais (OBJETIVA, CEBRASPE, VUNESP):
+- **O que faz o CCN:** Pegadinha unânime das bancas: afirmar que o CCN disponibiliza o texto completo de artigos de revistas. Gabarito: **ERRADO**. O CCN apenas informa *onde* (qual instituição) está o fascículo do periódico.
+- **Diferença entre Z39.50 e OAI-PMH:** O Z39.50 executa pesquisas dinâmicas ponto a ponto em catálogos OPAC para cópia de registros MARC; o OAI-PMH realiza colheita em lote de metadados Dublin Core para repositórios.
+- **Catalogação Cooperativa:** As bancas cobram o objetivo precípuo: economia de custos e tempo, redução do backlog técnico e erradicação do retrabalho.`,
+    commonTraps: `> 🚨 **Pegadinha Clássica de Concurso (OBJETIVA / CEBRASPE):**
+> *"O Catálogo Coletivo Nacional de Publicações Seriadas (CCN) substituiu o Portal de Periódicos da CAPES, passando a disponibilizar o download gratuito e imediato do texto integral de todos os periódicos indexados."*
 >
 > **Gabarito: ERRADO!**
-> O escopo fulcral da catalogação cooperativa é **reduzir drasticamente os custos e o tempo** despendido pelo processamento técnico, eliminando a redundância de catalogar o mesmo livro centenas de vezes em bibliotecas diferentes.`
+> O CCN é gerido pelo **IBICT** e funciona exclusivamente como ferramenta de **localização** de títulos e fascículos de periódicos em bibliotecas brasileiras. O Portal de Periódicos é gerido pela **CAPES** e tem como foco o licenciamento de texto completo.`
   },
-  memorizationMatrix: `### Mapeamento dos Sistemas Nacionais de Informação
+  memorizationMatrix: `### Quadro Comparativo dos Sistemas Nacionais de Informação
 
-| Sistema / Rede | Entidade Gestora | Ministério | Função Estratégica Principal |
+| Sistema / Protocolo | Órgão Gestor | Natureza / Função | Conteúdo que fornece |
 | :--- | :--- | :--- | :--- |
-| **BDTD** | IBICT | MCTI | Agregação e visibilidade das Teses e Dissertações do país |
-| **CCN** | IBICT | MCTI | Catálogo de localização das coleções de periódicos |
-| **COMUT** | IBICT | MCTI | Intercâmbio de cópias de artigos entre bibliotecas |
-| **Portal de Periódicos**| CAPES | MEC | Assinatura centralizada de bases de dados e e-journals |
-| **Rede CAFe** | RNP | MCTI / MEC | Autenticação remota federada (acesso fora do campus) |`
+| **BDTD** | IBICT / MCTI | Agregador nacional de teses e dissertações | Metadados e links para o texto completo |
+| **CCN** | IBICT / MCTI | Catálogo coletivo de periódicos seriados | Apenas dados de **localização** da posse da coleção |
+| **COMUT** | IBICT / MCTI | Serviço de comutação bibliográfica | Cópia sob demanda de artigos e capítulos |
+| **Portal CAPES** | CAPES / MEC | Biblioteca virtual de pesquisa internacional | Texto integral de periódicos e bases referenciais |
+| **Z39.50** | ANSI / NISO | Protocolo cliente-servidor de busca em OPACs | Registros catalográficos MARC 21 para importação |
+| **OAI-PMH** | Open Archives | Protocolo assíncrono de colheita HTTP/XML | Metadados (Dublin Core) para interoperabilidade |`
 };

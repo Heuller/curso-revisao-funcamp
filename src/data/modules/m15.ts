@@ -5,83 +5,86 @@ export const m15: AdvancedTopic = {
   title: "15. Código de Catalogação Anglo-Americano (AACR2)",
   authorsAndFrameworks: `### Autores e Marcos Históricos do AACR2
 
-- **Michael Gorman e Paul W. Winkler:** Editores responsáveis pela 2ª edição do *Anglo-American Cataloguing Rules* (**AACR2**, 1978) e suas revisões sucessivas (1988, 1998 e 2002/2005).
-- **IFLA e a ISBD (International Standard Bibliographic Description):** Criada a partir de 1971 para ditar as 8 áreas de descrição e os sinais formais de pontuação prescrita, os quais foram integralmente incorporados à **Parte I do AACR2**.
-- **Joint Steering Committee for Revision of AACR (JSC):** Comitê internacional mantenedor que decretou o encerramento do desenvolvimento do AACR2 e a transição para o RDA.`,
+- **Michael Gorman e Paul W. Winkler:** Editores gerais da 2ª edição do *Anglo-American Cataloguing Rules* (**AACR2**, 1978) e de suas revisões consolidadas (AACR2r 1988, 1998 e 2002/2005).
+- **IFLA e a ISBD (International Standard Bibliographic Description):** Estabeleceu a divisão em 8 áreas de descrição e os sinais formais de pontuação prescrita, os quais foram integralmente incorporados à **Parte I do AACR2**.
+- **Regras de Paris (1961):** Estabeleceram o consenso internacional para a determinação da escolha e da forma das entradas de autor e título, alicerçando a **Parte II do AACR2**.`,
   advancedTheory: `### 1. A Estrutura Dual do AACR2: Parte I vs. Parte II
 
-O Código organiza-se em duas metades com lógicas radicalmente distintas:
-
+Questão clássica de concurso (presente em 81.0% das provas analisadas):
 - **PARTE I — Descrição Bibliográfica (Capítulos 1 a 13):**
-  Ensina a registrar a materialidade do documento (transcrição de dados). É **estritamente subdividida por TIPO DE SUPORTE MATERIAL**:
-  - Cap. 1: Regras Gerais para Descrição;
-  - Cap. 2: Livros, Folhetos e Folhas Impressas;
-  - Cap. 3: Materiais Cartográficos (Mapas);
-  - Cap. 4: Manuscritos;
-  - Cap. 5: Música;
-  - Cap. 6: Gravações de Som;
-  - Cap. 9: Recursos Eletrônicos;
-  - Cap. 12: Recursos Contínuos (Periódicos).
-  *Regra Mestra:* A transcrição fundamenta-se na **Fonte Principal de Informação (FPI)**. Qualquer dado extraído de fora da FPI deve ser inserido compulsoriamente entre **colchetes \`[ ]\`**.
+  - Ensina como transcrever a materialidade do documento.
+  - **Critério de divisão:** É estritamente subdividida por **TIPO DE SUPORTE MATERIAL**:
+    - Cap. 1: Regras Gerais; Cap. 2: Livros, folhetos e folhas impressas; Cap. 3: Materiais cartográficos; Cap. 4: Manuscritos; Cap. 5: Música; Cap. 6: Gravações de som; Cap. 7: Filmes e vídeos; Cap. 8: Materiais gráficos; Cap. 9: Recursos eletrônicos; Cap. 10: Artefatos tridimensionais; Cap. 11: Microformas; Cap. 12: Recursos contínuos (periódicos); Cap. 13: Análise.
+  - **Fonte Principal de Informação (FPI):** Livros = **Folha de rosto** (*Title page*). Informações colhidas fora da FPI devem vir obrigatoriamente entre **colchetes \`[ ]\`**.
 
 - **PARTE II — Cabeçalhos, Títulos Uniformes e Remissivas (Capítulos 21 a 26):**
-  Normatiza a escolha e a forma dos **Pontos de Acesso** (entradas principais e secundárias). 
-  *Atenção Crítica:* A Parte II **NÃO é dividida por suporte físico**. Ela é regida exclusivamente pelas **condições de autoria e responsabilidade intelectual** (Cap. 21). As regras para um livro com três autores ou um CD com três compositores são idênticas.
+  - Normatiza a escolha do **Ponto de Acesso Principal** (*Main Entry*) e Secundários (*Added Entries*).
+  - **Critério de divisão:** **NÃO** é dividida por suporte físico! Rege-se exclusivamente pelo grau e pela natureza da **responsabilidade intelectual** (Cap. 21).
 
 ---
 
-### 2. Os Três Níveis de Descrição (Regra 1.0D)
+### 2. As 8 Áreas de Descrição da ISBD / AACR2 e a Pontuação Prescrita
 
-O AACR2 não impõe uma catalogação exaustiva idêntica para todas as bibliotecas; ele faculta a escolha de três patamares de detalhamento:
-
-- **1º Nível (Mínimo):** O mais conciso. Título principal / primeiro autor ; menção de edição resumida ; dados básicos de publicação (data) ; extensão física elementar. Adequado a pequenas bibliotecas escolares e comunitárias.
-- **2º Nível (Padrão):** O padrão adotado pela grande maioria das bibliotecas universitárias e de pesquisa. Inclui títulos equivalentes, subtítulos, outros responsáveis intelectuais, localidade, editora, dimensões e notas essenciais.
-- **3º Nível (Exaustivo):** O mais rico e detalhado. Descreve minuciosamente todos os elementos facultativos, particularidades de encadernação, tipografia e notas minuciosas. Empregado em acervos de Obras Raras e Bibliotecas Nacionais.
-
----
-
-### 3. Fontes Principais de Informação (FPI)
-
-O catalogador deve sempre respeitar a FPI definida pelo código para cada suporte:
-- **Livros e Folhetos (Cap. 2):** A **Página de Rosto** (*Title Page*). A capa e a lombada **NÃO** são fontes principais de informação para livros!
-- **Recursos Cartográficos (Cap. 3):** O próprio mapa ou sua legenda.
-- **Gravações de Som (Cap. 6):** O selo do disco de vinil ou o corpo impresso do CD.
+Cada área é precedida por ponto, travessão e espaço (\`. — \`), salvo início de parágrafo:
+1. **Área de Título e Menção de Responsabilidade:** Título principal : subtítulo / primeiro autor ; segundo autor.
+2. **Área de Edição:** . — Edição / responsável pela edição.
+3. **Área de Detalhes Específicos do Material:** . — Usada apenas para mapas (escala/projeção), música e seriados (numeração).
+4. **Área de Publicação, Distribuição etc. (Imprenta):** . — Lugar de publicação : Nome do editor, data de publicação.
+5. **Área de Descrição Física:** . — Extensão (páginas ou volumes) : outros detalhes físicos (ilustrações) ; dimensões (altura em cm) + material adicional.
+6. **Área de Série:** . — (Título da série ; numeração na série).
+7. **Área de Notas:** . — Notas livres ou estruturadas (ex.: bibliografia, conteúdo, dissertação).
+8. **Área de Número Normalizado:** . — ISBN ou ISSN : preço ou termos de disponibilidade.
 
 ---
 
-### 4. A Famosa "Regra dos Três" na Escolha do Ponto de Acesso Principal (Cap. 21)
+### 3. Falta de Dados de Publicação na Imprenta (Regra 1.4)
 
-Em obras de responsabilidade compartilhada entre autores pessoais:
+Quando faltam dados na folha de rosto, o AACR2 prescreve o uso de abreviaturas latinas entre colchetes:
+- Sem local de publicação conhecido: \`[s.l.]\` (*sine loco*).
+- Sem nome de editor conhecido: \`[s.n.]\` (*sine nomine*).
+- Sem local e sem editor: \`[s.l. : s.n.]\`.
+- **Datas de Publicação Aproximadas (Regra 1.4F7):**
+  - \`[ca. 1980]\`: Data provável (cerca de 1980).
+  - \`[198-]\`: Década certa.
+  - \`[198-?]\`: Década provável.
+  - \`[19--]\`: Século certo.
+  - \`[19--?]\`: Século provável.
+  - \`[s.d.]\`: Data completamente desconhecida (*sine data*).
 
-- **De 1 a 3 Autores (Regra 21.6B / 21.6C1):**
-  A **Entrada Principal** é feita obrigatoriamente pelo **primeiro autor** nomeado na página de rosto. Os demais autores (o segundo e o terceiro) recebem **entradas secundárias** sob seus respectivos nomes.
-- **Quatro ou Mais Autores (Regra 21.6C2):**
-  A **Entrada Principal** é feita compulsoriamente pelo **TÍTULO DA OBRA**. Somente o primeiro autor citado na fonte ganha uma entrada secundária; todos os demais autores são omitidos da menção de responsabilidade e substituídos pela expressão latina **\`[et al.]\`** (ou *"e outros"*).
+---
 
-> 💡 **Pontos de Acesso Secundários Mandatórios:**
-> Para obras cuja entrada principal recai sobre o nome do autor, o AACR2 recomenda a feitura sistemática de entrada secundária para o **Título**, garantindo a recuperabilidade da obra pelo nome.`,
-  unicampContext: `Embora o Sistema de Bibliotecas da Unicamp (SBU) tenha adotado o RDA para suas novas aquisições, o domínio do **AACR2** é mandatória para o concurso da FUNCAMP e para a gestão do legado:
+### 4. Condições Especiais de Autoria e a Regra de Três (Cap. 21)
 
-- **Catálogo Retrospectivo:** Centenas de milhares de fichas e registros MARC 21 históricos da Unicamp foram processados sob as regras rígidas do AACR2 (presença das abreviações em latim \`[s.l.]\` - *sine loco*, \`[s.n.]\` - *sine nomine* e \`[et al.]\`).
-- **Compatibilização de Registros:** O bibliotecário deve saber operar a migração e convivência harmônica entre os registros herdados em AACR2 e os novos metadados flexibilizados do RDA.`,
+- **Autoria Pessoal Única:** Entrada principal pelo nome do autor.
+- **Responsabilidade Compartilhada (Até 3 autores):** Entrada principal pelo **primeiro autor** nomeado na página de rosto; secundárias para o 2º e 3º autores.
+- **Responsabilidade Compartilhada (4 ou mais autores):** Entrada principal obrigatória pelo **TÍTULO DA OBRA**. Na menção de responsabilidade, registra-se apenas o primeiro autor seguido da abreviatura latina **\`[et al.]\`**. Apenas o 1º autor ganha entrada secundária.
+- **Responsabilidade Mista:**
+  - **Adaptações e paráfrases:** Se o texto foi substancialmente reescrito, a entrada principal é pelo **adaptador**; secundária para o autor original.
+  - **Ilustrações predominantes:** Se o texto for subordinado às ilustrações (livro de arte infantil), entrada principal pelo **ilustrador**.
+  - **Comunicações Mediúnicas / Espíritas (Regra 21.26):** Entrada principal sob o **espírito**, desde que nomeado no recurso; entrada secundária para o **médium** (*Ex.: Luiz, André (Espírito) com secundária para Xavier, Francisco Cândido*).
+- **Entidades Coletivas (Regra 21.1B2):** Só têm entrada principal por seu nome quando a obra for de caráter administrativo, relatórios financeiros ou trabalhos que registrem o pensamento oficial da instituição. Leis e constituições entram pela jurisdição (*Brasil; São Paulo (Estado)*).`,
+  unicampContext: `No acervo histórico do **Sistema de Bibliotecas da Unicamp (SBU)**:
+- Milhares de registros do acervo foram originalmente catalogados segundo o **AACR2r**, exigindo que o bibliotecário compreenda a pontuação ISBD e as regras de imprenta históricas (\`[s.l.]\`, \`[s.n.]\`, \`[et al.]\`).
+- Na catalogação na fonte de teses e dissertações, a identificação precisa da responsabilidade (autor vs orientador como entrada secundária) segue a disciplina consolidada pelo AACR2 e MARC 21.`,
   boardAnalysis: {
-    trends: `### Análise de Bancas (CEBRASPE, VUNESP e FUNCAMP)
-
-- **CEBRASPE:** Explora rigorosamente a lógica estrutural: afirma que a Parte II é subdividida por tipo de suporte material (ERRADO, apenas a Parte I é dividida por suporte). Também testa o uso de colchetes para elementos fora da Fonte Principal de Informação.
-- **VUNESP / FUNCAMP:** Cobram repetidamente a aplicação matemática da **Regra dos Três**: uma questão descreve um livro com 4 coautores e pergunta se o cabeçalho principal vai para o autor de maior titulação acadêmica (FALSO: entra pelo **TÍTULO**, não importando o status acadêmico do autor).`,
-    commonTraps: `> 🚨 **Pegadinha Clássica CEBRASPE / VUNESP:**
-> *"Ao catalogar um livro impresso com quatro autores explicitados na folha de rosto, o catalogador deve estabelecer como ponto de acesso principal o nome do autor responsável pela coordenação pedagógica da obra."*
+    trends: `### Padrões Extraídos das Provas Reais (OBJETIVA, CEBRASPE, VUNESP):
+- **Aplicação estrita da Regra de Três:** Casos hipotéticos com 4 autores perguntam quem é a entrada principal. O gabarito é SEMPRE o **TÍTULO**.
+- **Datas aproximadas do 1.4F7:** Cobrança da sintaxe exata de datas aproximadas (\`[ca. 1980]\` para cerca de; \`[198-?]\` para década provável).
+- **Fonte Principal de Informação (FPI):** As bancas afirmam que a capa externa de um livro pode substituir a folha de rosto como fonte principal sem necessidade de colchetes. Gabarito: **ERRADO**. A FPI de livros é estritamente a **folha de rosto**.`,
+    commonTraps: `> 🚨 **Pegadinha Clássica de Prova (OBJETIVA / CEBRASPE):**
+> *"Ao catalogar um livro impresso com quatro autores na folha de rosto, o catalogador deve atribuir a entrada principal ao autor mais famoso ou coordenador geral da pesquisa, gerando entradas secundárias para os outros três autores."*
 >
 > **Gabarito: ERRADO!**
-> Conforme a regra 21.6C2 do AACR2, quando uma obra possui **quatro ou mais autores**, a entrada principal deve ser feita compulsoriamente pelo **TÍTULO DA OBRA**. O primeiro autor recebe apenas entrada secundária, e os demais são suprimidos sob a designação \`[et al.]\`.`
+> Conforme a regra 21.6C2 do AACR2, se houver quatro ou mais autores sem indicação de responsabilidade principal isolada, a entrada principal recai compulsoriamente sobre o **TÍTULO DA OBRA**. Na descrição, transcreve-se apenas o primeiro autor acompanhado de \`[et al.]\`.`
   },
-  memorizationMatrix: `### Matriz Decisória do AACR2: Autoria e FPI
+  memorizationMatrix: `### Matriz de Decisão Rápida do AACR2
 
-| Regra / Elemento | Condição do Documento | Decisão Catalográfica Obrigatória |
+| Cenário Catalográfico | Entrada Principal (*Main Entry*) | Entradas Secundárias (*Added Entries*) |
 | :--- | :--- | :--- |
-| **Fonte Principal (FPI)** | Livro impresso (Capítulo 2) | **Página de Rosto** (Capa externa NUNCA é FPI) |
-| **Dado Fora da FPI** | Extraído de contracapa ou sumário | Envolver obrigatoriamente entre **colchetes \`[ ]\`** |
-| **Até 3 Autores** | Responsabilidade compartilhada | Entrada Principal no **1º Autor**; outros são secundários |
-| **4 ou mais Autores** | Responsabilidade compartilhada | Entrada Principal no **TÍTULO**; apenas 1º é secundário com \`[et al.]\` |
-| **Níveis de Descrição** | Regra 1.0D | **1º Nível (Mínimo)**, **2º Nível (Padrão)**, **3º Nível (Exaustivo)** |`
+| **1 Autor Pessoal** | Nome do Autor | Título da Obra |
+| **2 ou 3 Autores** | **1º Autor** citado na folha de rosto | 2º Autor, 3º Autor e Título |
+| **4 ou mais Autores** | **TÍTULO DA OBRA** | Apenas para o 1º Autor (com \`[et al.]\` no corpo) |
+| **Obra Psicografada** | **Espírito** (se nominado na obra) | **Médium** e Título |
+| **Adaptação Substancial**| **Adaptador** | Autor original e Título |
+| **Leis e Decretos** | **Jurisdição geográfica** (ex: Brasil) | Órgão emissor e Título uniforme |`
 };

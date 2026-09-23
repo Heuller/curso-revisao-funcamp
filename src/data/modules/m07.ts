@@ -10,64 +10,64 @@ export const m07: AdvancedTopic = {
 - **Murilo Bastos da Cunha e Cordélia Robalinho Cavalcanti (2008):** *Dicionário de Biblioteconomia e Arquivologia*. Fonte lexicográfica padrão utilizada por bancas de concurso para conceitos e definições estritas.`,
   advancedTheory: `### 1. A Tipologia Tripartite Clássica das Fontes de Informação
 
-A literatura biblioteconômica divide as fontes documentais em três categorias estruturantes:
+Presente em 85.7% dos cadernos de provas reais analisados (uma das maiores frequências do concurso):
 
 - **1. Fontes Primárias (Informação Inédita e Original):**
-  Contêm conhecimento novo, descobertas recentes ou relatos em primeira mão que ainda não foram filtrados, sintetizados ou avaliados por terceiros.
-  *Exemplos clássicos de concurso:* Artigos científicos originais (*papers* de pesquisa), Teses e Dissertações acadêmicas, Patentes de invenção, Relatórios Técnicos de projetos, Normas Técnicas (ABNT, ISO), Anais de Congressos (*Proceedings*), Correspondências epistolares e Diários oficiais.
+  - Contêm relatos originais em primeira mão, novas descobertas empíricas ou ideias científicas não filtradas nem condensadas previamente por terceiros.
+  - *Exemplos clássicos de concurso:* Artigos científicos originais (*papers* de pesquisa), Teses e Dissertações acadêmicas, Patentes de invenção, Relatórios Técnicos de projetos, Normas Técnicas (ISO, IEEE), Anais de Congressos (*Proceedings*), Correspondências epistolares, Legislação e Diários oficiais.
 
 - **2. Fontes Secundárias (Organização, Filtro e Apontamento):**
-  Não trazem conhecimento inédito; sua função precípua é **organizar, indexar, resumir ou facilitar o acesso** às fontes primárias.
-  *Exemplos clássicos de concurso:* Bases de dados bibliográficas e referenciais (Scopus, Web of Science, PubMed), Catálogos em linha de bibliotecas (OPACs), Bibliografias especializadas, Revistas de resumos (*Abstracts*), Índices de citação e **Artigos de Revisão de Literatura** (*Review Articles*).
+  - Não trazem conhecimento inédito primário; sua função precípua é **organizar, indexar, resumir ou facilitar o acesso** às fontes primárias.
+  - *Exemplos clássicos de concurso:* Bases de dados bibliográficas e referenciais (Scopus, Web of Science, PubMed, LILACS, ERIC), Catálogos em linha de bibliotecas (OPACs), Bibliografias especializadas, Revistas de resumos (*Abstracts*), Índices de citação e **Artigos de Revisão de Literatura** (*Review Articles*).
 
 - **3. Fontes Terciárias (Consolidação e Consulta Rápida):**
-  Apresentam a informação em estágio final de consolidação enciclopédica ou atuam como guias direcionadores para as fontes secundárias e primárias.
-  *Exemplos clássicos de concurso:* Dicionários da língua e técnicos, Enciclopédias gerais e especializadas, Anuários estatísticos, Manuais técnicos (*Handbooks*), Diretórios institucionais e Guias de fontes bibliográficas.
+  - Apresentam a informação em estágio final de consolidação enciclopédica ou atuam como guias direcionadores para localizar fontes primárias e secundárias.
+  - *Exemplos clássicos de concurso:* Dicionários da língua e técnicos, Enciclopédias gerais e especializadas, Anuários estatísticos, Manuais técnicos (*Handbooks*), Diretórios institucionais e Guias de fontes bibliográficas (bibliografias de bibliografias).
 
 > ⚠️ **Atenção Máxima em Prova (Artigos de Revisão):**
-> Embora publicados em revistas científicas, os **Artigos de Revisão Sistemática ou Integrativa** são classificados como **FONTES SECUNDÁRIAS**, pois não relatam um experimento novo de bancada, mas sim compilam e sintetizam estudos primários pré-existentes.
+> Embora publicados em revistas científicas com chancela por pares, os **Artigos de Revisão Sistemática ou Integrativa** são classificados como **FONTES SECUNDÁRIAS**, pois não relatam um experimento novo de bancada, mas sim compilam e sintetizam estudos primários pré-existentes.
 
 ---
 
-### 2. Categorias Especiais de Documentos
+### 2. Tipologia das Bases de Dados: Referenciais vs. Texto Completo
 
-- **Literatura Cinzenta (*Grey Literature*):**
-  Compreende a produção intelectual não convencional, gerada no âmbito governamental, acadêmico, industrial e comercial, **que não é disponibilizada através dos canais comerciais formais de edição e venda** (sem registro editorial padrão ou distribuição comercial em livrarias).
-  *Exemplos típicos:* Teses, relatórios técnicos confidenciais ou institucionais, atas de conferências, traduções não publicadas e regulamentos internos.
-
-- **Patentes de Invenção:**
-  Documentos com dupla dimensão (jurídica e tecnológica). Revelam detalhadamente o estado da arte e soluções industriais inéditas antes que cheguem aos artigos científicos. No Brasil, o órgão regulador e depositário é o **INPI** (Instituto Nacional da Propriedade Industrial).
+Cobrança direta identificada em dezenas de provas:
+- **Bases de Dados Referenciais (Bibliográficas):**
+  Contêm exclusivamente metadados representativos do documento (autor, título, fonte, resumo, termos de indexação e citações). Não armazenam o arquivo integral (PDF), embora possam fornecer links para ele (*resolvers*).
+  *Exemplos:* **Scopus**, **Web of Science**, **PubMed / MEDLINE**, **ERIC** (educação), **LILACS**.
+- **Bases de Dados de Texto Completo (*Full Text*):**
+  Armazenam e disponibilizam para leitura e download o conteúdo integral dos documentos originais (artigos em PDF ou HTML).
+  *Exemplos:* **SciELO**, **ScienceDirect (Elsevier)**, **IEEE Xplore**, **SpringerLink**, **JSTOR**.
+- **Bases de Dados Fatuais / Numéricas:**
+  Armazenam dados brutos, estatísticas, fórmulas químicas, estruturas moleculares ou séries temporais (ex: bases do IBGE, GenBank, PubChem).
 
 ---
 
-### 3. Grandes Bases Multidisciplinares Internacionais
+### 3. Literatura Cinzenta (*Grey Literature*) e Patentes
 
-- **Web of Science (Clarivate Analytics):**
-  A mais tradicional base de indexação seletiva do mundo. Reúne a *Core Collection* e fundamenta o cálculo do Fator de Impacto (JIF) via *Journal Citation Reports (JCR)*.
-- **Scopus (Elsevier):**
-  Maior cobertura quantitativa de títulos e conferências globais que a Web of Science. Baseia seus índices no SCImago (*SJR — SCImago Journal Rank* e *CiteScore*).
-- **LILACS (Literatura Latino-Americana em Ciências da Saúde):**
-  Coordenada pela BIREME/OPAS/OMS, indexa a literatura em saúde da América Latina e Caribe, incluindo artigos, teses e monografias não capturadas pelas bases anglo-saxãs.`,
-  unicampContext: `O **Sistema de Bibliotecas da Unicamp (SBU)** atua como ponte mediadora para o ecossistema de fontes:
-
-- **Treinamento Especializado:** O SBU mantém programas contínuos de capacitação de discentes e docentes no uso avançado de bases como PubMed/MEDLINE, Scopus, Web of Science, SciFinder e IEEE Xplore.
-- **Normalização e Suporte a Patentes:** Em articulação com a **Inova Unicamp** (Agência de Inovação da Unicamp), os bibliotecários prestam apoio técnico a pesquisadores na busca de anterioridade em bases de patentes (Espacenet, Derwent, INPI).`,
+- **Literatura Cinzenta:** Produção intelectual gerada no âmbito governamental, acadêmico, industrial e comercial **que não é distribuída através dos canais comerciais convencionais de edição e livrarias** (sem depósito comercial padrão). Exemplos: relatórios técnicos restritos, atas de reuniões, apostilas, separatas, pareceres governamentais e certidões técnicas.
+- **Patentes de Invenção:** Títulos de propriedade temporária concedidos pelo Estado que descrevem invenções e processos industriais inéditos. No Brasil, o órgão responsável pelo registro e concessão é o **INPI** (Instituto Nacional da Propriedade Industrial).`,
+  unicampContext: `O **Sistema de Bibliotecas da Unicamp (SBU)**:
+- Mantém catálogo e guias de acesso a centenas de bases referenciais e de texto completo assinadas nacionalmente pela CAPES ou localmente pela universidade.
+- Em parceria com a **Inova Unicamp** (Agência de Inovação da Unicamp), bibliotecários especializados prestam consultoria técnica na prospecção e busca de anterioridade de patentes nas bases Derwent Innovations Index, Espacenet e banco de dados do INPI.`,
   boardAnalysis: {
-    trends: `### Análise de Bancas (CEBRASPE, VUNESP e FUNCAMP)
-
-- **CEBRASPE:** A banca é implacável na classificação hierárquica das fontes. As armadilhas mais recorrentes tentam classificar **Patentes** e **Anais de Congressos** como secundárias (ERRADO, são primárias) ou **Artigos de Revisão** como primárias (ERRADO, são secundárias).
-- **VUNESP / FUNCAMP:** Exigem com frequência a definição canônica de **Literatura Cinzenta** e o reconhecimento de bases estatais em saúde e educação (LILACS, SciELO, Eric, PubMed).`,
-    commonTraps: `> 🚨 **Pegadinha Clássica CEBRASPE / VUNESP:**
-> *"Os anais de eventos científicos (proceedings) constituem fontes secundárias de informação, uma vez que decorrem de apresentações públicas já filtradas pela comissão avaliadora do congresso."*
+    trends: `### Padrões Extraídos das Provas Reais (OBJETIVA, CEBRASPE, VUNESP):
+- **Classificação das Fontes:** Provas cobram listas de itens para associar (1) Primária, (2) Secundária, (3) Terciária. Lembrar: Patente, Tese e Anais de Congresso são sempre **Primárias**; Bases de dados, OPACs e Artigos de Revisão são **Secundárias**; Dicionários, Enciclopédias e Diretórios são **Terciárias**.
+- **Natureza da base Scopus e Web of Science:** Ambas são formalmente classificadas como **bases referenciais e de citação**, e não primariamente como provedoras de texto integral.
+- **Literatura Cinzenta:** O conceito clássico é: documento não publicado pelos canais comerciais formais.`,
+    commonTraps: `> 🚨 **Pegadinha Clássica de Prova (OBJETIVA / CEBRASPE):**
+> *"A base de dados Scopus é classificada na Ciência da Informação como uma fonte de informação primária, haja vista que publica pesquisas científicas inéditas conduzidas pela editora Elsevier."*
 >
 > **Gabarito: ERRADO!**
-> Os trabalhos publicados em anais de congressos trazem comunicações e pesquisas científicas de primeira mão; são, portanto, **fontes PRIMÁRIAS** por excelência.`
+> A Scopus **não publica artigos inéditos**; ela é uma **base de dados referencial (fonte secundária)** que indexa metadados e citações de artigos publicados por milhares de revistas científicas de terceiros.`
   },
-  memorizationMatrix: `### Matriz Tripartite das Fontes de Informação
+  memorizationMatrix: `### Matriz Decisória das Fontes de Informação
 
-| Nível | Função Conceitual | Natureza do Conteúdo | Exemplos Irrefutáveis de Concurso |
-| :--- | :--- | :--- | :--- |
-| **Primária** | Geração e Registro | Inédito / Direto / Original | Artigos originais, Teses, Patentes, Normas ABNT, Anais, Relatórios Técnicos |
-| **Secundária** | Mediação e Acesso | Filtro / Indexação / Síntese | Bases de dados (Scopus/WoS), Catálogos (OPACs), Bibliografias, **Artigos de Revisão** |
-| **Terciária** | Consulta e Localização| Consolidado / Fato Estabelecido | Dicionários, Enciclopédias, Guias de fontes, Diretórios, Anuários |`
+| Tipo de Fonte | Função | Exemplos Clássicos de Prova |
+| :--- | :--- | :--- |
+| **Primária** | Conhecimento inédito / original | Artigos originais, Teses, Patentes, Normas Técnicas, Anais de Congressos |
+| **Secundária** | Organização, filtro e indexação | Bases referenciais (Scopus, WoS, PubMed), OPACs, **Artigos de Revisão** |
+| **Terciária** | Síntese de fatos consolidados | Dicionários, Enciclopédias, Diretórios, Anuários estatísticos, Manuais |
+| **Base Referencial** | Contém metadados e resumos | Scopus, Web of Science, LILACS, ERIC, MEDLINE |
+| **Base Full-Text** | Contém o texto integral (PDF) | SciELO, ScienceDirect, IEEE Xplore, JSTOR |`
 };

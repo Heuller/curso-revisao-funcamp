@@ -5,65 +5,75 @@ export const m09: AdvancedTopic = {
   title: "9. Competência Informacional (Information Literacy)",
   authorsAndFrameworks: `### Autores e Marcos Epistemológicos Fundamentais
 
-- **Paul Zurkowski (1974):** Presidente da *Information Industry Association*, cunhou pioneiramente a expressão **Information Literacy** nos Estados Unidos, correlacionando-a à capacidade de resolver problemas do cotidiano profissional com o suporte informacional.
-- **Patricia Knapp (1966):** Conduziu o seminal *"Monteith College Library Experiment"*, demonstrando a necessidade imperiosa de integrar a biblioteca diretamente ao planejamento pedagógico curricular dos cursos de graduação.
-- **Elisabeth Adriana Dudziak (2003) e Bernadete Santos Campello (2003):** Principais pesquisadoras brasileiras. Dudziak estruturou a transição epistemológica do antigo modelo mecanicista de "treinamento de usuários" para o paradigma socioconstrutivista da "competência em informação".
-- **ACRL (Association of College and Research Libraries):** Divisão da ALA, formuladora dos clássicos padrões de 2000 e do inovador **Framework for Information Literacy for Higher Education (2015)**.`,
-  advancedTheory: `### 1. O Salto Paradigmático: Do Treinamento de Usuários à Competência Informacional
+- **Paul Zurkowski (1974):** Presidente da *Information Industry Association*, cunhou pioneiramente a expressão **Information Literacy** nos Estados Unidos, correlacionando-a à capacidade de aplicar a informação na resolução de problemas do cotidiano profissional.
+- **Marcos Históricos Internacionais:**
+  - **Declaração de Praga (2003):** *"Rumo a uma Sociedade Letrada em Informação"*. Proclama a competência informacional como um direito humano básico e pré-requisito para a cidadania ativa e inclusão social.
+  - **Declaração de Alexandria (2005):** *"Faróis da Sociedade da Informação"*. Define a competência em informação e o aprendizado ao longo da vida como faróis que iluminam o caminho para o desenvolvimento humano.
+- **SCONUL (1999/2011):** Modelo dos **Sete Pilares da Competência Informacional** (*Seven Pillars of Information Literacy*), amplamente adotado no Reino Unido e Europa.
+- **ACRL / ALA:** Padrões de Competência em Informação para o Ensino Superior (2000) e o inovador **Framework for Information Literacy for Higher Education (2015)**.
+- **Elisabeth Adriana Dudziak (2003) e Regina Célia Baptista Belluzzo:** Principais pesquisadoras brasileiras a estruturar a transição do "treinamento de usuários" para o paradigma socioconstrutivista da "competência em informação".`,
+  advancedTheory: `### 1. A Transição Paradigmática: Do Treinamento de Usuários à Competência em Informação
 
-Um dos erros mais recorrentes em concursos públicos é equiparar o conceito moderno de **Competência em Informação (CoInfo)** ao modelo tradicional de **Treinamento de Usuários / Instrução Bibliográfica**:
+Presente em 10.7% dos cadernos de provas reais:
+As bancas adoram contrapor o modelo instrucional antigo ao modelo contemporâneo de emancipação:
 
-- **Paradigma Tradicional (Instrução Bibliográfica):**
-  Modelo mecanicista e tecnicista, centrado na biblioteca física e na autoridade do bibliotecário. Seu objetivo limitava-se a ensinar o usuário a "usar a biblioteca" (manusear fichários, decodificar a catalogação local e localizar estantes).
-- **Paradigma Contemporâneo (Competência em Informação):**
-  Modelo de base socioconstrutivista centrado na emancipação crítica do aprendiz (*Lifelong Learning*). Capacita o indivíduo a:
-  1. Identificar com exatidão a natureza de sua necessidade de informação;
-  2. Localizar as fontes em qualquer meio (físico, digital, web aberta ou bases assinadas);
-  3. **Avaliar criticamente a idoneidade, autoridade e viés das fontes** (combate à pós-verdade e desinformação);
-  4. Sintetizar e comunicar a informação de forma ética e legal (respeito aos direitos autorais e integridade acadêmica).
+- **Treinamento de Usuários / Instrução Bibliográfica (Paradigma Tradicional):**
+  - Modelo behaviorista e mecanicista centrado no sistema e no acervo da biblioteca física.
+  - O objetivo limitava-se a ensinar o usuário a "usar a biblioteca" (como consultar o fichário, como manusear o catálogo em linha e onde ficam as estantes).
+  - Ação isolada, esporádica (visita guiada de calouros) e desarticulada do projeto pedagógico.
 
----
-
-### 2. O Framework da ACRL (2015) e os Conceitos-Limiares (*Threshold Concepts*)
-
-Em 2015, a ACRL abandonou a visão linear e tecnicista dos padrões anteriores, introduzindo um ecossistema flexível fundado em **6 Conceitos-Limiares**:
-
-- **1. A Autoridade é Construída e Contextual:** A credibilidade de uma fonte depende do contexto disciplinar e da comunidade que a consagra.
-- **2. A Criação de Informação como um Processo:** A forma de publicação (artigo, tweet, patente) reflete os diferentes processos de validação do conteúdo.
-- **3. A Informação Possui Valor:** Reconhecimento das dimensões éticas, legais, socioeconômicas e do poder inerente ao acesso e produção informacional.
-- **4. A Pesquisa como Investigação Aberta:** O aprendizado não é estático; investigar é um processo iterativo e questionador em busca de novas soluções.
-- **5. A Academia como uma Conversação:** O conhecimento científico progride mediante o diálogo dialético contínuo entre pesquisadores (citações são vozes em debate).
-- **6. A Busca como Exploração Estratégica:** A pesquisa bibliográfica é flexível e exige adaptação mental constante diante dos resultados obtidos.
+- **Competência em Informação - CoInfo / Letramento (Paradigma Contemporâneo):**
+  - Modelo de base socioconstrutivista e emancipatório, centrado no sujeito aprendente e no aprendizado contínuo ao longo da vida (*Lifelong Learning*).
+  - Abrange quatro dimensões essenciais:
+    1. Reconhecer quando a informação é necessária;
+    2. Localizar e recuperar a informação com eficácia em múltiplas fontes;
+    3. **Avaliar criticamente as fontes e sua autoridade** (combate a fake news, vieses e desinformação);
+    4. Usar e comunicar a informação de forma ética e legal (integridade acadêmica e prevenção de plágio).
 
 ---
 
-### 3. Transversalidade e Integração ao Currículo Universitário
+### 2. O Modelo dos Sete Pilares da SCONUL
 
-Para que os programas de Competência em Informação alcancem sucesso duradouro:
-- **Não podem ser ações extracurriculares isoladas:** Devem ser concebidos de forma **transversal**, incorporados às ementas das disciplinas em coparceria estreita entre bibliotecários e corpo docente.
-- **O Bibliotecário como Educador:** Transição do papel histórico de mero "guardião do acervo" para o de **mediador pedagógico**.`,
-  unicampContext: `Na **Unicamp**, o Sistema de Bibliotecas da Unicamp (SBU) é pioneiro na implantação institucional de ações de Competência Informacional:
+O modelo britânico clássico organiza a competência em 7 habilidades nucleares:
+1. **Identificar:** Reconhecer uma necessidade informacional.
+2. **Definir:** Distinguir modos de suprir a lacuna e delimitar o escopo.
+3. **Planejar:** Construir estratégias e selecionar ferramentas de busca.
+4. **Localizar:** Encontrar e acessar os dados e recursos necessários.
+5. **Avaliar:** Analisar criticamente a autoridade, exatidão e relevância.
+6. **Organizar:** Estruturar, referenciar e armazenar com integridade ética.
+7. **Aplicar / Comunicar:** Sintetizar e disseminar o novo conhecimento.
 
-- **Oficinas e Disciplinas:** O SBU oferta disciplinas formais de graduação e pós-graduação sobre metodologia da pesquisa bibliográfica, uso ético da informação e prevenção de plágio acadêmico.
-- **Mediação Educativa:** Os bibliotecários participam diretamente da elaboração dos Planos de Desenvolvimento Institucional (PDI), fomentando o letramento digital e acadêmico dos ingressantes por meio do acolhimento estudantil.`,
+---
+
+### 3. O Framework da ACRL (2015): Os 6 Conceitos-Limiares (*Threshold Concepts*)
+
+Em 2015, a ACRL substituiu os padrões lineares por seis eixos interconectados:
+1. **A Autoridade é Construída e Contextual:** O conceito de autoridade varia conforme o contexto disciplinar e comunitário.
+2. **A Criação de Informação como um Processo:** A modalidade de publicação reflete os mecanismos de controle e avaliação da informação.
+3. **A Informação Possui Valor:** Reconhecimento das dimensões socioeconômicas, mercadológicas e de propriedade intelectual da informação.
+4. **A Pesquisa como Investigação Aberta:** O ato de pesquisar é não-linear, iterativo e formulador de perguntas abertas.
+5. **A Academia como uma Conversação:** A ciência avança mediante o diálogo crítico permanente entre pesquisadores.
+6. **A Busca como Exploração Estratégica:** A pesquisa bibliográfica requer flexibilidade cognitiva, persistência e redesign contínuo de estratégias.`,
+  unicampContext: `Na **Unicamp**, as ações de Competência Informacional são coordenadas pelas equipes do SBU:
+- O SBU oferece workshops regulares sobre elaboração de referências e citações acadêmicas, busca avançada em bases de dados e prevenção ao plágio acadêmico com suporte a ferramentas de verificação de similaridade (Turnitin).
+- O bibliotecário da Unicamp atua como parceiro pedagógico dos docentes nos programas de acolhimento e nivelamento de graduação e pós-graduação.`,
   boardAnalysis: {
-    trends: `### Análise de Bancas (CEBRASPE, VUNESP e FUNCAMP)
-
-- **CEBRASPE:** Insiste em tentar induzir o candidato ao erro igualando **Competência Informacional** à mera **Alfabetização Digital/Computacional**. A banca afirma que um indivíduo que domina softwares e sabe utilizar navegadores web já é plenamente competente em informação (FALSO, faltam o senso crítico e a ética).
-- **VUNESP / FUNCAMP:** Cobram os conceitos de **aprendizado contínuo ao longo da vida** (*Lifelong Learning*), a transição pedagógica de Dudziak e a importância da transversalidade curricular na biblioteca universitária.`,
-    commonTraps: `> 🚨 **Pegadinha Clássica CEBRASPE / VUNESP:**
-> *"A competência informacional encontra-se plenamente consolidada no indivíduo a partir do momento em que este adquire destreza técnica para manusear microcomputadores e executar comandos de busca no catálogo online sem requerer auxílio técnico."*
+    trends: `### Padrões Extraídos das Provas Reais (OBJETIVA, CEBRASPE, VUNESP):
+- **Competência Informacional vs Habilidade com Computadores:** As bancas cobram enfaticamente que a competência em informação **não se confunde com a simples alfabetização digital**. Saber usar o computador e as redes sociais é uma habilidade técnica; avaliar criticamente se a notícia é falsa e usar a informação com ética é Competência Informacional.
+- **Declarações de Praga e Alexandria:** Reconhecimento dessas conferências da UNESCO como os divisores de águas internacionais da área.`,
+    commonTraps: `> 🚨 **Pegadinha Clássica de Concurso (OBJETIVA / CEBRASPE):**
+> *"A competência informacional limita-se ao domínio de ferramentas informáticas de escritório e navegação em navegadores web para localização de arquivos em formato PDF."*
 >
 > **Gabarito: ERRADO!**
-> A destreza operacional no computador é apenas **alfabetização tecnológica (infraestrutura)**. A competência informacional exige capacidade intelectual de **avaliação crítica da veracidade**, percepção de viés ideológico, ética no uso de citações e autonomia de aprendizagem.`
+> Isso é mera **alfabetização tecnológica (computacional)**. A **Competência em Informação** envolve primordialmente a capacidade intelectual de **avaliação crítica da qualidade, relevância, ética, combate a preconceitos e autonomia de aprendizagem**.`
   },
-  memorizationMatrix: `### Evolução Epistemológica: Treinamento vs. Competência em Informação
+  memorizationMatrix: `### Síntese: Treinamento vs. Competência em Informação
 
-| Critério de Análise | Treinamento Tradicional de Usuários | Competência em Informação (CoInfo) |
+| Dimensão | Treinamento de Usuários | Competência em Informação (CoInfo) |
 | :--- | :--- | :--- |
-| **Balanço Pedagógico** | Mecanicista / Condutivista | Socioconstrutivista / Crítico |
-| **Foco Central** | A Biblioteca e o Bibliotecário | O Aprendiz e o Processo Cognitivo |
-| **Meta Final** | Ensinar a "usar a biblioteca física" | Ensinar a "aprender a aprender criticamente" |
-| **Atitude do Usuário**| Passiva e receptiva | Ativa, investigativa e autônoma |
-| **Inserção Institucional**| Palestra isolada / Extracurricular | **Transversal** / Embutida no Currículo Universitário |`
+| **Abordagem** | Tecnicista / Mecanicista | Socioconstrutivista / Crítica |
+| **Foco** | O Acervo e a Biblioteca física | O Indivíduo e o Aprendizado Crítico |
+| **Objetivo** | Saber manusear catálogos e estantes | **"Aprender a aprender" ao longo da vida** |
+| **Marcos Chave** | Visitas guiadas tradicionais | Declarações de **Praga (2003)** e **Alexandria (2005)** |
+| **Modelos Globais**| Manuais de procedimento | **SCONUL (Sete Pilares)** e **Framework ACRL (2015)** |`
 };

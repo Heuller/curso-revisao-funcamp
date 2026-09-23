@@ -162,7 +162,7 @@ export const q1_to_25: Question[] = [
       A: "Não possuem indicadores nem códigos de subcampo ($a, $b).",
       B: "Podem ser expandidos infinitamente pelo catalogador.",
       C: "Não possuem numeração de Tag.",
-      D: "São utilizados exclusivamente para números de classificação CDD/CDU.",
+      D: "São utilizados exclusivamente para números de chamada e classificação (CDD/LC).",
       E: "Exigem a aplicação das regras do AACR2 na íntegra."
     },
     correctAnswer: "A",
@@ -227,16 +227,16 @@ export const q1_to_25: Question[] = [
   {
     id: "q16",
     moduleId: "m19",
-    text: "A Classificação Decimal Universal (CDU) utiliza sinais gráficos (notação sintética) para relacionar conceitos. O sinal de 'Barra Oblíqua' (/) possui a função estrita de indicar:",
+    text: "Na Classificação Decimal de Dewey (CDD), as Tabelas Auxiliares possuem a função de expandir a especificidade da notação básica das classes principais. Dentre as seis tabelas auxiliares da CDD, qual é a ÚNICA que pode ser adicionada a qualquer número de classe sem a necessidade de haver uma instrução explícita de 'adicione a' (add instruction) na tabela principal?",
     options: {
-      A: "Relação de dependência ou influência entre assuntos distantes (Dois Pontos).",
-      B: "Adição ou coordenação de assuntos sem relação direta (Sinal de Mais).",
-      C: "Extensão consecutiva, unindo a primeira e a última notação de uma série de assuntos vizinhos na tabela.",
-      D: "Lugar geográfico.",
-      E: "Tempo ou cronologia."
+      A: "Tabela 2 (Áreas Geográficas, Períodos Históricos e Pessoas).",
+      B: "Tabela 1 (Subdivisões Padrão - Standard Subdivisions).",
+      C: "Tabela 3 (Subdivisões para as Artes e Literaturas Individuais).",
+      D: "Tabela 4 (Subdivisões de Línguas Individuais e Famílias Linguísticas).",
+      E: "Tabela 6 (Línguas)."
     },
-    correctAnswer: "C",
-    justification: "A barra oblíqua (/) agrupa conceitos que estão em sequência na CDU. Por exemplo, 221/225 engloba tudo que vai do Antigo ao Novo Testamento. O Sinal de Adição (+) liga assuntos que não têm nada a ver um com o outro na árvore."
+    correctAnswer: "B",
+    justification: "A Tabela 1 (Subdivisões Padrão: -01 a -09) tem aplicação autônoma e universal na CDD: pode ser agregada a qualquer número de classe sem instrução prévia, desde que não haja redundância semântica. Todas as outras tabelas (T2 a T6) exigem permissão ou instrução 'adicione a' no esquema."
   },
   {
     id: "q17",
@@ -283,7 +283,7 @@ export const q1_to_25: Question[] = [
   {
     id: "q20",
     moduleId: "m12",
-    text: "O Marketing em Bibliotecas é vital para a visibilidade. Uma biblioteca universitária que analisa seu público, identifica demandas reprimidas e lança um 'Curso de Normas ABNT' específico para alunos de engenharia, está utilizando qual pilar do mix de marketing (4 P's de McCarthy)?",
+    text: "O Marketing em Bibliotecas é vital para a visibilidade. Uma biblioteca universitária que analisa seu público, identifica demandas reprimidas e lança uma 'Oficina de Gestão de Dados de Pesquisa e Princípios FAIR' específica para pesquisadores, está utilizando qual pilar do mix de marketing (4 P's de McCarthy)?",
     options: {
       A: "Praça (Place).",
       B: "Promoção (Promotion).",
@@ -358,7 +358,7 @@ export const q1_to_25: Question[] = [
       A: "Domina a programação de buscas no Z39.50.",
       B: "Possui conhecimentos de restauro físico de obras raras.",
       C: "Sabe determinar a natureza da sua necessidade informacional, acessar, avaliar criticamente e usar a informação de forma ética.",
-      D: "Decora os sistemas de classificação como CDD e CDU.",
+      D: "Decora esquemas e tabelas de classificação como a CDD.",
       E: "Publica exclusivamente na Via Dourada do Acesso Aberto."
     },
     correctAnswer: "C",

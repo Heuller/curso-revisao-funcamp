@@ -144,7 +144,7 @@ export const q26_to_50: Question[] = [
   {
     id: "q36",
     moduleId: "m19",
-    text: "Na Classificação Decimal de Dewey (CDD), a regra de subordinação hierárquica dita que nenhuma classe principal pode conter menos de:",
+    text: "Na Classificação Decimal de Dewey (CDD), a regra de subordinação hierárquica dita que nenhuma notação de classe básica pode conter menos de:",
     options: {
       A: "1 dígito.",
       B: "2 dígitos.",
@@ -153,21 +153,21 @@ export const q26_to_50: Question[] = [
       E: "O uso de letras A-Z."
     },
     correctAnswer: "C",
-    justification: "Na CDD, a notação deve ter sempre no mínimo TRÊS algarismos arábicos (Ex: 000, 100, 500). (A CDU permite reduzir para 1 dígito)."
+    justification: "Na CDD, a notação básica exige compulsoriamente no mínimo TRÊS algarismos arábicos (ex: 000, 100, 500), completando-se com zeros à direita quando necessário."
   },
   {
     id: "q37",
     moduleId: "m19",
-    text: "Na Classificação Decimal Universal (CDU), o sinal utilizado para indicar a Relação Simples (ou Relação de Influência) entre dois assuntos distintos é:",
+    text: "Ao classificar uma obra complexa pela Classificação Decimal de Dewey (CDD), o bibliotecário constata que o livro aborda de forma equilibrada TRÊS subdivisões pertencentes a uma mesma divisão hierárquica mais ampla (por exemplo: Álgebra - 512, Geometria - 516 e Análise Matemática - 515). Segundo a consagrada 'Regra de Três' da CDD, a obra deve ser classificada:",
     options: {
-      A: "O Sinal de Mais (+).",
-      B: "A Barra Oblíqua (/).",
-      C: "Os Dois Pontos (:).",
-      D: "Os Parênteses ( ).",
-      E: "O Sinal de Igual (=)."
+      A: "No número correspondente ao assunto que possuir a maior quantidade de páginas.",
+      B: "No número do assunto que vier primeiro na sequência numérica (Álgebra - 512).",
+      C: "No número de classe imediatamente superior que abranja todas as três disciplinas (Matemática - 510).",
+      D: "Obrigatoriamente nas Obras Gerais (000).",
+      E: "Criando-se uma notação combinada com barra oblíqua."
     },
     correctAnswer: "C",
-    justification: "Os Dois Pontos (:) relacionam qualquer classe. (Ex: 17:32 = Ética relacionada à Política). É o símbolo mais versátil da CDU."
+    justification: "Pela Regra de Três da CDD: se uma obra trata de três ou mais disciplinas subordinadas a uma classe superior comum, ela deve ser classificada no número hierárquico imediatamente superior que abranja todos os assuntos (no caso, 510 Matemática Geral). A Regra do Primeiro só se aplica para duas disciplinas (First-of-two)."
   },
   {
     id: "q38",

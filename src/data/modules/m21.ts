@@ -3,89 +3,88 @@ import type { AdvancedTopic } from '../types';
 export const m21: AdvancedTopic = {
   id: "m21",
   title: "21. Indexação, Resumos e Controle Vocabular (Thesaurus)",
-  authorsAndFrameworks: `### Autores e Normas Técnicas Estruturantes
+  authorsAndFrameworks: `### Autores e Normas Internacionais Estruturantes
 
-- **F. W. Lancaster (1993):** *"Indexação e Resumos: Teoria e Prática"*. A obra clássica definitiva da Ciência da Informação para o processamento temático documental.
-- **Mariângela Spotti Lopes Fujita e Maria Inês Tomaél:** Principais pesquisadoras brasileiras na modelagem da leitura documentária e política de indexação.
-- **Normas ISO 5963 / ISO 25964:** Padrões internacionais para exame sistemático de documentos, seleção de termos e construção de tesauros interoperáveis.
-- **ABNT NBR 6028 (2021):** Norma brasileira para elaboração e apresentação de resumos documentais.`,
-  advancedTheory: `### 1. As Três Etapas da Indexação (Norma ISO 5963)
+- **F. W. Lancaster (1993, 2004):** *"Indexação e Resumos: Teoria e Prática"*. A obra clássica definitiva da Ciência da Informação para a representação temática e condensação documental.
+- **Jacques Chaumier (1988):** Formulador dos conceitos fundamentais sobre linguagens documentárias pré e pós-coordenadas e indexação por extração vs. atribuição.
+- **Mariângela Spotti Lopes Fujita:** Principal referência brasileira na metodologia de leitura documentária e política institucional de indexação.
+- **ISO 5963 (Documentação):** Métodos internacionais para exame de documentos, determinação de seus assuntos e seleção de termos de indexação.
+- **ISO 214 (Resumos):** Padrão internacional para elaboração e apresentação de resumos para publicações e documentação.
+- **ISO 25964:** Padrão internacional para tesauros e interoperabilidade com outras linguagens documentárias.`,
+  advancedTheory: `### 1. O Processo de Indexação: As Três Etapas Canônicas (ISO 5963 / Lancaster)
 
-A indexação é a operação intelectual de representação temática pela qual o conteúdo semântico de um documento é identificado e vertido em pontos de acesso temáticos. 
+Cobrança onipresente em provas de concurso (presente em 91.7% das provas analisadas):
+A indexação é a operação intelectual pela qual se analisa o conteúdo temático de um documento e se traduz esse conteúdo em termos de uma linguagem documentária.
 
-Segundo a **ISO 5963**, a indexação compõe-se de três etapas ordenadas e indissociáveis:
-
-- **1. Exame Analítico do Documento (Leitura Documentária):**
-  O indexador não lê a obra integralmente; ele executa uma leitura técnica seletiva em seções de alta densidade semântica (título, subtítulo, resumo, introdução, conclusões, cabeçalhos de seções e legendas de ilustrações).
-- **2. Identificação dos Conceitos Essenciais:**
-  O profissional formula mentalmente, em **Linguagem Natural**, quais são os tópicos centrais e o foco disciplinar abordado pelo autor.
-- **3. Tradução dos Conceitos para a Linguagem Documentária:**
-  Os conceitos identificados são convertidos para termos padronizados e autorizados em uma **Linguagem Controlada** (Tesauro, Lista de Cabeçalhos de Assunto ou Tabela de Classificação).
-
----
-
-### 2. Linguagem Natural vs. Linguagem Controlada
-
-- **Linguagem Natural (Indexação Livre / Texto Completo):**
-  Utiliza os termos exatos empregados pelo autor da publicação.
-  - *Vantagens:* Baixo custo, rapidez operacional e incorporação imediata de neologismos científicos de ponta.
-  - *Desvantagens:* Alto índice de ambiguidade semântica provocada por **sinônimos** (ex: *cão*, *cachorro*, *canino*) e **homônimos/polissemias** (ex: *manga* fruta vs. *manga* de camisa), gerando ruído e silêncio na recuperação.
-
-- **Linguagem Controlada (Vocabulário Controlado / Tesauro):**
-  Lista padronizada e unívoca de descritores autorizados pelo sistema.
-  - *Vantagens:* Erradica a dispersão sinonímica e a ambiguidade polissêmica; permite recuperação de alta precisão.
-  - *Desvantagens:* Custo financeiro de manutenção por equipes especializadas e **latência temporal** (demora para aprovar novos termos técnicos emergentes).
+Composta por 3 fases consecutivas e rigorosas:
+1. **Exame do Documento (Leitura Documentária):** Leitura técnica e seletiva concentrada em elementos de alta densidade informativa (título, subtítulo, resumo, introdução, conclusões, cabeçalhos de capítulos, legendas). O bibliotecário não lê o documento integralmente.
+2. **Identificação dos Conceitos (Análise Conceitual):** O profissional identifica os tópicos essenciais e determina o que o documento realmente trata em **Linguagem Natural**.
+3. **Tradução dos Conceitos para a Linguagem de Indexação:** Os conceitos identificados são convertidos para termos autorizados em um **Vocabulário Controlado / Tesauro** ou esquema de classificação.
 
 ---
 
-### 3. A Estrutura Semântica dos Tesauros Documentários
+### 2. Dimensões Críticas: Exaustividade vs. Especificidade
 
-O Tesauro é uma linguagem documentária dinâmica que se distingue de uma simples lista alfabética por estruturar formalmente **três relações semânticas**:
+O binômio de Lancaster mais cobrado pelas bancas:
+- **Exaustividade:** Refere-se à **quantidade de conceitos** indexados no documento. Trata-se da cobertura ampla de todos os temas abordados, mesmo os secundários.
+  - *Efeito na recuperação:* **Aumenta a Revocação (*Recall*)**, mas **diminui a Precisão**, gerando mais **Ruído**.
+- **Especificidade:** Refere-se à **precisão e exatidão** com que o termo de indexação descreve o conceito. Usar o termo mais específico disponível (ex: usar *"Diabetes Mellitus tipo 2"* em vez de *"Doenças Metabólicas"*).
+  - *Efeito na recuperação:* **Aumenta a Precisão (*Precision*)**, mas **diminui a Revocação**, podendo gerar **Silêncio**.
 
+---
+
+### 3. Tipos de Linguagens Documentárias: Pré-coordenação vs. Pós-coordenação
+
+- **Linguagens Pré-coordenadas:** Os termos são combinados no momento da **indexação** pelo bibliotecário, antes da consulta (ex: Listas de Cabeçalhos de Assunto, CDD). A sintaxe e a ordem de citação são fixas (*Ex.: "Bibliotecas universitárias — Automação — Brasil — Século XXI"*).
+- **Linguagens Pós-coordenadas:** Os termos são mantidos como conceitos isolados (*Unitermos* ou descritores de tesauros) e são combinados livremente pelo **usuário no momento da busca** mediante o uso de operadores booleanos (*Ex.: "Bibliotecas" AND "Automação" AND "Brasil"*).
+
+---
+
+### 4. Estrutura das Relações em Tesauros Documentários (ISO 25964)
+
+Um tesauro controla termos normalizados estabelecendo 3 tipos canônicos de relações semânticas:
 - **1. Relação de Equivalência (Preferência / Sinônimos):**
-  Combate a sinonímia estabelecendo qual termo é autorizado e quais são remissivos:
-  - **USE:** Direciona do termo não autorizado para o descritor autorizado (*Ex: Automóvel ➔ USE ➔ Carro*).
-  - **UP (*Used For* / Usado Para):** Indica quais sinônimos foram substituídos pelo descritor oficial.
-- **2. Relação Hierárquica (Gênero e Espécie / Todo e Parte):**
-  Estrutura a taxonomia em níveis de subordinação conceitual:
-  - **TG / BT (*Broader Term* / Termo Genérico):** Conceito mais amplo (*Ex: Veículo é TG de Carro*).
-  - **TE / NT (*Narrower Term* / Termo Específico):** Conceito mais restrito (*Ex: Carro é TE de Veículo*).
+  - **USE:** Encaminha do termo não-descritor (sinônimo/proibido) para o descritor autorizado (*Ex.: Celular ➔ USE ➔ Telefone celular*).
+  - **UP (*Used For* / Usado Para):** Registra sob o termo autorizado quais formas foram rejeitadas (*Ex.: Telefone celular ➔ UP ➔ Celular, Telefone móvel*).
+- **2. Relação Hierárquica (Gênero/Espécie e Todo/Parte):**
+  - **TG / BT (*Broader Term* / Termo Genérico):** Conceito mais amplo de nível imediatamente superior (*Ex.: Veículo é TG de Automóvel*).
+  - **TE / NT (*Narrower Term* / Termo Específico):** Conceito subordinado (*Ex.: Automóvel é TE de Veículo*).
 - **3. Relação Associativa (Afinidade Semântica):**
-  Conecta conceitos interdependentes que não possuem relação hierárquica nem são sinônimos:
-  - **TR / RT (*Related Term* / Termo Relacionado):** (*Ex: Carro ➔ TR ➔ Rodovia, Mecânica, Combustível*).
+  - **TR / RT (*Related Term* / Termo Relacionado):** Liga termos que compartilham afinidade temática, mas não são sinônimos nem pertencem à mesma linhagem hierárquica (*Ex.: Automóvel ➔ TR ➔ Rodovia, Tráfego, Combustível*).
 
 ---
 
-### 4. Tipologia dos Resumos (ABNT NBR 6028)
+### 5. Tipologia de Resumos Documentais (F. W. Lancaster / ISO 214)
 
-- **Resumo Indicativo:** Indica apenas os pontos principais do documento de forma sucinta, sem apresentar dados quantitativos ou conclusões detalhadas. **NÃO dispensa a consulta ao documento original**.
-- **Resumo Informativo:** Informa com precisão finalidades, metodologia, resultados estatísticos e conclusões centrais. **Pode dispensar a leitura do texto integral** em pesquisas rápidas.
-- **Resumo Crítico (Resenha):** Elaborado por especialista independente, apresentando julgamento de valor, análise crítica e mérito da obra avaliada.`,
-  unicampContext: `Nas bibliotecas da **Unicamp**:
-
-- **Vocabulários Especializados:** O SBU utiliza o **DeCS/MeSH** (Descritores em Ciências da Saúde) para teses da Faculdade de Ciências Médicas (FCM) e Faculdade de Odontologia de Piracicaba (FOP), e vocabulários controlados interdisciplinares (como o VocUSP) nas Humanidades.
-- **Curadoria no DSpace:** O bibliotecário revisa as palavras-chave livres atribuídas pelo autor na auto-submissão e inclui descritores controlados normalizados nos metadados Dublin Core (\`dc.subject\`), garantindo interoperabilidade com o Oasisbr e BDTD.`,
+A teoria clássica da Ciência da Informação classifica os resumos documentais em três categorias fundamentais:
+- **Resumo Indicativo (Descritivo):** Indica os tópicos e aspectos tratados no documento de forma concisa, sem apresentar metodologia detalhada, dados experimentais ou conclusões. **NÃO dispensa a leitura do texto original completo**.
+- **Resumo Informativo (Analítico):** Apresenta as finalidades, a metodologia adotada, os resultados concretos e as principais conclusões do trabalho. É suficientemente abrangente para permitir que o leitor decida com precisão e, frequentemente, **dispensa a consulta imediata ao documento original**.
+- **Resumo Crítico (Resenha):** Elaborado por especialista na área, analisa criticamente a obra, julgando seu mérito científico, originalidade, relevância e eventuais deficiências, expressando juízo de valor opinativo fundamentado.`,
+  unicampContext: `No **Sistema de Bibliotecas da Unicamp (SBU)**:
+- A indexação das teses e dissertações adota vocabulários controlados especializados (DeCS na área médica e VocUSP/VocUnicamp nas Humanidades e Exatas).
+- A política de indexação da Unicamp preconiza alta especificidade para garantir que as buscas especializadas de pesquisadores recuperem conjuntos pertinentes com mínimo ruído.`,
   boardAnalysis: {
-    trends: `### Análise de Bancas (CEBRASPE, VUNESP e FUNCAMP)
-
-- **CEBRASPE:** Explora rigorosamente as **três etapas da ISO 5963** (Exame do documento ➔ Identificação dos conceitos ➔ Tradução para a linguagem documentária). Também cobra as siglas das relações do tesauro: **USE/UP** (equivalência), **TG/TE** (hierárquica) e **TR** (associativa).
-- **VUNESP / FUNCAMP:** Cobram com frequência a classificação da ABNT NBR 6028, com destaque para a distinção entre **Resumo Indicativo** (não substitui o original) e **Resumo Informativo** (pode substituir a leitura original).`,
-    commonTraps: `> 🚨 **Pegadinha Clássica CEBRASPE / VUNESP:**
-> *"Em um tesauro documentário, a relação entre o termo 'Medicina' e o termo 'Hospital' constitui uma relação hierárquica de gênero-espécie (TG/TE)."*
+    trends: `### Padrões Extraídos das Provas Reais (OBJETIVA, CEBRASPE, VUNESP):
+- **O impacto da Exaustividade e Especificidade:** Perguntas constantes sobre o que acontece com a revocação e a precisão quando se aumenta a exaustividade (aumenta revocação, cai precisão).
+- **As 3 etapas da ISO 5963 / Lancaster:** Cobrança da sequência exata: Exame / Leitura documentária ➔ Identificação dos conceitos ➔ Tradução para a linguagem documentária.
+- **Classificação de Relações em Tesauros:** Identificar se uma relação entre dois termos (ex.: *Agricultura* e *Trator*) é hierárquica ou associativa. Resposta: **Associativa (TR)**, pois Trator não é um "tipo" de Agricultura.
+- **Tipologia de Resumos:** Reconhecer a diferença crucial entre resumo indicativo (não dispensa a leitura do original), informativo (dispensa para fins gerais de triagem) e crítico/resenha (opinativo).`,
+    commonTraps: `> 🚨 **Pegadinha Clássica de Prova (OBJETIVA / CEBRASPE):**
+> *"O aumento da especificidade na indexação amplia a revocação do sistema de busca, pois permite que o usuário encontre um volume muito maior de documentos correlatos."*
 >
 > **Gabarito: ERRADO!**
-> Hospital não é um "tipo" de Medicina (gênero/espécie), nem é uma parte anatômica da disciplina. A ligação entre eles decorre de associação funcional ou institucional, configurando uma **Relação Associativa (TR — Termo Relacionado)**.`
+> O aumento da especificidade aumenta a **PRECISÃO** (traz documentos exatos) e diminui a **REVOCAÇÃO** (reduz o número total de itens recuperados, podendo gerar silêncio documental se a busca for genérica).`
   },
-  memorizationMatrix: `### Relações Semânticas em Tesauros & Tipos de Resumos
+  memorizationMatrix: `### Matriz Decisória de Indexação & Tesauros
 
-| Tipo de Relação | Siglas (Português / Inglês) | Função Semântica | Exemplo Prático |
-| :--- | :--- | :--- | :--- |
-| **Equivalência** | **USE** / **UP** (*Used For*) | Controla sinônimos e grafias | Bicicleta ➔ USE ➔ Ciclismo |
-| **Hierárquica** | **TG** (*Broader*) / **TE** (*Narrower*) | Gênero-Espécie / Todo-Parte | Meio de Transporte (TG) ➔ Bicicleta (TE) |
-| **Associativa** | **TR** (*Related Term*) | Afinidade ou conexão temática | Bicicleta (TR) ➔ Ciclovia |
-
-#### ABNT NBR 6028: Resumos
-- **Indicativo:** Sintético, não traz resultados completos. **Não substitui o texto original**.
-- **Informativo:** Completo (metodologia, dados e conclusões). **Pode dispensar o original**.
-- **Crítico (Resenha):** Emite parecer e julgamento valorativo sobre a obra.`
+| Variável / Conceito | Mecanismo | Efeito na Busca |
+| :--- | :--- | :--- |
+| **Alta Exaustividade** | Atribui muitos termos (cobre tudo) | **Sobe Revocação** (traz muito), **Desce Precisão** (gera Ruído) |
+| **Alta Especificidade** | Usa o termo exato mais aprofundado | **Sobe Precisão** (traz certo), **Desce Revocação** (gera Silêncio) |
+| **USE / UP** | Relação de Equivalência | Controla sinônimos (ex: Avião ➔ USE ➔ Aeronave) |
+| **TG / TE** | Relação Hierárquica | Gênero / Espécie (ex: Mamífero TG de Baleia) |
+| **TR** | Relação Associativa | Conexão contextual (ex: Baleia TR Pesca) |
+| **Resumo Indicativo** | Breve, sem dados conclusivos | **Não dispensa** a leitura do original |
+| **Resumo Informativo**| Metodologia, dados e conclusão | **Dispensa** a leitura do original |
+| **Resumo Crítico** | Análise e julgamento de valor | **Opinativo**, emitido por avaliador |`
 };

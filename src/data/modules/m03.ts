@@ -2,76 +2,82 @@ import type { AdvancedTopic } from '../types';
 
 export const m03: AdvancedTopic = {
   id: "m03",
-  title: "3. Movimento de Acesso Aberto (Open Access)",
-  authorsAndFrameworks: `### Marcos Históricos e Doutrinários (As Declarações dos "3 B's")
+  title: "3. Ciência Aberta, Acesso Aberto e Dados de Pesquisa (FAIR)",
+  authorsAndFrameworks: `### Marcos Históricos e Doutrinários
 
-- **Iniciativa de Budapeste (BOAI - 2002):** *Budapest Open Access Initiative*. O marco fundador formal que cunhou e conceituou internacionalmente o termo **Open Access**, definindo o autoarquivamento e os periódicos abertos.
-- **Declaração de Bethesda (2003):** Focou no engajamento das agências de fomento, instituições biomédicas e na transferência dos direitos para repositórios digitais abertos.
-- **Declaração de Berlim (2003):** O tratado de maior peso político global. Ampliou o Acesso Aberto para abranger não apenas artigos científicos, mas dados brutos de pesquisa, representações digitais e patrimônio cultural.
-- **Peter Suber:** O mais influente teórico contemporâneo do Acesso Aberto, responsável pela distinção seminal entre *Gratis OA* e *Libre OA*.
-- **SciELO e IBICT:** Pioneiros históricos no Brasil e América Latina na consolidação da publicação aberta sem custos de assinatura.`,
-  advancedTheory: `### 1. O Conceito Jurídico e Operacional de "Acesso Aberto"
+- **As Declarações dos 3 B's do Acesso Aberto:**
+  - **Iniciativa de Budapeste (BOAI - 2002):** Cunhou e definiu formalmente o termo **Open Access**, estabelecendo as duas estratégias complementares: periódicos abertos e autoarquivamento.
+  - **Declaração de Bethesda (2003):** Enfatizou o papel das instituições de pesquisa e agências biomédicas no financiamento do acesso aberto e depósito em repositórios.
+  - **Declaração de Berlim (2003):** O marco de maior peso diplomático internacional. Expandiu o Acesso Aberto para além dos artigos, incluindo dados brutos de pesquisa, representações digitais e patrimônio científico.
+- **Peter Suber:** Formulador da distinção seminal entre *Gratis OA* (apenas remoção da barreira de preço) e *Libre OA* (remoção da barreira de preço e de permissão com licenças abertas).
+- **Consórcio FORCE11 (2016):** Publicação dos **Princípios FAIR** para gestão e administração de dados científicos (*Wilkinson et al., Nature*).
+- **SciELO, IBICT e FAPESP:** Pioneiros no Brasil na consolidação de políticas de Ciência Aberta e mandatos de Planos de Gestão de Dados (PGD).`,
+  advancedTheory: `### 1. Ciência Aberta (Open Science) vs. Acesso Aberto (Open Access)
 
-O verdadeiro Acesso Aberto não se resume à simples gratuidade (*free*). Segundo a formulação clássica de Peter Suber, o Acesso Aberto pleno exige a superação simultânea de duas barreiras:
-
-- **Barreira de Preço (*Price Barrier*):** O leitor não se depara com cobranças de assinaturas, compras avulsas ou bloqueios de *paywall*.
-- **Barreira de Permissão (*Permission Barrier*):** Os direitos patrimoniais de autor são flexibilizados mediante o uso de licenças abertas (notadamente **Creative Commons**, como **CC-BY**), outorgando a terceiros o direito de copiar, distribuir, imprimir, pesquisar ou minerar dados (*text and data mining*), resguardada a devida atribuição de autoria.
-
-> 💡 **Distinção Fundamental (Peter Suber):**
-> - **Gratis OA:** Remove apenas a barreira de preço (o artigo pode ser lido sem pagar, mas sob restrições severas de direitos autorais).
-> - **Libre OA:** Remove as barreiras de preço E de permissão (garante liberdade jurídica ampla de reuso e mineração de dados).
-
----
-
-### 2. A Tipologia das Vias (Cores) do Acesso Aberto
-
-O ecossistema editorial internacional classifica a disseminação aberta em quatro rotas principais:
-
-- **Via Verde (*Green Road* / Autoarquivamento):**
-  O pesquisador publica em qualquer periódico (inclusive comercial e fechado), mas retém o direito de **autoarquivar** uma versão do trabalho (geralmente o *Preprint* ou *Postprint* revisado por pares) no **Repositório Institucional** da sua universidade.
-  *Custo para o autor:* **Zero**.
-  *Instrumento tecnológico:* Repositórios Digitais (DSpace, EPrints).
-
-- **Via Dourada (*Gold Road* / Periódicos Abertos Comerciais):**
-  O artigo nasce com acesso público direto no website do próprio periódico científico.
-  *Custo de publicação:* O autor ou a agência de fomento financia uma taxa de processamento de artigo (**APC** — *Article Processing Charge*), frequentemente com valores vultosos pagos a grandes conglomerados editoriais.
-
-- **Via Diamante / Platina (*Diamond Road* / Sem Taxas):**
-  A revista opera em Acesso Aberto total, **sem cobrar taxa do leitor (assinatura) e sem cobrar taxa do autor (APC)**. Os custos operacionais são inteiramente subsidiados por universidades, associações científicas e órgãos estatais de fomento. É o modelo amplamente consolidado na América Latina (plataformas SciELO e Redalyc).
-
-- **Via Bronze (*Bronze Road*):**
-  Artigos acessíveis gratuitamente no site da editora comercial, mas sem uma licença formal Creative Commons anexada. A editora mantém a prerrogativa de reincluir o material atrás de um *paywall* a qualquer tempo.
+Em concursos recentes (36.9% das provas analisadas), o conceito de **Ciência Aberta** é cobrado como um guarda-chuva amplo que ultrapassa a simples leitura gratuita de artigos:
+- **Pilares da Ciência Aberta:**
+  1. **Acesso Aberto (Open Access):** Acesso universal sem paywall a publicações científicas.
+  2. **Dados Abertos de Pesquisa (Open Research Data):** Dados primários reutilizáveis.
+  3. **Código Aberto (Open Source / Open Code):** Scripts, algoritmos e softwares de análise abertos.
+  4. **Metodologias e Cadernos Abertos (Open Notebook Science):** Transparência do processo investigativo.
+  5. **Avaliação por Pares Aberta (Open Peer Review):** Pareceres públicos, identidades reveladas e diálogo transparente.
+  6. **Ciência Cidadã (Citizen Science):** Participação da sociedade na coleta e análise de dados.
 
 ---
 
-### 3. O Dilema do Prestígio Científico e o Plano S
+### 2. As Vias do Acesso Aberto (Taxonomia Internacional)
 
-Historicamente, o Movimento de Acesso Aberto colidiu com a métrica do **Fator de Impacto (JIF)**, monopolizada por revistas de modelos tradicionais fechados:
+- **Via Verde (*Green Road* / Autoarquivamento):** Depósito do manuscrito pelo próprio autor em **Repositório Institucional** ou temático. Sem cobrança de APC para o autor e gratuito para o leitor.
+- **Via Dourada (*Gold Road* / Periódicos Abertos com APC):** Artigo imediatamente aberto no site da revista. Custos financiados por **Taxas de Processamento de Artigo (APC - Article Processing Charge)** pagas pelo autor ou sua agência de fomento.
+- **Via Diamante / Platina (*Diamond/Platinum Road*):** Modelo ideal e não comercial. Acesso aberto para o leitor **SEM** cobrança de taxas (APC) para o autor. Financiado inteiramente por universidades, institutos públicos ou sociedades científicas (modelo predominante do SciELO).
+- **Via Bronze (*Bronze Road*):** Conteúdo gratuito no site da editora, mas sem licença formal aberta (Creative Commons). A editora pode fechar o acesso a qualquer instante.
 
-- **Conflito de Interesses:** Os docentes apoiavam o acesso livre, mas submetiam seus melhores trabalhos a periódicos pagos e prestigiados para progredir na carreira acadêmica.
-- **Intervenção Mandatória (Plano S):** Consórcios mundiais de agências financiadoras passaram a estabelecer que toda pesquisa científica custeada com verbas públicas deve ser publicada **obrigatoriamente** em acesso aberto imediato, sem períodos de embargo.`,
-  unicampContext: `O **Sistema de Bibliotecas da Unicamp (SBU)** atua como um dos grandes catalisadores do Acesso Aberto no estado de São Paulo:
+---
 
-- **Via Verde Obrigatória:** Aplicação do Mandato de Depósito no Repositório da Produção Científica e Intelectual da Unicamp para toda a produção acadêmica da instituição.
-- **Via Diamante Local:** O SBU gerencia o **Portal de Periódicos Eletrônicos da Unicamp (PPEC)**, oferecendo infraestrutura no sistema **OJS (Open Journal Systems)** para dezenas de revistas científicas da universidade que não cobram qualquer taxa de submissão ou processamento (APC).
-- **Negociações e Acordos Transformativos:** Acompanhamento de acordos que visam migrar verbas de assinaturas fechadas para cobertura de taxas de publicação em periódicos abertos.`,
+### 3. Ciclo de Vida dos Dados de Pesquisa e o Plano de Gestão de Dados (PGD)
+
+Um tema em rápida ascensão em provas federais e estaduais (ex.: UFRGS, Unicamp, USP):
+- **O Plano de Gestão de Dados (PGD / DMP):** Documento formal elaborado na submissão de projetos a agências de fomento (FAPESP, CNPq). Descreve como os dados serão coletados, documentados, formatados, protegidos, compartilhados e preservados a longo prazo.
+- **Ciclo de Vida dos Dados Científicos (Etapas Canônicas de Concurso):**
+  1. **Planejar:** Definição de recursos, formatos, metadados e PGD.
+  2. **Coletar:** Obtenção de observações manuais, sensores, questionários ou experimentos.
+  3. **Assegurar:** Validação de qualidade, anonimização e conformidade ética (LGPD).
+  4. **Descrever:** Atribuição de metadados ricos e identificadores persistentes (DOI).
+  5. **Preservar:** Depósito em repositório confiável de dados (ex.: Dataverse).
+  6. **Descobrir:** Indexação em catálogos para recuperação global.
+  7. **Integrar e Analisar:** Reuso e cruzamento com outros conjuntos de dados.
+
+---
+
+### 4. Os Princípios FAIR (Data Stewardship)
+
+Os princípios FAIR destinam-se a garantir que os dados de pesquisa sejam legíveis e processáveis tanto por humanos quanto por **máquinas**:
+- **Findable (Encontrável):** Dados e metadados com identificador único e persistente global (**PID/DOI**); metadados ricos e registrados em índice pesquisável.
+- **Accessible (Acessível):** Metadados e dados recuperáveis por meio de um protocolo de comunicação padronizado, livre e aberto (ex.: HTTP/HTTPS, REST). *Atenção:* Permite autenticação/autorização quando houver dados sensíveis (segredo industrial, dados de saúde).
+- **Interoperable (Interoperável):** Uso de formatos de arquivo não proprietários e abertos (ex.: CSV em vez de XLS; JSON em vez de formato binário fechado) e vocabulários/ontologias controladas.
+- **Reusable (Reutilizável):** Metadados com descrição clara de procedência (quem gerou, quando e com que instrumentos) e licença de uso inequívoca (ex.: Creative Commons CC-BY, CC0).`,
+  unicampContext: `Na **Unicamp**, a governança da Ciência Aberta e dos dados científicos é um padrão institucional:
+- **Resolução CONSU-A-050/2020:** Estabelece a Política Institucional de Acesso Aberto da Unicamp.
+- **Repositório de Dados de Pesquisa da Unicamp (REDU):** Construído sobre a plataforma aberta internacional **Dataverse**, administrado pelo SBU.
+- **Instrução Normativa CCPG nº 001/2024:** Torna obrigatório o cadastramento de metadados dos dados de pesquisa vinculados a teses e dissertações defendidas na universidade no REDU.
+- **Apoio a PGDs:** A equipe de bibliotecários da Unicamp oferece consultoria direta aos pesquisadores para a elaboração de Planos de Gestão de Dados exigidos pela FAPESP.`,
   boardAnalysis: {
-    trends: `### Análise de Bancas (CEBRASPE, VUNESP e FUNCAMP)
-
-- **CEBRASPE:** A banca costuma inverter maliciosamente as características da **Via Verde** e da **Via Dourada**. O examinador afirma que a Via Verde exige pagamento de APC pelo pesquisador ou que a Via Dourada dispensa a revisão por pares.
-- **VUNESP / FUNCAMP:** Cobram o reconhecimento histórico das **3 Declarações "B"** (Budapeste, Bethesda e Berlim). Fique atento: se a questão indagar qual iniciativa marcou o surgimento do termo e a primeira definição formal de Acesso Aberto, o gabarito é **Budapeste (BOAI - 2002)**.`,
-    commonTraps: `> 🚨 **Pegadinha Clássica CEBRASPE / VUNESP:**
-> *"A Via Verde do acesso aberto caracteriza-se pelo recolhimento de taxas de processamento de artigos (APCs) por parte dos repositórios institucionais para remunerar os revisores por pares."*
+    trends: `### Padrões Extraídos das Provas Reais (OBJETIVA, CEBRASPE, FCC):
+- **O que significa "Acessível" no FAIR:** É a pegadinha número 1 de concursos. As bancas afirmam que para atender ao princípio *Accessible*, o dado precisa ser público, irrestrito e desprovido de qualquer senha. O gabarito é **ERRADO**: o dado pode ser restrito por questões de sigilo ético ou de patentes, desde que os protocolos de rede para solicitar acesso sejam claros, transparentes e abertos. A máxima da Ciência Aberta é: *"Tão aberto quanto possível, tão fechado quanto necessário"*.
+- **Etapas do ciclo de vida dos dados:** Questões literais pedem a identificação da fase do ciclo (planejamento, coleta, asseguramento, descrição, preservação, reuso).
+- **Diferença entre Via Verde e Via Diamante:** As bancas cobram que na Via Verde o pesquisador deposita em Repositório Institucional sem pagar APC, enquanto na Diamante publica em periódico sem taxas para autor e leitor.`,
+    commonTraps: `> 🚨 **Pegadinha Clássica de Prova (OBJETIVA / FCC):**
+> *"Os Princípios FAIR estabelecem que todos os dados de pesquisa devem ser obrigatoriamente colocados em domínio público ou sob acesso público irrestrito, sendo vedada qualquer exigência de autenticação ou autorização de usuários."*
 >
 > **Gabarito: ERRADO!**
-> A **Via Verde** é baseada no autoarquivamento gratuito no repositório institucional e **não envolve cobrança de APCs**. Quem pratica APCs é a **Via Dourada** comercial. Ademais, repositórios universitários não remuneram revisores.`
+> Princípios FAIR tratam da **encontrabilidade e interoperabilidade técnica**. Um conjunto de dados clínicos confidenciais pode ser estritamente FAIR e, ao mesmo tempo, exigir aprovação de comitê de ética e credenciais de login para acesso.`
   },
-  memorizationMatrix: `### Matriz Cromática do Acesso Aberto (As 4 Vias)
+  memorizationMatrix: `### Matriz Mnemônica: Princípios FAIR
 
-| Rota / Cor | Onde o artigo fica disponível? | Quem custeia a operação? | Custo pro Leitor? | Licença Típica |
-| :--- | :--- | :--- | :--- | :--- |
-| **Via Verde (Green)** | Repositório Institucional (RI) | A Universidade (Infraestrutura) | **Grátis (Zero)** | CC-BY / Depósito |
-| **Via Dourada (Gold)** | Site do Periódico Comercial | Autor ou Agência via **APC** | **Grátis (Zero)** | CC-BY / Open |
-| **Via Diamante** | Site do Periódico Acadêmico | Sociedade Científica / Universidade | **Grátis (Sem APC)**| CC-BY / CC-BY-NC |
-| **Via Bronze** | Site da Editora Comercial | A própria editora (Promocional) | **Grátis temporário**| Copyright padrão |`
+| Princípio | Conceito Central | Exigência Técnica de Concurso |
+| :--- | :--- | :--- |
+| **F** - Findable | Encontrável | Identificador persistente (**DOI / Handle**) + Metadados ricos indexados |
+| **A** - Accessible | Acessível | Protocolo de rede aberto e universal (**HTTP/HTTPS**) + Autenticação se exigida |
+| **I** - Interoperable | Interoperável | Vocabulários controlados + Formatos de arquivo abertos (**CSV, XML, JSON**) |
+| **R** - Reusable | Reutilizável | Licença de uso explícita (**Creative Commons**) + Proveniência detalhada |`
 };

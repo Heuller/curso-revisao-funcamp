@@ -4,6 +4,7 @@ import { MarkdownViewer } from './components/MarkdownViewer';
 import { modulesData } from './data';
 import type { AdvancedTopic } from './data/types';
 import Simulado from './components/Simulado';
+import { ModuleQuiz } from './components/ModuleQuiz';
 import { MODULE_CATEGORIES, CATEGORY_FILTERS } from './data/categories';
 import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from './components/ui/accordion';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from './components/ui/card';
@@ -615,6 +616,9 @@ function App() {
                     </Card>
 
                   </div>
+
+                  {/* Module 5-Question Quiz */}
+                  <ModuleQuiz moduleId={activeModule.id} moduleTitle={activeModule.title} />
 
                   {/* Bottom Navigation Bar */}
                   <div className="bg-white rounded-3xl p-6 sm:p-8 border border-slate-200 shadow-sm flex flex-col sm:flex-row items-center justify-between gap-4 mt-8">

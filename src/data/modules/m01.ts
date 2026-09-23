@@ -5,76 +5,86 @@ export const m01: AdvancedTopic = {
   title: "1. Biblioteca Digital e Repositório Institucional",
   authorsAndFrameworks: `### Autores e Marcos Teóricos Fundamentais
 
-- **F. W. Lancaster (1978):** *"Toward Paperless Information Systems"*. Considerado o grande visionário da desmaterialização dos suportes físicos e da emergência da biblioteca sem papel.
+- **F. W. Lancaster (1978):** *"Toward Paperless Information Systems"*. O visionário clássico da transição do suporte em papel para suportes eletrônicos e bibliotecas sem paredes.
 - **Christine Borgman (2000):** *"From Gutenberg to the Global Information Infrastructure"*. Estabelece a distinção epistemológica clássica: *bibliotecas digitais como coleções orientadas a dados* versus *bibliotecas digitais como instituições sociais e de serviço*.
-- **Clifford Lynch (2003):** Autor do manifesto fundador dos Repositórios Institucionais, definindo o RI como um conjunto de serviços que a universidade oferece à sua comunidade para o gerenciamento e disseminação de materiais digitais criados pela instituição.
-- **Hélio Kuramoto (2006):** Pioneiro e articulador no IBICT da implantação do Movimento de Acesso Aberto e das diretrizes nacionais de Repositórios Institucionais no Brasil.
-- **Open Archives Initiative (OAI):** Consórcio responsável pelo protocolo **OAI-PMH**, padrão técnico que tornou viável a interoperabilidade e a colheita automatizada de metadados em escala global.`,
-  advancedTheory: `### 1. A Fronteira Estrutural: Biblioteca Digital (BD) vs. Repositório Institucional (RI)
+- **Clifford Lynch (2003):** Autor do manifesto fundador dos Repositórios Institucionais, definindo o RI como um conjunto de serviços que a universidade oferece à sua comunidade para gerenciamento e disseminação de materiais digitais gerados pela instituição.
+- **Hélio Kuramoto (2006):** Pioneiro e articulador no IBICT da implantação das diretrizes nacionais de Repositórios Institucionais e do Movimento de Acesso Aberto no Brasil.
+- **Open Archives Initiative (OAI):** Consórcio responsável pela especificação técnica do protocolo **OAI-PMH** (*Protocol for Metadata Harvesting*), alicerce da interoperabilidade mundial de repositórios.`,
+  advancedTheory: `### 1. Distinção Estrutural de Concurso: Biblioteca Digital (BD) vs. Repositório Institucional (RI)
 
-O erro mais comum em provas de concurso é assumir que o **Repositório Institucional (RI)** é meramente uma Biblioteca Digital menor ou um repositório comum de arquivos. A diferença central reside na **missão institucional** e no **fluxo de aquisição informacional**:
+A confusão deliberada entre BD e RI é uma das armadilhas mais recorrentes em provas de concursos para bibliotecário (presente em 63.1% dos cadernos analisados):
 
-- **Biblioteca Digital (BD) — Foco no Consumo:**
-  Sua missão prioritária é atender às necessidades imediatas de estudo e leitura do usuário. O acervo provém predominantemente do meio **externo** por meio de compras, consórcios e licenciamento de editoras comerciais (ex: bases de dados EBSCO, ProQuest, assinaturas de periódicos e pacotes de e-books).
-  *Pergunta condutora:* "O que os nossos usuários e alunos precisam consumir?"
+- **Biblioteca Digital (BD) — Foco no Usuário/Consumo:**
+  - **Objetivo precípuo:** Suprir demandas informacionais imediatas de leitura, estudo e pesquisa de sua comunidade.
+  - **Origem do acervo:** Predominantemente **externa** (livros e periódicos comerciais licenciados de editoras como Elsevier, Wiley, Springer, bases EBSCO, pacotes de e-books assinados e coleções digitalizadas de domínio público).
+  - **Acesso e Restrições:** Frequentemente restrito por autenticação de IP institucional, credenciais de login e sistemas de DRM (*Digital Rights Management*).
 
-- **Repositório Institucional (RI) — Foco na Produção e Memória:**
-  Sua missão é registrar, preservar a longo prazo e democratizar em **Acesso Aberto** a memória intelectual da própria universidade. O acervo provém estritamente de **dentro** da instituição (teses, dissertações, artigos de docentes, preprints, relatórios de pesquisa e patentes). O RI não adquire nem comercializa literatura externa.
-  *Pergunta condutora:* "O que a nossa universidade gerou de conhecimento?"
-
-> 💡 **Princípio Decisivo de Prova:**
-> A **Biblioteca Digital** compra e licencia acervo externo para leitura; o **Repositório Institucional** custodia, preserva e difunde a produção científica interna em regime de acesso aberto.
-
----
-
-### 2. O Protocolo OAI-PMH e a Arquitetura de Interoperabilidade
-
-Um Repositório Institucional isolado do mundo não cumpre sua função. Para que a produção acadêmica ganhe visibilidade global, os repositórios precisam comunicar seus registros com motores de busca e agregadores (como **Oasisbr**, **NDLTD**, **La Referencia** e **Google Acadêmico**).
-
-Essa integração ocorre por meio do protocolo **OAI-PMH** (*Open Archives Initiative Protocol for Metadata Harvesting*), estruturado em dois agentes:
-
-- **Provedores de Dados (Data Providers):**
-  São os repositórios institucionais locais (instalados sobre plataformas como **DSpace**) que expõem seus metadados de forma padronizada via HTTP/XML para serem colhidos.
-
-- **Provedores de Serviço (Service Providers):**
-  São as entidades colhedoras (*harvesters*) que percorrem os repositórios cadastrados, extraem os metadados e constroem portais unificados de pesquisa e indicadores bibliométricos.
-
-> ⚠️ **Metadados Obrigatórios:**
-> O protocolo OAI-PMH estabelece como requisito mínimo e universal de conformidade o padrão de metadados **Dublin Core (15 elementos básicos)** em sua versão simples (não qualificada).
+- **Repositório Institucional (RI) — Foco na Memória e Produção Própria:**
+  - **Objetivo precípuo:** Coletar, organizar, preservar a longo prazo e democratizar a produção científica, técnica e artística gerada pela própria universidade.
+  - **Origem do acervo:** Estritamente **interna** (teses, dissertações, artigos científicos de docentes, relatórios de pesquisa, patentes e preprints). O RI **não** compra acervo comercial de terceiros.
+  - **Regime de Acesso:** Pauta-se no **Acesso Aberto (Open Access)**, sem barreiras financeiras ou cadastrais para leitura e download.
 
 ---
 
-### 3. Políticas de Sustentabilidade: Mandato de Depósito vs. Adesão Voluntária
+### 2. O Protocolo OAI-PMH: Arquitetura, Verbos e Metadados
 
-Para que um Repositório Institucional mantenha representatividade e volume documental, a biblioteca universitária atua na gestão de políticas mandatórias:
+O protocolo **OAI-PMH** opera sobre HTTP transportando metadados codificados em XML. Ele define dois papéis centrais e seis comandos funcionais (verbos) cobrados sistematicamente:
 
-- **Depósito Voluntário:**
-  Historicamente ineficaz no contexto universitário, com taxas de autoarquivamento espontâneo raramente superando **15%**, dada a sobrecarga de tarefas de docentes e pesquisadores.
+#### Papéis dos Participantes:
+1. **Provedores de Dados (Data Providers):** Repositórios que mantêm os metadados e os expõem publicamente para colheita (ex.: DSpace universitário).
+2. **Provedores de Serviços (Service Providers):** Agregadores que colhem metadados de múltiplos repositórios para criar portais unificados de busca e métricas (ex.: **Oasisbr**, **NDLTD**, **La Referencia**, **Google Acadêmico**).
 
-- **Mandato Institucional de Depósito:**
-  Resolução normativa de instâncias deliberativas da universidade que torna **compulsório** o depósito da versão final de teses, dissertações e artigos decorrentes de verba pública como condição prévia para titulação ou prestação de contas.`,
-  unicampContext: `Na **Universidade Estadual de Campinas (Unicamp)**, o Repositório da Produção Científica e Intelectual é uma das maiores referências do país, sustentado pela plataforma **DSpace** e gerido operacionalmente pelo **Sistema de Bibliotecas da Unicamp (SBU)**.
+#### Os 6 Verbos Oficiais do OAI-PMH:
+- \`Identify\`: Retorna informações gerais sobre o repositório (nome, URL base, versão do protocolo, e-mail do administrador, granularidade de data).
+- \`ListMetadataFormats\`: Lista os esquemas de metadados suportados pelo repositório (requisito mínimo obrigatório: Dublin Core simples - prefixo \`oai_dc\`).
+- \`ListSets\`: Recupera a estrutura hierárquica de conjuntos/coleções do repositório.
+- \`ListIdentifiers\`: Colhe apenas os cabeçalhos/identificadores dos registros (usado para verificação rápida de atualizações).
+- \`ListRecords\`: Efetua a colheita completa dos registros de metadados em lote.
+- \`GetRecord\`: Recupera um registro individual específico de metadados pelo seu identificador persistente.
 
-- **Mandato Compulsório:** Na Unicamp, a entrega e auto-submissão digital da versão final de teses e dissertações aprovadas é requisito obrigatório para a expedição de diplomas pela Diretoria Acadêmica (DAC).
-- **Curadoria e Validação:** A equipe de bibliotecários do SBU valida criteriosamente os metadados (padronização de termos, autoridades e licenças de direito autoral) antes da publicação definitiva e exposição via protocolo OAI-PMH para indexação internacional.`,
+---
+
+### 3. Dublin Core Simples (15 Elementos Fundamentais)
+
+Padrão internacional (ISO 15836 / IETF RFC 5013) obrigatório para conformidade OAI-PMH:
+1. **Title** (Título)
+2. **Creator** (Autor/Criador primário)
+3. **Subject** (Assunto/Palavras-chave)
+4. **Description** (Resumo/Descrição)
+5. **Publisher** (Editora/Instituição publicadora)
+6. **Contributor** (Colaborador secundário, orientador)
+7. **Date** (Data do recurso)
+8. **Type** (Natureza do conteúdo, ex.: tese, artigo)
+9. **Format** (Formato de arquivo ou mídia, MIME type, ex.: application/pdf)
+10. **Identifier** (Identificador unívoco, ex.: DOI, Handle, URI)
+11. **Source** (Obra original de onde o recurso foi derivado)
+12. **Language** (Idioma do conteúdo textual)
+13. **Relation** (Relação com outro recurso correlato)
+14. **Coverage** (Abrangência espacial e temporal)
+15. **Rights** (Direitos autorais, copyright, licença Creative Commons)`,
+  unicampContext: `Na **Unicamp**, a infraestrutura de repositórios digitais é gerida operacionalmente pelo **Sistema de Bibliotecas da Unicamp (SBU)**:
+- **Repositório da Produção Científica e Intelectual da Unicamp:** Sustentado sobre a plataforma aberta **DSpace**, centraliza a produção de docentes e alunos e integra o portal nacional **Oasisbr** (IBICT) e o agregador latino-americano **La Referencia**.
+- **Mandato Compulsório:** A homologação de títulos de mestrado e doutorado e a expedição de diplomas pela DAC exigem o autoarquivamento prévio da versão homologada da tese/dissertação no repositório.
+- **Curadoria pelo Bibliotecário:** Antes da liberação pública, os metadados passam por revisão estrita (padronização de autoridades, termos controlados do Vocabulário Unicamp e verificação de licenças de uso).`,
   boardAnalysis: {
-    trends: `### Análise de Bancas (CEBRASPE, VUNESP e FUNCAMP)
-
-- **CEBRASPE:** Explora reiteradamente o contraste entre **Z39.50** (protocolo cliente-servidor tradicional focado em catalogação cooperativa e consulta remota de OPACs) e **OAI-PMH** (protocolo assíncrono baseado em colheita de metadados XML para repositórios). A banca costuma criar itens incorretos afirmando que repositórios universitários devem despender orçamento com assinaturas de e-books comerciais.
-- **VUNESP / FUNCAMP:** Cobram com frequência os conceitos de **Dublin Core simples** como requisito nativo do OAI-PMH e a articulação entre as diretrizes de preservação digital e as políticas institucionais de autoarquivamento compulsório.`,
-    commonTraps: `> 🚨 **Pegadinha Clássica CEBRASPE / VUNESP:**
-> *"Tanto a biblioteca digital quanto o repositório institucional possuem como diretriz precípua a aquisição onerosa de licenças de periódicos científicos e e-books comerciais para suprir o acervo de graduação."*
+    trends: `### Padrões Extraídos das Provas Reais (CEBRASPE, OBJETIVA, VUNESP, FCC):
+- **OAI-PMH vs Z39.50:** O Z39.50 é um protocolo síncrono cliente-servidor para busca e recuperação de registros em catálogos tradicionais (OPACs). O OAI-PMH é um protocolo assíncrono para colheita massiva de metadados XML para agregação.
+- **Obrigatoriedade do Dublin Core:** As bancas cobram se o repositório exige MARC21 para o OAI-PMH. O gabarito é **NÃO**: o OAI-PMH exige expressamente o **Dublin Core simples (15 elementos)** como linha de base universal.
+- **Mandato de Autoarquivamento:** Questões frequentemente contrastam o autoarquivamento voluntário (baixo índice de adesão, ~15%) com a política mandatória institucional com respaldo regulatório.`,
+    commonTraps: `> 🚨 **Pegadinha Clássica de Prova (OBJETIVA / CEBRASPE):**
+> *"O protocolo OAI-PMH exige que os repositórios institucionais disponibilizem o texto completo de todas as obras no corpo da mensagem XML colhida pelos provedores de serviço."*
 >
 > **Gabarito: ERRADO!**
-> Repositórios Institucionais **NUNCA** compram nem licenciam obras comerciais de terceiros. Seu escopo exclusivo é arquivar, preservar e franquear o acesso livre à produção gerada internamente pela própria instituição de ensino e pesquisa.`
+> O protocolo OAI-PMH colhe **exclusivamente METADADOS** (descrição bibliográfica, links persistentes e metadados de direitos). Ele **não** transporta o arquivo de texto integral (bitstream/PDF) no pacote de colheita.`
   },
-  memorizationMatrix: `### Matriz de Diferenciação Estrutural: BD vs. RI
+  memorizationMatrix: `### Matriz Decisiva para Concursos: BD vs. RI
 
-| Dimensão de Análise | Biblioteca Digital (BD) | Repositório Institucional (RI) |
+| Critério | Biblioteca Digital (BD) | Repositório Institucional (RI) |
 | :--- | :--- | :--- |
-| **Origem do Acervo** | Externa (compras, doações, licenciamentos comerciais) | Estritamente Interna (produção própria da comunidade acadêmica) |
-| **Foco de Atuação** | Demanda imediata do consumidor/leitor | Registro da memória institucional e difusão científica livre |
-| **Protocolo Predominante**| Z39.50, SRU/SRW e APIs proprietárias | OAI-PMH (*Metadata Harvesting*) |
-| **Padrão de Metadados**| MARC21, MODS e esquemas ricos | Dublin Core (15 elementos fundamentais) |
-| **Regime de Acesso** | Restrito a usuários autorizados (DRMs, controle de IP) | Universal e irrestrito (**Open Access** - Acesso Aberto) |`
+| **Origem do Conteúdo** | Externa (compra, assinatura, licenciamento comercial) | Interna (produção intelectual da própria comunidade) |
+| **Público-Alvo Prioritário** | Alunos/usuários como **consumidores** da informação | A comunidade mundial como leitora da **produção institucional** |
+| **Modelo Financeiro** | Pagamento contínuo de assinaturas a fornecedores | Custeado pela instituição pública com retorno em visibilidade |
+| **Protocolo de Integração** | Z39.50, APIs proprietárias, SRU/SRW | OAI-PMH (*Protocol for Metadata Harvesting*) |
+| **Metadados Obrigatórios** | Formatos ricos e especializados (MARC 21, MODS) | Dublin Core Simples (15 elementos universais) |
+| **Regime de Licenciamento** | Direitos autorais rígidos (restrição por IP/login) | Acesso Aberto (Open Access, Creative Commons) |`
 };

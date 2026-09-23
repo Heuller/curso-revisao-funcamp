@@ -37,7 +37,7 @@ export const q76_to_100: Question[] = [
   {
     id: "q78",
     moduleId: "m21",
-    text: "Um resumo que contém não apenas o esqueleto da obra original, mas também o julgamento pessoal, crítico e opinativo de quem o escreveu, fugindo da neutralidade, denomina-se tecnicamente (conforme NBR 6028):",
+    text: "Um resumo que contém não apenas o esqueleto da obra original, mas também o julgamento pessoal, crítico e opinativo de quem o escreveu, fugindo da neutralidade, denomina-se tecnicamente (segundo a teoria de F. W. Lancaster):",
     options: {
       A: "Resumo Informativo.",
       B: "Resumo Indicativo.",
@@ -166,7 +166,7 @@ export const q76_to_100: Question[] = [
     text: "Dentro das políticas rigorosas de Desenvolvimento de Coleções em Bibliotecas Universitárias, a prática de receber materiais por doação requer a formulação de um documento prévio e assinado, orientando expectativas. O termo adequado para este instrumento é:",
     options: {
       A: "Política de Descarte Compulsório.",
-      B: "Guia de Tesauros ABNT.",
+      B: "Manual de Tombamento de Acervos.",
       C: "Termo de Doação (podendo prever a recusa ou descarte do material inapropriado, não obrigando a biblioteca a guarda-lo eternamente).",
       D: "Contrato de Empréstimo Intersistemas.",
       E: "Ata de Consórcio Nacional."
