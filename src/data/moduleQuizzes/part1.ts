@@ -9,13 +9,13 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     moduleId: "m01",
     text: "No contexto da arquitetura do protocolo OAI-PMH (Open Archives Initiative Protocol for Metadata Harvesting), amplamente utilizado em repositórios digitais acadêmicos, as instituições participantes podem atuar como Provedores de Dados ou Provedores de Serviços. A Biblioteca Digital de Teses e Dissertações (BDTD), mantida pelo IBICT, é classificada tecnicamente como:",
     options: {
-      A: "Provedor de Serviços (Service Provider), pois colhe (harvesting) periodicamente metadados dos repositórios de diversas universidades e oferece interface de busca e serviços integrados ao usuário final.",
+      A: "Repositório Institucional Primário, responsável por emitir compulsoriamente os registros de catalogação na publicação (CIP) e atribuir códigos de barras digitais a cada dissertação.",
       B: "Provedor de Dados (Data Provider), pois custodia em seus servidores centrais os arquivos originais em formato PDF de todas as defesas de pós-graduação realizadas em território nacional.",
       C: "Servidor Proxy de Autenticação Federada, cuja atribuição exclusiva é validar as credenciais acadêmicas de pesquisadores para autorizar o download de itens sob embargo comercial.",
-      D: "Repositório Institucional Primário, responsável por emitir compulsoriamente os registros de catalogação na publicação (CIP) e atribuir códigos de barras digitais a cada dissertação.",
+      D: "Provedor de Serviços (Service Provider), pois colhe (harvesting) periodicamente metadados dos repositórios de diversas universidades e oferece interface de busca e serviços integrados ao usuário final.",
       E: "Base de Dados Relacional Fechada, estruturada em esquemas proprietários que prescindem da interoperabilidade com padrões abertos como o Dublin Core e o protocolo Z39.50."
     },
-    correctAnswer: "A",
+    correctAnswer: "D",
     justification: "A BDTD nacional atua como Provedor de Serviços (Service Provider). Ela não armazena os arquivos integrais de todas as universidades diretamente em primeira instância; ela colhe periodicamente os metadados expostos pelos Provedores de Dados (os repositórios de cada universidade via OAI-PMH) e disponibiliza uma interface única de busca e recuperação.",
     reference: "Rosetto (2008) / IBICT / Padrão OAI-PMH"
   },
@@ -41,11 +41,11 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     options: {
       A: "Garantir o sigilo perpétuo e a restrição definitiva de acesso a todas as investigações científicas financiadas com dotações orçamentárias públicas.",
       B: "Substituir integralmente a tramitação ética em pesquisas com seres humanos, isentando a equipe de submeter o projeto ao comitê de ética correspondente.",
-      C: "Documentar, desde a concepção da pesquisa, como os dados serão coletados, organizados, documentados, armazenados, protegidos e compartilhados a longo prazo.",
+      C: "Definir tabelas de preços e tarifação compensatória para cobrança obrigatória de taxas de download direcionadas a outros pesquisadores acadêmicos.",
       D: "Comprovar a liquidação financeira prévia e a aquisição de licenças proprietárias de softwares comerciais para tratamento estatístico e análise quantitativa.",
-      E: "Definir tabelas de preços e tarifação compensatória para cobrança obrigatória de taxas de download direcionadas a outros pesquisadores acadêmicos."
+      E: "Documentar, desde a concepção da pesquisa, como os dados serão coletados, organizados, documentados, armazenados, protegidos e compartilhados a longo prazo."
     },
-    correctAnswer: "C",
+    correctAnswer: "E",
     justification: "O PGD é o planejamento prévio e dinâmico que descreve todo o ciclo de vida dos dados de pesquisa: métodos de coleta, formatos de arquivo (preferencialmente abertos), metadados de documentação, políticas de custódia, preservação a longo prazo e termos de compartilhamento sob princípios de Ciência Aberta.",
     reference: "Sayão e Sales (2014) - Curadoria Digital e PGDs"
   },
@@ -54,13 +54,13 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     moduleId: "m01",
     text: "No software DSpace, a mais consagrada plataforma de código aberto para repositórios institucionais no mundo, a estrutura organizacional hierárquica fundamental que organiza os conteúdos obedece à seguinte sequência (do nível mais abrangente para o item específico):",
     options: {
-      A: "Coleções bibliográficas ➔ Comunidades acadêmicas ➔ Esquemas de metadados ➔ Registros de autoridades ➔ Fluxos de bits primários.",
+      A: "Comunidades (Communities) ➔ Subcomunidades ➔ Coleções (Collections) ➔ Itens (Items) com seus respectivos Bitstreams (arquivos anexos).",
       B: "Repositório central ➔ Pastas virtuais de rede ➔ Registros no padrão MARC 21 ➔ Arquivos de índices remissivos ➔ Ficheiros anexos.",
       C: "Fluxos de bits (Bitstreams) ➔ Registros de metadados ➔ Coleções temáticas ➔ Subcomunidades departamentais ➔ Comunidades gerais.",
-      D: "Comunidades (Communities) ➔ Subcomunidades ➔ Coleções (Collections) ➔ Itens (Items) com seus respectivos Bitstreams (arquivos anexos).",
+      D: "Coleções bibliográficas ➔ Comunidades acadêmicas ➔ Esquemas de metadados ➔ Registros de autoridades ➔ Fluxos de bits primários.",
       E: "Unidades gestoras ➔ Grupos certificados de pesquisa ➔ Linhas temáticas ➔ Volumes encadernados ➔ Tabelas estatísticas relacionais."
     },
-    correctAnswer: "D",
+    correctAnswer: "A",
     justification: "A arquitetura clássica do DSpace estrutura-se em: Comunidades (ex: Faculdades ou Institutos) ➔ Subcomunidades (ex: Departamentos ou Programas de Pós-graduação) ➔ Coleções (ex: Teses, Artigos, Livros) ➔ Itens (registro bibliográfico com metadados Dublin Core) ➔ Bitstreams (os arquivos físicos, como PDFs, planilhas e imagens anexas).",
     reference: "DSpace Architecture Documentation / DSpace 7"
   },
@@ -71,11 +71,11 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     options: {
       A: "Expurgo documental sumário e descarte físico programado.",
       B: "Indexação por extração semântica em bases referenciais fechadas.",
-      C: "Backup frio em fitas magnéticas offline sem verificação de integridade.",
+      C: "Ação de preservação digital sequencial e curadoria ativa de ciclo de vida.",
       D: "Comutação bibliográfica internacional automatizada via rede postal.",
-      E: "Ação de preservação digital sequencial e curadoria ativa de ciclo de vida."
+      E: "Backup frio em fitas magnéticas offline sem verificação de integridade."
     },
-    correctAnswer: "E",
+    correctAnswer: "C",
     justification: "A Curadoria Digital (Digital Curation) supera a mera guarda estática (backup): é o gerenciamento ativo e contínuo dos dados durante todo o seu ciclo de vida, agregando valor, garantindo autenticidade, proveniência e viabilizando a reutilização futura frente à obsolescência tecnológica.",
     reference: "DCC Curation Lifecycle Model / Higgins (2008)"
   },
@@ -88,13 +88,13 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     moduleId: "m02",
     text: "Segundo Arellano (2004), as estratégias metodológicas de preservação digital podem ser agrupadas em dois grandes tipos: estruturais e operacionais. Constituem, respectivamente, um exemplo de método estrutural e um de método operacional:",
     options: {
-      A: "Elaboração de políticas institucionais e adoção de esquemas de metadados; e migração de formatos ou emulação de softwares legados.",
-      B: "Reparo mecânico de rasgos no suporte celulósico com papel japonês; e encadernação artística em couro legítimo vegetal.",
+      A: "Reparo mecânico de rasgos no suporte celulósico com papel japonês; e encadernação artística em couro legítimo vegetal.",
+      B: "Elaboração de políticas institucionais e adoção de esquemas de metadados; e migração de formatos ou emulação de softwares legados.",
       C: "Armazenamento provisório em unidades flash USB sem redundância; e instalação de sistemas de climatização nas salas de leitura.",
       D: "Digitalização óptica de negativos fotográficos em tons de cinza; e aplicação de defensivos químicos voláteis nas estantes.",
       E: "Contratação de apólices de seguro contra sinistros prediais; e terceirização integral dos serviços de balcão de referência."
     },
-    correctAnswer: "A",
+    correctAnswer: "B",
     justification: "Segundo Arellano (2004), métodos estruturais são os investimentos preliminares de gestão: formulação de políticas institucionais, normas e esquemas de metadados (ex: PREMIS). Métodos operacionais são as intervenções técnicas concretas aplicadas aos objetos: migração de formatos, emulação, encapsulamento e refrescamento de suporte.",
     reference: "Arellano (2004) - 'Critérios para a preservação de documentos digitais'"
   },
@@ -104,12 +104,12 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     text: "O Modelo de Referência para um Sistema Aberto de Arquivamento (OAIS - Open Archival Information System / ISO 14721) define três pacotes de informação cruciais para a cadeia de custódia digital. O pacote gerado pelo produtor e entregue ao repositório, o pacote armazenado e preservado a longo prazo, e o pacote entregue ao usuário final são denominados, respectivamente:",
     options: {
       A: "DIP (Dissemination Information Package), AIP (Archival Information Package) e SIP (Submission Information Package).",
-      B: "SIP (Submission Information Package), AIP (Archival Information Package) e DIP (Dissemination Information Package).",
+      B: "AIC (Archival Information Collection), AIU (Archival Information Unit) e DIP (Dissemination Information Package).",
       C: "AIP (Archival Information Package), SIP (Submission Information Package) e DIP (Dissemination Information Package).",
       D: "SIP (Submission Information Package), DIP (Dissemination Information Package) e AIP (Archival Information Package).",
-      E: "AIC (Archival Information Collection), AIU (Archival Information Unit) e DIP (Dissemination Information Package)."
+      E: "SIP (Submission Information Package), AIP (Archival Information Package) e DIP (Dissemination Information Package)."
     },
-    correctAnswer: "B",
+    correctAnswer: "E",
     justification: "Na terminologia rigorosa do modelo OAIS: SIP é o pacote de submissão recebido do produtor; AIP é o pacote de arquivamento definitivo, dotado de todos os metadados de preservação e integridade para guarda permanente; DIP é o pacote de disseminação, entregue ao usuário no formato amigável de consumo.",
     reference: "ISO 14721 (OAIS Reference Model)"
   },
@@ -118,13 +118,13 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     moduleId: "m02",
     text: "Na preservação de acervos físicos em suporte papel (livros raros, teses e documentos impressos), os dois parâmetros ambientais mais críticos para prevenir a proliferação fúngica e a hidrólise ácida celulósica são a Temperatura e a Umidade Relativa (UR). As faixas ideais recomendadas pela literatura conservacionista para áreas de guarda são:",
     options: {
-      A: "Temperatura oscilando entre 28ºC e 35ºC com taxa de umidade relativa permanentemente superior a 80%.",
+      A: "Temperatura estabilizada entre 18ºC e 22ºC e umidade relativa rigorosamente controlada entre 45% e 55%.",
       B: "Temperatura fixa de 25ºC e índice de umidade relativa com variações bruscas diárias entre 20% e 90%.",
-      C: "Temperatura estabilizada entre 18ºC e 22ºC e umidade relativa rigorosamente controlada entre 45% e 55%.",
+      C: "Temperatura oscilando entre 28ºC e 35ºC com taxa de umidade relativa permanentemente superior a 80%.",
       D: "Temperatura criogênica abaixo de 0ºC em ambiente com saturação zero e ausência total de circulação de ar.",
       E: "Temperatura ambiente sem climatização com incidência perpendicular direta de radiação solar nas estantes."
     },
-    correctAnswer: "C",
+    correctAnswer: "A",
     justification: "A literatura de conservação preventiva (Cassares, Spinelli, IFLA) preconiza que a temperatura de guarda de papel deve situar-se entre 18ºC e 22ºC, com umidade relativa estabilizada entre 45% e 55%. Umidade acima de 65% ativa o desenvolvimento de fungos e insetos xilófagos; ar seco demais (<40%) torna as fibras do papel quebradiças.",
     reference: "Cassares (2000) - 'Como fazer conservação preventiva em arquivos e bibliotecas'"
   },
@@ -135,11 +135,11 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     options: {
       A: "Obra, Expressão, Manifestação, Item físico e Ponto de acesso controlado do catálogo.",
       B: "Líder de registro, Diretório de campos, Indicadores de posição, Subcampos alfanuméricos e Campos fixos.",
-      C: "Título principal, Autoria intelectual, Imprenta comercial, Colação física e Notas de conteúdo analítico.",
-      D: "Entidades Intelectuais (Intellectual Entities), Objetos (Objects), Eventos (Events), Direitos (Rights) e Agentes (Agents).",
+      C: "Entidades Intelectuais (Intellectual Entities), Objetos (Objects), Eventos (Events), Direitos (Rights) e Agentes (Agents).",
+      D: "Título principal, Autoria intelectual, Imprenta comercial, Colação física e Notas de conteúdo analítico.",
       E: "Documento primário, Documento secundário, Documento terciário, Literatura cinzenta e Obras em domínio público."
     },
-    correctAnswer: "D",
+    correctAnswer: "C",
     justification: "O modelo de dados conceitual do PREMIS organiza-se nas 5 entidades basilares: Entidade Intelectual (a obra ou conteúdo discreto), Objeto (a representação física, arquivo ou fluxo de bits), Evento (ações executadas sobre o objeto, como migração ou validação de checksum), Direitos (permissões legais de preservação) e Agentes (pessoas, softwares ou instituições executoras).",
     reference: "PREMIS Data Dictionary for Preservation Metadata (Library of Congress)"
   },
@@ -151,10 +151,10 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
       A: "Converte os binários originais em microfichas analógicas de halogeneto de prata para guarda em cofre à prova de fogo.",
       B: "Altera a codificação interna dos dados para formatos abertos como PDF/A, descartando os arquivos na versão original de software.",
       C: "Transfere os fluxos de bits exclusivamente entre suportes de mesma geração tecnológica sem reconfigurar o sistema de arquivos.",
-      D: "Elimina compulsoriamente os direitos morais de autor mediante licenças compulsórias para permitir a reprogramação do binário.",
-      E: "Cria um ambiente de software capaz de simular o hardware e o sistema operacional legados, executando o arquivo em sua integridade nativa."
+      D: "Cria um ambiente de software capaz de simular o hardware e o sistema operacional legados, executando o arquivo em sua integridade nativa.",
+      E: "Elimina compulsoriamente os direitos morais de autor mediante licenças compulsórias para permitir a reprogramação do binário."
     },
-    correctAnswer: "E",
+    correctAnswer: "D",
     justification: "A Emulação preserva o objeto digital exatamente como foi concebido, sem converter seus formatos internos: ela constrói um software emulador que reproduz a máquina antiga em um computador moderno. Já a Migração altera o formato original do arquivo (ex: converte WordStar para PDF/A), correndo riscos de perda de dados e layout.",
     reference: "Arellano (2004) / Rothenberg (1999)"
   },
@@ -167,13 +167,13 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     moduleId: "m03",
     text: "O movimento internacional pelo Acesso Aberto (Open Access) consolidou duas vias fundamentais de disseminação na Declaração de Budapeste (BOAI 2002): a Via Verde (Green Road) e a Via Dourada (Gold Road). A característica essencial que define a Via Verde é:",
     options: {
-      A: "O autoarquivamento, pelo próprio pesquisador, de versões de seu manuscrito (preprints ou pós-prints) em um repositório digital de acesso aberto.",
+      A: "A venda de tiragens impressas de relatórios técnicos em livrarias universitárias mediante celebração de contratos de distribuição comercial.",
       B: "A publicação exclusiva em revistas científicas comerciais de alto fator de impacto que exigem o pagamento de taxas de processamento de artigos.",
-      C: "A venda de tiragens impressas de relatórios técnicos em livrarias universitárias mediante celebração de contratos de distribuição comercial.",
+      C: "O autoarquivamento, pelo próprio pesquisador, de versões de seu manuscrito (preprints ou pós-prints) em um repositório digital de acesso aberto.",
       D: "A contratação corporativa de grandes pacotes fechados de periódicos (Big Deals) com restrição de acesso por faixa de endereço IP do campus.",
       E: "A cessão total, irrevogável e definitiva de todos os direitos patrimoniais do autor para as editoras multinacionais de circulação fechada."
     },
-    correctAnswer: "A",
+    correctAnswer: "C",
     justification: "A Via Verde (Green Open Access) é a via do autoarquivamento: o autor deposita uma cópia do seu manuscrito (versão aceita ou prévia) no repositório institucional de sua universidade ou em um repositório temático, permitindo o acesso público gratuito sem necessidade de pagamento de taxas de publicação.",
     reference: "Budapest Open Access Initiative (BOAI, 2002) / Suber (2012)"
   },
@@ -182,13 +182,13 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     moduleId: "m03",
     text: "No contexto da transição para a Ciência Aberta, a modalidade de Acesso Aberto conhecida como 'Via Diamante' (Diamond / Platinum Open Access) diferencia-se da 'Via Dourada Comercial' porque na Via Diamante:",
     options: {
-      A: "O acesso aos artigos é restrito exclusivamente a pesquisadores bolsistas vinculados a sociedades científicas internacionais reconhecidas.",
-      B: "Nem os leitores pagam taxa de assinatura nem os autores arcam com custos de publicação (sem APCs), sendo a revista financiada por instituições públicas.",
+      A: "Nem os leitores pagam taxa de assinatura nem os autores arcam com custos de publicação (sem APCs), sendo a revista financiada por instituições públicas.",
+      B: "O acesso aos artigos é restrito exclusivamente a pesquisadores bolsistas vinculados a sociedades científicas internacionais reconhecidas.",
       C: "Os conteúdos submetidos devem ser mantidos sob sigilo comercial e protegidos por patentes industriais antes de qualquer avaliação de mérito.",
       D: "A etapa de revisão por pares é integralmente dispensada para acelerar a indexação imediata nas plataformas automatizadas de busca.",
       E: "A editora estabelece um período mandatório de embargo de cinco anos antes de autorizar o download gratuito do artigo em formato PDF."
     },
-    correctAnswer: "B",
+    correctAnswer: "A",
     justification: "A Via Diamante é o modelo mais democrático e sustentável de Acesso Aberto: os periódicos são mantidos por universidades, sociedades científicas e agências públicas (como grande parte das revistas brasileiras do portal SciELO), garantindo gratuidade total tanto para quem publica (sem APC) quanto para quem lê.",
     reference: "Fuchs & Sandoval (2013) / SciELO Open Access"
   },
@@ -199,11 +199,11 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     options: {
       A: "Depósito legal eletrônico obrigatório em bibliotecas depositárias nacionais.",
       B: "Curadoria ativa de dados experimentais em ambientes computacionais abertos.",
-      C: "Double Dipping (Duplo Pagamento / Dupla Cobrança), auferindo lucro duplo sobre o mesmo objeto.",
-      D: "Indexação por atribuição temática em esquemas de vocabulários controlados.",
+      C: "Indexação por atribuição temática em esquemas de vocabulários controlados.",
+      D: "Double Dipping (Duplo Pagamento / Dupla Cobrança), auferindo lucro duplo sobre o mesmo objeto.",
       E: "Avaliação aberta por pares com publicação transparente dos pareceres técnicos emitidos."
     },
-    correctAnswer: "C",
+    correctAnswer: "D",
     justification: "O 'Double Dipping' é a prática predatória pela qual as grandes editoras comerciais lucram duplamente com o mesmo periódico: recebem a assinatura milionária das universidades pelo acesso à revista e cobram taxas astronômicas de APC (Article Processing Charge) dos autores para tornar seus artigos individuais abertos.",
     reference: "Björk & Solomon (2014) - 'Developing an Effective Market for Open Access Article Processing Charges'"
   },
@@ -215,10 +215,10 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
       A: "CC BY-NC, que autoriza a reutilização e criação de obras derivadas exclusivamente para finalidades educacionais sem fins comerciais.",
       B: "CC BY-NC-ND, que veda qualquer alteração ou obra derivada e restringe a circulação do arquivo intacto a fins não comerciais.",
       C: "CC0 (Domínio Público), que implica a renúncia total aos direitos patrimoniais e morais em escala internacional sem necessidade de citação.",
-      D: "CC BY (Atribuição), que confere ampla liberdade de distribuição, remixagem e exploração comercial, exigindo apenas o crédito de autoria.",
-      E: "CC BY-SA (CompartilhaIgual), que impõe a obrigatoriedade de licenciar obras derivadas sob os mesmos termos da licença original."
+      D: "CC BY-SA (CompartilhaIgual), que impõe a obrigatoriedade de licenciar obras derivadas sob os mesmos termos da licença original.",
+      E: "CC BY (Atribuição), que confere ampla liberdade de distribuição, remixagem e exploração comercial, exigindo apenas o crédito de autoria."
     },
-    correctAnswer: "D",
+    correctAnswer: "E",
     justification: "A licença CC BY é a licença padrão recomendada para a Ciência Aberta plena (adotada pelo SciELO e pela BOAI): ela confere a máxima liberdade de circulação e reuso, exigindo apenas a atribuição da autoria original.",
     reference: "Creative Commons Legal Framework / SciELO Guidelines"
   },
@@ -228,12 +228,12 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     text: "A Ciência Aberta (Open Science) é um conceito guarda-chuva que ultrapassa a mera abertura de artigos. Qual das seguintes alternativas apresenta elementos integrantes genuínos do ecossistema da Ciência Aberta?",
     options: {
       A: "Exigência de patenteamento de todos os achados científicos preliminares antes de qualquer divulgação à comunidade acadêmica.",
-      B: "Encerramento gradual de repositórios institucionais abertos para restringir os arquivos a docentes titulares com vínculo ativo.",
+      B: "Dados Abertos (Open Data), Cadernos Abertos de Laboratório, Avaliação Aberta por Pares e Recursos Educacionais Abertos (REA).",
       C: "Adoção de assinaturas financeiras diferenciadas baseadas no produto interno bruto per capita de cada país interessado na leitura.",
       D: "Destruição programada de dados brutos e cadernos de bancada após a aceitação do manuscrito para preservar a privacidade do laboratório.",
-      E: "Dados Abertos (Open Data), Cadernos Abertos de Laboratório, Avaliação Aberta por Pares e Recursos Educacionais Abertos (REA)."
+      E: "Encerramento gradual de repositórios institucionais abertos para restringir os arquivos a docentes titulares com vínculo ativo."
     },
-    correctAnswer: "E",
+    correctAnswer: "B",
     justification: "A Ciência Aberta engloba diversas práticas integradas: Acesso Aberto às publicações, Dados Abertos de pesquisa, Código/Software Aberto, Cadernos de Laboratório Abertos, Revisão Aberta por Pares, Recursos Educacionais Abertos e Ciência Cidadã.",
     reference: "UNESCO Recommendation on Open Science (2021)"
   },
@@ -246,13 +246,13 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     moduleId: "m04",
     text: "A aplicação de Grandes Modelos de Linguagem (LLMs) e Inteligência Artificial Generativa em serviços de informação tem despertado grande debate técnico. Quando um modelo de IA gera referências bibliográficas estruturalmente plausíveis, mas que não existem na realidade física ou nas bases indexadoras, ocorre o fenômeno denominado tecnicamente de:",
     options: {
-      A: "Alucinação (Hallucination) / Confabulação sintática de saída estatística.",
+      A: "Desbastamento algorítmico automatizado em bases bibliográficas antigas.",
       B: "Indexação exaustiva com sobrecarga deliberada de descritores autorizados.",
       C: "Revocação de cem por cento decorrente da convergência exata de termos de busca.",
       D: "Ruído documental intencional planejado em testes de avaliação de desempenho de recuperação.",
-      E: "Desbastamento algorítmico automatizado em bases bibliográficas antigas."
+      E: "Alucinação (Hallucination) / Confabulação sintática de saída estatística."
     },
-    correctAnswer: "A",
+    correctAnswer: "E",
     justification: "Na terminologia da IA e Processamento de Linguagem Natural, 'alucinação' (hallucination) ocorre quando o modelo estatístico prevê sequências de palavras altamente prováveis e bem estruturadas sintaticamente, mas que são factualmente incorretas ou inventadas (como criar autores, títulos de periódicos e DOIs inexistentes).",
     reference: "Ji et al. (2023) - 'Survey of Hallucination in Natural Language Generation'"
   },
@@ -262,12 +262,12 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     text: "Nos modernos sistemas de Recuperação da Informação potencializados por Inteligência Artificial, a 'Busca Semântica' difere da tradicional busca booleana por palavras-chave (keyword-based) porque:",
     options: {
       A: "Impõe a formulação obrigatória de comandos em linguagem SQL avançada por parte do usuário final no terminal.",
-      B: "Recupera itens a partir do significado conceitual e vetores de termos (embeddings), achando dados sem correspondência léxica exata.",
+      B: "Processa exclusivamente variáveis numéricas em bancos relacionais e planilhas contábeis financeiras estruturadas.",
       C: "Veda taxativamente a aplicação de operadores booleanos ou filtros facetados em toda a arquitetura de consulta.",
-      D: "Processa exclusivamente variáveis numéricas em bancos relacionais e planilhas contábeis financeiras estruturadas.",
+      D: "Recupera itens a partir do significado conceitual e vetores de termos (embeddings), achando dados sem correspondência léxica exata.",
       E: "Substitui os campos bibliográficos convencionais por miniaturas gráficas comprimidas geradas por redes neurais generativas."
     },
-    correctAnswer: "B",
+    correctAnswer: "D",
     justification: "A busca semântica transforma palavras e frases em representações matemáticas densas (vetores/embeddings): ela mede a proximidade contextual entre os conceitos na base de dados, permitindo recuperar documentos de alto valor temático mesmo quando o usuário utiliza sinônimos ou termos afins não previstos na query literal.",
     reference: "Manning, Raghavan & Schütze (2008) / Jurafsky & Martin (2023)"
   },
@@ -277,12 +277,12 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     text: "Na automação do processamento técnico de unidades de informação, a IA tem sido aplicada em tarefas de 'Extração Automática de Metadados'. Uma aplicação legítima e ética dessa tecnologia na catalogação de teses e artigos consiste em:",
     options: {
       A: "Substituir a validação intelectual humana, delegando integralmente as decisões de autoridade aos modelos neurais.",
-      B: "Alterar arbitrariamente nomes de autores de outras nacionalidades para adequá-los aos cânones bibliográficos ocidentais.",
-      C: "Apoiar a identificação de entidades, sugerir cabeçalhos temáticos de tesauros e gerar resumos preliminares com validação humana.",
+      B: "Apoiar a identificação de entidades, sugerir cabeçalhos temáticos de tesauros e gerar resumos preliminares com validação humana.",
+      C: "Alterar arbitrariamente nomes de autores de outras nacionalidades para adequá-los aos cânones bibliográficos ocidentais.",
       D: "Eliminar registros bibliográficos antigos do catálogo para desocupar espaço de processamento no banco de dados principal.",
       E: "Dispensar a aplicação das regras do MARC 21 e dos padrões internacionais de catalogação descritiva para simplificar os registros."
     },
-    correctAnswer: "C",
+    correctAnswer: "B",
     justification: "A literatura contemporânea preconiza o modelo 'Human-in-the-loop' (humano no controle): a IA acelera o processamento executando tarefas repetitivas de extração preliminar e sugestão de termos controlados, cabendo ao bibliotecário catalogador validar criticamente, refinar e garantir a fidedignidade dos metadados.",
     reference: "IFLA Statement on Libraries and Artificial Intelligence (2020)"
   },
@@ -291,13 +291,13 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     moduleId: "m04",
     text: "O 'Viés Algorítmico' (Algorithmic Bias) representa um dos maiores desafios éticos na implementação de algoritmos de recomendação e busca em acervos de bibliotecas. Esse viés se manifesta quando:",
     options: {
-      A: "O servidor de rede da biblioteca perde a conectividade com os cabos de fibra óptica do campus durante a madrugada.",
+      A: "Os dados de treino contêm preconceitos e assimetrias sociais históricas, fazendo a IA replicar e potencializar tais distorções.",
       B: "A biblioteca substitui sistemas legados por plataformas de código aberto sob licença GNU General Public License.",
       C: "Os formulários eletrônicos do catálogo online exigem a digitação padronizada de diacríticos e acentuações da língua culta.",
-      D: "Os dados de treino contêm preconceitos e assimetrias sociais históricas, fazendo a IA replicar e potencializar tais distorções.",
+      D: "O servidor de rede da biblioteca perde a conectividade com os cabos de fibra óptica do campus durante a madrugada.",
       E: "O sistema de gerenciamento de acervos adota templates responsivos para navegação em dispositivos móveis e tablets."
     },
-    correctAnswer: "D",
+    correctAnswer: "A",
     justification: "Modelos de IA aprendem com os dados do passado: se as bases de dados e a literatura histórica contêm vieses (como a invisibilização sistemática de autoras mulheres ou minorias), o algoritmo assimilará esses padrões como regra, perpetuando o preconceito e a exclusão nos resultados de busca.",
     reference: "Noble (2018) - 'Algorithms of Oppression: How Search Engines Reinforce Racism'"
   },
@@ -308,11 +308,11 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     options: {
       A: "Desenvolver novos microprocessadores e circuitos eletrônicos integrados em linguagem de montagem de baixo nível.",
       B: "Transferir a produção intelectual de dissertações e artigos a robôs conversacionais para abreviar a titulação acadêmica.",
-      C: "Dispensar a conferência em fontes primárias revisadas por pares ao confiar cegamente nas sínteses automatizadas.",
+      C: "Compreender limites da IA, estruturar prompts críticos, avaliar alucinações e aplicar ferramentas com integridade e ética.",
       D: "Empregar plugins não autorizados para burla de autenticação em portais de periódicos científicos com assinaturas comerciais.",
-      E: "Compreender limites da IA, estruturar prompts críticos, avaliar alucinações e aplicar ferramentas com integridade e ética."
+      E: "Dispensar a conferência em fontes primárias revisadas por pares ao confiar cegamente nas sínteses automatizadas."
     },
-    correctAnswer: "E",
+    correctAnswer: "C",
     justification: "A AI Literacy desenvolvida pelas bibliotecas universitárias atua na dimensão crítica e ética: saber como formular prompts eficazes, compreender os limites da tecnologia, checar fontes e usar a IA como ferramenta de suporte sem comprometer a honestidade intelectual e a originalidade acadêmica.",
     reference: "Long & Magerko (2020) - 'What is AI Literacy? Competencies and Design Considerations'"
   },
@@ -341,12 +341,12 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     text: "Segundo a abordagem sistêmica de Yves-François Le Coadic (1996), a Ciência da Informação estuda a informação sob o prisma do seu ciclo vital. As três funções elementares que integram o ciclo de fluxo da informação são:",
     options: {
       A: "Aquisição documental por compra institucional, tombamento patrimonial em livro de registro e desbastamento físico por descarte.",
-      B: "Construção (produção / gênese), Comunicação (circulação / transferência) e Uso (consumo / assimilação) da informação.",
-      C: "Catalogação descritiva de itens, classificação temática decimal e indexação por cabeçalhos de assunto em linguagens controladas.",
+      B: "Catalogação descritiva de itens, classificação temática decimal e indexação por cabeçalhos de assunto em linguagens controladas.",
+      C: "Construção (produção / gênese), Comunicação (circulação / transferência) e Uso (consumo / assimilação) da informação.",
       D: "Captura óptica por digitalização, compressão de imagens em formato TIFF e transferência por upload a repositórios em nuvem.",
       E: "Comercialização livreira em rede de varejo, tributação alfandegária de importação e apuração de lucro líquido contábil."
     },
-    correctAnswer: "B",
+    correctAnswer: "C",
     justification: "Para Le Coadic (1996, 'A Ciência da Informação'), a informação científica cumpre um ciclo tripartite constante: a fase de construção (pesquisa/produção), a fase de comunicação (registro, processamento, disseminação e transferência) e a fase de uso (leitura, assimilação e aplicação pelo usuário final).",
     reference: "Le Coadic (1996) - 'A Ciência da Informação'"
   },
@@ -357,11 +357,11 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     options: {
       A: "Instalações de ensino superior clandestinas que operam sem o devido credenciamento emitido pelo Ministério da Educação.",
       B: "Bibliotecas comunitárias que exercem atividades sem contar com um profissional bibliotecário com registro regular no CRB.",
-      C: "Redes informais e estruturadas de colaboração científica entre pesquisadores de ponta que trocam ideias antes da publicação formal.",
+      C: "Servidores institucionais de armazenamento em rede que operam sem suporte técnico ao protocolo aberto OAI-PMH.",
       D: "Editoras universitárias que comercializam livros didáticos impressos sem a ficha de catalogação na publicação oficial.",
-      E: "Servidores institucionais de armazenamento em rede que operam sem suporte técnico ao protocolo aberto OAI-PMH."
+      E: "Redes informais e estruturadas de colaboração científica entre pesquisadores de ponta que trocam ideias antes da publicação formal."
     },
-    correctAnswer: "C",
+    correctAnswer: "E",
     justification: "Colégios invisíveis são redes informais de comunicação e cooperação entre pesquisadores que lideram determinada área de pesquisa no mundo: eles trocam preprints, dados e percepções críticas rapidamente entre si muito antes de o artigo passar pelo moroso processo de publicação em periódicos impressos.",
     reference: "Price (1963) - 'Little Science, Big Science'"
   },
@@ -371,12 +371,12 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     text: "Para o eminente teórico brasileiro Aldo Barreto, a informação atua como uma 'estrutura significante'. Em suas formulações conceituais, a transferência de informação só se completa efetivamente quando:",
     options: {
       A: "O arquivo digital em formato PDF é transferido com integridade de bits para a unidade de armazenamento do leitor.",
-      B: "O exemplar bibliográfico é devolvido rigorosamente dentro do prazo estipulado no balcão de empréstimo da biblioteca.",
+      B: "A mensagem emitida é percebida e assimilada pelo receptor, gerando transformação no seu estado de conhecimento prévio.",
       C: "A ficha catalográfica com os códigos de assunto e classificação decimal é impressa no verso da folha de rosto da publicação.",
-      D: "A mensagem emitida é percebida e assimilada pelo receptor, gerando transformação no seu estado de conhecimento prévio.",
+      D: "O exemplar bibliográfico é devolvido rigorosamente dentro do prazo estipulado no balcão de empréstimo da biblioteca.",
       E: "O servidor de correio institucional expede uma notificação automatizada acusando o recebimento da solicitação de busca."
     },
-    correctAnswer: "D",
+    correctAnswer: "B",
     justification: "Aldo Barreto enfatiza a dimensão cognitiva da informação: a simples transmissão física de sinais ou dados não configura transferência da informação. A informação só se concretiza plenamente quando gera significado, sendo assimilada pela consciência do receptor e transformando seu estoque de conhecimento (conhecimento gerando conhecimento).",
     reference: "Barreto (1998) - 'Mudança estrutural no fluxo da informação'"
   },
@@ -388,10 +388,10 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
       A: "Barreira linguística e idiomática derivada da hegemonia da língua inglesa nas bases de dados indexadoras internacionais.",
       B: "Barreira fisiológica e perceptiva associada a limitações sensoriais e neurocognitivas dos pesquisadores consulentes.",
       C: "Barreira terminológica e conceitual gerada pela polissemia e imprecisão vocabular de descritores de assunto não controlados.",
-      D: "Barreira ideológica e política decorrente de regimes de censura e controle de circulação de ideias por governos totalitários.",
-      E: "Barreira financeira / econômica de acesso, condicionando o direito ao saber à capacidade orçamentária do usuário ou da instituição."
+      D: "Barreira financeira / econômica de acesso, condicionando o direito ao saber à capacidade orçamentária do usuário ou da instituição.",
+      E: "Barreira ideológica e política decorrente de regimes de censura e controle de circulação de ideias por governos totalitários."
     },
-    correctAnswer: "E",
+    correctAnswer: "D",
     justification: "As barreiras financeiras e econômicas ocorrem quando o acesso ao conhecimento gerado pela humanidade é condicionado à capacidade de pagamento individual ou institucional (preço exorbitante de assinaturas de bases e periódicos), sendo o principal alvo de combate do Movimento de Acesso Aberto.",
     reference: "Pinheiro & Loureiro (1995) / Meadows (1999)"
   },
@@ -404,13 +404,13 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     moduleId: "m06",
     text: "A Lei de Bradford (1934), conhecida como a Lei da Dispersão Periódica, estabelece que se os periódicos forem ordenados em ordem decrescente de produtividade de artigos sobre determinado assunto, eles podem ser divididos em um núcleo de periódicos mais dedicados ao tema e várias zonas contendo o mesmo número de artigos. A relação entre a quantidade de periódicos no núcleo e nas zonas sucessivas obedece à proporção:",
     options: {
-      A: "1 : n : n² : n³... (crescimento geométrico do número de títulos para obter o mesmo rendimento de artigos).",
+      A: "n : n/2 : n/4 : n/8... (decaimento exponencial na quantidade de revistas necessárias para cobrir o campo temático).",
       B: "1 : 1 : 1 : 1... (distribuição perfeitamente equilibrada e uniforme de periódicos em todas as zonas do conhecimento).",
       C: "1 : 2 : 3 : 4... (progressão aritmética simples na razão de um periódico a mais a cada zona delimitada).",
-      D: "n : n/2 : n/4 : n/8... (decaimento exponencial na quantidade de revistas necessárias para cobrir o campo temático).",
+      D: "1 : n : n² : n³... (crescimento geométrico do número de títulos para obter o mesmo rendimento de artigos).",
       E: "log(n) : exp(n)... (relação logarítmica pura independente do volume de artigos acumulados nas diferentes classes)."
     },
-    correctAnswer: "A",
+    correctAnswer: "D",
     justification: "A formulação matemática de Bradford demonstra que para obter o mesmo número de artigos sobre um assunto em zonas sucessivas, o número de periódicos necessários aumenta geometricamente na proporção 1 : n : n² (onde 'n' é o multiplicador de Bradford).",
     reference: "Bradford (1934) - 'Sources of information on specific subjects' / Vanti (2002)"
   },
@@ -420,12 +420,12 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     text: "A Lei de Lotka (1926), ou Lei do Quadrado Inverso da Produtividade Científica, estuda a distribuição de autores por volume de artigos publicados. Essa lei empírica demonstra que:",
     options: {
       A: "Todos os autores acadêmicos publicam exatamente a mesma quantidade de artigos ao longo de suas trajetórias institucionais.",
-      B: "O número de autores que produzem n artigos decai como 1/n², concentrando a maioria da produção em um núcleo restrito de autores.",
+      B: "O montante total da literatura científica mundial dobra de volume a cada dois anos de forma homogênea em todas as disciplinas.",
       C: "Quanto maior for a titulação formal do pesquisador, menor será sua produção bibliográfica em periódicos internacionais indexados.",
       D: "Artigos elaborados em coautoria múltipla recebem rigorosamente o dobro de citações em comparação a publicações de autoria única.",
-      E: "O montante total da literatura científica mundial dobra de volume a cada dois anos de forma homogênea em todas as disciplinas."
+      E: "O número de autores que produzem n artigos decai como 1/n², concentrando a maioria da produção em um núcleo restrito de autores."
     },
-    correctAnswer: "B",
+    correctAnswer: "E",
     justification: "A Lei de Lotka constata que cerca de 60% de todos os autores em uma disciplina publicam apenas 1 trabalho ao longo da vida, enquanto a proporção de autores que publicam mais decai exponencialmente segundo o inverso do quadrado de sua produção (1/n²).",
     reference: "Lotka (1926) - 'The frequency distribution of scientific productivity'"
   },
@@ -449,13 +449,13 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     moduleId: "m06",
     text: "No Journal Citation Reports (JCR / Clarivate), o Fator de Impacto (Journal Impact Factor - JIF) de um periódico em um determinado ano (por exemplo, 2026) é calculado classicamente pela seguinte razão:",
     options: {
-      A: "Total de artigos originais publicados em 2026 dividido pelo quantitativo de leitores cadastrados no portal eletrônico da revista.",
+      A: "Citações recebidas em 2026 por artigos de 2024 e 2025, divididas pelo total de itens citáveis publicados pela revista nesse biênio.",
       B: "Média aritmética das notas quantitativas concedidas pelos pareceristas ad hoc nas avaliações por pares duplo-cegas do exercício.",
       C: "Soma das citações obtidas em 2026 pelos artigos de 2024 e 2025, multiplicada pelo valor monetário da taxa de publicação (APC).",
-      D: "Citações recebidas em 2026 por artigos de 2024 e 2025, divididas pelo total de itens citáveis publicados pela revista nesse biênio.",
+      D: "Total de artigos originais publicados em 2026 dividido pelo quantitativo de leitores cadastrados no portal eletrônico da revista.",
       E: "Número total de visualizações de página na internet apuradas no último quadrimestre do ano fiscal anterior pelo servidor institucional."
     },
-    correctAnswer: "D",
+    correctAnswer: "A",
     justification: "A fórmula clássica do Fator de Impacto de Garfield (JCR) para o ano N mede a média de citações por artigo nos dois anos precedentes: Citações em N a artigos de (N-1 e N-2) / Artigos citáveis publicados em (N-1 e N-2).",
     reference: "Garfield (1972) - 'Citation analysis as a tool in journal evaluation'"
   },
@@ -465,12 +465,12 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     text: "O Índice H (H-Index), formulado pelo físico Jorge Hirsch em 2005 para quantificar o rendimento e impacto acumulado de um pesquisador individual, define que um cientista possui índice h se:",
     options: {
       A: "Alcançou exatamente a marca de h livros impressos editados no idioma inglês por editoras estrangeiras com arbitragem por pares.",
-      B: "Atua há h anos ininterruptos como docente com estabilidade funcional e regime de dedicação exclusiva em universidade pública.",
+      B: "Possui h publicações que receberam, individualmente, pelo menos h citações, enquanto seus demais trabalhos têm menos de h citações.",
       C: "Orientou h teses de doutorado acadêmico defendidas e homologadas perante programas de pós-graduação nota 7 da CAPES.",
       D: "Captou h bolsas de produtividade em pesquisa do CNPq em editais universais de grande concorrência orçamentária nacional.",
-      E: "Possui h publicações que receberam, individualmente, pelo menos h citações, enquanto seus demais trabalhos têm menos de h citações."
+      E: "Atua há h anos ininterruptos como docente com estabilidade funcional e regime de dedicação exclusiva em universidade pública."
     },
-    correctAnswer: "E",
+    correctAnswer: "B",
     justification: "A métrica do Índice H combina produtividade (número de artigos) e impacto (citações recebidas): um pesquisador tem h=15 se ele tem pelo menos 15 artigos com 15 ou mais citações cada um. Isso impede que um autor com apenas 1 artigo muito citado tenha nota altíssima ou que um autor com 100 artigos nunca citados tenha nota alta.",
     reference: "Hirsch (2005) - 'An index to quantify an individual's scientific research output'"
   },
@@ -483,13 +483,13 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     moduleId: "m07",
     text: "Na clássica tipologia de fontes de informação estabelecida por Denis Grogan e sistematizada no Brasil por Murilo Bastos da Cunha, as fontes dividem-se em Primárias, Secundárias e Terciárias. São exemplos exclusivos de Fontes Primárias de informação científica:",
     options: {
-      A: "Artigos originais em periódicos, teses e dissertações acadêmicas, relatórios técnicos de pesquisa e cartas-patentes de invenção.",
-      B: "Dicionários biográficos, enciclopédias temáticas em múltiplos volumes e roteiros gerais de localização de acervos em bibliotecas.",
+      A: "Dicionários biográficos, enciclopédias temáticas em múltiplos volumes e roteiros gerais de localização de acervos em bibliotecas.",
+      B: "Artigos originais em periódicos, teses e dissertações acadêmicas, relatórios técnicos de pesquisa e cartas-patentes de invenção.",
       C: "Bases de dados referenciais como Scopus e Web of Science que armazenam apenas índices de citação e resumos documentais analíticos.",
       D: "Bibliografias retrospectivas nacionais e catálogos automatizados em linha de acesso público a bibliotecas universitárias (OPACs).",
       E: "Artigos de revisão integrativa da literatura, tratados de síntese bibliográfica e periódicos especializados em resumos (Abstracts)."
     },
-    correctAnswer: "A",
+    correctAnswer: "B",
     justification: "Fontes primárias trazem conhecimento novo, inédito, em primeira mão, que não sofreu condensação, filtro ou reprocessamento prévio por terceiros: artigos de pesquisa empírica, relatórios técnicos, teses, dissertações, patentes e anais de eventos científicos.",
     reference: "Grogan (1995) / Cunha (2001) - 'Para saber mais: fontes de informação em ciência e tecnologia'"
   },
@@ -498,13 +498,13 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     moduleId: "m07",
     text: "Embora sejam publicados em revistas científicas de prestígio com revisão por pares, os 'Artigos de Revisão de Literatura' (Review Articles / Revisões Sistemáticas) são classificados na Ciência da Informação formalmente como:",
     options: {
-      A: "Fontes Primárias, uma vez que contêm dados empíricos gerados em bancada laboratorial com delineamento amostral inédito.",
-      B: "Fontes Secundárias, pois não relatam descoberta inédita, mas sintetizam, analisam e consolidam estudos primários anteriores.",
+      A: "Fontes Secundárias, pois não relatam descoberta inédita, mas sintetizam, analisam e consolidam estudos primários anteriores.",
+      B: "Fontes Primárias, uma vez que contêm dados empíricos gerados em bancada laboratorial com delineamento amostral inédito.",
       C: "Fontes Terciárias, equivalendo estruturalmente a repertórios de almanaques populares e pequenos dicionários lexicais de bolso.",
       D: "Literatura Cinzenta não científica, em virtude de não adotarem os procedimentos formais de depósito legal e circulação livreira.",
       E: "Documentos de circulação efémera em domínio público compulsório, dispensados da concessão formal de crédito aos autores originais."
     },
-    correctAnswer: "B",
+    correctAnswer: "A",
     justification: "Pegadinha clássica em provas de concurso: Artigos de revisão analisam a literatura primária pré-existente; portanto, sua função é organizar, filtrar, consolidar e apontar o estado da arte de pesquisas anteriores, constituindo tecnicamente uma Fonte Secundária de informação.",
     reference: "Grogan (1995) / Cunha (2001)"
   },
@@ -515,11 +515,11 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     options: {
       A: "As bases referenciais operam sem campos de indexação temática, enquanto as de texto completo utilizam vocabulários multilíngues.",
       B: "As bases de texto completo não admitem operadores booleanos, enquanto as referenciais realizam exclusivamente busca por frase exata.",
-      C: "As bases referenciais indexam metadados analíticos e citações sem o arquivo integral; as de texto completo fornecem o documento na íntegra.",
-      D: "As bases referenciais arquivam livros de ficção, ao passo que as de texto completo restringem-se ao depósito de teses em microfilme.",
+      C: "As bases referenciais arquivam livros de ficção, ao passo que as de texto completo restringem-se ao depósito de teses em microfilme.",
+      D: "As bases referenciais indexam metadados analíticos e citações sem o arquivo integral; as de texto completo fornecem o documento na íntegra.",
       E: "As bases de texto completo funcionam exclusivamente em redes intranet locais, enquanto as referenciais exigem pagamentos por consulta."
     },
-    correctAnswer: "C",
+    correctAnswer: "D",
     justification: "Bases referenciais são inventários de metadados analíticos e índices de citação: apontam para onde a literatura está. Já as bases de texto completo armazenam nos seus servidores e entregam o arquivo completo (PDF/HTML) do texto para consulta direta.",
     reference: "Lancaster (2004) / Rowley (2002)"
   },
@@ -530,11 +530,11 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     options: {
       A: "Apresentam encadernações cinzentas padronizadas resultantes da deterioração natural dos pigmentos da capa por oxidação física.",
       B: "Estão submetidos a regimes de segredo de estado e censura inquisitorial que proíbem o acesso público sob qualquer hipótese.",
-      C: "Constituem reproduções reprográficas não autorizadas que violam dispositivos da legislação de direitos patrimoniais do autor.",
-      D: "São produzidos por governos, academia ou indústrias, mas circulam fora dos canais comerciais convencionais de distribuição livreira.",
+      C: "São produzidos por governos, academia ou indústrias, mas circulam fora dos canais comerciais convencionais de distribuição livreira.",
+      D: "Constituem reproduções reprográficas não autorizadas que violam dispositivos da legislação de direitos patrimoniais do autor.",
       E: "Abordam estritamente o impacto de resíduos industriais e índices de contaminação atmosférica em centros metropolitanos."
     },
-    correctAnswer: "D",
+    correctAnswer: "C",
     justification: "O conceito de literatura cinzenta (conferência de Luxemburgo, 1997) abrange o material produzido por órgãos públicos, laboratórios, empresas e universidades cuja circulação é restrita ou não passa pelo canal convencional de comercialização livreira, exigindo estratégias de busca e coleta especializadas das bibliotecas.",
     reference: "Alberani (1990) / Farace & Schöpfel (2010)"
   },
@@ -562,13 +562,13 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     moduleId: "m08",
     text: "Na formulação de estratégias de busca em catálogos eletrônicos e bases de dados científicos, o uso dos operadores booleanos clássicos (AND, OR, NOT) altera sensivelmente o conjunto de resultados. O operador que realiza a UNIÃO lógica de conjuntos, ampliando a pesquisa para recuperar documentos que contenham qualquer um dos termos sinônimos pesquisados, aumentando a REVOCAÇÃO, é o:",
     options: {
-      A: "OR (OU), promovendo a reunião lógica de termos alternativos e sinônimos no conjunto recuperado.",
+      A: "NOT (NÃO), excluindo compulsoriamente os registros que apresentem determinada palavra-chave da seleção.",
       B: "AND (E), executando a interseção restritiva entre termos para delimitar e estreitar os resultados.",
-      C: "NOT (NÃO), excluindo compulsoriamente os registros que apresentem determinada palavra-chave da seleção.",
+      C: "OR (OU), promovendo a reunião lógica de termos alternativos e sinônimos no conjunto recuperado.",
       D: "XOR (OU exclusivo), recuperando apenas itens que contenham estritamente um termo com descarte do outro.",
       E: "NEAR (Perto de), impondo proximidade espacial física obrigatória entre as expressões no texto integral."
     },
-    correctAnswer: "A",
+    correctAnswer: "C",
     justification: "O operador OR efetua a união dos conjuntos: ele recupera documentos que apresentem o termo A, o termo B ou ambos. É a ferramenta indispensável para agrupar sinônimos e variantes linguísticas (ex: 'câncer OR neoplasia OR tumor'), ampliando a revocação da busca.",
     reference: "Lancaster (2004) - 'Indexação e Resumos' / Rowley (2002)"
   },
@@ -578,12 +578,12 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     text: "Durante uma pesquisa em base de dados bibliográfica, o bibliotecário utiliza o recurso de 'Truncamento' (geralmente representado pelos caracteres *, ? ou $). A finalidade técnica desse recurso é:",
     options: {
       A: "Interromper a consulta após determinado intervalo em segundos para desocupar o buffer de memória do servidor web.",
-      B: "Recuperar a raiz ou radical de uma palavra com todas as suas flexões morfológicas de sufixo, prefixo, gênero e número.",
+      B: "Impedir a exibição de resumos que apresentem percentuais de similaridade identificados por ferramentas de plágio.",
       C: "Filtrar os resultados para retirar registros redigidos em línguas estrangeiras que não pertençam ao vernáculo oficial.",
-      D: "Impedir a exibição de resumos que apresentem percentuais de similaridade identificados por ferramentas de plágio.",
+      D: "Recuperar a raiz ou radical de uma palavra com todas as suas flexões morfológicas de sufixo, prefixo, gênero e número.",
       E: "Padronizar automaticamente os termos de busca em caracteres maiúsculos independentemente do teclado do usuário."
     },
-    correctAnswer: "B",
+    correctAnswer: "D",
     justification: "O truncamento (truncation) é a substituição de um ou mais caracteres pelo caractere coringa (* ou $): permite que uma única raiz lexical recupere todas as derivações sufixais e flexões gramaticais sem necessidade de digitar cada termo individualmente com OR.",
     reference: "Rowley (2002) - 'A biblioteca eletrônica'"
   },
@@ -592,13 +592,13 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     moduleId: "m08",
     text: "A avaliação do desempenho de um Sistema de Recuperação da Informação (SRI) baseia-se historicamente nas métricas formuladas por Cyril Cleverdon nos experimentos de Cranfield e consagradas por F. W. Lancaster. As métricas de 'Revocação' (Recall) e 'Precisão' (Precision) são calculadas, respectivamente, como:",
     options: {
-      A: "Total de volumes catalogados no acervo / Quantitativo de consulentes presenciais atendidos no trimestre.",
+      A: "Proporção de relevantes recuperados sobre o total de relevantes existentes; e de relevantes recuperados sobre o total recuperado.",
       B: "Largura de banda do link de internet da biblioteca / Latência média de resposta em milissegundos do servidor.",
-      C: "Proporção de relevantes recuperados sobre o total de relevantes existentes; e de relevantes recuperados sobre o total recuperado.",
+      C: "Total de volumes catalogados no acervo / Quantitativo de consulentes presenciais atendidos no trimestre.",
       D: "Percentual de incorreções gramaticais no resumo analítico / Quantidade bruta de termos autorizados pelo tesauro.",
       E: "Média de cliques efetuados pelo usuário no navegador / Volume de páginas impressas nos terminais públicos."
     },
-    correctAnswer: "C",
+    correctAnswer: "A",
     justification: "Revocação mede a capacidade de esgotar o acervo: (Relevantes Recuperados) / (Total de Relevantes no Sistema). Precisão mede a pureza do resultado: (Relevantes Recuperados) / (Total de Itens Trazidos pela Busca). São grandezas inversamente proporcionais.",
     reference: "Lancaster (1979, 2004) - 'Information Retrieval Systems'"
   },
@@ -610,10 +610,10 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
       A: "A consulta gera um volume excessivo de documentos totalmente irrelevantes que poluem o conjunto recuperado.",
       B: "O sistema operacional de rede sofre uma falha física de hardware desligando as estações públicas de consulta.",
       C: "A comissão gestora da biblioteca veda o empréstimo domiciliar de títulos de referência durante as férias escolares.",
-      D: "A busca deixa de recuperar itens relevantes existentes na base devido a uma formulação excessivamente restritiva.",
-      E: "O terminal de pesquisa entra em modo de economia de energia e desconecta a sessão por inatividade do usuário."
+      D: "O terminal de pesquisa entra em modo de economia de energia e desconecta a sessão por inatividade do usuário.",
+      E: "A busca deixa de recuperar itens relevantes existentes na base devido a uma formulação excessivamente restritiva."
     },
-    correctAnswer: "D",
+    correctAnswer: "E",
     justification: "Silêncio Documental ocorre quando documentos relevantes existem na base, mas a estratégia de busca foi excessivamente restrita (ou usou termos rígidos/sinônimos não mapeados), fazendo com que a busca não recupere o que o usuário precisava (baixa revocação). Ruído é o oposto (muitos itens inúteis trazidos na busca).",
     reference: "Lancaster (2004) / Chaumier (1988)"
   },
@@ -623,12 +623,12 @@ export const moduleQuizzesPart1: ModuleQuizQuestion[] = [
     text: "Os operadores de proximidade (como NEAR, WITH, ADJ ou SAME) são ferramentas avançadas de recuperação da informação. A função desses operadores em relação ao operador booleano AND tradicional é:",
     options: {
       A: "Alargar a pesquisa para recuperar documentos em qualquer formato sem conexão contextual entre os campos indexados.",
-      B: "Tornar a estratégia de busca equivalente ao operador OR, recuperando termos dissociados distribuídos pelo texto.",
+      B: "Exigir que os termos de busca ocorram contíguos ou em distância determinada no mesmo campo, elevando a precisão.",
       C: "Ignorar os critérios gramaticais de ordem alfabética para acelerar a indexação preliminar no catálogo público.",
       D: "Substituir a necessidade de indexação descritiva por meio da leitura direta de metadados binários nos ficheiros.",
-      E: "Exigir que os termos de busca ocorram contíguos ou em distância determinada no mesmo campo, elevando a precisão."
+      E: "Tornar a estratégia de busca equivalente ao operador OR, recuperando termos dissociados distribuídos pelo texto."
     },
-    correctAnswer: "E",
+    correctAnswer: "B",
     justification: "O operador AND apenas exige que ambos os termos estejam no mesmo registro (um pode estar no título e o outro lá no final das referências, sem conexão real de sentido). Os operadores de proximidade (ex: NEAR/3) exigem contiguidade ou proximidade de palavras, garantindo que os conceitos estejam intimamente associados e reduzindo o ruído.",
     reference: "Rowley (2002) / Lancaster (2004)"
   }

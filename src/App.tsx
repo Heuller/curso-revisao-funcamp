@@ -1113,8 +1113,8 @@ export default function App() {
                           </CardDescription>
                         </CardHeader>
                         <CardContent className="p-5 sm:p-8">
-                          <div className="prose prose-invert max-w-none text-slate-200">
-                            <MarkdownViewer content={activeModule.memorizationMatrix} />
+                          <div className="max-w-none text-slate-200">
+                            <MarkdownViewer content={activeModule.memorizationMatrix} variant="dark" />
                           </div>
                         </CardContent>
                       </Card>

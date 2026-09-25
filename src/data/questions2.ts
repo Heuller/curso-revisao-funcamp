@@ -6,13 +6,13 @@ export const q26_to_50: Question[] = [
     moduleId: "m01",
     text: "O padrão internacional que permite a coleta automatizada e interoperável de metadados descritivos por provedores de serviço (harvesters), viabilizando a integração em rede de Repositórios Institucionais ao redor do mundo, é o:",
     options: {
-      A: "OAI-PMH (Open Archives Initiative Protocol for Metadata Harvesting), baseado em requisições HTTP e XML.",
+      A: "ISO 2709, que define a formatação magnética de registros em fitas de dados e diretórios posicionais.",
       B: "Z39.50 (ISO 23950), voltado primordialmente à catalogação cooperativa e cópia remota de fichas em MARC 21.",
-      C: "ISO 2709, que define a formatação magnética de registros em fitas de dados e diretórios posicionais.",
+      C: "OAI-PMH (Open Archives Initiative Protocol for Metadata Harvesting), baseado em requisições HTTP e XML.",
       D: "Protocolo SPARQL, utilizado com exclusividade para consulta de dados em grafos na Web Semântica aberta.",
       E: "Dublin Core Qualificado, que atua como esquema de classificação decimal para acervos multimídia físicos."
     },
-    correctAnswer: "A",
+    correctAnswer: "C",
     justification: "O OAI-PMH é o protocolo de colheita (harvesting) de metadados por excelência nos Repositórios Institucionais em todo o mundo. O Dublin Core é o conjunto de metadados transportado, e o Z39.50 é voltado a catálogos de bibliotecas."
   },
   {
@@ -20,13 +20,13 @@ export const q26_to_50: Question[] = [
     moduleId: "m02",
     text: "Uma biblioteca universitária decidiu converter todo o seu acervo digital de teses e dissertações antigas arquivadas em formato proprietário '.DOCX' para o padrão aberto e normalizado 'PDF/A', assegurando a legibilidade futura dos arquivos independentemente de softwares comerciais. Essa estratégia técnica de preservação digital de longo prazo denomina-se:",
     options: {
-      A: "Emulação tecnológica, que desenvolve programas para simular o funcionamento de processadores e sistemas antigos.",
-      B: "Migração de formato, que converte o arquivo lógico de um padrão tecnológico obsoleto para um padrão estável.",
+      A: "Migração de formato, que converte o arquivo lógico de um padrão tecnológico obsoleto para um padrão estável.",
+      B: "Emulação tecnológica, que desenvolve programas para simular o funcionamento de processadores e sistemas antigos.",
       C: "Refrescamento de mídia (Refreshing), que transfere os bits de um disco rígido antigo para um servidor em nuvem.",
       D: "Encapsulamento informacional, que agrupa o arquivo e o software visualizador dentro de um único pacote criptografado.",
       E: "Arqueologia digital, que reconstitui bits danificados a partir de restos magnéticos de fitas perfuradas históricas."
     },
-    correctAnswer: "B",
+    correctAnswer: "A",
     justification: "A Migração de Formato consiste na transferência periódica de dados digitais de um formato lógico de arquivo para outro mais moderno ou normalizado (ex: .doc para PDF/A), driblando a obsolescência de software."
   },
   {
@@ -36,11 +36,11 @@ export const q26_to_50: Question[] = [
     options: {
       A: "Via Dourada com APC (Gold Open Access), mantida pela cobrança de taxas de autores para custear o periódico.",
       B: "Via Verde (Green Open Access), na qual o artigo fica sob embargo no site da editora e é autoarquivado.",
-      C: "Via Diamante ou Platina (Diamond/Platinum Open Access), sustentada institucionalmente e sem custos para autores e leitores.",
+      C: "Via Híbrida (Hybrid Open Access), na qual periódicos comerciais tradicionais cobram assinatura e APC simultaneamente.",
       D: "Via Bronze (Bronze Open Access), em que o artigo é liberado temporariamente para leitura sem licença Creative Commons.",
-      E: "Via Híbrida (Hybrid Open Access), na qual periódicos comerciais tradicionais cobram assinatura e APC simultaneamente."
+      E: "Via Diamante ou Platina (Diamond/Platinum Open Access), sustentada institucionalmente e sem custos para autores e leitores."
     },
-    correctAnswer: "C",
+    correctAnswer: "E",
     justification: "A Via Diamante (ou Platina) do Acesso Aberto caracteriza-se pela gratuidade absoluta para ambos os lados: não cobra dos leitores (acesso aberto) e não cobra dos autores (isenta de APCs), sendo mantida por universidades, sociedades científicas e agências públicas de fomento."
   },
   {
@@ -49,12 +49,12 @@ export const q26_to_50: Question[] = [
     text: "No contexto da ética aplicada e do uso de Inteligência Artificial em catálogos e serviços de busca de bibliotecas, o fenômeno do 'Viés Algorítmico' (Algorithmic Bias) manifesta-se quando:",
     options: {
       A: "O sistema computacional inventa títulos de teses e inventa autores fictícios com aparência de verossimilhança.",
-      B: "O software de indexação paralisa suas atividades devido ao excesso de requisições concorrentes de alunos.",
+      B: "O algoritmo reproduz, amplifica ou perpetua discriminações e preconceitos contidos nos dados de seu treinamento.",
       C: "A ferramenta de busca substitui automaticamente operadores booleanos por consultas em linguagem natural aberta.",
-      D: "O algoritmo reproduz, amplifica ou perpetua discriminações e preconceitos contidos nos dados de seu treinamento.",
+      D: "O software de indexação paralisa suas atividades devido ao excesso de requisições concorrentes de alunos.",
       E: "A base de dados bloqueia o acesso a usuários que não possuem certificado digital emitido pela autoridade local."
     },
-    correctAnswer: "D",
+    correctAnswer: "B",
     justification: "O Viés Algorítmico ocorre quando o modelo reflete e perpetua os preconceitos (sociais, raciais, de gênero ou culturais) existentes na base documental histórica utilizada para seu treinamento, gerando assimetrias injustas nos resultados."
   },
   {
@@ -65,10 +65,10 @@ export const q26_to_50: Question[] = [
       A: "Portal de Periódicos da CAPES, direcionado à consulta de periódicos científicos e patentes internacionais.",
       B: "Plataforma Lattes, destinada exclusivamente ao registro curricular individual de pesquisadores e estudantes.",
       C: "CCN (Catálogo Coletivo Nacional), cuja função é a localização física de fascículos de publicações seriadas.",
-      D: "SciELO Brasil, plataforma de publicação eletrônica cooperativa de periódicos científicos de alto impacto.",
-      E: "BDTD (Biblioteca Digital Brasileira de Teses e Dissertações), portal unificado nacional do IBICT."
+      D: "BDTD (Biblioteca Digital Brasileira de Teses e Dissertações), portal unificado nacional do IBICT.",
+      E: "SciELO Brasil, plataforma de publicação eletrônica cooperativa de periódicos científicos de alto impacto."
     },
-    correctAnswer: "E",
+    correctAnswer: "D",
     justification: "A BDTD (Biblioteca Digital Brasileira de Teses e Dissertações), mantida pelo IBICT, é a rede nacional que integra os sistemas de informação de teses e dissertações das instituições de ensino superior do país em um único ponto de acesso público."
   },
   {
@@ -76,13 +76,13 @@ export const q26_to_50: Question[] = [
     moduleId: "m14",
     text: "De acordo com a Declaração de Princípios Internacionais de Catalogação (ICP - IFLA 2016), quando a aplicação estrita de uma regra técnica ou código internacional entrar em conflito direto com as necessidades informacionais reais da comunidade acadêmica atendida pela biblioteca, o catalogador deve guiar-se prioritariamente pelo Princípio Supremo da:",
     options: {
-      A: "Conveniência do Usuário (Convenience of the User), adaptando a descrição em benefício da busca e recuperação do leitor.",
-      B: "Padronização Internacional Universal (Universal Standardization), que proíbe qualquer adaptação de termos em nível local.",
+      A: "Padronização Internacional Universal (Universal Standardization), que proíbe qualquer adaptação de termos em nível local.",
+      B: "Conveniência do Usuário (Convenience of the User), adaptando a descrição em benefício da busca e recuperação do leitor.",
       C: "Interoperabilidade Comercial de Dados, que exige a preservação das formas linguísticas adotadas pelos grandes livreiros.",
       D: "Economia de Processamento Técnico, priorizando regras que reduzam o tempo gasto na transcrição dos elementos da obra.",
       E: "Fidelidade Absoluta ao Suporte Físico, obrigando o catalogador a transcrever apenas caracteres tipográficos visíveis."
     },
-    correctAnswer: "A",
+    correctAnswer: "B",
     justification: "O Princípio da Conveniência do Usuário é o farol maior de toda a teoria catalográfica contemporânea da IFLA (ICP 2016): as decisões sobre a formulação de descrições e pontos de acesso devem ser tomadas tendo sempre em vista o interesse e a facilidade do usuário."
   },
   {
@@ -91,12 +91,12 @@ export const q26_to_50: Question[] = [
     text: "Em conformidade com as regras do Código de Catalogação Anglo-Americano (AACR2R, Regra 21.6), se a folha de rosto de um livro indicar a autoria de exatamente TRÊS pessoas que compartilham igualmente a criação da obra, sem destaque tipográfico ou indicação de coordenador, a determinação do Ponto de Acesso Principal deverá recair sobre:",
     options: {
       A: "O Título próprio da obra, elaborando-se entradas secundárias para os três autores mencionados na publicação.",
-      B: "O primeiro autor listado na folha de rosto, elaborando-se entradas secundárias para os outros dois autores.",
+      B: "Todos os três autores em cabeçalhos principais independentes, criando-se três registros catalográficos distintos.",
       C: "O autor que tiver maior antiguidade acadêmica ou titulação científica informada no verso da folha de rosto.",
       D: "A instituição de ensino ou editora universitária responsável pelo financiamento da pesquisa publicada.",
-      E: "Todos os três autores em cabeçalhos principais independentes, criando-se três registros catalográficos distintos."
+      E: "O primeiro autor listado na folha de rosto, elaborando-se entradas secundárias para os outros dois autores."
     },
-    correctAnswer: "B",
+    correctAnswer: "E",
     justification: "Na regra de três do AACR2 (21.6B1): havendo dois ou três autores com responsabilidade compartilhada, o ponto de acesso principal é dado ao PRIMEIRO mencionado na folha de rosto, elaborando-se entradas secundárias para os demais. Apenas quando houver quatro ou mais autores é que a entrada principal migra para o Título."
   },
   {
@@ -106,11 +106,11 @@ export const q26_to_50: Question[] = [
     options: {
       A: "Tag 100, reservada privativamente para o ponto de acesso principal de nome pessoal do primeiro autor.",
       B: "Tag 260 ou 264, que abriga os dados de imprenta, compreendendo local, editora e data de publicação do item.",
-      C: "Tag 245 (Title Statement), subdividida em subcampos como $a (título principal) e $c (menção de responsabilidade).",
-      D: "Tag 300, destinada ao registro da descrição física, abrangendo número de páginas, dimensões e ilustrações.",
+      C: "Tag 300, destinada ao registro da descrição física, abrangendo número de páginas, dimensões e ilustrações.",
+      D: "Tag 245 (Title Statement), subdividida em subcampos como $a (título principal) e $c (menção de responsabilidade).",
       E: "Tag 500, utilizada para a inserção de notas gerais e observações textuais de interesse do catalogador."
     },
-    correctAnswer: "C",
+    correctAnswer: "D",
     justification: "A Tag 245 é o campo principal de título no MARC 21. Ela comporta subcampos essenciais como $a (título principal), $b (outras informações sobre o título/subtítulo) e $c (indicação de responsabilidade)."
   },
   {
@@ -120,11 +120,11 @@ export const q26_to_50: Question[] = [
     options: {
       A: "Inserir compulsoriamente a abreviatura latina tradicional [S.l.] entre colchetes no subcampo de imprenta.",
       B: "Utilizar a indicação em latim por extenso [sine loco] para assegurar padronização com bibliotecas da Europa.",
-      C: "Deixar o campo de publicação em branco, saltando diretamente para a menção da editora ou fabricante da obra.",
-      D: "Registrar a indicação expressa na língua da agência catalogadora, como [Local de publicação não identificado].",
+      C: "Registrar a indicação expressa na língua da agência catalogadora, como [Local de publicação não identificado].",
+      D: "Deixar o campo de publicação em branco, saltando diretamente para a menção da editora ou fabricante da obra.",
       E: "Substituir a ausência do local pelo nome do país de registro do ISBN informado no código de barras impresso."
     },
-    correctAnswer: "D",
+    correctAnswer: "C",
     justification: "O RDA aboliu expressamente as siglas latinas arcaicas. Em vez de [S.l.] (sine loco), o RDA instrui registrar a expressão por extenso na língua da agência: [Local de publicação não identificado] (ou [Place of publication not identified])."
   },
   {
@@ -132,13 +132,13 @@ export const q26_to_50: Question[] = [
     moduleId: "m18",
     text: "No modelo conceitual FRBR (Functional Requirements for Bibliographic Records) e no consolidado IFLA LRM, o nível ontológico mais elevado e abstrato do Grupo 1, que representa a criação intelectual ou artística em seu estado puramente conceitual, independente de qualquer forma de expressão linguística ou suporte material, denomina-se:",
     options: {
-      A: "Item (Item), correspondente ao objeto físico singular que se encontra acondicionado na estante da biblioteca.",
+      A: "Obra (Work), que constitui a criação intelectual ou artística abstrata como conceito ontológico originário.",
       B: "Expressão (Expression), que compreende a realização linguística, musical ou coreográfica da mensagem intelectual.",
       C: "Manifestação (Manifestation), que personifica a corporificação física ou digital produzida por uma editora.",
       D: "Nomen (Nome), responsável pela atribuição de rótulos linguísticos e códigos de autoridade aos registros.",
-      E: "Obra (Work), que constitui a criação intelectual ou artística abstrata como conceito ontológico originário."
+      E: "Item (Item), correspondente ao objeto físico singular que se encontra acondicionado na estante da biblioteca."
     },
-    correctAnswer: "E",
+    correctAnswer: "A",
     justification: "A 'Obra' (Work) é o conceito mais abstrato na hierarquia WEMI do FRBR/LRM: é a ideia central e criação intelectual em si. Quando essa obra se materializa em signos e linguagem, temos a Expressão; quando é editada e publicada, temos a Manifestação; e cada exemplar é um Item."
   },
   {
@@ -146,13 +146,13 @@ export const q26_to_50: Question[] = [
     moduleId: "m19",
     text: "Na estrutura sistemática e na notação básica da Classificação Decimal de Dewey (CDD, 23ª edição), a regra estrutural de subordinação hierárquica estabelece que NENHUMA notação de classe básica principal pode ser grafada com menos de:",
     options: {
-      A: "Três algarismos arábicos (como 000, 100 ou 530), completando-se com zeros à direita caso necessário.",
+      A: "Cinco dígitos posicionais com inclusão obrigatória de indicadores de idioma e localização física da obra.",
       B: "Dois algarismos arábicos seguidos de uma letra maiúscula que represente a subdivisão temática principal.",
       C: "Quatro algarismos arábicos separados por ponto decimal após o segundo dígito (exemplo: 50.40).",
       D: "Um algarismo romano precedido do sinal gráfico de adição (+) para indicar a hierarquia das ciências.",
-      E: "Cinco dígitos posicionais com inclusão obrigatória de indicadores de idioma e localização física da obra."
+      E: "Três algarismos arábicos (como 000, 100 ou 530), completando-se com zeros à direita caso necessário."
     },
-    correctAnswer: "A",
+    correctAnswer: "E",
     justification: "Na CDD, nenhuma notação básica tem menos de 3 dígitos (ex: 000 Generalidades, 500 Ciências Naturais, 510 Matemática, 512 Álgebra). Se o número for menor, completa-se com zeros à direita para manter o padrão tridimensional mínimo."
   },
   {
@@ -161,12 +161,12 @@ export const q26_to_50: Question[] = [
     text: "Ao classificar uma obra pela Classificação Decimal de Dewey (CDD), o bibliotecário constata que o documento analisa com igual profundidade e abrangência TRÊS tópicos pertencentes a uma mesma classe hierárquica superior (por exemplo: 512 - Álgebra, 515 - Análise e 516 - Geometria). De acordo com a clássica 'Regra de Três' da CDD, a obra deve ser classificada:",
     options: {
       A: "Na notação da disciplina que ocupar o maior percentual de páginas ilustradas no corpo do documento.",
-      B: "No número de classe imediatamente superior que abranja de forma abrangente todas as três disciplinas (510 - Matemática).",
+      B: "Obrigatoriamente na classe geral de enciclopédias e obras de referência multidisciplinares (030).",
       C: "Na classe da disciplina que aparecer primeiro na ordenação numérica das tabelas da CDD (512 - Álgebra).",
-      D: "Obrigatoriamente na classe geral de enciclopédias e obras de referência multidisciplinares (030).",
+      D: "No número de classe imediatamente superior que abranja de forma abrangente todas as três disciplinas (510 - Matemática).",
       E: "Criando-se uma notação composta ligada pelo sinal de dois-pontos (:), a exemplo da prática adotada na CDU."
     },
-    correctAnswer: "B",
+    correctAnswer: "D",
     justification: "A 'Regra de Três' da CDD estabelece que, se um livro trata de três ou mais disciplinas que sejam subdivisões de uma classe comum mais ampla, ele deve ser classificado na classe imediatamente superior que as engloba (neste caso, 510 Matemática Geral). A regra do primeiro na ordem (First of Two) só se aplica quando forem dois assuntos."
   },
   {
@@ -174,13 +174,13 @@ export const q26_to_50: Question[] = [
     moduleId: "m21",
     text: "Na estrutura conceitual dos Tesauros e Linguagens Documentárias Controladas, as relações de subordinação e supraordinação lógica entre classes mais amplas e suas subdivisões específicas (como a relação entre 'Metais' e 'Alumínio') são formalmente codificadas pelas siglas:",
     options: {
-      A: "USE / UP (Use / Usado Para), que estabelece a relação de equivalência e sinonímia entre termos do vocabulário.",
+      A: "TG / TE (Termo Genérico / Termo Específico), que estrutura o encadeamento hierárquico vertical entre conceitos.",
       B: "TR / RT (Termo Relacionado / Related Term), que representa associações conceituais de afinidade e contiguidade temática.",
-      C: "TG / TE (Termo Genérico / Termo Específico), que estrutura o encadeamento hierárquico vertical entre conceitos.",
+      C: "USE / UP (Use / Usado Para), que estabelece a relação de equivalência e sinonímia entre termos do vocabulário.",
       D: "NE / SN (Nota de Escopo / Scope Note), que define e restringe o significado e a aplicação do descritor na base.",
       E: "ND / NA (Não Descritor / Não Autorizado), que indica termos rejeitados por critérios de obsolescência lexical."
     },
-    correctAnswer: "C",
+    correctAnswer: "A",
     justification: "A relação hierárquica em tesauros é representada pelo par TG (Termo Genérico / Broader Term - BT) e TE (Termo Específico / Narrower Term - NT). USE/UP é equivalência e TR é relação associativa."
   },
   {
@@ -189,12 +189,12 @@ export const q26_to_50: Question[] = [
     text: "Diferentemente do serviço de referência convencional, frequentemente classificado como 'reativo' por aguardar a presença física do consulente, o serviço de informação que se caracteriza pelo perfil 'pró-ativo', antecipando-se às necessidades dos pesquisadores mediante alertas personalizados de novas publicações com base em seus interesses, é o(a):",
     options: {
       A: "Comutação Bibliográfica (COMUT), responsável pelo fornecimento de cópias impressas de artigos por via postal.",
-      B: "Empréstimo Entre Bibliotecas (EEB), que viabiliza o translado de exemplares físicos entre instituições conveniadas.",
+      B: "Disseminação Seletiva da Informação (DSI), que cruza continuamente os perfis temáticos com o acervo recém-ingressado.",
       C: "Catalogação na Fonte (CIP), que confecciona a ficha catalográfica no verso da folha de rosto das edições comerciais.",
-      D: "Disseminação Seletiva da Informação (DSI), que cruza continuamente os perfis temáticos com o acervo recém-ingressado.",
+      D: "Empréstimo Entre Bibliotecas (EEB), que viabiliza o translado de exemplares físicos entre instituições conveniadas.",
       E: "Depósito Legal obrigatório, que exige o envio compulsório de exemplares à biblioteca nacional para guarda de memória."
     },
-    correctAnswer: "D",
+    correctAnswer: "B",
     justification: "A Disseminação Seletiva da Informação (DSI) é o serviço pró-ativo por excelência: a biblioteca cadastra o perfil temático do usuário e o sistema dispara notificações e alertas contínuos sobre novas publicações que correspondam exatamente àquele perfil."
   },
   {
@@ -204,11 +204,11 @@ export const q26_to_50: Question[] = [
     options: {
       A: "Ser dispensada de triagem técnica, aceitando-se indiscriminadamente qualquer material para inflar os índices do MEC.",
       B: "Ser feita com menor rigor que a aquisição por compra, já que materiais doados não geram desembolso financeiro direto.",
-      C: "Submeter-se à aceitação compulsória, sendo juridicamente vedado o descarte de materiais doados a órgãos públicos.",
+      C: "Obedecer rigorosamente aos mesmos critérios de qualidade, pertinência e relevância adotados para as compras regulares.",
       D: "Ser encaminhada integralmente ao setor de obras raras e coleções especiais, independentemente do estado e da data.",
-      E: "Obedecer rigorosamente aos mesmos critérios de qualidade, pertinência e relevância adotados para as compras regulares."
+      E: "Submeter-se à aceitação compulsória, sendo juridicamente vedado o descarte de materiais doados a órgãos públicos."
     },
-    correctAnswer: "E",
+    correctAnswer: "C",
     justification: "Materiais recebidos por doação demandam custos de processamento técnico, espaço físico e conservação. Portanto, a seleção de doações deve seguir com exatidão os MESMOS critérios de seleção estabelecidos para a compra de materiais, descartando o que não agregar valor ao currículo e à pesquisa da universidade."
   },
   {
@@ -216,13 +216,13 @@ export const q26_to_50: Question[] = [
     moduleId: "m10",
     text: "No domínio da Competência em Informação (Information Literacy), o modelo conceitual formulado por Michael Eisenberg e Robert Berkowitz, estruturado em seis etapas lógicas para a solução de problemas de informação (Definição da Tarefa, Estratégia de Busca, Localização e Acesso, Uso da Informação, Síntese e Avaliação), denomina-se:",
     options: {
-      A: "Big6 Skills, amplamente aplicado em programas de formação de usuários e alfabetização informacional.",
+      A: "Ciclo de Curadoria Digital do DCC, direcionado à preservação contínua de metadados em repositórios digitais.",
       B: "Modelo SCONUL das Sete Competências, focado nas bibliotecas universitárias e de pesquisa do Reino Unido.",
       C: "Modelo ISP de Carol Kuhlthau, voltado à análise dos sentimentos de dúvida e ansiedade no processo de busca.",
-      D: "Ciclo de Curadoria Digital do DCC, direcionado à preservação contínua de metadados em repositórios digitais.",
+      D: "Big6 Skills, amplamente aplicado em programas de formação de usuários e alfabetização informacional.",
       E: "Framework da ACRL para o Ensino Superior, baseado em limiares conceituais epistemológicos e autoria aberta."
     },
-    correctAnswer: "A",
+    correctAnswer: "D",
     justification: "O modelo Big6 (Eisenberg e Berkowitz) é um dos modelos mais cobrados em concursos públicos para programas de competência informacional, dividindo o processo de busca e resolução de problemas informacionais em seis passos práticos e iterativos."
   },
   {
@@ -231,12 +231,12 @@ export const q26_to_50: Question[] = [
     text: "Na investigação sobre o Comportamento Informacional de Usuários, o modelo ISP (Information Search Process), desenvolvido pela pesquisadora Carol Kuhlthau, destaca a dimensão afetiva que acompanha a busca. De acordo com o modelo de Kuhlthau, o usuário vivencia seus índices mais elevados de incerteza, frustração e ansiedade tipicamente na fase de:",
     options: {
       A: "Apresentação e fechamento dos resultados consolidados da pesquisa para os avaliadores acadêmicos.",
-      B: "Iniciação e seleção preliminar do tópico, quando ele reconhece a carência informacional e ainda carece de foco.",
-      C: "Coleta e síntese final das evidências documentais já selecionadas nas estantes da unidade de informação.",
+      B: "Coleta e síntese final das evidências documentais já selecionadas nas estantes da unidade de informação.",
+      C: "Iniciação e seleção preliminar do tópico, quando ele reconhece a carência informacional e ainda carece de foco.",
       D: "Indexação sistemática dos descritores utilizando termos preferenciais extraídos de tesauros especializados.",
       E: "Auditoria contábil da comutação de dados em redes de empréstimo entre bibliotecas universitárias conveniadas."
     },
-    correctAnswer: "B",
+    correctAnswer: "C",
     justification: "O modelo ISP de Carol Kuhlthau integra cognição e sentimentos. As etapas iniciais (Iniciação e Seleção) são caracterizadas por sentimentos intensos de incerteza, dúvida, frustração e ansiedade, sentimentos que diminuem conforme o usuário formula um foco claro para a pesquisa."
   },
   {
@@ -245,12 +245,12 @@ export const q26_to_50: Question[] = [
     text: "De acordo com os preceitos gerais de transcrição descritiva do AACR2R (Capítulo 1 e 2), qualquer elemento ou dado catalográfico que seja retirado de uma fonte de informação EXTERNA à Fonte Principal de Informação (FPI) prescrita para a área respectiva deve ser obrigatoriamente grafado:",
     options: {
       A: "Em caixa-alta e sublinhado no corpo da ficha catalográfica para advertir o pesquisador sobre a origem do dado.",
-      B: "Em fonte itálica antecedida pelo sinal de barra oblíqua (/) para indicar menção de responsabilidade secundária.",
-      C: "Entre colchetes [ ], sinal gráfico padronizado para indicar intervenção do catalogador com dados de fora da FPI.",
+      B: "Entre colchetes [ ], sinal gráfico padronizado para indicar intervenção do catalogador com dados de fora da FPI.",
+      C: "Em fonte itálica antecedida pelo sinal de barra oblíqua (/) para indicar menção de responsabilidade secundária.",
       D: "Entre parênteses curvos ( ), indicando que a informação possui caráter meramente subsidiário e provisório.",
       E: "Precedido de asteriscos duplos (**) no início de cada linha de cabeçalho do registro catalográfico principal."
     },
-    correctAnswer: "C",
+    correctAnswer: "B",
     justification: "No AACR2R, os colchetes [ ] são a convenção internacional para demarcar informações interpoladas pelo catalogador que foram extraídas de fontes externas à Fonte Principal de Informação daquela área ou tipo de suporte."
   },
   {
@@ -261,10 +261,10 @@ export const q26_to_50: Question[] = [
       A: "Criar compulsoriamente um ponto de acesso secundário de assunto com base nas palavras-chave do título.",
       B: "Classificar a obra na Tabela 1 da CDD de acordo com o idioma oficial em que o texto foi originalmente redigido.",
       C: "Bloquear a edição colaborativa do registro por catalogadores terceirizados que operem em regime remoto.",
-      D: "Informar a quantidade de caracteres não ordenáveis (non-filing characters) a serem ignorados pelo sistema (ex: artigos 'O', 'A', 'The').",
-      E: "Definir se o recurso bibliográfico se encontra disponível em formato impresso ou exclusivamente em suporte eletrônico."
+      D: "Definir se o recurso bibliográfico se encontra disponível em formato impresso ou exclusivamente em suporte eletrônico.",
+      E: "Informar a quantidade de caracteres não ordenáveis (non-filing characters) a serem ignorados pelo sistema (ex: artigos 'O', 'A', 'The')."
     },
-    correctAnswer: "D",
+    correctAnswer: "E",
     justification: "O segundo indicador do campo 245 no MARC 21 especifica o número de caracteres a serem ignorados na ordenação alfabética (non-filing characters). Por exemplo, para 'O cortiço', usa-se indicador 2 (ignora 'O' e o espaço, indexando em 'C')."
   },
   {
@@ -272,13 +272,13 @@ export const q26_to_50: Question[] = [
     moduleId: "m17",
     text: "A fim de superar a rigidez e a ambiguidade da antiga 'Designação Geral do Material' (GMD - subcampo 245 $h) do AACR2, o código RDA (Resource Description and Access) instituiu uma nova abordagem tripartite para a descrição das características físicas e lógicas dos itens, mapeada no MARC 21 nos campos:",
     options: {
-      A: "Campos de controle 001, 007 e 008, que registram parâmetros técnicos de preservação em fita magnética.",
+      A: "Campos 336 (Tipo de Conteúdo), 337 (Tipo de Mídia) e 338 (Tipo de Suporte), que substituíram integralmente o GMD.",
       B: "Campos de notas 500, 505 e 520, que detalham o sumário analítico e o resumo descritivo do documento examinado.",
       C: "Campos de assunto 600, 650 e 651, que classificam os tópicos temáticos e geográficos abordados no texto.",
       D: "Campos de catalogação na fonte 080, 082 e 090, que definem a notação decimal e o número de chamada do exemplar.",
-      E: "Campos 336 (Tipo de Conteúdo), 337 (Tipo de Mídia) e 338 (Tipo de Suporte), que substituíram integralmente o GMD."
+      E: "Campos de controle 001, 007 e 008, que registram parâmetros técnicos de preservação em fita magnética."
     },
-    correctAnswer: "E",
+    correctAnswer: "A",
     justification: "O RDA aboliu o GMD (245 $h) e criou o trio de atributos Content Type (campo 336), Media Type (campo 337) e Carrier Type (campo 338), conferindo precisão granular aos novos suportes digitais e analógicos."
   },
   {
@@ -301,12 +301,12 @@ export const q26_to_50: Question[] = [
     text: "Na construção e manutenção de Tesauros e Linguagens de Indexação, é comum encontrar vocábulos que apresentam homonímia, polissemia ou significados múltiplos (como o termo 'Manga'). O elemento metodológico utilizado pelo tesauro para delimitar o sentido exato e a abrangência em que o descritor deve ser empregado na base denomina-se:",
     options: {
       A: "Relação Associativa (TR / RT), que vincula termos de campos semânticos vizinhos para ampliar a busca.",
-      B: "Nota de Escopo (NE / Scope Note - SN), texto explicativo que restringe e esclarece a aplicação do descritor.",
+      B: "Operador de Proximidade Booleana, que estipula o intervalo numérico de palavras entre dois conceitos de busca.",
       C: "Relação de Equivalência (USE / UP), que encaminha o usuário de uma forma não autorizada para o termo aceito.",
       D: "Subdivisão de Forma, que identifica o suporte material ou gênero editorial em que a obra foi publicada.",
-      E: "Operador de Proximidade Booleana, que estipula o intervalo numérico de palavras entre dois conceitos de busca."
+      E: "Nota de Escopo (NE / Scope Note - SN), texto explicativo que restringe e esclarece a aplicação do descritor."
     },
-    correctAnswer: "B",
+    correctAnswer: "E",
     justification: "A Nota de Escopo (NE / SN - Scope Note) é uma nota de esclarecimento que define os limites conceituais e a abrangência com que determinado termo preferencial (descritor) deve ser empregado na indexação e recuperação, evitando equívocos polissêmicos."
   },
   {
@@ -343,12 +343,12 @@ export const q26_to_50: Question[] = [
     text: "De acordo com o modelo conceitual IFLA LRM (2017) e os requisitos funcionais do FRBR, quando um estudante se dirige à biblioteca universitária e não consegue realizar o empréstimo domiciliar de um livro porque o exemplar físico que estava na estante foi retirado por outro leitor, essa situação operacional envolve diretamente a entidade do nível:",
     options: {
       A: "Obra (Work), visto que a ausência do exemplar físico anula a criação intelectual abstrata original do autor.",
-      B: "Expressão (Expression), já que o empréstimo domiciliar altera a realização linguística da tradução examinada.",
+      B: "Item (Item), que representa o objeto físico individual e concreto de uma manifestação sob custódia da biblioteca.",
       C: "Manifestação (Manifestation), por representar a edição comercial inteira produzida pela editora para circulação.",
       D: "Res (Coisa), entidade superior que engloba apenas conceitos filosóficos imateriais que não circulam fisicamente.",
-      E: "Item (Item), que representa o objeto físico individual e concreto de uma manifestação sob custódia da biblioteca."
+      E: "Expressão (Expression), já que o empréstimo domiciliar altera a realização linguística da tradução examinada."
     },
-    correctAnswer: "E",
+    correctAnswer: "B",
     justification: "O 'Item' é o exemplar concreto e individualizado de uma manifestação (o livro com código de barras específico que está na estante ou na mochila do usuário). A biblioteca pode ter 1 Manifestação do livro e possuir 5 Itens (cópias físicas) desse mesmo título."
   }
 ];

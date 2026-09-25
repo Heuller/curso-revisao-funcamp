@@ -12,7 +12,7 @@ interface ModuleQuizProps {
 
 export const ModuleQuiz: React.FC<ModuleQuizProps> = ({ moduleId, moduleTitle }) => {
   const questions = useMemo(() => getQuizForModule(moduleId), [moduleId]);
-  const storageKey = `funcamp_module_quiz_${moduleId}`;
+  const storageKey = `funcamp_module_quiz_v3_${moduleId}`;
 
   // State: Record of questionId -> selectedOption ('A' | 'B' | 'C' | 'D' | 'E')
   const [userAnswers, setUserAnswers] = useState<Record<string, string>>(() => {
@@ -241,12 +241,12 @@ export const ModuleQuiz: React.FC<ModuleQuizProps> = ({ moduleId, moduleTitle })
                       keyBadgeStyle = 'bg-emerald-600 text-white border-emerald-600';
                     } else if (isSelected && !isThisCorrect) {
                       // User selected wrong option
-                      optionStyle = 'border-rose-300 bg-rose-50/70 text-rose-950 line-through opacity-85';
+                      optionStyle = 'border-rose-300 bg-rose-50 text-rose-950 font-medium ring-1 ring-rose-300';
                       keyBadgeStyle = 'bg-rose-600 text-white border-rose-600';
                     } else {
                       // Other unselected options
-                      optionStyle = 'border-slate-100 bg-slate-50/40 text-slate-400 opacity-60';
-                      keyBadgeStyle = 'bg-slate-100 text-slate-400 border-slate-200';
+                      optionStyle = 'border-slate-200/70 bg-slate-50/50 text-slate-600 opacity-80';
+                      keyBadgeStyle = 'bg-slate-100 text-slate-500 border-slate-200';
                     }
                   } else if (isSelected) {
                     optionStyle = 'border-indigo-600 bg-indigo-50/50 text-indigo-950 ring-1 ring-indigo-500 font-medium';

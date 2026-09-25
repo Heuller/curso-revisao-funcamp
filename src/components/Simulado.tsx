@@ -70,7 +70,7 @@ export interface SimuladoProps {
 export default function Simulado({ discipline = 'biblioteconomia' }: SimuladoProps) {
   const isPortuguese = discipline === 'portugues';
   const baseQuestions = useMemo(() => isPortuguese ? simuladoLPQuestions : allQuestions, [isPortuguese]);
-  const activeStorageKey = isPortuguese ? 'funcamp_simulado_portugues_v2' : 'funcamp_simulado_v2';
+  const activeStorageKey = isPortuguese ? 'funcamp_simulado_portugues_v3' : 'funcamp_simulado_v3';
   const initialTime = isPortuguese ? 60 * 60 : 100 * 60; // 60 min for 40 questions, 100 min for 100 questions
 
   const [initialData] = useState(() => loadSimuladoSavedState(activeStorageKey, baseQuestions, initialTime));

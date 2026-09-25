@@ -300,13 +300,13 @@ export const simuladoLPQuestions: Question[] = [
     moduleId: "lp09",
     text: "Considere o seguinte período extraído de um parecer da Procuradoria Geral da Unicamp sobre litígios contratuais: 'Caso a comissão de sindicância [...] a instrução probatória no prazo legal e a reitoria [...] os recursos de ofício, a deliberação homologatória [...] em vigor imediatamente'. Assinale a alternativa que preenche as lacunas com a rigorosa correlação de tempos e modos verbais exigida na norma culta:",
     options: {
-      A: "conclua — acolha — entrará",
-      B: "conclua — acolhesse — entraria",
+      A: "conclua — acolhesse — entraria",
+      B: "conclua — acolha — entrará",
       C: "concluísse — acolha — entrará",
       D: "concluir — acolher — entrava",
       E: "conclua — acolhesse — entrava"
     },
-    correctAnswer: "A",
+    correctAnswer: "B",
     justification: "A conjunção subordinativa condicional 'caso' exige o modo subjuntivo no tempo presente ('caso conclua... e acolha...'). Para manter a correlação com a consequência futura certa, a oração principal deve vir no futuro do presente do indicativo ('entrará em vigor')."
   },
   {
@@ -317,10 +317,10 @@ export const simuladoLPQuestions: Question[] = [
       A: "Quando você ver o resultado da homologação no mural, avise seus colegas de sala.",
       B: "Assim que a comissão vir a Campinas para a visita técnica, faremos a recepção.",
       C: "Se ele não ver os arquivos digitais na pasta compartilhada, deverá contatar o suporte.",
-      D: "Quando você vir o documento oficial na secretaria, solicite uma cópia autenticada.",
-      E: "Se eles virem de ônibus para a universidade, chegarão atrasados para o seminário."
+      D: "Se eles virem de ônibus para a universidade, chegarão atrasados para o seminário.",
+      E: "Quando você vir o documento oficial na secretaria, solicite uma cópia autenticada."
     },
-    correctAnswer: "D",
+    correctAnswer: "E",
     justification: "O futuro do subjuntivo do verbo VER é: quando eu VIR, tu VIRES, ele VIR, nós VIRMOS, eles VIREM. Já o futuro do subjuntivo de VIR é: quando eu VIER, tu VIERES, ele VIER, nós VIERMOS, eles VIEREM. A opção D emprega acertadamente 'quando você vir' (de enxergar o documento)."
   },
   {
@@ -328,13 +328,13 @@ export const simuladoLPQuestions: Question[] = [
     moduleId: "lp10",
     text: "Em provas de alto rendimento da Unicamp e Funcamp, a análise do sinal indicativo de crase é indissociável da regência verbal e nominal. Assinale o período em que o acento grave foi empregado em DESACORDO com as normas gramaticais vigentes:",
     options: {
-      A: "A direção do Instituto de Física concedeu acesso irrestrito à pesquisadora estrangeira.",
-      B: "A reitoria da universidade comprometeu-se à divulgar os novos editais na próxima semana.",
+      A: "A reitoria da universidade comprometeu-se à divulgar os novos editais na próxima semana.",
+      B: "A direção do Instituto de Física concedeu acesso irrestrito à pesquisadora estrangeira.",
       C: "Os dados tabulados pelo departamento de informática eram semelhantes àqueles de 2023.",
       D: "O colegiado docente permaneceu reunido na sala de deliberações das 14 horas às 18 horas.",
       E: "A biblioteca central prestou assistência especializada à comunidade acadêmica de Campinas."
     },
-    correctAnswer: "B",
+    correctAnswer: "A",
     justification: "Em 'comprometeu-se à divulgar', a palavra 'divulgar' é um verbo no infinitivo. É preceito elementar da gramática normativa que o sinal de crase é rigorosamente proibido diante de verbos, visto que formas verbais não admitem artigo feminino."
   },
   {
@@ -345,10 +345,10 @@ export const simuladoLPQuestions: Question[] = [
       A: "Fizemos referência às diretrizes pedagógicas estabelecidas pelo ministério.",
       B: "O coordenador comprou todos os materiais necessários à vista no comércio local.",
       C: "O candidato respondeu a perguntas complexas formuladas pelos examinadores da banca.",
-      D: "Todos os inscritos assistiram à magnífica conferência proferida pelo professor emérito.",
-      E: "O servidor encaminhou os relatórios técnicos a sua supervisora imediata no setor."
+      D: "O servidor encaminhou os relatórios técnicos a sua supervisora imediata no setor.",
+      E: "Todos os inscritos assistiram à magnífica conferência proferida pelo professor emérito."
     },
-    correctAnswer: "E",
+    correctAnswer: "D",
     justification: "Antes de pronome possessivo feminino singular ('sua'), a presença do artigo é opcional, tornando o uso da crase puramente facultativo: 'a sua supervisora' ou 'à sua supervisora' são ambas válidas."
   },
   {
@@ -370,13 +370,13 @@ export const simuladoLPQuestions: Question[] = [
     moduleId: "lp11",
     text: "Assinale a frase que atende perfeitamente às regras de concordância verbal com a partícula apassivadora 'SE':",
     options: {
-      A: "Divulgaram-se os nomes dos candidatos aprovados na primeira fase do concurso da Unicamp.",
+      A: "Precisam-se de novos técnicos laboratoriais para atuarem nas pesquisas de bioquímica.",
       B: "Divulgou-se os nomes dos candidatos aprovados na primeira fase do concurso da Unicamp.",
-      C: "Precisam-se de novos técnicos laboratoriais para atuarem nas pesquisas de bioquímica.",
+      C: "Divulgaram-se os nomes dos candidatos aprovados na primeira fase do concurso da Unicamp.",
       D: "Tratam-se de reivindicações legítimas apresentadas pela associação dos docentes.",
       E: "Obedeceu-se aos critérios regimentais que haviam sidos propostos pela comissão."
     },
-    correctAnswer: "A",
+    correctAnswer: "C",
     justification: "Em 'Divulgaram-se os nomes...', o verbo 'divulgar' é Transitivo Direto (VTD). O pronome 'se' é partícula apassivadora e 'os nomes dos candidatos aprovados' é o sujeito paciente plural. O verbo deve concordar obrigatoriamente no plural ('divulgaram-se'). Em C e D, os verbos são VTI (com preposição), exigindo verbo no singular."
   },
   {
@@ -398,13 +398,13 @@ export const simuladoLPQuestions: Question[] = [
     moduleId: "lp11",
     text: "Assinale a alternativa que apresenta concordância verbal em conformidade com as regras para o verbo FAZER indicando tempo decorrido:",
     options: {
-      A: "Fazem quase dez anos que a biblioteca universitária passou pela última grande reforma.",
-      B: "Faz quase dez anos que a biblioteca universitária passou pela última grande reforma.",
+      A: "Faz quase dez anos que a biblioteca universitária passou pela última grande reforma.",
+      B: "Fazem quase dez anos que a biblioteca universitária passou pela última grande reforma.",
       C: "Vão fazerem três meses que o resultado definitivo do concurso público foi homologado.",
       D: "Haverão de fazerem muitos anos até que todas as obras raras sejam totalmente catalogadas.",
       E: "Deveriam fazerem duas semanas que o novo sistema de empréstimos entrou em operação."
     },
-    correctAnswer: "B",
+    correctAnswer: "A",
     justification: "O verbo 'fazer', quando indica tempo decorrido, é impessoal: não possui sujeito e deve permanecer compulsoriamente na 3ª pessoa do singular ('Faz quase dez anos'). Dizer 'Fazem dez anos' é erro clássico em provas."
   },
   {
@@ -427,12 +427,12 @@ export const simuladoLPQuestions: Question[] = [
     text: "Considere as frases: I. 'A dedicação DO PROFESSOR comoveu os alunos'; II. 'A resposta AO PROFESSOR foi encaminhada pela congregação'. Os termos em destaque exercem, respectivamente, a função de:",
     options: {
       A: "Complemento Nominal em ambas as ocorrências, por serem introduzidos por preposição.",
-      B: "Objeto Indireto na primeira oração e Agente da Passiva analítica na segunda frase.",
-      C: "Adjunto Adnominal (sentido ativo: o professor se dedica) e Complemento Nominal (sentido paciente).",
+      B: "Adjunto Adnominal (sentido ativo: o professor se dedica) e Complemento Nominal (sentido paciente).",
+      C: "Objeto Indireto na primeira oração e Agente da Passiva analítica na segunda frase.",
       D: "Predicativo do Sujeito composto em I e Adjunto Adverbial circunstancial na frase II.",
       E: "Sujeito Simples preposicionado em I e Objeto Direto preposicionado na segunda ocorrência."
     },
-    correctAnswer: "C",
+    correctAnswer: "B",
     justification: "Em I, 'do professor' é Adjunto Adnominal porque possui sentido ativo (o professor pratica a ação de se dedicar). Em II, 'ao professor' é Complemento Nominal porque possui sentido paciente (o professor recebe a resposta)."
   },
 
@@ -445,13 +445,13 @@ export const simuladoLPQuestions: Question[] = [
     moduleId: "lp12",
     text: "No período 'Convirá aos gestores das bibliotecas universitárias da Unicamp reavaliar com rigor crítico os critérios de descarte das publicações obsoletas', a oração sublinhada 'reavaliar com rigor crítico os critérios de descarte das publicações obsoletas' exerce a função sintática de:",
     options: {
-      A: "Sujeito da oração principal, razão pela qual o verbo 'convirá' se mantém na terceira pessoa do singular.",
+      A: "Aposto especificativo do termo 'bibliotecas universitárias', esclarecendo a metodologia de descarte.",
       B: "Objeto direto preposicionado, completando o sentido transitivo do verbo 'convirá' na oração regente.",
       C: "Complemento nominal do substantivo 'gestores', delimitando a abrangência temática de sua atuação.",
       D: "Adjunto adverbial de finalidade reduzido de infinitivo, indicando o propósito da reavaliação técnica.",
-      E: "Aposto especificativo do termo 'bibliotecas universitárias', esclarecendo a metodologia de descarte."
+      E: "Sujeito da oração principal, razão pela qual o verbo 'convirá' se mantém na terceira pessoa do singular."
     },
-    correctAnswer: "A",
+    correctAnswer: "E",
     justification: "Verbos como 'convir', 'urgir', 'bastar' e 'cumprir' frequentemente operam com sujeitos oracionais: 'Reavaliar com rigor crítico os critérios de descarte convirá aos gestores' = [ISSO convirá aos gestores]. A oração subordinada atua como Sujeito (Oração Subordinada Substantiva Subjetiva Reduzida de Infinitivo), mantendo o verbo regente no singular."
   },
   {
@@ -459,13 +459,13 @@ export const simuladoLPQuestions: Question[] = [
     moduleId: "lp13",
     text: "No período: 'Estudou com afinco e perseverança, CONTUDO não obteve a classificação desejada no concurso', a conjunção destacada estabelece relação de:",
     options: {
-      A: "Adição, somando duas etapas cronológicas sucessivas na trajetória do concorrente.",
+      A: "Adversidade, contrapondo uma ideia que quebra a expectativa gerada pelo esforço.",
       B: "Conclusão, deduzindo um desfecho necessário derivado da premissa anterior.",
       C: "Explicação, justificando a razão pela qual o concurseiro adotou tal rotina de estudos.",
-      D: "Adversidade, contrapondo uma ideia que quebra a expectativa gerada pelo esforço.",
+      D: "Adição, somando duas etapas cronológicas sucessivas na trajetória do concorrente.",
       E: "Concessão, exigindo compulsoriamente a conjugação do verbo no modo subjuntivo."
     },
-    correctAnswer: "D",
+    correctAnswer: "A",
     justification: "'Contudo' é uma conjunção coordenativa adversativa clássica (= porém, todavia, no entanto), que expressa oposição e quebra de expectativa diante da oração antecedente."
   },
   {
@@ -474,12 +474,12 @@ export const simuladoLPQuestions: Question[] = [
     text: "Considere a oração: 'Os servidores da Unicamp que participaram do treinamento receberam certificado'. A ausência de vírgulas na oração adjetiva introduzida por 'que' indica que:",
     options: {
       A: "Todos os servidores da Unicamp participaram do treinamento e todos receberam certificado.",
-      B: "Apenas a parcela de servidores que participou do treinamento recebeu o respectivo certificado.",
-      C: "Nenhum servidor da universidade compareceu ao treinamento oferecido pelo departamento.",
+      B: "Nenhum servidor da universidade compareceu ao treinamento oferecido pelo departamento.",
+      C: "Apenas a parcela de servidores que participou do treinamento recebeu o respectivo certificado.",
       D: "O autor incorreu em erro gramatical, pois orações adjetivas exigem vírgulas obrigatórias.",
       E: "O certificado foi outorgado a todos os inscritos independentemente de sua frequência."
     },
-    correctAnswer: "B",
+    correctAnswer: "C",
     justification: "A oração adjetiva restritiva (sem vírgulas) limita e restringe a informação a um subconjunto do sujeito (apenas aqueles servidores que participaram do treinamento receberam o certificado; os demais não receberam)."
   },
   {
@@ -490,10 +490,10 @@ export const simuladoLPQuestions: Question[] = [
       A: "Subordinada Adjetiva Explicativa, generalizando o atributo dos inscritos no processo.",
       B: "Subordinada Adverbial Causal, indicando o motivo que gerou o pronunciamento oficial.",
       C: "Subordinada Substantiva Subjetiva, exercendo a função de sujeito do verbo afirmar.",
-      D: "Coordenada Sindética Explicativa, trazendo uma justificativa para a fala do diretor.",
-      E: "Subordinada Substantiva Objetiva Direta, completando o verbo transitivo direto 'afirmou'."
+      D: "Subordinada Substantiva Objetiva Direta, completando o verbo transitivo direto 'afirmou'.",
+      E: "Coordenada Sindética Explicativa, trazendo uma justificativa para a fala do diretor."
     },
-    correctAnswer: "E",
+    correctAnswer: "D",
     justification: "Quem afirma, afirma algo (verbo transitivo direto). Substituindo pelo macete do 'ISSO': 'O coordenador afirmou [ISSO]'. A oração funciona como objeto direto da principal, sendo, portanto, Subordinada Substantiva Objetiva Direta."
   },
   {
@@ -502,12 +502,12 @@ export const simuladoLPQuestions: Question[] = [
     text: "Em um relatório de auditoria interna sobre a aquisição de acervos digitais na Unicamp, o auditor redigiu: 'Cumpre [...] o processo licitatório para corrigir falhas procedimentais, sem prejuízo de [...] as normas vigentes que garantem a lisura da concorrência pública'. Para que o período mantenha a precisão técnica e a propriedade semântica exigidas na norma culta, as lacunas devem ser preenchidas, respectivamente, por:",
     options: {
       A: "ratificar (confirmar o ato válido) — prescrever (determinar expressamente a aplicação)",
-      B: "retificar (corrigir o que tem defeito) — proscrever (autorizar plenamente a execução)",
-      C: "retificar (corrigir o que tem defeito) — prescrever (determinar expressamente a aplicação)",
+      B: "retificar (corrigir o que tem defeito) — prescrever (determinar expressamente a aplicação)",
+      C: "retificar (corrigir o que tem defeito) — proscrever (autorizar plenamente a execução)",
       D: "ratificar (confirmar o ato válido) — proscrever (banir ou extinguir do ordenamento)",
       E: "retificar (corrigir o que tem defeito) — diferir (conceder aprovação sem restrições)"
     },
-    correctAnswer: "C",
+    correctAnswer: "B",
     justification: "'Retificar' significa corrigir, emendar falhas ('retificar o processo'); 'prescrever' significa ordenar, determinar, fixar normas ('prescrever as normas vigentes'). 'Ratificar' significaria validar ou confirmar, e 'proscrever' significaria banir, proibir."
   },
   {
@@ -515,13 +515,13 @@ export const simuladoLPQuestions: Question[] = [
     moduleId: "lp14",
     text: "Considere os pares de palavras sublinhados nos seguintes enunciados: I. 'A nova diretoria do arquivo central procedeu à CESSÃO dos documentos para digitalização durante a SESSÃO solene da congregação.' II. 'O bibliotecário agiu com elevado SENSO de responsabilidade ao analisar os dados do CENSO demográfico discente.' Quanto às relações semânticas e fonético-gráficas existentes entre os vocábulos destacados em cada enunciado, é correto afirmar que se tratam de:",
     options: {
-      A: "Homófonos em ambos os enunciados, pois possuem pronúncia idêntica, mas grafias e significados distintos.",
+      A: "Sinônimos contextuais absolutos em I e termos antônimos complementares no desenvolvimento da frase II.",
       B: "Homógrafos em ambos os enunciados, visto que compartilham a mesma escrita gráfica e fonética original.",
       C: "Parônimos imperfeitos em I e homônimos perfeitos na frase II segundo a classificação da ABL e do VOLP.",
-      D: "Sinônimos contextuais absolutos em I e termos antônimos complementares no desenvolvimento da frase II.",
+      D: "Homófonos em ambos os enunciados, pois possuem pronúncia idêntica, mas grafias e significados distintos.",
       E: "Hiperônimos lexicais em ambos os períodos, estabelecendo coesão referencial por abstração conceitual."
     },
-    correctAnswer: "A",
+    correctAnswer: "D",
     justification: "Cessão/Sessão e Senso/Censo soam de modo exatamente igual (fonemas idênticos / mesma pronúncia acústica), porém possuem representação ortográfica diferente e sentidos desvinculados. São, portanto, exemplos incontestes de homófonos heterográficos."
   },
   {
@@ -529,13 +529,13 @@ export const simuladoLPQuestions: Question[] = [
     moduleId: "lp15",
     text: "De acordo com o Acordo Ortográfico vigente, assinale a opção em que TODAS as palavras estão acentuadas ou grafadas com absoluta correção:",
     options: {
-      A: "Idéia — herói — microondas — auto-escola — paraquedas.",
+      A: "Ideia — herói — micro-ondas — autoescola — paraquedas.",
       B: "Ideia — heroi — micro-ondas — autoescola — pára-quedas.",
       C: "Idéia — herói — micro-ondas — autoescola — paraquedas.",
-      D: "Ideia — herói — micro-ondas — autoescola — paraquedas.",
+      D: "Idéia — herói — microondas — auto-escola — paraquedas.",
       E: "Ideia — herói — microondas — auto-escola — para-quedas."
     },
-    correctAnswer: "D",
+    correctAnswer: "A",
     justification: "Em D: 'ideia' (sem acento no ditongo aberto paroxítono); 'herói' (com acento no ditongo aberto oxítono); 'micro-ondas' (com hífen por letras iguais: o-o); 'autoescola' (sem hífen por letras diferentes: o-e); 'paraquedas' (sem hífen e sem acento). Perfeito!"
   },
   {
@@ -544,12 +544,12 @@ export const simuladoLPQuestions: Question[] = [
     text: "No fragmento 'A catalogação sistemática de obras raras confere CARÁTER indelével à memória documental da Unicamp', a palavra em destaque recebe acento gráfico por determinada regra normativa. Assinale a alternativa em que TODAS as palavras retiradas de textos acadêmicos são acentuadas rigorosamente pelo MESMO princípio gramatical da palavra sublinhada:",
     options: {
       A: "tórax — memória — histórico",
-      B: "âmbar — cadáver — revólver",
-      C: "açúcar — país — relatórios",
+      B: "açúcar — país — relatórios",
+      C: "âmbar — cadáver — revólver",
       D: "álbum — jiboia — pedagógico",
       E: "fóssil — heróico — voluntário"
     },
-    correctAnswer: "B",
+    correctAnswer: "C",
     justification: "'Ca-rá-ter' é uma palavra paroxítona terminada na consoante -R. Na alternativa B, todas as três palavras ('âm-bar', 'ca-dá-ver', 're-vól-ver') são igualmente paroxítonas terminadas em -R. As outras alternativas misturam paroxítonas em ditongo, proparoxítonas, hiatos e palavras desatualizadas."
   },
   {
@@ -558,12 +558,12 @@ export const simuladoLPQuestions: Question[] = [
     text: "Assinale a frase em que o emprego da pontuação atende com absoluto rigor à norma-padrão da língua:",
     options: {
       A: "O coordenador geral do concurso, encaminhou todos os cadernos lacrados à diretoria.",
-      B: "Os estudantes leram os artigos técnicos, e elaboraram resumos, sem erros conceituais.",
+      B: "O diretor, ciente das dificuldades orçamentárias, autorizou a abertura do processo licitatório.",
       C: "Campinas 25 de setembro de 2026 data em que se encerram as inscrições do certame.",
       D: "A reitoria adquiriu, computadores novos, impressoras a laser, e mesas ergonômicas.",
-      E: "O diretor, ciente das dificuldades orçamentárias, autorizou a abertura do processo licitatório."
+      E: "Os estudantes leram os artigos técnicos, e elaboraram resumos, sem erros conceituais."
     },
-    correctAnswer: "E",
+    correctAnswer: "B",
     justification: "Na opção E, a oração intercalada explicativa ('ciente das dificuldades orçamentárias') está perfeitamente isolada entre duas vírgulas, sem separar indevidamente o sujeito do predicado. Nas outras: A separa sujeito de verbo por vírgula; B coloca vírgulas desnecessárias; C omite a vírgula após a cidade; D separa o verbo 'adquiriu' de seus objetos."
   },
   {
@@ -573,11 +573,11 @@ export const simuladoLPQuestions: Question[] = [
     options: {
       A: "A norma-padrão constitui a única variedade dotada de lógica intrínseca e rigor gramatical no português.",
       B: "O domínio das variedades populares dispensa o aprendizado da norma culta na escrita institucional.",
-      C: "A diversidade linguística é legítima e o julgamento depreciativo de certas falas revela preconceito social.",
+      C: "A gramática prescritiva tradicional deve ser aplicada indistintamente a todos os gêneros textuais orais.",
       D: "As manifestações da linguagem coloquial representam ameaça de degeneração para a língua nacional.",
-      E: "A gramática prescritiva tradicional deve ser aplicada indistintamente a todos os gêneros textuais orais."
+      E: "A diversidade linguística é legítima e o julgamento depreciativo de certas falas revela preconceito social."
     },
-    correctAnswer: "C",
+    correctAnswer: "E",
     justification: "A tradição sociolinguística da Unicamp e do Instituto de Estudos da Linguagem (IEL) defende que todas as variantes linguísticas possuem gramática e coerência internas legítimas. A estigmatização de certas variedades reflete preconceito social, e não incapacidade cognitiva ou linguística dos falantes."
   }
 ];

@@ -11,13 +11,13 @@ export const q76_to_100: Question[] = [
     moduleId: "m19",
     text: "No sistema de Classificação Decimal de Dewey (CDD), a classificação de obras de caráter biográfico requer especial atenção metodológica. Onde um bibliotecário deve classificar prioritariamente a biografia de um químico renomado?",
     options: {
-      A: "Na classe de Química (540), aplicando-se a subdivisão padrão de pessoas e biografias da Tabela 1 da CDD.",
-      B: "Na classe geral de Biografias e Genealogia (920), independentemente da disciplina científica exercida pelo biografado.",
+      A: "Na classe geral de Biografias e Genealogia (920), independentemente da disciplina científica exercida pelo biografado.",
+      B: "Na classe de Química (540), aplicando-se a subdivisão padrão de pessoas e biografias da Tabela 1 da CDD.",
       C: "Na classe de Obras Raras e Enciclopédias Gerais (030), por registrar o histórico de vida de uma personalidade célebre.",
       D: "Na classe de História Geral da Europa (940), adotando como critério de ordenação o continente de nascimento do cientista.",
       E: "Na classe de Filosofia e Teoria da Ciência (501), vinculando a trajetória pessoal à epistemologia geral do conhecimento."
     },
-    correctAnswer: "A",
+    correctAnswer: "B",
     justification: "Na CDD, a regra para biografias de indivíduos associados a uma disciplina específica determina que a biografia deve ser classificada juntamente com o assunto respectivo (Química 540 + subdivisão de biografia -092 da Tabela 1), reunindo a vida do cientista com a literatura de sua ciência."
   },
   {
@@ -26,12 +26,12 @@ export const q76_to_100: Question[] = [
     text: "Muitos Sistemas Integrados de Gestão de Bibliotecas (SIGB) operam integrados a sensores e antenas com tecnologia RFID (Radio Frequency Identification). A vantagem operacional primordial do RFID sobre as tradicionais etiquetas de código de barras unidimensional consiste no fato de que o RFID:",
     options: {
       A: "Dispensa a aplicação física de qualquer suporte adesivo ou etiqueta de identificação nos exemplares do acervo.",
-      B: "Permite a leitura múltipla e instantânea de vários livros empilhados simultaneamente, sem exigir linha de visão direta com o leitor.",
-      C: "Bloqueia automaticamente o acesso de hackers e usuários externos não autorizados aos servidores do protocolo OAI-PMH.",
+      B: "Bloqueia automaticamente o acesso de hackers e usuários externos não autorizados aos servidores do protocolo OAI-PMH.",
+      C: "Permite a leitura múltipla e instantânea de vários livros empilhados simultaneamente, sem exigir linha de visão direta com o leitor.",
       D: "Reduz o peso físico dos livros nas prateleiras ao substituir a encadernação original por chips poliméricos flexíveis.",
       E: "Elimina integralmente os custos orçamentários de aquisição e manutenção de sistemas de segurança antifurto predial."
     },
-    correctAnswer: "B",
+    correctAnswer: "C",
     justification: "A grande revolução do RFID nas bibliotecas é a leitura por radiofrequência sem necessidade de visada ótica (Line of Sight) direta: permite ler dezenas de itens empilhados numa única passada de leitor, agilizando autoempréstimo, devoluções e inventários de acervo."
   },
   {
@@ -41,11 +41,11 @@ export const q76_to_100: Question[] = [
     options: {
       A: "Resumo Informativo, que destaca objetivos, metodologia, resultados e conclusões com neutralidade clínica.",
       B: "Resumo Indicativo, que apenas sinaliza os temas abordados no documento sem dispensar a leitura integral da obra.",
-      C: "Resumo Crítico (ou Resenha), que analisa criticamente o documento emitindo julgamento de mérito e juízo de valor.",
-      D: "Abstract Internacional, formulado em língua estrangeira para indexação obrigatória em bases comerciais científicas.",
+      C: "Abstract Internacional, formulado em língua estrangeira para indexação obrigatória em bases comerciais científicas.",
+      D: "Resumo Crítico (ou Resenha), que analisa criticamente o documento emitindo julgamento de mérito e juízo de valor.",
       E: "Sumário Executivo, destinado à prestação de contas de projetos gerenciais perante conselhos de administração pública."
     },
-    correctAnswer: "C",
+    correctAnswer: "D",
     justification: "O Resumo Crítico (ou Resenha / Review) é a única modalidade de resumo que comporta a emissão de juízo de valor, análise opinativa e comentários críticos do autor da resenha sobre o mérito, a relevância e a qualidade da obra original."
   },
   {
@@ -56,10 +56,10 @@ export const q76_to_100: Question[] = [
       A: "São protegidos com exclusividade pelas gráficas oficiais da União pelo prazo inalienável de cinquenta anos.",
       B: "Exigem autorização prévia por escrito do Ministério da Justiça para qualquer reprodução que ultrapasse dois parágrafos.",
       C: "Podem ser consultados presencialmente nas bibliotecas, mas sua reprodução digital integral constitui ilícito civil.",
-      D: "Não são objeto de proteção de direitos autorais, podendo ser livre e integralmente reproduzidos em prol da transparência pública.",
-      E: "Ficam submetidos a licenças Creative Commons restritivas que vedam a compilação em repositórios universitários."
+      D: "Ficam submetidos a licenças Creative Commons restritivas que vedam a compilação em repositórios universitários.",
+      E: "Não são objeto de proteção de direitos autorais, podendo ser livre e integralmente reproduzidos em prol da transparência pública."
     },
-    correctAnswer: "D",
+    correctAnswer: "E",
     justification: "O Art. 8º, inciso IV, da Lei nº 9.610/98 é taxativo: não são objeto de proteção como direitos autorais os textos de tratados ou convenções, leis, decretos, regulamentos, decisões judiciais e demais atos oficiais. Nascem essencialmente livres para reprodução integral."
   },
   {
@@ -67,13 +67,13 @@ export const q76_to_100: Question[] = [
     moduleId: "m23",
     text: "No fluxo de editoração e gestão de periódicos científicos acadêmicos, o modelo de avaliação de manuscritos designado internacionalmente como 'Double-Blind Peer Review' (Revisão por Pares Duplo-Cega) caracteriza-se operacionalmente pelo fato de que:",
     options: {
-      A: "O autor do manuscrito conhece a identidade dos avaliadores, mas os pareceristas desconhecem a autoria do artigo submetido.",
+      A: "Nem os pareceristas conhecem a identidade dos autores, nem os autores têm conhecimento da identidade dos pareceristas que os avaliaram.",
       B: "Os pareceristas se reúnem presencialmente com os autores em audiência aberta para negociar as correções metodológicas exigidas.",
       C: "A avaliação é realizada inteiramente por algoritmos probabilísticos de inteligência artificial sem intervenção de pareceristas humanos.",
       D: "A revista científica divulga publicamente na internet os nomes e as anotações dos revisores juntamente com o artigo publicado.",
-      E: "Nem os pareceristas conhecem a identidade dos autores, nem os autores têm conhecimento da identidade dos pareceristas que os avaliaram."
+      E: "O autor do manuscrito conhece a identidade dos avaliadores, mas os pareceristas desconhecem a autoria do artigo submetido."
     },
-    correctAnswer: "E",
+    correctAnswer: "A",
     justification: "A avaliação Duplo-Cega (Double-Blind) é o padrão clássico de imparcialidade científica: a identidade dos autores é ocultada dos pareceristas para evitar viés de prestígio ou instituição, e a identidade dos pareceristas é ocultada dos autores para garantir liberdade total de crítica."
   },
   {
@@ -81,13 +81,13 @@ export const q76_to_100: Question[] = [
     moduleId: "m01",
     text: "O conceito de 'Preprint', que adquiriu extraordinária relevância nas práticas de Ciência Aberta e na comunicação científica rápida durante emergências sanitárias globais, define-se tecnicamente no âmbito da biblioteconomia como:",
     options: {
-      A: "A versão completa de um manuscrito científico disponibilizada publicamente em um repositório antes da avaliação por pares e publicação formal.",
+      A: "O resumo analítico bilíngue que antecede obrigatoriamente o sumário de teses e dissertações aprovadas em congregação acadêmica.",
       B: "A prova tipográfica de corte impressa pela gráfica comercial imediatamente antes da distribuição física às livrarias universitárias.",
       C: "O rascunho manuscrito preliminar elaborado por estudantes de graduação que ainda não receberam orientação docente formal.",
-      D: "O resumo analítico bilíngue que antecede obrigatoriamente o sumário de teses e dissertações aprovadas em congregação acadêmica.",
+      D: "A versão completa de um manuscrito científico disponibilizada publicamente em um repositório antes da avaliação por pares e publicação formal.",
       E: "A versão definitiva de um artigo que já transitou em julgado editorial e que foi diagramada com os logotipos oficiais da editora."
     },
-    correctAnswer: "A",
+    correctAnswer: "D",
     justification: "Preprints são manuscritos científicos completos depositados e compartilhados abertamente em servidores especializados (como arXiv, bioRxiv, SciELO Preprints) antes de passarem pela avaliação formal por pares de um periódico, acelerando a circulação do conhecimento."
   },
   {
@@ -95,13 +95,13 @@ export const q76_to_100: Question[] = [
     moduleId: "m03",
     text: "O pagamento das denominadas APCs (Article Processing Charges ou Taxas de Processamento de Artigos) na comunicação científica contemporânea ocorre primordialmente para financiar a publicação e viabilizar a sustentabilidade econômica de qual modalidade do Acesso Aberto?",
     options: {
-      A: "Via Verde (Green Open Access), na qual o autoarquivamento é realizado pelo próprio autor em repositórios institucionais.",
-      B: "Via Dourada Comercial (Gold Open Access), na qual o periódico oferece acesso aberto imediato ao leitor cobrando taxas do autor ou financiador.",
+      A: "Via Dourada Comercial (Gold Open Access), na qual o periódico oferece acesso aberto imediato ao leitor cobrando taxas do autor ou financiador.",
+      B: "Via Verde (Green Open Access), na qual o autoarquivamento é realizado pelo próprio autor em repositórios institucionais.",
       C: "Via Diamante (Diamond Open Access), mantida pelo financiamento institucional de universidades sem cobrança de taxas de autores.",
       D: "Via Bronze (Bronze Open Access), caracterizada pela liberação temporária e promocional de leitura nas páginas da editora.",
       E: "Via Platina (Platinum Open Access), modalidade governamental latino-americana que veda qualquer cobrança de taxas financeiras."
     },
-    correctAnswer: "B",
+    correctAnswer: "A",
     justification: "Na Via Dourada (Gold Road) com APC, a editora comercial não cobra assinaturas dos leitores (garantindo acesso aberto no site da revista), mas transfere os custos operacionais e margem de lucro para os autores ou suas instituições de fomento por meio das APCs."
   },
   {
@@ -124,12 +124,12 @@ export const q76_to_100: Question[] = [
     text: "No campo das Leis Bibliométricas, enquanto a Lei de Bradford investiga a dispersão de artigos em periódicos e a Lei de Zipf analisa a frequência de palavras em textos, a Lei de Lotka (Lei do Quadrado Inverso) dedica-se a analisar a produtividade científica de autores. A premissa central demonstrada empiricamente por Lotka estabelece que:",
     options: {
       A: "A vasta maioria dos pesquisadores publica múltiplos artigos por ano com frequência perfeitamente homogênea e uniforme.",
-      B: "A literatura científica dobra de volume acumulado a cada dez anos em decorrência do crescimento exponencial das universidades.",
+      B: "Uma pequena fração de autores altamente produtivos (a elite) é responsável pela autoria de uma grande parcela da literatura total.",
       C: "As citações recebidas por artigos da área de ciências exatas envelhecem mais lentamente que as referências das humanidades.",
-      D: "Uma pequena fração de autores altamente produtivos (a elite) é responsável pela autoria de uma grande parcela da literatura total.",
+      D: "A literatura científica dobra de volume acumulado a cada dez anos em decorrência do crescimento exponencial das universidades.",
       E: "O número de autores em coautoria interdisciplinar cresce na proporção direta do financiamento orçamentário dos laboratórios."
     },
-    correctAnswer: "D",
+    correctAnswer: "B",
     justification: "A Lei de Lotka (produtividade dos autores) demonstra uma distribuição assimétrica: um número muito pequeno de pesquisadores produz muito (núcleo de alta produtividade), enquanto a esmagadora maioria dos autores publica apenas um ou dois artigos ao longo de sua carreira acadêmica."
   },
   {
@@ -151,13 +151,13 @@ export const q76_to_100: Question[] = [
     moduleId: "m12",
     text: "Na aplicação do Composto de Marketing (4 Ps de McCarthy) à administração de bibliotecas universitárias, quando a gestão decide prorrogar o horário de atendimento físico do balcão até as 23 horas e disponibilizar caixas de autoatendimento para devolução 24 horas no campus, essa ação atua diretamente sobre o 'P' de:",
     options: {
-      A: "Praça (Place / Distribuição), adequando e expandindo os canais, horários e pontos de contato de acesso aos serviços informacionais.",
+      A: "Produto (Product), alterando a encadernação e o conteúdo intelectivo dos livros que compõem o catálogo bibliográfico central.",
       B: "Preço (Price), calculando a tarifa monetária que será repassada aos estudantes de pós-graduação pelo uso noturno das salas.",
-      C: "Produto (Product), alterando a encadernação e o conteúdo intelectivo dos livros que compõem o catálogo bibliográfico central.",
+      C: "Praça (Place / Distribuição), adequando e expandindo os canais, horários e pontos de contato de acesso aos serviços informacionais.",
       D: "Promoção (Promotion), concentrando-se na produção de anúncios de rádio e cartazes publicitários para divulgar o vestibular.",
       E: "Parceria (Partnership), estabelecendo convênios comerciais com empresas privadas de transporte coletivo municipal."
     },
-    correctAnswer: "A",
+    correctAnswer: "C",
     justification: "O 'P' de Praça (Place ou Distribuição) no marketing de bibliotecas envolve a logística de entrega dos serviços: horários de funcionamento, localização predial, facilidade de devolução, acessibilidade física e plataformas digitais de acesso remoto."
   },
   {
@@ -166,12 +166,12 @@ export const q76_to_100: Question[] = [
     text: "Na formulação de Políticas de Desenvolvimento de Coleções em bibliotecas universitárias, o recebimento de doações de acervos particulares de professores e cidadãos exige um instrumento formal de gestão para evitar a aceitação de materiais desnecessários. Esse instrumento, que estabelece que a biblioteca se reserva o direito de selecionar, descartar ou repassar obras, denomina-se:",
     options: {
       A: "Manual de Classificação Decimal da Coleção Especial, que dita o arranjo físico das estantes de acordo com a ordem do MEC.",
-      B: "Termo de Doação, documento assinado pelo doador declarando ciência de que a instituição aplicará os critérios da política de seleção.",
+      B: "Contrato de Alienação de Bens Imateriais, que converte doações bibliográficas em créditos orçamentários de custeio anual.",
       C: "Ata de Consórcio Federado, que obriga a universidade a remeter exemplares duplicados a bibliotecas de outros Estados.",
       D: "Certificado de Depósito Legal Compulsório, emitido pela Fundação Biblioteca Nacional para comprovar a entrada da obra.",
-      E: "Contrato de Alienação de Bens Imateriais, que converte doações bibliográficas em créditos orçamentários de custeio anual."
+      E: "Termo de Doação, documento assinado pelo doador declarando ciência de que a instituição aplicará os critérios da política de seleção."
     },
-    correctAnswer: "B",
+    correctAnswer: "E",
     justification: "O Termo de Doação é o documento jurídico-administrativo essencial no qual o doador transfere a guarda e manifesta concordância expressa com as regras da biblioteca, garantindo à instituição a autonomia técnica de incorporar apenas o que for relevante e descartar ou repassar o que não for pertinente."
   },
   {
@@ -180,12 +180,12 @@ export const q76_to_100: Question[] = [
     text: "O Código de Catalogação Anglo-Americano (AACR2R) prevê três Níveis de Descrição (Regra 1.0D), do mais sucinto (Nível 1) ao mais detalhado (Nível 3). A justificativa técnica primordial para que uma biblioteca universitária adote o 'Segundo Nível' de descrição em suas rotinas regulares reside no fato de que:",
     options: {
       A: "O Terceiro Nível é expressamente proibido pela norma internacional ISBD em virtude do risco de redundância catalográfica.",
-      B: "O Segundo Nível elimina a necessidade de identificar a autoria principal e secundária nas fichas bibliográficas do sistema.",
-      C: "O Terceiro Nível exige a descrição exaustiva de minúcias de fabricação, sendo justificado geralmente apenas para Obras Raras e especiais.",
+      B: "O Terceiro Nível exige a descrição exaustiva de minúcias de fabricação, sendo justificado geralmente apenas para Obras Raras e especiais.",
+      C: "O Segundo Nível elimina a necessidade de identificar a autoria principal e secundária nas fichas bibliográficas do sistema.",
       D: "O Primeiro Nível é exclusivo para catálogos comerciais informatizados e o Terceiro Nível destina-se unicamente a sebos e livrarias.",
       E: "O Segundo Nível dispensa o preenchimento de pontos de acesso de assunto baseados em linguagens documentárias controladas."
     },
-    correctAnswer: "C",
+    correctAnswer: "B",
     justification: "O Nível 3 do AACR2 exige a transcrição de absolutamente todos os elementos possíveis descritos no código (detalhes pormenorizados de ilustrações, dimensões ao milímetro, notas exaustivas), o que demanda tempo e recursos incompatíveis com o fluxo diário, sendo reservado a acervos raros e preciosos. O Nível 2 equilibra precisão e economia de processamento."
   },
   {
@@ -207,13 +207,13 @@ export const q76_to_100: Question[] = [
     moduleId: "m18",
     text: "Segundo as diretrizes conceituais do modelo IFLA LRM e do modelo FRBR original, a análise comparativa entre uma edição integral do clássico 'Dom Casmurro' em língua portuguesa original e uma edição da mesma obra literária traduzida para a língua inglesa com notas explicativas de um crítico estrangeiro evidencia que se tratam de:",
     options: {
-      A: "Duas Obras totalmente distintas e independentes no catálogo, em virtude da alteração da nacionalidade dos leitores.",
+      A: "Uma única e mesma Obra (a criação de Machado de Assis), que se materializou em duas Expressões distintas (o texto em português e a tradução inglesa).",
       B: "Duas criações que compartilham a mesma Expressão textual, divergindo unicamente quanto ao número de chamada do exemplar.",
       C: "Duas manifestações que pertencem a Obras distintas, pois o tradutor passa a ser considerado o criador primário do texto.",
       D: "Dois Itens físicos correspondentes a uma única Manifestação unificada produzida pela mesma gráfica internacional cooperativa.",
-      E: "Uma única e mesma Obra (a criação de Machado de Assis), que se materializou em duas Expressões distintas (o texto em português e a tradução inglesa)."
+      E: "Duas Obras totalmente distintas e independentes no catálogo, em virtude da alteração da nacionalidade dos leitores."
     },
-    correctAnswer: "E",
+    correctAnswer: "A",
     justification: "No modelo FRBR/LRM, a Obra abstrata 'Dom Casmurro' de Machado de Assis é uma só. Quando esse texto é traduzido para o inglês, surge uma nova EXPRESSÃO (a realização linguística do texto em outro idioma). Cada edição comercial lançada de cada expressão é uma Manifestação."
   },
   {
@@ -236,12 +236,12 @@ export const q76_to_100: Question[] = [
     text: "Na gestão de Linguagens Documentárias e Sistemas de Recuperação da Informação, os tesauros enfrentam o desafio da 'Latência Temporal' (ou gap temporal de atualização terminológica), fenômeno que decorre do fato de que:",
     options: {
       A: "Os computadores de servidores de bibliotecas sofrem degradação física de processamento com o acúmulo de acessos simultâneos.",
-      B: "Existe um hiato temporal significativo entre o surgimento de um novo conceito na literatura científica e sua inclusão formal no tesauro.",
+      B: "A velocidade de colheita de registros pelo protocolo OAI-PMH diminui quando há documentos em formatos abertos em PDF/A.",
       C: "Os dados catalográficos em formato MARC 21 perdem sua validade jurídica após cinco anos de depósito no banco de dados.",
-      D: "A velocidade de colheita de registros pelo protocolo OAI-PMH diminui quando há documentos em formatos abertos em PDF/A.",
+      D: "Existe um hiato temporal significativo entre o surgimento de um novo conceito na literatura científica e sua inclusão formal no tesauro.",
       E: "O tempo de atendimento presencial nos balcões de referência ultrapassa a tolerância estipulada nas cartas de serviços ao usuário."
     },
-    correctAnswer: "B",
+    correctAnswer: "D",
     justification: "Linguagens controladas (como tesauros) são instrumentos padronizados que dependem de comitês técnicos para validar e incluir novos termos. O tempo que decorre entre o aparecimento de um neologismo científico ou termo de vanguarda na literatura e sua oficialização no tesauro é denominado latência temporal."
   },
   {
@@ -251,11 +251,11 @@ export const q76_to_100: Question[] = [
     options: {
       A: "A eliminação definitiva dos arquivos mestres para liberar espaço em disco, mantendo apenas resumos em texto descritivo.",
       B: "A impressão física das ondas sonoras e frequências em papel cartão resistente para guarda em pastas de arquivo deslizante.",
-      C: "A guarda segura dos arquivos brutos não comprimidos em pacotes AIP protegidos com checksum, gerando derivados leves (DIPs) para consulta do usuário.",
+      C: "A compactação de todo o acervo histórico em formatos com perda irreversível de qualidade sem manter os dados brutos.",
       D: "A cessão exclusiva e onerosa dos direitos patrimoniais do acervo sonoro a plataformas privadas de streaming na internet.",
-      E: "A compactação de todo o acervo histórico em formatos com perda irreversível de qualidade sem manter os dados brutos."
+      E: "A guarda segura dos arquivos brutos não comprimidos em pacotes AIP protegidos com checksum, gerando derivados leves (DIPs) para consulta do usuário."
     },
-    correctAnswer: "C",
+    correctAnswer: "E",
     justification: "O modelo OAIS estrutura a cadeia de custódia: os arquivos mestres originais de alta fidelidade sem perdas são mantidos como Pacotes de Informação Arquivística (AIP) com metadados PREMIS e controle de integridade (fixity/checksum), enquanto derivados comprimidos (DIPs) são criados para acesso rápido e leve aos usuários."
   },
   {
@@ -264,12 +264,12 @@ export const q76_to_100: Question[] = [
     text: "O Marketing de Relacionamento (Customer Relationship Management - CRM) aplicado a bibliotecas universitárias diferencia-se das abordagens transacionais tradicionais de marketing, tendo como objetivo estratégico primordial:",
     options: {
       A: "Maximizar o lucro financeiro obtido por meio da cobrança de multas por devolução em atraso de materiais bibliográficos.",
-      B: "Promover campanhas publicitárias de massa em meios de comunicação aberta para atrair público desprovido de vínculo com o campus.",
+      B: "Construir e consolidar vínculos contínuos de confiança, fidelização e cooperação mútua a longo prazo entre a biblioteca e sua comunidade de usuários.",
       C: "Incentivar a venda direta de exemplares duplicados do acervo circulante em feiras de troca de livros didáticos no início do semestre.",
-      D: "Construir e consolidar vínculos contínuos de confiança, fidelização e cooperação mútua a longo prazo entre a biblioteca e sua comunidade de usuários.",
+      D: "Promover campanhas publicitárias de massa em meios de comunicação aberta para atrair público desprovido de vínculo com o campus.",
       E: "Restringir o atendimento personalizado aos estudantes de graduação que apresentarem maior coeficiente de rendimento escolar."
     },
-    correctAnswer: "D",
+    correctAnswer: "B",
     justification: "O Marketing de Relacionamento em unidades de informação foca no longo prazo: busca compreender as necessidades contínuas de alunos, professores e pesquisadores, construindo uma relação duradoura de parceria, confiança e fidelização ao longo de toda a sua trajetória acadêmica."
   },
   {
@@ -279,11 +279,11 @@ export const q76_to_100: Question[] = [
     options: {
       A: "Efetuar a compra imediata de obras similares junto aos fornecedores comerciais credenciados pela universidade.",
       B: "Substituir a necessidade de leitura integral dos textos mediante a criação de sumários analíticos de inteligência artificial.",
-      C: "Calcular o tempo de decomposição física do suporte material com base nas taxas de acidez da celulose das páginas.",
+      C: "Auxiliar o usuário na ESCOLHA de um livro, seja com relação à sua edição (bibliograficamente) ou ao seu caráter (literariamente).",
       D: "Impor a notação de classificação decimal da CDD como único elemento recuperável no catálogo de autoridade de assunto.",
-      E: "Auxiliar o usuário na ESCOLHA de um livro, seja com relação à sua edição (bibliograficamente) ou ao seu caráter (literariamente)."
+      E: "Calcular o tempo de decomposição física do suporte material com base nas taxas de acidez da celulose das páginas."
     },
-    correctAnswer: "E",
+    correctAnswer: "C",
     justification: "Os Objetivos do Catálogo formulados por Cutter em 1876 são tríplices: 1. Permitir ENCONTRAR um livro do qual se conheça autor, título ou assunto; 2. MOSTRAR o que a biblioteca possui; 3. AUXILIAR na ESCOLHA do livro (com relação à sua edição ou ao seu caráter literário/tópico). Esse postulado inspirou os objetivos contemporâneos da IFLA."
   },
   {
@@ -291,13 +291,13 @@ export const q76_to_100: Question[] = [
     moduleId: "m17",
     text: "Na transição do código AACR2R para o padrão RDA (Resource Description and Access), a hierarquia e o rigor de prescrição das fontes de informação passaram por uma evolução paradigmática significativa. No padrão RDA, a determinação da fonte de informação para a transcrição do título e dados da manifestação caracteriza-se por:",
     options: {
-      A: "Priorizar o próprio recurso como um todo, aceitando dados do corpo do item com flexibilidade e reduzindo a exigência de colchetes.",
+      A: "Restringir as fontes de informação aos metadados Dublin Core inseridos na assinatura eletrônica de certificação digital do autor.",
       B: "Impor o uso obrigatório e inflexível da folha de rosto, proibindo a retirada de dados de qualquer outra página da obra sob pena de nulidade.",
       C: "Adotar prioritariamente as descrições constantes em sites de livrarias virtuais comerciais em detrimento dos dados impressos no item.",
       D: "Exigir que todos os dados catalográficos que não constem na capa externa do exemplar sejam compulsoriamente grafados em letras maiúsculas.",
-      E: "Restringir as fontes de informação aos metadados Dublin Core inseridos na assinatura eletrônica de certificação digital do autor."
+      E: "Priorizar o próprio recurso como um todo, aceitando dados do corpo do item com flexibilidade e reduzindo a exigência de colchetes."
     },
-    correctAnswer: "A",
+    correctAnswer: "E",
     justification: "O RDA substituiu o conceito rígido de 'Fonte Principal de Informação' do AACR2 pelo princípio de que o próprio recurso em sua totalidade é a fonte primária, com ordem de preferência (dando preferência à página com título formal), mas aceitando informações encontradas em qualquer parte do recurso sem a exigência obsessiva de colchetes do passado."
   },
   {
@@ -319,13 +319,13 @@ export const q76_to_100: Question[] = [
     moduleId: "m06",
     text: "Na reflexão sociológica contemporânea sobre a 'Sociedade da Informação e do Conhecimento' e a era da rede (conforme teorizado por Manuel Castells), um dos maiores desafios estruturais que as bibliotecas universitárias e públicas são convocadas a mitigar em suas comunidades é:",
     options: {
-      A: "A diminuição no consumo de energia elétrica em razão da desativação progressiva de computadores e terminais de autoatendimento.",
+      A: "A 'Exclusão Digital' (Digital Divide), abismo que marginaliza indivíduos e grupos sociais sem competências ou acesso às tecnologias da informação.",
       B: "O risco de esgotamento prematuro do papel sulfite nas dependências da universidade devido à expansão das reprografias.",
-      C: "A 'Exclusão Digital' (Digital Divide), abismo que marginaliza indivíduos e grupos sociais sem competências ou acesso às tecnologias da informação.",
+      C: "A diminuição no consumo de energia elétrica em razão da desativação progressiva de computadores e terminais de autoatendimento.",
       D: "A substituição total de cursos presenciais de ensino superior por treinamentos virtuais de curta duração sem supervisão docente.",
       E: "O encerramento definitivo das atividades de editoras comerciais em decorrência da universalização do protocolo Z39.50."
     },
-    correctAnswer: "C",
+    correctAnswer: "A",
     justification: "A Exclusão Digital (Digital Divide) é a assimetria que separa cidadãos com pleno acesso e letramento informacional/tecnológico daqueles desprovidos de conectividade e habilidades críticas, perpetuando desigualdades socioeconômicas. As bibliotecas desempenham papel central na inclusão e justiça informacional."
   },
   {
@@ -349,11 +349,11 @@ export const q76_to_100: Question[] = [
     options: {
       A: "É expressamente vedado qualquer tipo de suporte técnico remunerado ou remuneração de profissionais que atuem no desenvolvimento.",
       B: "O sistema opera unicamente em servidores instalados fisicamente no campus, sendo proibido o uso de infraestruturas em nuvem híbrida.",
-      C: "Os dados do catálogo bibliográfico devem ser compulsoriamente eliminados a cada ano letivo para garantir o sigilo de privacidade discente.",
+      C: "O usuário e a instituição têm a liberdade jurídica de executar, estudar o código-fonte, modificar e redistribuir cópias do sistema sem restrições.",
       D: "O software funciona unicamente por meio de comandos em modo texto, sendo tecnicamente proibida a criação de interfaces gráficas na web.",
-      E: "O usuário e a instituição têm a liberdade jurídica de executar, estudar o código-fonte, modificar e redistribuir cópias do sistema sem restrições."
+      E: "Os dados do catálogo bibliográfico devem ser compulsoriamente eliminados a cada ano letivo para garantir o sigilo de privacidade discente."
     },
-    correctAnswer: "E",
+    correctAnswer: "C",
     justification: "Segundo a Free Software Foundation (FSF), Software Livre define-se por quatro liberdades essenciais: Liberdade 0 (executar o programa para qualquer propósito); Liberdade 1 (estudar o funcionamento e modificá-lo via acesso ao código-fonte); Liberdade 2 (redistribuir cópias); Liberdade 3 (melhorar o programa e liberar os aprimoramentos ao público)."
   }
 ];
