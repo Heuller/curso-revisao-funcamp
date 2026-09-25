@@ -276,167 +276,186 @@ export default function App() {
       />
 
       {/* Top Navbar */}
-      <header className="sticky top-0 z-40 bg-slate-950/95 backdrop-blur-md text-white border-b border-slate-800 shadow-lg">
+      <header className="sticky top-0 z-40 bg-slate-950/90 backdrop-blur-xl text-white border-b border-slate-800/80 shadow-md">
         
         {/* Desktop Header Content (md+) */}
-        <div className="hidden md:flex max-w-[1440px] mx-auto px-4 sm:px-6 h-18 items-center justify-between gap-4">
-          {/* Logo & Platform Info */}
-          <div className="flex items-center gap-5">
+        <div className="hidden md:flex max-w-[1440px] mx-auto px-4 sm:px-6 h-16 items-center justify-between gap-4">
+          
+          {/* Left: Brand Logo & Segmented Discipline Switcher */}
+          <div className="flex items-center gap-4 lg:gap-5">
+            {/* Logo */}
             <div 
               onClick={() => { setCurrentView('curso'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-              className="flex items-center gap-3 cursor-pointer group"
+              className="flex items-center gap-2.5 cursor-pointer group shrink-0"
             >
-              <div className={`p-2.5 rounded-2xl shadow-md group-hover:scale-105 transition-transform ${
+              <div className={`w-9 h-9 rounded-xl shadow-xs flex items-center justify-center transition-transform group-hover:scale-105 ${
                 isPortuguese 
-                  ? 'bg-gradient-to-br from-teal-500 via-teal-600 to-emerald-600' 
-                  : 'bg-gradient-to-br from-indigo-500 via-indigo-600 to-purple-600'
+                  ? 'bg-gradient-to-br from-teal-500 to-emerald-600 shadow-teal-950/30' 
+                  : 'bg-gradient-to-br from-indigo-500 to-purple-600 shadow-indigo-950/30'
               }`}>
                 {isPortuguese ? (
-                  <Languages className="w-5 h-5 text-white" />
+                  <Languages className="w-4.5 h-4.5 text-white" />
                 ) : (
-                  <Library className="w-5 h-5 text-white" />
+                  <Library className="w-4.5 h-4.5 text-white" />
                 )}
               </div>
-              <div>
-                <div className="flex items-center gap-2">
-                  <h1 className="text-base sm:text-lg font-black tracking-tight leading-none text-slate-50 group-hover:text-indigo-300 transition-colors">
+              <div className="leading-tight">
+                <div className="flex items-center gap-1.5">
+                  <span className="text-sm lg:text-base font-black tracking-tight text-white group-hover:text-indigo-300 transition-colors">
                     Revisão Master
-                  </h1>
-                  <span className="px-2 py-0.5 rounded text-[10px] font-black uppercase tracking-wider bg-rose-900/70 text-rose-200 border border-rose-700/60 shadow-xs">
+                  </span>
+                  <span className="px-1.5 py-0.2 rounded text-[9px] font-black uppercase tracking-wider bg-rose-500/20 text-rose-300 border border-rose-500/30">
                     Unicamp
                   </span>
                 </div>
-                <p className="text-indigo-300 text-[10px] font-bold tracking-[0.14em] uppercase mt-0.5">
-                  Funcamp 2026 • {isPortuguese ? 'Língua Portuguesa' : 'Biblioteconomia'}
-                </p>
+                <div className="text-[10px] text-slate-400 font-bold tracking-wider uppercase mt-0.5">
+                  Funcamp 2026
+                </div>
               </div>
             </div>
 
-            <div className="h-6 w-px bg-slate-800"></div>
+            <div className="hidden xl:block h-6 w-px bg-slate-800/80"></div>
 
-            {/* Prominent Discipline Selector */}
-            <div className="flex items-center bg-slate-900/90 p-1 rounded-2xl border border-slate-700/80 shadow-inner">
+            {/* Segmented Discipline Switcher (High-End & Subtle) */}
+            <div className="flex items-center bg-slate-900/90 p-1 rounded-xl border border-slate-800 shadow-inner">
               <button
                 onClick={() => handleChangeDiscipline('biblioteconomia')}
-                className={`flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-black transition-all ${
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                   !isPortuguese
-                    ? 'bg-gradient-to-r from-indigo-600 to-indigo-700 text-white shadow-md shadow-indigo-950'
-                    : 'text-slate-400 hover:text-slate-200'
+                    ? 'bg-indigo-600 text-white shadow-xs'
+                    : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50'
                 }`}
               >
                 <Library className="w-3.5 h-3.5" />
                 <span>Biblioteconomia</span>
-                <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-md ${
-                  !isPortuguese ? 'bg-indigo-900 text-indigo-200' : 'bg-slate-800 text-slate-400'
-                }`}>
-                  23 Tópicos
+                <span className={`text-[10px] font-mono px-1 rounded ${!isPortuguese ? 'bg-indigo-700/80 text-indigo-100 font-black' : 'text-slate-500'}`}>
+                  23
                 </span>
               </button>
 
               <button
                 onClick={() => handleChangeDiscipline('portugues')}
-                className={`flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-black transition-all ${
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
                   isPortuguese
-                    ? 'bg-gradient-to-r from-teal-600 to-emerald-600 text-white shadow-md shadow-teal-950'
-                    : 'text-slate-400 hover:text-slate-200'
+                    ? 'bg-teal-600 text-white shadow-xs'
+                    : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/50'
                 }`}
               >
                 <Languages className="w-3.5 h-3.5" />
                 <span>Língua Portuguesa</span>
-                <span className={`text-[10px] font-bold px-1.5 py-0.5 rounded-md ${
-                  isPortuguese ? 'bg-teal-900 text-teal-200' : 'bg-slate-800 text-slate-400'
-                }`}>
-                  17 Tópicos
+                <span className={`text-[10px] font-mono px-1 rounded ${isPortuguese ? 'bg-teal-700/80 text-teal-100 font-black' : 'text-slate-500'}`}>
+                  17
                 </span>
               </button>
             </div>
-
-            <div className="h-6 w-px bg-slate-800"></div>
-
-            {/* Desktop View Switcher */}
-            <nav className="flex bg-slate-900/70 p-1 rounded-xl ring-1 ring-slate-800">
-              <button
-                onClick={() => setCurrentView('curso')}
-                className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
-                  currentView === 'curso' 
-                    ? (isPortuguese ? 'bg-teal-600 text-white shadow-md' : 'bg-indigo-600 text-white shadow-md')
-                    : 'text-slate-400 hover:text-slate-200'
-                }`}
-              >
-                <BookOpen className="w-4 h-4" />
-                Trilha Teórica ({activeModulesList.length})
-              </button>
-              <button
-                onClick={() => setCurrentView('simulado')}
-                className={`flex items-center gap-2 px-3.5 py-1.5 rounded-lg text-xs font-bold transition-all ${
-                  currentView === 'simulado' 
-                    ? (isPortuguese ? 'bg-teal-600 text-white shadow-md' : 'bg-indigo-600 text-white shadow-md')
-                    : 'text-slate-400 hover:text-slate-200'
-                }`}
-              >
-                <Target className="w-4 h-4" />
-                Simulado Master ({isPortuguese ? '40Q' : '100Q'})
-              </button>
-              {isPortuguese && (
-                <button
-                  onClick={() => { setCurrentView('guia-unicamp'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
-                  className={`flex items-center gap-1.5 px-3 py-1.5 rounded-lg text-xs font-bold transition-all cursor-pointer ${
-                    currentView === 'guia-unicamp'
-                      ? 'bg-amber-500 text-slate-950 font-black shadow-md'
-                      : 'text-amber-300 hover:text-amber-100 hover:bg-slate-800/80'
-                  }`}
-                >
-                  <GraduationCap className="w-4 h-4" />
-                  <span>Raio-X Unicamp</span>
-                  <span className="text-[9px] uppercase px-1.5 py-0.5 bg-amber-950/70 text-amber-200 rounded font-black border border-amber-500/40">
-                    IEL
-                  </span>
-                </button>
-              )}
-            </nav>
           </div>
 
-          {/* Progress & Quick Actions */}
-          <div className="flex items-center gap-4">
-            <div className="flex items-center gap-3 text-right">
-              <div>
-                <div className="text-[10px] font-bold text-slate-400 uppercase tracking-wider mb-1 flex items-center justify-end gap-1.5">
-                  <span>Edital {isPortuguese ? 'Português' : 'Biblioteconomia'}</span>
-                  <span className="text-slate-200 font-extrabold">{completedModules.size}/{activeModulesList.length}</span>
-                </div>
-                <div className="w-32 h-2 bg-slate-800/90 rounded-full overflow-hidden border border-slate-700/50">
-                  <div 
-                    className={`h-full rounded-full transition-all duration-500 ${
-                      isPortuguese 
-                        ? 'bg-gradient-to-r from-teal-500 to-emerald-400' 
-                        : 'bg-gradient-to-r from-indigo-500 to-emerald-400'
-                    }`}
-                    style={{ width: `${progressPercentage}%` }}
-                  />
-                </div>
-              </div>
-              <div className="text-base font-black text-emerald-400 w-11">{progressPercentage}%</div>
-            </div>
+          {/* Center: Primary Navigation Tabs (Clean & Floating) */}
+          <nav className="flex items-center gap-1 bg-slate-900/60 p-1 rounded-2xl border border-slate-800/70 shadow-inner">
+            <button
+              onClick={() => { setCurrentView('curso'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+              className={`flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                currentView === 'curso' 
+                  ? 'bg-slate-800 text-white shadow-xs border border-slate-700/80' 
+                  : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/40'
+              }`}
+            >
+              <BookOpen className={`w-3.5 h-3.5 ${currentView === 'curso' ? (isPortuguese ? 'text-teal-400' : 'text-indigo-400') : 'text-slate-400'}`} />
+              <span>Trilha Teórica</span>
+            </button>
 
-            {completedModules.size > 0 && (
+            <button
+              onClick={() => { setCurrentView('simulado'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+              className={`flex items-center gap-2 px-3.5 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                currentView === 'simulado' 
+                  ? 'bg-slate-800 text-white shadow-xs border border-slate-700/80' 
+                  : 'text-slate-400 hover:text-slate-200 hover:bg-slate-800/40'
+              }`}
+            >
+              <Target className={`w-3.5 h-3.5 ${currentView === 'simulado' ? (isPortuguese ? 'text-teal-400' : 'text-indigo-400') : 'text-slate-400'}`} />
+              <span>Simulado Master</span>
+              <span className={`text-[10px] font-bold px-1.5 py-0.2 rounded-md ${
+                currentView === 'simulado' ? 'bg-slate-700 text-slate-100' : 'bg-slate-800/90 text-slate-400'
+              }`}>
+                {isPortuguese ? '40Q' : '100Q'}
+              </span>
+            </button>
+
+            {isPortuguese && (
               <button
-                onClick={handleResetProgress}
-                title={`Zerar progresso dos tópicos de ${isPortuguese ? 'Língua Portuguesa' : 'Biblioteconomia'}`}
-                className="hidden xl:flex items-center gap-1 text-[11px] font-bold text-slate-400 hover:text-rose-300 transition-colors px-2 py-1 rounded bg-slate-800/40"
+                onClick={() => { setCurrentView('guia-unicamp'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
+                className={`flex items-center gap-1.5 px-3 py-1.5 rounded-xl text-xs font-bold transition-all cursor-pointer ${
+                  currentView === 'guia-unicamp'
+                    ? 'bg-amber-500/20 text-amber-200 border border-amber-500/40 shadow-xs'
+                    : 'text-amber-400/80 hover:text-amber-200 hover:bg-amber-500/10'
+                }`}
               >
-                <RotateCcw className="w-3 h-3" />
-                Zerar
+                <GraduationCap className="w-3.5 h-3.5 text-amber-400" />
+                <span>Raio-X IEL</span>
               </button>
             )}
+          </nav>
 
-            <div className={`w-9 h-9 rounded-2xl flex items-center justify-center border shadow-inner font-extrabold text-xs text-white ${
-              isPortuguese 
-                ? 'bg-gradient-to-tr from-teal-600 to-emerald-600 border-teal-400/50' 
-                : 'bg-gradient-to-tr from-indigo-600 to-purple-600 border-indigo-400/50'
-            }`}>
-              {isPortuguese ? 'LP' : 'BIB'}
+          {/* Right: Integrated High-Tech Progress Capsule */}
+          <div className="flex items-center gap-3">
+            <div className="flex items-center gap-3 bg-slate-900/90 border border-slate-800/90 pl-2.5 pr-3.5 py-1.5 rounded-2xl shadow-inner">
+              {/* Circular Progress SVG Ring */}
+              <div className="relative w-7 h-7 flex items-center justify-center shrink-0">
+                <svg className="w-7 h-7 -rotate-90" viewBox="0 0 28 28">
+                  <circle
+                    cx="14"
+                    cy="14"
+                    r="11"
+                    fill="none"
+                    stroke="currentColor"
+                    className="text-slate-800"
+                    strokeWidth="2.5"
+                  />
+                  <circle
+                    cx="14"
+                    cy="14"
+                    r="11"
+                    fill="none"
+                    stroke="currentColor"
+                    className={isPortuguese ? 'text-teal-400' : 'text-indigo-400'}
+                    strokeWidth="2.5"
+                    strokeDasharray={2 * Math.PI * 11}
+                    strokeDashoffset={2 * Math.PI * 11 - ((2 * Math.PI * 11) * progressPercentage) / 100}
+                    strokeLinecap="round"
+                    style={{ transition: 'stroke-dashoffset 0.5s ease-in-out' }}
+                  />
+                </svg>
+                <span className="absolute text-[8px] font-black text-slate-200">
+                  {progressPercentage}%
+                </span>
+              </div>
+
+              {/* Fraction and Label */}
+              <div className="text-left leading-tight">
+                <div className="flex items-center gap-1 text-[11px] font-black text-white">
+                  <span>{completedModules.size}</span>
+                  <span className="text-slate-500 font-normal">/</span>
+                  <span className="text-slate-400 font-bold">{activeModulesList.length}</span>
+                  <span className="text-[10px] text-slate-400 font-medium ml-0.5">módulos</span>
+                </div>
+                <div className="text-[9px] font-bold text-slate-400 uppercase tracking-wider">
+                  {isPortuguese ? 'Edital Português' : 'Edital Biblioteconomia'}
+                </div>
+              </div>
+
+              {/* Reset Button (only if > 0) */}
+              {completedModules.size > 0 && (
+                <button
+                  onClick={handleResetProgress}
+                  title="Zerar progresso da disciplina ativa"
+                  className="ml-1 p-1 text-slate-500 hover:text-rose-400 hover:bg-slate-800/80 rounded-lg transition-colors cursor-pointer"
+                >
+                  <RotateCcw className="w-3 h-3" />
+                </button>
+              )}
             </div>
           </div>
+
         </div>
 
         {/* Ultra-Clean Mobile Header Content (under 768px: Single 54px Row) */}
@@ -446,46 +465,59 @@ export default function App() {
             onClick={() => { setCurrentView('curso'); window.scrollTo({ top: 0, behavior: 'smooth' }); }}
             className="flex items-center gap-2 cursor-pointer"
           >
-            <div className={`p-2 rounded-xl text-white ${
+            <div className={`w-8 h-8 rounded-xl text-white flex items-center justify-center shadow-xs ${
               isPortuguese ? 'bg-gradient-to-br from-teal-500 to-emerald-600' : 'bg-gradient-to-br from-indigo-500 to-purple-600'
             }`}>
               {isPortuguese ? <Languages className="w-4 h-4" /> : <Library className="w-4 h-4" />}
             </div>
-            <div>
+            <div className="leading-tight">
               <div className="flex items-center gap-1.5">
-                <span className="font-black text-sm text-white tracking-tight leading-none">Revisão Master</span>
-                <span className="px-1.5 py-0.2 rounded text-[9px] font-black uppercase tracking-wider bg-rose-950 text-rose-300 border border-rose-800">
+                <span className="font-black text-sm text-white tracking-tight">Revisão Master</span>
+                <span className="px-1.5 py-0.2 rounded text-[9px] font-black uppercase tracking-wider bg-rose-500/20 text-rose-300 border border-rose-500/30">
                   Unicamp
                 </span>
               </div>
-              <span className="text-[10px] font-bold text-indigo-300 uppercase tracking-wider block">
-                {isPortuguese ? 'Língua Portuguesa' : 'Biblioteconomia'}
+              <span className="text-[10px] font-bold text-slate-400 uppercase tracking-wider block">
+                Funcamp 2026
               </span>
             </div>
           </div>
 
-          {/* Quick Discipline Switcher Pill & Progress */}
+          {/* Quick Discipline Switcher Pill & Progress Ring */}
           <div className="flex items-center gap-2">
             {/* Quick Switch Button (BIB ⇄ LP) */}
             <button
               onClick={() => handleChangeDiscipline(isPortuguese ? 'biblioteconomia' : 'portugues')}
-              className={`px-2.5 py-1 rounded-xl text-[11px] font-extrabold flex items-center gap-1.5 border transition-all ${
-                isPortuguese 
-                  ? 'bg-teal-950/80 text-teal-300 border-teal-800' 
-                  : 'bg-indigo-950/80 text-indigo-300 border-indigo-800'
-              }`}
+              className="px-2.5 py-1 rounded-xl text-[11px] font-bold bg-slate-900 border border-slate-800 text-slate-300 hover:text-white flex items-center gap-1.5 transition-all shadow-xs cursor-pointer active:scale-95"
             >
-              <span>{isPortuguese ? 'Mudar p/ BIB' : 'Mudar p/ LP'}</span>
+              <span className="text-slate-400 text-[10px]">Trocar:</span>
+              <span className={`font-black ${isPortuguese ? 'text-indigo-400' : 'text-teal-400'}`}>
+                {isPortuguese ? 'BIB' : 'LP'}
+              </span>
             </button>
 
-            {/* Mobile Module Drawer Trigger */}
+            {/* Mobile Module Drawer Trigger with Progress Ring */}
             <button
               onClick={() => setMobileDrawerOpen(true)}
-              className="p-2 rounded-xl bg-slate-800/90 text-slate-200 border border-slate-700 flex items-center gap-1"
-              title="Ver Módulos"
+              className="flex items-center gap-1.5 bg-slate-900 border border-slate-800 pl-1.5 pr-2 py-1 rounded-xl text-slate-200 shadow-xs cursor-pointer active:scale-95"
+              title="Abrir lista de módulos"
             >
-              <Layers className="w-4 h-4 text-emerald-400" />
-              <span className="text-xs font-black text-white">{completedModules.size}/{activeModulesList.length}</span>
+              <div className="relative w-5 h-5 flex items-center justify-center shrink-0">
+                <svg className="w-5 h-5 -rotate-90" viewBox="0 0 20 20">
+                  <circle cx="10" cy="10" r="8" fill="none" stroke="currentColor" className="text-slate-800" strokeWidth="2.5" />
+                  <circle
+                    cx="10" cy="10" r="8" fill="none" stroke="currentColor"
+                    className={isPortuguese ? 'text-teal-400' : 'text-indigo-400'}
+                    strokeWidth="2.5"
+                    strokeDasharray={2 * Math.PI * 8}
+                    strokeDashoffset={2 * Math.PI * 8 - ((2 * Math.PI * 8) * progressPercentage) / 100}
+                    strokeLinecap="round"
+                    style={{ transition: 'stroke-dashoffset 0.5s ease-in-out' }}
+                  />
+                </svg>
+                <span className="absolute text-[7px] font-black">{progressPercentage}%</span>
+              </div>
+              <span className="text-[11px] font-black text-white">{completedModules.size}/{activeModulesList.length}</span>
             </button>
           </div>
         </div>
