@@ -33,16 +33,6 @@ export const ModuleQuiz: React.FC<ModuleQuizProps> = ({ moduleId, moduleTitle })
     }
   }, [userAnswers, storageKey]);
 
-  // When module changes, reload answers for that module
-  useEffect(() => {
-    try {
-      const saved = localStorage.getItem(storageKey);
-      setUserAnswers(saved ? JSON.parse(saved) : {});
-    } catch {
-      setUserAnswers({});
-    }
-  }, [storageKey]);
-
   const handleSelectOption = (questionId: string, optionKey: string) => {
     // If already answered, allow re-selection or keep locked?
     // Let's allow answering if not yet answered, or click to switch if desired,

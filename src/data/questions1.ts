@@ -17,351 +17,351 @@ export const q1_to_25: Question[] = [
   {
     id: "q01",
     moduleId: "m01",
-    text: "Sobre as Bibliotecas Digitais e Repositórios Institucionais, assinale a alternativa que descreve corretamente a diferença essencial de missão entre eles:",
+    text: "Sobre as Bibliotecas Digitais e os Repositórios Institucionais, assinale a alternativa que descreve com rigor técnico a diferença primordial de missão e escopo entre eles:",
     options: {
-      A: "A Biblioteca Digital tem foco na preservação da produção científica local da universidade, enquanto o Repositório compra acervos de editoras comerciais.",
-      B: "O Repositório Institucional utiliza o protocolo Z39.50 para interoperabilidade comercial, enquanto a Biblioteca Digital depende do OAI-PMH.",
-      C: "A Biblioteca Digital foca no consumo e aquisição de acervos externos para seus usuários, enquanto o Repositório foca na preservação e no acesso aberto da produção intelectual gerada na própria instituição.",
-      D: "Ambos possuem a mesma finalidade, divergindo apenas quanto ao formato dos arquivos, já que repositórios não aceitam PDFs multimídia.",
-      E: "Bibliotecas Digitais são obrigatoriamente de Acesso Aberto (Open Access), enquanto os Repositórios Institucionais cobram taxas de acesso (paywalls)."
+      A: "A Biblioteca Digital foca na aquisição e disponibilização de coleções comerciais externas para sua comunidade, enquanto o Repositório Institucional foca na custódia, preservação e acesso aberto da produção científica e intelectual gerada pela própria instituição.",
+      B: "A Biblioteca Digital tem por missão exclusiva o arquivamento de monografias e teses de pós-graduação locais, enquanto o Repositório Institucional adquire pacotes de e-books de editoras multinacionais mediante assinaturas periódicas e licenças de acesso.",
+      C: "O Repositório Institucional opera obrigatoriamente sob o protocolo de busca federada Z39.50 para catálogos locais, enquanto a Biblioteca Digital depende unicamente do protocolo OAI-PMH para indexação de conteúdos restritos a redes acadêmicas internas.",
+      D: "Ambos compartilham a mesma missão e arquitetura funcional de armazenamento, divergindo unicamente nos formatos dos dados, visto que repositórios institucionais não admitem objetos digitais multimídia ou conjuntos de dados brutos de pesquisa.",
+      E: "As Bibliotecas Digitais vinculam-se unicamente ao movimento de Acesso Aberto (Open Access) global, ao passo que os Repositórios Institucionais cobram taxas de submissão e processamento de artigos (APCs) para custear os servidores de preservação."
     },
-    correctAnswer: "C",
-    justification: "Bibliotecas Digitais existem para servir leitores (consomem de fora: EBSCO, Elsevier). Repositórios Institucionais existem para servir a memória da universidade (guardam o que foi produzido por dentro: teses, artigos dos professores)."
+    correctAnswer: "A",
+    justification: "Bibliotecas Digitais têm como foco central o consumo e a gestão de coleções externas (comerciais ou licenciadas) para atender seus usuários. Já os Repositórios Institucionais cumprem a função precípua de reunir, preservar e disseminar em acesso aberto a produção intelectual interna da universidade."
   },
   {
     id: "q02",
     moduleId: "m02",
-    text: "O ciclo da curadoria digital e a preservação em longo prazo enfrentam o risco constante da obsolescência tecnológica. No Modelo OAIS (Open Archival Information System), o pacote gerado com metadados pesados de preservação (PREMIS) e armazenado a sete chaves no servidor, inacessível ao público, é o:",
+    text: "No modelo conceitual de referência para preservação digital de longo prazo OAIS (Open Archival Information System - ISO 14721), o pacote de informação que é enriquecido com metadados estruturados de preservação (como o padrão PREMIS) e armazenado de forma protegida e definitiva no repositório digital, sem acesso público direto, denomina-se:",
     options: {
-      A: "SIP (Submission Information Package).",
-      B: "DIP (Dissemination Information Package).",
-      C: "AIP (Archival Information Package).",
-      D: "OAI (Open Archive Initiative).",
-      E: "METS (Metadata Encoding and Transmission Standard)."
+      A: "SIP (Submission Information Package), que consiste no pacote bruto entregue pelo produtor.",
+      B: "AIP (Archival Information Package), que é o pacote arquivístico de preservação permanente.",
+      C: "DIP (Dissemination Information Package), que é o pacote formatado para consulta e download.",
+      D: "METS (Metadata Encoding and Transmission Standard), pacote exclusivo para troca de dados.",
+      E: "OAI (Open Archive Information), que consiste no pacote reservado para harvesters externos."
     },
-    correctAnswer: "C",
-    justification: "O OAIS tem 3 pacotes: SIP (o que o autor submete), AIP (o 'Archive', o cofre onde o arquivo fica guardado com metadados de preservação) e o DIP (o arquivo otimizado para o usuário baixar no site)."
+    correctAnswer: "B",
+    justification: "O modelo OAIS define 3 pacotes principais: o SIP (entregue pelo autor/produtor), o AIP (pacote arquivístico completo, com metadados PREMIS para preservação a longo prazo no cofre do sistema) e o DIP (pacote derivado para disseminação e consumo público)."
   },
   {
     id: "q03",
     moduleId: "m03",
-    text: "O pesquisador Carlos publicou um artigo em uma revista científica tradicional fechada (paywall) de alto fator de impacto. No entanto, por exigência da universidade, ele depositou a versão 'postprint' de seu artigo, gratuitamente, no Repositório Institucional da universidade. Essa prática caracteriza-se como a via do acesso aberto denominada:",
+    text: "Um pesquisador da Unicamp publicou um artigo científico em um periódico internacional fechado (com acesso restrito por paywall). Em conformidade com a política institucional de acesso aberto da universidade, ele depositou a versão 'postprint' (revisada por pares) do mesmo artigo no Repositório Institucional. Esse procedimento de autoarquivamento caracteriza formalmente:",
     options: {
-      A: "Via Dourada.",
-      B: "Via Verde.",
-      C: "Via Diamante.",
-      D: "Via Bronze.",
-      E: "Via Platina."
+      A: "A Via Dourada (Gold Open Access), na qual o artigo é disponibilizado no repositório mediante pagamento de taxa APC.",
+      B: "A Via Diamante (Diamond Open Access), em que o periódico comercial passa a ser integralmente financiado por fundações públicas.",
+      C: "A Via Verde (Green Open Access), na qual o autor realiza o autoarquivamento de sua produção em um repositório institucional.",
+      D: "A Via Bronze (Bronze Open Access), caracterizada pela liberação temporária e promocional de leitura no site da própria editora.",
+      E: "A Via Híbrida (Hybrid Open Access), em que a editora exige que o repositório cobre mensalidades de acesso de usuários externos."
     },
-    correctAnswer: "B",
-    justification: "Via Verde (Green Road) é o autoarquivamento feito pelo autor no Repositório Institucional de sua instituição, mesmo que a publicação oficial tenha sido feita em uma revista comercial fechada."
+    correctAnswer: "C",
+    justification: "A Via Verde (Green Road) do Acesso Aberto é definida como a prática do autoarquivamento pelo próprio autor em repositórios digitais abertos (institucionais ou temáticos), respeitando eventuais períodos de embargo editorial."
   },
   {
     id: "q04",
     moduleId: "m04",
-    text: "A implementação de Inteligência Artificial Generativa (LLMs) no serviço de referência de bibliotecas universitárias traz o desafio ético conhecido como 'Alucinação', que ocorre quando o sistema:",
+    text: "A incorporação de sistemas baseados em Modelos de Linguagem de Grande Escala (LLMs) e Inteligência Artificial generativa aos serviços de busca e referência de bibliotecas universitárias suscitou debates éticos e técnicos. Na terminologia da ciência da computação e da biblioteconomia, o fenômeno da 'Alucinação' (Hallucination) manifesta-se quando o sistema:",
     options: {
-      A: "Extrai dados excessivos do usuário, ferindo a LGPD.",
-      B: "Rejeita responder a comandos devido a filtros de segurança rígidos.",
-      C: "Afirma fatos falsos ou cita referências bibliográficas inexistentes com alta confiança estatística.",
-      D: "Herda preconceitos e vieses socioculturais presentes na base de treinamento.",
-      E: "Demora excessivamente para processar PDFs extensos em linguagem natural."
+      A: "Reproduz sistematicamente preconceitos históricos, vieses de gênero e exclusões raciais contidos no corpus textual.",
+      B: "Recusa-se a responder a consultas legítimas de usuários devido ao acionamento indevido de filtros de moderação.",
+      C: "Exige tempos de processamento excessivamente longos para indexar acervos documentais em formato aberto PDF/A.",
+      D: "Gera asserções factualmente falsas ou cita referências bibliográficas inexistentes com elevado grau de certeza aparente.",
+      E: "Viola as salvaguardas da Lei Geral de Proteção de Dados (LGPD) ao expor termos de busca privados a outros consulentes."
     },
-    correctAnswer: "C",
-    justification: "Alucinação é o termo técnico para quando a IA inventa dados (livros, leis, autores que não existem) para completar a probabilidade de uma frase, demonstrando certeza na mentira. Herdar preconceito é 'Viés Algorítmico' (Bias)."
+    correctAnswer: "D",
+    justification: "A 'Alucinação' em IA ocorre quando o modelo probabilístico gera respostas sintaticamente perfeitas, mas contendo dados falsos ou invenção deliberada de títulos, autores e periódicos que nunca existiram. Reprodução de preconceitos históricos classifica-se como 'Viés Algorítmico'."
   },
   {
     id: "q05",
     moduleId: "m05",
-    text: "As Redes de Informação no Brasil são mantidas por órgãos governamentais. Assinale a alternativa que indica o sistema responsável por indicar em QUAL biblioteca do Brasil está localizada uma determinada revista científica (periódico):",
+    text: "O Instituto Brasileiro de Informação em Ciência e Tecnologia (IBICT) coordena diversas redes informacionais cooperativas estratégicas. O sistema nacional que atua especificamente como ferramenta cooperativa para a identificação, localização física e compartilhamento de títulos e fascículos de publicações seriadas existentes nas bibliotecas brasileiras é o:",
     options: {
-      A: "BDTD.",
-      B: "COMUT.",
-      C: "Portal de Periódicos CAPES.",
-      D: "CCN (Catálogo Coletivo Nacional).",
-      E: "Lattes."
+      A: "SciELO (Scientific Electronic Library Online), focado no catálogo de periódicos indexados.",
+      B: "Portal de Periódicos da CAPES, direcionado à assinatura centralizada de bases comerciais.",
+      C: "BDTD (Biblioteca Digital Brasileira de Teses e Dissertações), agregador de teses nacionais.",
+      D: "Currículo Lattes (CNPq), direcionado ao registro biográfico e da produção de pesquisadores.",
+      E: "CCN (Catálogo Coletivo Nacional de Publicações Seriadas), voltado à localização de acervos."
     },
-    correctAnswer: "D",
-    justification: "O CCN (Catálogo Coletivo Nacional de Publicações Seriadas), mantido pelo IBICT, é a ferramenta mestra para localização física e eletrônica de fascículos de periódicos nas bibliotecas brasileiras."
+    correctAnswer: "E",
+    justification: "O CCN (Catálogo Coletivo Nacional de Publicações Seriadas), mantido pelo IBICT, é a rede cooperativa que mapeia as coleções de revistas e periódicos científicos existentes em centenas de bibliotecas do Brasil, subsidiando o COMUT."
   },
   {
     id: "q06",
     moduleId: "m06",
-    text: "No contexto da Comutação Bibliográfica (COMUT) e das coleções cooperativas, quando uma biblioteca opta por solicitar o empréstimo entre bibliotecas (EEB) em vez de comprar um livro raro ou pouco utilizado, ela está aplicando o paradigma do:",
+    text: "No âmbito do Desenvolvimento de Coleções e das redes cooperativas, as bibliotecas universitárias modernas têm repensado suas políticas orçamentárias. A estratégia em que a biblioteca substitui a aquisição preventiva de livros pouco demandados pelo acesso sob demanda (por meio de comutação bibliográfica, empréstimo entre bibliotecas ou aquisição orientada pelo usuário) materializa a transição do modelo:",
     options: {
-      A: "Just in case (Acesso por precaução).",
-      B: "Just in time (Acesso no momento exato da necessidade).",
-      C: "Desenvolvimento de Coleções Autossuficiente.",
-      D: "Desbastamento compulsório.",
-      E: "Open Access (Acesso Aberto)."
+      A: "Just in case (acesso preventivo baseado na posse física) para o modelo Just in time (acesso ágil no exato momento da demanda).",
+      B: "Just in time (aquisição em lote de obras raras) para o modelo Just in case (intercâmbio exclusivo de cópias reprográficas digitais).",
+      C: "Open Access (acesso público irrestrito) para o modelo de Assinatura Fechada com controle biométrico de empréstimo local.",
+      D: "Desbastamento compulsório anual para o modelo de Preservação Integral de todos os exemplares adquiridos no século passado.",
+      E: "Depósito Legal obrigatório para o modelo de Cessão de Direitos Autorais patrimoniais de autores vinculados à instituição."
     },
-    correctAnswer: "B",
-    justification: "Com a explosão informacional, as bibliotecas migraram do modelo 'Just in case' (ter na estante caso alguém peça um dia) para o 'Just in time' (ter acesso rápido através de redes e COMUT na hora que o usuário precisar)."
+    correctAnswer: "A",
+    justification: "A transição do paradigma 'Just in case' (possuir na estante por precaução, sem saber se haverá uso) para o 'Just in time' (acessar cooperativamente ou adquirir pontualmente quando o usuário demandar) é um dos pilares da gestão contemporânea de acervos."
   },
   {
     id: "q07",
     moduleId: "m14",
-    text: "Segundo os Princípios Internacionais de Catalogação (ICP, IFLA 2016), o catálogo não é apenas um depósito de descrições, mas uma ferramenta que deve cumprir tarefas específicas para o usuário. Qual das tarefas abaixo foi a grande NOVIDADE trazida pelo ICP/LRM em relação aos antigos Princípios de Paris?",
+    text: "Segundo a Declaração de Princípios Internacionais de Catalogação (ICP - IFLA 2016), inspirada no modelo conceitual IFLA LRM, o catálogo bibliográfico deve apoiar o usuário na execução de tarefas essenciais. A tarefa que representa a principal INOVAÇÃO conceitual do ICP e do LRM em relação aos antigos Princípios de Paris de 1961 é:",
     options: {
-      A: "Encontrar (Find).",
-      B: "Identificar (Identify).",
-      C: "Selecionar (Select).",
-      D: "Navegar (Navigate).",
-      E: "Obter (Obtain)."
+      A: "Encontrar (Find): localizar recursos bibliográficos que correspondam aos critérios de busca informados.",
+      B: "Navegar (Navigate): explorar conexões e caminhos relacionais entre entidades, obras, autores e assuntos na teia de dados.",
+      C: "Identificar (Identify): confirmar que a descrição do recurso corresponde à entidade procurada pelo usuário.",
+      D: "Selecionar (Select): escolher um recurso que atenda aos requisitos específicos de conteúdo ou suporte físico.",
+      E: "Obter (Obtain): adquirir ou obter acesso ao item mediante empréstimo físico, download ou licenciamento digital."
     },
-    correctAnswer: "D",
-    justification: "Os Princípios de Paris já esboçavam encontrar, identificar. O modelo LRM e o ICP 2016 incluíram o 'Navegar' como tarefa crucial para o ambiente de Web Semântica (Linked Data), permitindo explorar conexões."
+    correctAnswer: "B",
+    justification: "As tarefas de Encontrar, Identificar, Selecionar e Obter já vinham sendo consolidadas desde os Requisitos Funcionais (FRBR). A grande novidade do LRM e do ICP 2016 para a Web Semântica é a tarefa 'Navegar' (Navigate), que permite ao usuário explorar relacionamentos entre entidades."
   },
   {
     id: "q08",
     moduleId: "m15",
-    text: "De acordo com o AACR2R (Código de Catalogação Anglo-Americano, 2ª ed.), se uma obra possui na página de rosto o nome de quatro autores compartilhando a mesma responsabilidade, o Ponto de Acesso Principal (Main Entry) será:",
+    text: "Em relação às regras de determinação de Ponto de Acesso Principal (Main Entry) preconizadas pelo Código de Catalogação Anglo-Americano (AACR2R, Regra 21.6C2), se uma obra monográfica impressa contiver na sua fonte principal de informação os nomes de QUATRO autores compartilhando a mesma responsabilidade intelectual, a entrada principal deverá ser formulada:",
     options: {
-      A: "O primeiro autor listado na folha de rosto.",
-      B: "O autor que estiver em maior destaque tipográfico, independentemente da ordem.",
-      C: "O coordenador da obra.",
-      D: "O Título da obra.",
-      E: "Todos os autores, não havendo hierarquia."
+      A: "Pelo nome do primeiro autor mencionado na folha de rosto, elaborando-se entradas secundárias para os outros três.",
+      B: "Pelo nome do coordenador ou organizador geral da edição, mesmo que a publicação não informe essa atribuição formal.",
+      C: "Pelo Título próprio da obra, elaborando-se entrada secundária de autor apenas para o primeiro autor mencionado.",
+      D: "Pelos quatro autores simultaneamente no cabeçalho principal, dividindo a responsabilidade em blocos de parágrafos.",
+      E: "Pelo nome da instituição patrocinadora ou editora responsável pela publicação em nível de cabeçalho unificado."
     },
-    correctAnswer: "D",
-    justification: "A famigerada 'Regra de 3' do AACR2 (Regra 21.6C2) dita que se a obra tem 4 ou mais autores, a entrada principal abandona os humanos e vai para o TÍTULO. (Nota: Isso foi abolido no RDA)."
+    correctAnswer: "C",
+    justification: "A célebre 'Regra de Três' do AACR2 (21.6C2) estipula que, havendo mais de três autores sem predominância de responsabilidade, a entrada principal é feita obrigatoriamente pelo TÍTULO, gerando-se entrada secundária somente para o primeiro autor nomeado (seguido de et al.)."
   },
   {
     id: "q09",
     moduleId: "m15",
-    text: "Ainda sobre o AACR2, a Fonte Principal de Informação (FPI) estabelecida para a catalogação de um Livro (Monografia Impressa) é:",
+    text: "No processo de catalogação descritiva de um livro segundo o AACR2R (Capítulo 2), os dados devem ser extraídos preferencialmente da Fonte Principal de Informação (FPI). Assinale a alternativa que indica a FPI prioritária para monografias impressas:",
     options: {
-      A: "A Capa.",
-      B: "A Folha de Rosto (Página de Rosto).",
-      C: "O Verso da Folha de Rosto.",
-      D: "A Lombada.",
-      E: "O Sumário."
+      A: "A Capa (frente do livro), complementada pela lombada do exemplar.",
+      B: "O Verso da folha de rosto, onde se localiza a ficha catalográfica oficial.",
+      C: "A Orelha do livro, acompanhada das notas explicativas do editor comercial.",
+      D: "A Página de Rosto (Folha de Rosto), que antecede o início do texto da obra.",
+      E: "O Sumário detalhado e a introdução da monografia impressa no acervo."
     },
-    correctAnswer: "B",
-    justification: "Para o Capítulo 2 (Livros, folhetos e folhas volantes), a FPI absoluta é a Página de Rosto. O que for retirado da capa e não constar na folha de rosto deve ir obrigatoriamente entre colchetes [ ]."
+    correctAnswer: "D",
+    justification: "No AACR2R, a Fonte Principal de Informação para livros, folhetos e folhas soltas é a Página de Rosto (Folha de Rosto). Qualquer dado descritivo que seja extraído de fora da página de rosto (ou das fontes prescritas de cada área) deve ser grafado entre colchetes [ ]."
   },
   {
     id: "q10",
     moduleId: "m16",
-    text: "O formato MARC 21 possui uma arquitetura baseada na norma ISO 2709. Qual parte invisível do registro atua como um 'mapa' para a máquina, indicando exatamente em qual byte começa e termina cada campo variável (como o campo do autor ou do título)?",
+    text: "O formato MARC 21 estrutura seus registros bibliográficos e de autoridade com base na norma técnica internacional ISO 2709. O componente estrutural gerado automaticamente pelo software, que funciona como um sumário ou índice em bytes, indicando a etiqueta (tag), a posição inicial e o comprimento de cada campo variável no registro, denomina-se:",
     options: {
-      A: "O Líder (Leader).",
-      B: "Os Campos de Controle (00X).",
-      C: "Os Subcampos.",
-      D: "O Diretório (Directory).",
-      E: "Os Indicadores."
+      A: "Líder (Leader), composto por exatamente 24 caracteres de comprimento fixo no início do registro.",
+      B: "Subcampo (Subfield), delimitado pelo caractere cifrão ($) seguido de um código alfanumérico.",
+      C: "Indicador (Indicator), formado por dois caracteres que qualificam a leitura dos campos variáveis.",
+      D: "Campo de Controle (00X), reservado para metadados técnicos de processamento e data de catalogação.",
+      E: "Diretório (Directory), estruturado em blocos de 12 caracteres para mapear cada campo variável existente."
     },
-    correctAnswer: "D",
-    justification: "O Diretório é o índice ou mapa gerado automaticamente pelo sistema que diz à máquina o tamanho e a posição inicial de cada campo no registro."
+    correctAnswer: "E",
+    justification: "O Diretório (Directory) é o mapa de navegação interna do registro MARC 21 segundo a ISO 2709. Ele é composto por entradas de 12 caracteres (3 dígitos para a tag, 4 dígitos para o comprimento do campo e 5 dígitos para a posição inicial em bytes)."
   },
   {
     id: "q11",
     moduleId: "m16",
-    text: "No MARC 21 para Dados Bibliográficos, os campos fixos (001 a 008) são chamados de Campos de Controle. A característica fundamental que diferencia esses campos dos campos variáveis (ex: 245) é que os Campos de Controle:",
+    text: "No formato MARC 21 para Dados Bibliográficos, os campos com etiquetas compreendidas entre 001 e 008 são denominados Campos de Controle. A característica fundamental que diferencia esses campos de controle dos campos de dados variáveis (como os campos 100, 245 ou 650) reside no fato de que os Campos de Controle:",
     options: {
-      A: "Não possuem indicadores nem códigos de subcampo ($a, $b).",
-      B: "Podem ser expandidos infinitamente pelo catalogador.",
-      C: "Não possuem numeração de Tag.",
-      D: "São utilizados exclusivamente para números de chamada e classificação (CDD/LC).",
-      E: "Exigem a aplicação das regras do AACR2 na íntegra."
+      A: "Não contêm indicadores nem códigos de subcampo delimitados por cifrão ($), sendo compostos por dados posicionais fixos.",
+      B: "São campos de repetição ilimitada pelo catalogador, permitindo a inclusão livre de notas de conteúdo em texto corrido.",
+      C: "Dispõem obrigatoriamente de dois indicadores numéricos e podem utilizar apenas subcampos alfabéticos minúsculos.",
+      D: "Destinam-se unicamente ao registro do número de chamada do exemplar segundo a Classificação Decimal de Dewey (CDD).",
+      E: "Exigem a aplicação das regras ortográficas da ABNT em detrimento das convenções internacionais da Library of Congress."
     },
     correctAnswer: "A",
-    justification: "Os campos de controle (00X) são caixas fixas. Eles não usam indicadores (as duas posições pós-tag) e não utilizam cifrão ($a) de subcampos."
+    justification: "Os Campos de Controle (001 a 008) caracterizam-se por não possuírem indicadores nem delimitadores de subcampos ($a, $b, etc.). Eles armazenam códigos e dados de comprimento fixo em posições de caracteres rigorosamente pré-determinadas."
   },
   {
     id: "q12",
     moduleId: "m17",
-    text: "O padrão RDA (Resource Description and Access) baniu diversas práticas do AACR2. A principal filosofia do RDA na transcrição de dados de um item é resumida pelo princípio 'Take what you see' (Aceite o que você vê). Como consequência prática, o RDA:",
+    text: "O padrão de catalogação RDA (Resource Description and Access), concebido para superar as limitações do AACR2 no ambiente da Web Semântica, adota como preceito orientador o princípio 'Take what you see' (Aceite o que você vê). Entre as consequências práticas diretas desse princípio nas rotinas descritivas da catalogação com RDA, destaca-se:",
     options: {
-      A: "Reintroduziu o uso massivo do latim para padronizar acervos internacionais.",
-      B: "Aboliu abreviaturas clássicas como [S.l.] e [s.n.], exigindo que a omissão seja descrita na língua do catalogador (ex: [editor não identificado]).",
-      C: "Manteve a Designação Geral do Material (GMD) logo após o título, na tag 245 $h.",
-      D: "Proibiu a transcrição de erros tipográficos no título, obrigando a correção automática pelo catalogador.",
-      E: "Reduziu o registro dos autores a apenas 3 pessoas, escondendo o resto com [et al.]."
+      A: "A manutenção integral da Designação Geral do Material (GMD) no subcampo 245 $h para todos os tipos de documentos.",
+      B: "A abolição de abreviaturas latinas artificiais como [S.l.] e [s.n.], substituídas por expressões na língua do catálogo.",
+      C: "A proibição de registrar erros de grafia impressos na folha de rosto, obrigando o catalogador a corrigir o texto no título.",
+      D: "A redução obrigatória da menção de responsabilidade a no máximo três autores, ocultando os demais com o uso de [et al.].",
+      E: "O restabelecimento do latim clássico como língua internacional obrigatória para a confecção de notas de dissertação acadêmica."
     },
     correctAnswer: "B",
-    justification: "O RDA odeia abreviações não intuitivas. Ele matou o 'sine loco' e 'sine nomine', preferindo linguagem clara. Ele também matou o GMD (criando as tags 336, 337 e 338)."
+    justification: "O princípio 'Take what you see' do RDA preconiza transcrever os dados conforme aparecem na fonte. O RDA eliminou as arcaicas abreviaturas em latim como [S.l.] (sine loco) e [s.n.] (sine nomine), exigindo expressões claras na língua da agência catalogadora, como [local de publicação não identificado]."
   },
   {
     id: "q13",
     moduleId: "m18",
-    text: "De acordo com o modelo conceitual FRBR (e mantido na essência pelo IFLA LRM), a alteração do tipo de suporte físico (ex: pegar um livro que estava em capa mole e imprimir uma edição idêntica, do mesmo ano, mas em Capa Dura) gera uma nova entidade no nível de:",
+    text: "No modelo conceitual IFLA LRM (e no modelo FRBR original), as entidades do Grupo 1 organizam o universo bibliográfico em quatro níveis hierárquicos: Obra, Expressão, Manifestação e Item (WEMI). Se uma biblioteca universitária adquire um exemplar da mesma obra literária, com o mesmo texto original traduzido para o português pelo mesmo tradutor, porém publicado por outra editora com projeto gráfico novo e formato de bolso, essa nova publicação constitui formalmente uma nova:",
     options: {
-      A: "Obra.",
-      B: "Expressão.",
-      C: "Manifestação.",
-      D: "Item.",
-      E: "Agente."
+      A: "Obra (Work), visto que a mudança de editora gera uma nova criação intelectual autônoma.",
+      B: "Expressão (Expression), já que a mudança no design físico altera o conteúdo intelectivo da mensagem.",
+      C: "Manifestação (Manifestation), por se tratar de uma nova corporificação física/comercial da expressão.",
+      D: "Item (Item), pois a mudança de editora não impacta o plano das entidades conceituais bibliográficas.",
+      E: "Res (Coisa), que substitui a categoria de manifestações em publicações de natureza comercial moderna."
     },
     correctAnswer: "C",
-    justification: "Mudança no formato físico (PDF pra impresso, capa mole pra capa dura, tamanho das páginas, fonte) geram uma nova Manifestação. Obras e Expressões são imateriais/intelectuais."
+    justification: "A Manifestação é a corporificação física ou digital da expressão de uma obra (a edição produzida por determinada editora, com paginação, formato, ISBN e tipografia específicos). O texto e tradução são a Expressão; os exemplares nas mãos dos alunos são os Itens."
   },
   {
     id: "q14",
     moduleId: "m18",
-    text: "No modelo IFLA LRM, as antigas entidades do Grupo 3 do FRBR (Conceito, Objeto, Evento e Lugar) foram consolidadas sob uma única super-entidade superior, que representa 'tudo aquilo que pode ser alvo de discurso humano'. O nome dessa entidade é:",
+    text: "Na transição do modelo FRBR para o modelo consolidado IFLA LRM (Library Reference Model), a taxonomia de entidades passou por um refinamento ontológico expressivo. As entidades que compunham o antigo Grupo 3 do FRBR (Conceito, Objeto, Evento e Lugar), historicamente utilizadas como assuntos de obras, foram consolidadas sob a entidade de nível mais alto denominada:",
     options: {
-      A: "Agente (Agent).",
-      B: "Nomen (Nome).",
-      C: "Res (Coisa).",
-      D: "Place (Lugar).",
-      E: "Timespan (Período de Tempo)."
+      A: "Agente (Agent), que engloba pessoas, grupos corporativos e coletividades de trabalho.",
+      B: "Nomen (Nome), responsável pela associação entre designações verbais e objetos representados.",
+      C: "Place (Lugar), que passou a absorver todas as noções de espaço geográfico e conceitual.",
+      D: "Res (Coisa), que abrange qualquer entidade ou elemento que possa constituir objeto de pensamento humano.",
+      E: "Timespan (Extensão Temporal), criada para agrupar marcos cronológicos da história documental."
     },
-    correctAnswer: "C",
-    justification: "Para limpar a ontologia, o LRM colocou tudo sob 'RES' (do latim 'Coisa'). Qualquer coisa do universo pode ser um 'RES' e, portanto, pode ser o assunto de uma Obra."
+    correctAnswer: "D",
+    justification: "No IFLA LRM, a entidade 'RES' (termo em latim para 'coisa') é a entidade topo da ontologia. Ela abrange todas as demais entidades do modelo e inclui tudo aquilo que pode ser assunto de uma obra, englobando conceitos, objetos, eventos e lugares."
   },
   {
     id: "q15",
     moduleId: "m19",
-    text: "Sobre a Classificação Decimal de Dewey (CDD), se um livro trata exata e equitativamente de dois assuntos distintos (por exemplo, Botânica - 580 e Zoologia - 590), o classificador, ao aplicar a regra da CDD, deverá classificar a obra:",
+    text: "No sistema de Classificação Decimal de Dewey (CDD), quando um documento aborda simultaneamente dois assuntos de disciplinas distintas com a mesma extensão e profundidade (por exemplo, 580 - Botânica e 590 - Zoologia), sem que haja uma classe geral imediatamente superior que englobe ambas de forma harmoniosa, o classificador deve aplicar a regra de precedência denominada:",
     options: {
-      A: "Na classe mais geral que engloba ambas (Biologia - 570).",
-      B: "Na classe que for mais solicitada pelo perfil dos usuários locais.",
-      C: "Na classe que vier PRIMEIRO no esquema numérico (Botânica - 580).",
-      D: "Em ambas as classes simultaneamente, criando duas etiquetas para a lombada.",
-      E: "Na classe que vier POR ÚLTIMO no esquema numérico (Zoologia - 590)."
+      A: "Regra do Assunto Mais Nobre, que prioriza ciências exatas em detrimento de biológicas.",
+      B: "Regra da Última Notação, optando-se compulsoriamente pela classe de maior numeração sequencial.",
+      C: "Regra da Dupla Notação, imprimindo-se duas etiquetas de chamada para afixação na mesma lombada.",
+      D: "Regra da Conveniência Local, selecionando a classe sugerida pelo usuário que retirou a primeira cópia.",
+      E: "Regra do Primeiro na Ordem (First of Two Rule), classificando o documento na notação que aparecer primeiro."
     },
-    correctAnswer: "C",
-    justification: "A Regra do Primeiro na Ordem (First of Two Rule) da CDD estabelece que, se houver duas disciplinas com igual ênfase, classifica-se na que aparecer primeiro na sequência numérica (580 ganha de 590)."
+    correctAnswer: "E",
+    justification: "A regra 'First of Two' da CDD estabelece que, se um livro trata de dois assuntos com igual profundidade, deve-se classificá-lo na notação que aparecer primeiro no esquema numérico (580 ganha de 590)."
   },
   {
     id: "q16",
     moduleId: "m19",
-    text: "Na Classificação Decimal de Dewey (CDD), as Tabelas Auxiliares possuem a função de expandir a especificidade da notação básica das classes principais. Dentre as seis tabelas auxiliares da CDD, qual é a ÚNICA que pode ser adicionada a qualquer número de classe sem a necessidade de haver uma instrução explícita de 'adicione a' (add instruction) na tabela principal?",
+    text: "Na Classificação Decimal de Dewey (CDD, 23ª edição), existem seis Tabelas Auxiliares que permitem sintetizar e detalhar números de classificação complexos. Dentre essas tabelas, a ÚNICA que possui autorização geral de uso, podendo ser anexada a qualquer número de classe básica sem a necessidade de uma instrução explícita de 'adicione a' (add instruction) na tabela principal, é a:",
     options: {
-      A: "Tabela 2 (Áreas Geográficas, Períodos Históricos e Pessoas).",
-      B: "Tabela 1 (Subdivisões Padrão - Standard Subdivisions).",
-      C: "Tabela 3 (Subdivisões para as Artes e Literaturas Individuais).",
-      D: "Tabela 4 (Subdivisões de Línguas Individuais e Famílias Linguísticas).",
-      E: "Tabela 6 (Línguas)."
+      A: "Tabela 1 (Subdivisões Padrão - Standard Subdivisions), aplicável universalmente a qualquer assunto da CDD.",
+      B: "Tabela 2 (Áreas Geográficas, Períodos Históricos e Pessoas), que exige menção nominal no índice relativo.",
+      C: "Tabela 3 (Subdivisões para as Artes e Literaturas Individuais), aplicada unicamente às classes 700 e 800.",
+      D: "Tabela 4 (Subdivisões de Línguas Individuais e Famílias Linguísticas), privativa da classe de Linguística 400.",
+      E: "Tabela 6 (Línguas), restrita à tradução de dicionários bilíngues e publicações seriadas internacionais."
     },
-    correctAnswer: "B",
-    justification: "A Tabela 1 (Subdivisões Padrão: -01 a -09) tem aplicação autônoma e universal na CDD: pode ser agregada a qualquer número de classe sem instrução prévia, desde que não haja redundância semântica. Todas as outras tabelas (T2 a T6) exigem permissão ou instrução 'adicione a' no esquema."
+    correctAnswer: "A",
+    justification: "A Tabela 1 (Subdivisões Padrão: -01 a -09) pode ser agregada livremente a qualquer notação da CDD (ex: 540 + 03 = 540.3 dicionário de química), a menos que haja restrição expressa. Todas as demais tabelas exigem instruções explícitas 'add from'."
   },
   {
     id: "q17",
     moduleId: "m21",
-    text: "No contexto da Recuperação da Informação e Avaliação de Sistemas, o paradoxo estabelecido por F.W. Lancaster indica que Revocação e Precisão são inversamente proporcionais. Portanto, se um bibliotecário executa uma busca que tenta maximizar a PRECISÃO (trazendo zero resultados inúteis), a consequência direta será:",
+    text: "Na avaliação de Sistemas de Recuperação da Informação (SRI), F. W. Lancaster estabeleceu a existência de uma relação de proporcionalidade inversa entre as medidas de Revocação (Recall) e Precisão (Precision). Em conformidade com esse princípio, se um bibliotecário formula uma estratégia de busca extremamente restritiva e especializada, visando maximizar a PRECISÃO dos resultados, a consequência imediata esperada será:",
     options: {
-      A: "Aumentar também a Revocação, alcançando 100% de eficiência.",
-      B: "Queda na Revocação (Aumento do Silêncio), deixando documentos relevantes para trás.",
-      C: "Aumento do Ruído Documentário (muitos documentos inúteis).",
-      D: "Perda da consistência dos termos de busca.",
-      E: "Exaustividade excessiva do catálogo."
+      A: "A elevação simultânea da taxa de revocação, garantindo que nenhum documento relevante seja esquecido.",
+      B: "A queda substancial na taxa de revocação, provocando um aumento no fenômeno conhecido como Silêncio Documentário.",
+      C: "O aumento expressivo no volume de ruído informacional, trazendo dezenas de itens irrelevantes na lista final.",
+      D: "A perda imediata da consistência terminológica dos termos selecionados no vocabulário controlado.",
+      E: "A anulação das funções booleanas de interseção (AND) devido à saturação algorítmica da base de dados."
     },
     correctAnswer: "B",
-    justification: "A gangorra de Lancaster: Quando a Precisão sobe (busca super restrita), a Revocação cai violentamente, causando 'Silêncio' (você não acha lixo, mas deixa coisa boa e relevante esquecida na base)."
+    justification: "Revocação e Precisão são inversamente proporcionais. Quando a estratégia é excessivamente restritiva para garantir que todos os resultados sejam estritamente precisos (alta precisão), documentos relevantes deixam de ser recuperados, provocando 'Silêncio' (baixa revocação)."
   },
   {
     id: "q18",
     moduleId: "m21",
-    text: "Segundo a norma ISO 5963, a primeira etapa do processo de indexação feita pelo ser humano É:",
+    text: "Segundo as diretrizes metodológicas da norma técnica internacional ISO 5963 (Procedimentos para Exame de Documentos, Determinação de seus Assuntos e Seleção de Termos de Indexação), a PRIMEIRA etapa que deve ser cumprida pelo indexador humano é:",
     options: {
-      A: "Ler o documento integralmente, palavra por palavra.",
-      B: "Traduzir os conceitos soltos para o Tesauro.",
-      C: "O exame do documento, analisando partes chaves como título, sumário, introdução e conclusão.",
-      D: "A criação de um resumo informativo do documento.",
-      E: "A atribuição de notações de classificação decimal (CDD)."
+      A: "A consulta minuciosa às tabelas de notação decimal para escolha preliminar de números de classificação.",
+      B: "A tradução direta dos descritores livres para os termos preferenciais catalogados no tesauro da área.",
+      C: "O exame do documento com leitura analítica de suas partes chaves (título, sumário, introdução e conclusões).",
+      D: "A leitura linear e integral de todas as páginas da obra, da folha de guarda ao colofão tipográfico final.",
+      E: "A elaboração prévia de um resumo crítico opinativo contendo o juízo de valor do catalogador da universidade."
     },
     correctAnswer: "C",
-    justification: "Os 3 passos da ISO 5963: 1º Exame Analítico do doc (ler o miolo vital, nunca ler tudo); 2º Identificação de conceitos (na mente); 3º Tradução dos conceitos pra linguagem artificial (Tesauro)."
+    justification: "A ISO 5963 estipula 3 passos: 1º Exame do documento (leitura seletiva dos pontos estruturais vitais: títulos, subtítulos, resumos, introdução e conclusão); 2º Identificação dos conceitos que representam o assunto; 3º Tradução dos conceitos para a linguagem de indexação (linguagem controlada)."
   },
   {
     id: "q19",
     moduleId: "m20",
-    text: "Um software de Automação de Bibliotecas deve permitir a exportação e importação de registros sem perdas. O protocolo padrão internacional de comunicação cliente-servidor, que permite a uma biblioteca pesquisar e importar um registro MARC de outra biblioteca em tempo real (mesmo usando sistemas de empresas diferentes), é o:",
+    text: "A automação de bibliotecas universitárias requer protocolos robustos para viabilizar a cooperação interinstitucional. O protocolo padrão de comunicação cliente-servidor (norma ISO 23950 / ANSI/NISO Z39.50) tem como finalidade primordial permitir que:",
     options: {
-      A: "OAI-PMH.",
-      B: "ISO 2709.",
-      C: "Z39.50.",
-      D: "Dublin Core.",
-      E: "HTTP/REST."
+      A: "Sistemas de repositórios digitais colham automaticamente pacotes OAI-PMH de teses e dissertações públicas.",
+      B: "Arquivos permanentes transmitam dados contábeis em formato EDIFACT para fornecedores de mobiliário.",
+      C: "Usuários remotos renovem o empréstimo de livros físicos mediante autenticação federada com biometria facial.",
+      D: "Um sistema de biblioteca pesquise e importe registros catalográficos em MARC de outro catálogo remoto em tempo real.",
+      E: "Editoras comerciais bloqueiem o acesso de estudantes não matriculados aos periódicos científicos internacionais."
     },
-    correctAnswer: "C",
-    justification: "O Z39.50 é o protocolo lendário de busca e recuperação em catálogos (OPACs) de bibliotecas distintas. (Aviso: OAI-PMH é para Repositórios Institucionais, não confunda)."
+    correctAnswer: "D",
+    justification: "O Z39.50 é o protocolo clássico que permite a busca e recuperação de registros bibliográficos entre catálogos de sistemas heterogêneos de bibliotecas, possibilitando copiar registros em MARC 21 diretamente de outros servidores de forma transparente."
   },
   {
     id: "q20",
     moduleId: "m12",
-    text: "O Marketing em Bibliotecas é vital para a visibilidade. Uma biblioteca universitária que analisa seu público, identifica demandas reprimidas e lança uma 'Oficina de Gestão de Dados de Pesquisa e Princípios FAIR' específica para pesquisadores, está utilizando qual pilar do mix de marketing (4 P's de McCarthy)?",
+    text: "No contexto da gestão e do marketing em unidades de informação universitárias, uma biblioteca que elabora e oferece um serviço estruturado de 'Consultoria em Gestão de Dados de Pesquisa e Princípios FAIR' voltado aos laboratórios de pós-graduação está atuando precipuamente sobre qual variável do composto mercadológico (Mix de Marketing / 4 Ps de McCarthy)?",
     options: {
-      A: "Praça (Place).",
-      B: "Promoção (Promotion).",
-      C: "Produto (Product).",
-      D: "Preço (Price).",
-      E: "Previsão (Prediction)."
+      A: "Preço (Price), fixando o custo monetário que será cobrado por hora de consultoria dos docentes.",
+      B: "Praça (Place), definindo os canais físicos e balcões de atendimento onde os livros serão guardados.",
+      C: "Promoção (Promotion), concentrando-se exclusivamente na confecção de banners e folhetos de divulgação.",
+      D: "Previsão (Prediction), estimando a taxa de evasão de discentes no decorrer do próximo ano acadêmico.",
+      E: "Produto (Product), configurando o conjunto de benefícios, serviços e soluções oferecidos ao usuário."
     },
-    correctAnswer: "C",
-    justification: "O Produto no marketing da informação engloba serviços, palestras, consultorias e produtos informacionais tangíveis ou intangíveis."
+    correctAnswer: "E",
+    justification: "No marketing da informação, o 'Produto' compreende tanto bens tangíveis (livros, guias) quanto serviços e consultorias especializadas (como o suporte à gestão de dados científicos) desenvolvidos para solucionar as necessidades informacionais do público-alvo."
   },
   {
     id: "q21",
     moduleId: "m09",
-    text: "Segundo os Estudos de Usuários, há uma diferença sutil entre 'Necessidade de Informação' e 'Demanda de Informação'. A situação em que o usuário sabe exatamente o que precisa, vai até a biblioteca, pede no balcão e aguarda a resolução formal configura uma:",
+    text: "Na literatura clássica de Estudos de Usuários e Necessidades de Informação, estabelece-se uma distinção entre necessidade e demanda. A situação na qual o usuário tem plena consciência de sua carência informacional, formula uma consulta explícita e a encaminha ao serviço de referência da biblioteca caracteriza uma:",
     options: {
-      A: "Necessidade Visceral.",
-      B: "Necessidade Inconsciente.",
-      C: "Demanda Manifesta.",
-      D: "Uso Efetivo.",
-      E: "Demanda Reprimida."
+      A: "Demanda Manifesta (ou expressa), que se materializa na formulação de um pedido formal ao sistema ou bibliotecário.",
+      B: "Necessidade Visceral (inconsciente), na qual o indivíduo não consegue verbalizar a essência de sua dúvida.",
+      C: "Demanda Reprimida, quando o usuário necessita da informação, mas desiste de procurar auxílio por receio ou descrença.",
+      D: "Demanda Potencial, observada em membros da comunidade acadêmica que nunca frequentaram o espaço da biblioteca.",
+      E: "Necessidade Consciente não expressa, na qual a dúvida permanece retida exclusivamente no plano mental do pesquisador."
     },
-    correctAnswer: "C",
-    justification: "A Demanda Manifesta é a necessidade de informação que foi ativamente expressa em forma de pedido ao sistema ou ao bibliotecário. A demanda reprimida é quando ele precisa, mas desiste de pedir."
+    correctAnswer: "A",
+    justification: "A Demanda Manifesta (ou expressa) é aquela em que a necessidade de informação sai do plano mental do sujeito e se converte em uma solicitação ativa aos profissionais ou catálogos da unidade de informação."
   },
   {
     id: "q22",
     moduleId: "m13",
-    text: "No Desenvolvimento de Coleções, a etapa onde o livro que não tem mais circulação, está desatualizado ou com severo dano físico é fisicamente RETIRADO do acervo ativo (seja para o lixo, doação ou guarda-morta) chama-se:",
+    text: "No processo contínuo de Desenvolvimento de Coleções, a etapa administrativa e técnica na qual determinados materiais bibliográficos — que se tornaram obsoletos, irremediavelmente danificados ou destituídos de valor histórico e demanda — são retirados do acervo ativo (para descarte, permuta ou remessa a depósito de guarda compartilhada) denomina-se:",
     options: {
-      A: "Seleção.",
-      B: "Avaliação.",
-      C: "Aquisição.",
-      D: "Desbastamento (Weeding / Descarte).",
-      E: "Preservação."
+      A: "Seleção qualitativa preliminar de obras de referência.",
+      B: "Desbastamento (Weeding) e Descarte sistemático de materiais.",
+      C: "Aquisição centralizada por meio de licitação pública anual.",
+      D: "Avaliação do acervo baseada unicamente no método checklist.",
+      E: "Preservação corretiva mediante encadernação em capa de couro."
     },
-    correctAnswer: "D",
-    justification: "O Desbastamento (Weeding) ou Descarte é a poda vital da árvore. Sem descarte, a biblioteca vira um museu morto. Remove-se o material para dar espaço ao novo ou proteger a precisão técnica da coleção."
+    correctAnswer: "B",
+    justification: "O Desbastamento (Weeding) e o Descarte são processos essenciais para manter a vitalidade e a relevância das coleções. Sem a poda técnica periódica, as bibliotecas sofrem superlotação física e disseminam informações superadas e incorretas."
   },
   {
     id: "q23",
     moduleId: "m11",
-    text: "A Disseminação Seletiva da Informação (DSI), concebida por Hans Peter Luhn, tem como característica central e obrigatória:",
+    text: "O Serviço de Disseminação Seletiva da Informação (DSI), idealizado pioneiramente por Hans Peter Luhn nos laboratórios da IBM na década de 1950, caracteriza-se fundamentalmente por:",
     options: {
-      A: "A emissão de boletins gerais para todos os usuários da universidade simultaneamente.",
-      B: "O cruzamento (matching) contínuo e automático entre o perfil do usuário e os novos documentos entrados no sistema.",
-      C: "A busca retrospectiva feita manualmente pelo usuário na base de teses.",
-      D: "O uso estrito de metadados PREMIS para notificação de segurança.",
-      E: "A catalogação na fonte."
+      A: "Publicar boletins impressos generalistas contendo a totalidade das novas aquisições para todos os alunos.",
+      B: "Exigir que o pesquisador compareça semanalmente ao balcão de referência para renovar seus termos de busca.",
+      C: "Cruzar automaticamente o perfil de interesses dos usuários com os metadados dos novos documentos incorporados à base.",
+      D: "Operar unicamente mediante solicitações de comutação bibliográfica enviadas por correio eletrônico comercial.",
+      E: "Restringir o acesso a novas teses e dissertações a professores titulares que possuam bolsa de produtividade do CNPq."
     },
-    correctAnswer: "B",
-    justification: "O coração da DSI é a personalização e o fluxo contínuo. Sistema rastreia o perfil X contra o Documento novo Y, deu match, ele manda alerta pro usuário de forma pró-ativa."
+    correctAnswer: "C",
+    justification: "A essência da DSI é a proatividade e a personalização: o sistema armazena o perfil de interesse informacional do usuário e executa o cruzamento (matching) contínuo e automático desse perfil com os novos documentos adicionados à base, enviando alertas pertinentes."
   },
   {
     id: "q24",
     moduleId: "m22",
-    text: "No contexto dos Direitos Autorais brasileiros (Lei 9.610/98), as bibliotecas usufruem de exceções pontuais. É considerado uso permitido, que não constitui ofensa aos direitos autorais:",
+    text: "Em consonância com as disposições da Lei Brasileira de Direitos Autorais (Lei nº 9.610/1998, Art. 46), as instituições de ensino e bibliotecas universitárias atuam sob limitações legais específicas. Dentre as práticas abaixo, assinale a que NÃO constitui ofensa aos direitos autorais:",
     options: {
-      A: "A reprodução integral (cópia total) de livros esgotados para disponibilização na internet.",
-      B: "A reprodução em um só exemplar de pequenos trechos, para uso privado do copista, sem intuito de lucro.",
-      C: "A venda de apostilas xerocadas dentro do campus para cobrir os custos operacionais da gráfica.",
-      D: "O empréstimo de livros físicos cobrando taxas de aluguel por dia.",
-      E: "A tradução não autorizada de obras científicas para facilitar o acesso de alunos."
+      A: "A digitalização integral de livros protegidos e sua disponibilização aberta e irrestrita na internet para download.",
+      B: "A venda de apostilas contendo a cópia integral de obras didáticas para cobrir as despesas da associação de alunos.",
+      C: "O aluguel remunerado de capítulos de teses protegidas a empresas privadas de pesquisa e desenvolvimento de mercado.",
+      D: "A reprodução, em um só exemplar de pequenos trechos, para uso privado do copista, desde que feita sem intuito de lucro.",
+      E: "A tradução não autorizada e comercialização de livros estrangeiros vigentes cujos autores residam fora do Brasil."
     },
-    correctAnswer: "B",
-    justification: "A Lei de Direitos Autorais permite a cópia de 'pequenos trechos' para uso privado. Cópia integral é crime, a menos que a obra caia em Domínio Público (70 anos após a morte do autor)."
+    correctAnswer: "D",
+    justification: "O Art. 46, inciso II, da Lei 9.610/98 estabelece expressamente que não constitui ofensa aos direitos autorais a reprodução, em um só exemplar de pequenos trechos, para uso privado do copista, desde que feita por este e sem intuito de lucro."
   },
   {
     id: "q25",
     moduleId: "m10",
-    text: "A Competência em Informação (Information Literacy) vai além do simples 'saber usar o computador'. Segundo os padrões da ACRL (Association of College and Research Libraries), um estudante literado informacionalmente é aquele que, primariamente:",
+    text: "De acordo com os referenciais conceituais estabelecidos pela ACRL (Association of College and Research Libraries), a Competência em Informação (Information Literacy) no ensino superior ultrapassa a mera habilidade operacional de manipular computadores, configurando uma capacidade reflexiva que capacita o indivíduo a:",
     options: {
-      A: "Domina a programação de buscas no Z39.50.",
-      B: "Possui conhecimentos de restauro físico de obras raras.",
-      C: "Sabe determinar a natureza da sua necessidade informacional, acessar, avaliar criticamente e usar a informação de forma ética.",
-      D: "Decora esquemas e tabelas de classificação como a CDD.",
-      E: "Publica exclusivamente na Via Dourada do Acesso Aberto."
+      A: "Escrever rotinas de programação computacional em código aberto para migração de bases de dados de acervos.",
+      B: "Memorizar códigos de classificação decimal (CDD e CDU) para localizar fisicamente os livros nas estantes.",
+      C: "Preservar encadernações raras e realizar intervenções químicas de restauração de papel contra a acidez ambiental.",
+      D: "Publicar pesquisas acadêmicas unicamente em periódicos comerciais indexados com cobrança obrigatória de taxas APC.",
+      E: "Determinar a extensão de sua necessidade de informação, acessar, avaliar criticamente e utilizar a informação de modo ético."
     },
-    correctAnswer: "C",
-    justification: "CoInfo (Information Literacy) é uma habilidade cognitiva. O usuário sabe *que precisa*, *onde buscar*, como *julgar se é fake news* e como *usar sem cometer plágio* (uso ético)."
+    correctAnswer: "E",
+    justification: "Segundo a ACRL e a literatura de Competência em Informação (CoInfo), um indivíduo informacionalmente competente sabe reconhecer quando precisa de informação, tem capacidade de localizá-la, avaliá-la criticamente e utilizá-la com ética e legalidade."
   }
 ];

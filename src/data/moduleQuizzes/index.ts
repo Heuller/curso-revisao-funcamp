@@ -2,13 +2,15 @@ import type { ModuleQuizQuestion } from './types';
 import { moduleQuizzesPart1 } from './part1';
 import { moduleQuizzesPart2 } from './part2';
 import { moduleQuizzesPart3 } from './part3';
+import { allModuleQuestionsLP } from '../portugues/moduleQuizzes';
 
 export * from './types';
 
 export const allModuleQuestions: ModuleQuizQuestion[] = [
   ...moduleQuizzesPart1,
   ...moduleQuizzesPart2,
-  ...moduleQuizzesPart3
+  ...moduleQuizzesPart3,
+  ...allModuleQuestionsLP
 ];
 
 export const MODULE_QUIZZES: Record<string, ModuleQuizQuestion[]> = allModuleQuestions.reduce((acc, q) => {

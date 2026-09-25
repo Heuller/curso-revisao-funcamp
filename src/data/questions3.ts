@@ -4,351 +4,351 @@ export const q51_to_75: Question[] = [
   {
     id: "q51",
     moduleId: "m02",
-    text: "O projeto europeu InterPARES (International Research on Permanent Authentic Records in Electronic Systems), dirigido por Luciana Duranti, foca primordialmente em qual aspecto dos documentos digitais?",
+    text: "O projeto internacional de pesquisa InterPARES (International Research on Permanent Authentic Records in Electronic Systems), coordenado pioneiramente pela professora Luciana Duranti, consagrou-se como uma das iniciativas científicas mais influentes no domínio da preservação digital ao investigar com rigor:",
     options: {
-      A: "Taxas de conversão de texto OCR.",
-      B: "Sustentabilidade financeira de Repositórios.",
-      C: "Preservação da Autenticidade, Confiabilidade e Integridade de documentos arquivísticos eletrônicos de longo prazo.",
-      D: "Emulação de videogames obsoletos.",
-      E: "Definição das licenças Creative Commons."
+      A: "A preservação da autenticidade, fidedignidade e integridade jurídica de documentos arquivísticos eletrônicos de valor permanente.",
+      B: "O desenvolvimento de algoritmos de compressão de imagens em formato TIFF sem perdas para redução do espaço em servidores de nuvem.",
+      C: "A viabilidade econômica e o retorno financeiro do investimento em repositórios digitais em consórcios de bibliotecas privadas.",
+      D: "A emulação completa de softwares de videogame dos anos 1980 em ambientes virtuais fechados para museus de ciência e tecnologia.",
+      E: "A formulação de licenças Creative Commons para proteção de patentes universitárias derivadas de laboratórios farmacêuticos."
     },
-    correctAnswer: "C",
-    justification: "A marca registrada da obra de Luciana Duranti e do InterPARES é a AUTENTICIDADE e preservação diplomática do documento nato-digital."
+    correctAnswer: "A",
+    justification: "O InterPARES (e a obra de Luciana Duranti) fundamenta-se nos princípios da Diplomática Arquivística e da Arquivologia contemporânea, tendo como foco central garantir que documentos nato-digitais permaneçam autênticos, confiáveis e íntegros ao longo de sucessivas migrações tecnológicas."
   },
   {
     id: "q52",
     moduleId: "m04",
-    text: "A implementação de Inteligência Artificial generativa no Atendimento de Referência, ao tentar sugerir proativamente o melhor conteúdo para a necessidade do usuário, fundamenta-se modernamente em qual Lei de Ranganathan?",
+    text: "A incorporação de ferramentas de busca semântica e sistemas de Inteligência Artificial para antecipar respostas a dúvidas de pesquisa no Serviço de Referência de bibliotecas universitárias, reduzindo o tempo despendido pelos usuários na formulação de consultas complexas, encontra justificativa epistemológica primordial em qual das Cinco Leis da Biblioteconomia de S. R. Ranganathan?",
     options: {
-      A: "1ª Lei (Livros são para uso).",
-      B: "2ª Lei (A cada leitor o seu livro).",
-      C: "3ª Lei (A cada livro o seu leitor).",
-      D: "4ª Lei (Poupe o tempo do leitor).",
-      E: "5ª Lei (A biblioteca é um organismo em crescimento)."
+      A: "1ª Lei: Os livros são para usar (Books are for use), que foca na remoção de correntes e barreiras de circulação.",
+      B: "4ª Lei: Poupe o tempo do leitor (Save the time of the reader), que orienta a máxima celeridade e eficiência no acesso.",
+      C: "2ª Lei: A cada leitor o seu livro (Every reader his/her book), voltada à universalização do atendimento público.",
+      D: "3ª Lei: A cada livro o seu leitor (Every book its reader), que preconiza a divulgação ativa das obras do acervo.",
+      E: "5ª Lei: A biblioteca é um organismo em crescimento (A library is a growing organism), que foca na expansão predial."
     },
-    correctAnswer: "D",
-    justification: "Embora todas sirvam de apoio (A IA customiza 'A cada leitor...'), a justificativa MAGNA para automatizar e criar busas semânticas instantâneas é 'Poupar o Tempo' do pesquisador."
+    correctAnswer: "B",
+    justification: "Embora todas as leis converjam para o atendimento ideal, a 4ª Lei ('Poupe o tempo do leitor') é o fundamento direto de toda automação e inovação tecnológica voltada a otimizar, acelerar e desburocratizar a recuperação da informação pelo usuário."
   },
   {
     id: "q53",
     moduleId: "m06",
-    text: "O Processo de Comunicação Científica é classicamente dividido em Comunicação Informal e Formal. Assinale a opção que exemplifica estritamente um canal de comunicação INFORMAL:",
+    text: "No estudo dos fluxos da Comunicação Científica, a literatura especializada estabelece uma divisão nítida entre canais formais e informais de intercâmbio de conhecimento. Assinale a alternativa que exemplifica estritamente um canal de comunicação INFORMAL no trabalho acadêmico:",
     options: {
-      A: "Artigo publicado na revista Nature.",
-      B: "Tese defendida e aprovada pela banca.",
-      C: "Relatório técnico financiado pela FAPESP.",
-      D: "Discussão de preprints em um corredor (Colégio Invisível) ou e-mails trocados entre cientistas.",
-      E: "Livro (Monografia)."
+      A: "Artigo científico revisado por pares e publicado na versão eletrônica regular de uma revista indexada de alto impacto.",
+      B: "Tese de doutorado aprovada por banca examinadora e formalmente depositada no catálogo do Repositório Institucional.",
+      C: "Conversas acadêmicas, troca de correspondência e debates preliminares de pesquisa no âmbito de um Colégio Invisível.",
+      D: "Relatório técnico conclusivo de pesquisa financiada por agência de fomento publicado com ficha catalográfica e ISBN.",
+      E: "Monografia impressa publicada por editora universitária de prestígio após parecer favorável do conselho editorial."
     },
-    correctAnswer: "D",
-    justification: "Canais informais são efêmeros, não peer-reviewed e ocorrem fora do fluxo editorial (Congressos informais, conversas, e-mails = Colégio Invisível). Todos os outros são canais formais ou semi-formais."
+    correctAnswer: "C",
+    justification: "Canais informais (conversas em corredores, mensagens diretas, intercâmbio dentro de 'Colégios Invisíveis') caracterizam-se pelo imediatismo, ausência de arbitragem por pares e não registro formal em publicações permanentes. Os demais são canais formais ou semiformais."
   },
   {
     id: "q54",
     moduleId: "m07",
-    text: "A Lei de Bradford (Bibliometria) estabelece um princípio matemático sobre a dispersão da literatura científica. A aplicação prática da Lei de Bradford na gestão de bibliotecas universitárias permite ao bibliotecário:",
+    text: "A Lei de Bradford (Lei da Dispersão da Literatura Científica), formulada no campo dos estudos bibliométricos, estabelece que artigos sobre um determinado tema distribuem-se em zonas concêntricas de periódicos em proporção matemática geométrica (1:n:n²). A aplicação prática direta da Lei de Bradford na gestão de bibliotecas universitárias permite ao gestor:",
     options: {
-      A: "Medir o envelhecimento do acervo (Obsolescência).",
-      B: "Contabilizar a produtividade individual de cada autor.",
-      C: "Identificar as revistas (periódicos) 'Núcleo' (Core Journals) que concentram a maior parte dos artigos de uma determinada disciplina, otimizando as assinaturas.",
-      D: "Determinar o número de empréstimos futuros.",
-      E: "Medir o impacto das redes sociais."
+      A: "Mensurar a taxa de obsolescência das monografias e a meia-vida da literatura em ciências humanas para o descarte.",
+      B: "Calcular com precisão a produtividade individual dos pesquisadores de um departamento para a concessão de bolsas.",
+      C: "Determinar o vocabulário mais frequente de uma área científica por meio da contagem de palavras de um corpus de artigos.",
+      D: "Identificar o núcleo central (Core Journals) de periódicos que concentra a maior parte da produção relevante da área.",
+      E: "Estimar o número futuro de empréstimos domiciliares com base no coeficiente de Poisson aplicado às retiradas diárias."
     },
-    correctAnswer: "C",
-    justification: "Bradford = Dispersão em Revistas. Identifica que poucos periódicos (o núcleo) carregam a maioria dos artigos relevantes, ajudando o bibliotecário a decidir quais revistas assinar/cancelar. Lotka = Autores. Zipf = Palavras."
+    correctAnswer: "D",
+    justification: "A Lei de Bradford revela a dispersão de artigos sobre determinado assunto em revistas. Poucas revistas (o núcleo/Core) contêm uma grande fração dos artigos; muitas revistas contêm poucos artigos. Ela permite aos bibliotecários selecionar os periódicos mais estratégicos para assinar e manter."
   },
   {
     id: "q55",
     moduleId: "m08",
-    text: "Na tipologia das Fontes de Informação, as obras que não contêm o texto original e nem o conhecimento direto, mas servem como 'guias' para encontrar as obras principais (como Catálogos de Bibliotecas, Bibliografias Nacionais e Índices), são classificadas como:",
+    text: "Na clássica tipologia das Fontes de Informação adotada em estudos biblioteconômicos, as obras de referência que não contêm o conhecimento científico novo de forma direta, mas atuam como instrumentos organizados para localizar e apontar para as fontes primárias (a exemplo dos Catálogos de Bibliotecas, Bibliografias Especializadas e Índices de Artigos), classificam-se como:",
     options: {
-      A: "Fontes Primárias.",
-      B: "Fontes Secundárias.",
-      C: "Fontes Terciárias.",
-      D: "Fontes Informais.",
-      E: "Fontes Cinzentas."
+      A: "Fontes Primárias, que trazem relatos em primeira mão de descobertas científicas e relatórios inéditos.",
+      B: "Fontes Cinzentas, de tiragem reduzida e circulação restrita fora do mercado livreiro convencional.",
+      C: "Fontes Informais, transmitidas exclusivamente por meio de tradição oral e debates não registrados.",
+      D: "Fontes Terciárias, representadas por bibliografias de bibliografias e guias bibliográficos de literatura.",
+      E: "Fontes Secundárias, concebidas para intermediar, organizar e facilitar a recuperação dos documentos primários."
     },
-    correctAnswer: "B",
-    justification: "Fontes Primárias = Artigos originais, teses. Fontes Secundárias = Bibliografias, catálogos, resumos (apontam para as primárias). Fontes Terciárias = Guias de bibliografias, bibliografia das bibliografias."
+    correctAnswer: "E",
+    justification: "Fontes primárias contêm a informação nova direta (artigos, teses, patentes). Fontes secundárias (catálogos, bibliografias, bases de dados de índices e resumos) apontam e guiam o usuário em direção às fontes primárias. Fontes terciárias organizam as secundárias (ex: bibliografia de bibliografias)."
   },
   {
     id: "q56",
     moduleId: "m12",
-    text: "Dentro do Marketing da Informação em Bibliotecas, Kotler destaca que o 'Serviço' é profundamente diferente de um 'Produto Físico' (como sabonete). Uma característica fundamental dos Serviços informacionais é a 'Inseparabilidade', que significa:",
+    text: "No âmbito do Marketing de Serviços em Bibliotecas, autores de renome como Philip Kotler destacam que a gestão de serviços difere substancialmente da comercialização de produtos manufaturados tangíveis. A característica que expressa o fato de que um serviço de referência informacional é simultaneamente produzido pelo bibliotecário e consumido pelo consulente no mesmo ato comunicativo denomina-se:",
     options: {
-      A: "O serviço não pode ser estocado no almoxarifado para uso futuro.",
-      B: "A impossibilidade de cobrar dinheiro pelo serviço.",
-      C: "O serviço é produzido e consumido SIMULTANEAMENTE, muitas vezes com a participação ativa do usuário (ex: Atendimento de Referência).",
-      D: "O serviço perde qualidade dependendo de quem atende.",
-      E: "O serviço não possui forma física."
+      A: "Inseparabilidade (Inseparability), refletindo a interação sincrônica direta entre o prestador e o receptor do serviço.",
+      B: "Intangibilidade (Intangibility), referente à impossibilidade de o usuário tocar ou pesar fisicamente o serviço antes do uso.",
+      C: "Perecibilidade (Perishability), que impede a estocagem em prateleiras do tempo não aproveitado em balcões de atendimento.",
+      D: "Variabilidade (Heterogeneity), que faz com que a qualidade do atendimento oscile conforme o estado de ânimo do profissional.",
+      E: "Inalienabilidade institucional, que veda a terceirização do atendimento de balcão segundo diretrizes do Ministério da Educação."
     },
-    correctAnswer: "C",
-    justification: "A inseparabilidade dita que a 'produção' da resposta de referência pelo bibliotecário ocorre ao mesmo tempo em que o usuário consome a resposta na mesa."
+    correctAnswer: "A",
+    justification: "A 'Inseparabilidade' significa que o serviço de informação é gerado e usufruído ao mesmo tempo, exigindo frequentemente a presença e cooperação do usuário (como na entrevista de referência). Intangibilidade é a falta de substância material; Perecibilidade é a impossibilidade de estocar."
   },
   {
     id: "q57",
     moduleId: "m14",
-    text: "O Controle Bibliográfico nacional depende das agências catalogadoras centrais. Na tradição bibliotecária moderna baseada no modelo IFLA LRM, o Controle de Autoridade desempenha a função de:",
+    text: "No tratamento temático e descritivo da informação com base nos Princípios Internacionais de Catalogação (ICP) e no modelo IFLA LRM, o processo de Controle de Autoridade desempenha um papel fulcral na eficácia dos catálogos automatizados, tendo por objetivo principal:",
     options: {
-      A: "Garantir a precisão da numeração de classificação (CDD).",
-      B: "Ditar quem pode emprestar livros.",
-      C: "Unificar diferentes formas do nome de um autor ou entidade (sinonímia) sob uma única 'Forma Autorizada', facilitando a tarefa de ENCONTRAR.",
-      D: "Gerar multas aos usuários por não seguirem regras.",
-      E: "Fixar a imprenta do livro."
+      A: "Determinar a hierarquia burocrática dos servidores e estabelecer quem possui permissão de acesso físico às salas de arquivo.",
+      B: "Unificar as diversas variantes de nomes de autores e entidades sob uma forma autorizada padronizada, permitindo a tarefa de Encontrar.",
+      C: "Gerar relatórios de cobrança de multas administrativas aplicadas aos usuários por extravio de exemplares de referência rápida.",
+      D: "Atribuir números de chamada em algarismos romanos a todas as monografias impressas antes do século XIX no acervo geral.",
+      E: "Validar a autenticidade jurídica de assinaturas digitais por meio de certificados emitidos pelo padrão ICP-Brasil governamental."
     },
-    correctAnswer: "C",
-    justification: "A essência do controle de autoridade é evitar que Machado de Assis, J.M. Assis e Assis, Machado de fiquem perdidos no catálogo, reunindo tudo em 1 nome forte."
+    correctAnswer: "B",
+    justification: "O Controle de Autoridade visa garantir a consistência dos pontos de acesso: estabelece uma forma autorizada e oficial para o nome de um autor, pessoa corporativa ou assunto, vinculando as formas variantes (remissivas) para que o usuário localize toda a obra do criador independentemente da forma como pesquisar."
   },
   {
     id: "q58",
     moduleId: "m15",
-    text: "Ao catalogar um mapa de geografia histórica, qual Capítulo do AACR2 (Parte 1: Descrição) rege estritamente as regras de descrição física de Materiais Cartográficos?",
+    text: "Na estrutura organizacional do Código de Catalogação Anglo-Americano (AACR2R, Parte 1: Descrição), a catalogação e descrição física de materiais cartográficos (como mapas geográficos, globos terrestres e atlas) são regidas com exclusividade pelo:",
     options: {
-      A: "Capítulo 1.",
-      B: "Capítulo 2.",
-      C: "Capítulo 3.",
-      D: "Capítulo 7.",
-      E: "Capítulo 21."
+      A: "Capítulo 1, que trata dos princípios gerais de catalogação aplicáveis indistintamente a todos os suportes.",
+      B: "Capítulo 2, que estabelece as prescrições para livros, folhetos e folhas impressas avulsas de bibliotecas.",
+      C: "Capítulo 3, que é o capítulo especializado voltado estritamente à descrição de Materiais Cartográficos.",
+      D: "Capítulo 7, que orienta a descrição minuciosa de filmes, vídeos cinematográficos e gravações bidimensionais.",
+      E: "Capítulo 21, que disciplina a escolha de pontos de acesso principal e secundário de autoria e título."
     },
     correctAnswer: "C",
-    justification: "O AACR2 divide sua descrição física rigidamente por suportes: Cap 1 (Geral), Cap 2 (Livros), Cap 3 (Cartográficos), Cap 4 (Manuscritos), Cap 5 (Música/Partitura). Cap 21 já é Parte II (Autoria)."
+    justification: "O AACR2R é compartimentado por tipos de material em sua Parte 1: Cap. 1 (Regras Gerais), Cap. 2 (Livros), Cap. 3 (Materiais Cartográficos), Cap. 4 (Manuscritos), Cap. 5 (Música), etc. O Capítulo 21 abre a Parte 2 (Pontos de Acesso)."
   },
   {
     id: "q59",
     moduleId: "m16",
-    text: "No registro bibliográfico MARC 21, caso o bibliotecário deseje criar uma nota contendo o 'Sumário' com todos os capítulos e artigos contidos dentro de uma revista científica, ele deve utilizar o campo de Nota da centena 5XX. A tag exata é:",
+    text: "No formato MARC 21 para Dados Bibliográficos, caso o catalogador necessite incluir uma nota formatada contendo o 'Sumário' ou a relação de capítulos e autores individuais contidos no corpo de uma coletânea acadêmica, a etiqueta (Tag) do bloco 5XX que deve ser empregada é a:",
     options: {
-      A: "500.",
-      B: "504.",
-      C: "505.",
-      D: "520.",
-      E: "546."
+      A: "Tag 500, destinada privativamente à redação de notas gerais descritivas que não possuem campo específico no formato.",
+      B: "Tag 504, empregada para registrar notas bibliográficas indicativas da presença de referências no fim da monografia.",
+      C: "Tag 520, utilizada para a transcrição do resumo informativo ou abstract de artigos de periódicos e teses de mestrado.",
+      D: "Tag 505 (Formatted Contents Note), campo padronizado para estruturar sumários e tabelas analíticas de conteúdo.",
+      E: "Tag 546, reservada para a inclusão de notas relativas a idiomas e códigos linguísticos empregados no documento."
     },
-    correctAnswer: "C",
-    justification: "500 = Nota Geral. 504 = Nota de Bibliografia (Tem ref bibliográfica). 505 = Nota de Conteúdo (Formatted Contents Note), usada pesadamente para sumários de livros de congressos."
+    correctAnswer: "D",
+    justification: "No MARC 21, a Tag 505 (Formatted Contents Note) é o campo padrão para inserção de sumários formatados de livros, capítulos e atas de congressos. A 500 é nota geral, a 504 é nota de bibliografia e a 520 é nota de resumo."
   },
   {
     id: "q60",
     moduleId: "m17",
-    text: "O RDA não adotou a limitação do AACR2 quanto aos níveis descritivos (Nível 1, 2 e 3). Em seu lugar, determinou que certos elementos do recurso são fundamentais para que a entidade não fique 'órfã' no sistema, sendo de preenchimento obrigatório. Tais elementos são conhecidos na base do RDA como:",
+    text: "Diferentemente do AACR2, que estipulava três níveis de descrição rígidos (Níveis 1, 2 e 3 de abrangência), o código RDA (Resource Description and Access) adotou uma arquitetura flexível que identifica atributos de preenchimento mínimo indispensável para que o registro atenda às tarefas do usuário no catálogo. No léxico do RDA, esses elementos são tecnicamente designados como:",
     options: {
-      A: "Mandatory Tags.",
-      B: "Core Elements (Elementos Centrais).",
-      C: "ISBD Fixed Data.",
-      D: "Authority Keys.",
-      E: "Main Entries."
+      A: "Tags Mandatórias ISO, que são fixadas pelos padrões de interoperabilidade eletrônica das agências de telecomunicação.",
+      B: "Registros de Cabeçalho Primário, correspondentes às entradas de autoridade pessoal herdadas do catálogo de fichas.",
+      C: "Descritores Unificados da IFLA, restritos aos campos bibliográficos que possuem tradução automática em bases multilíngues.",
+      D: "Chaves de Acesso Primárias, que funcionam como números de série alfanuméricos gerados pelos softwares de automação.",
+      E: "Core Elements (Elementos Centrais), conjunto básico de elementos que deve ser incluído obrigatoriamente pelo catalogador."
     },
-    correctAnswer: "B",
-    justification: "O termo oficial do RDA para os elementos mínimos irrenunciáveis (como Título, ISBN, Nome do Criador) é 'Core Elements'."
+    correctAnswer: "E",
+    justification: "No RDA, os 'Core Elements' (Elementos Centrais) substituíram os antigos níveis descritivos do AACR2. Eles representam o conjunto mínimo de atributos (como Título Principal, Menção de Responsabilidade, Designação de Edição, Identificador) exigidos para identificar uma entidade sem deixá-la órfã."
   },
   {
     id: "q61",
     moduleId: "m19",
-    text: "Um bibliotecário se depara com um livro intitulado 'História da Filosofia e da Química no Brasil'. Ao consultar a Tabela da CDD, percebe que as disciplinas (História, Filosofia, Química) não possuem relação óbvia de subordinação (Regra do Primeiro). Além disso, envolve 3 assuntos macro. Para onde ele deve enviar a classificação?",
+    text: "Um bibliotecário se depara com um livro interdisciplinar intitulado 'História da Filosofia e das Descobertas da Química na Idade Moderna'. Ao consultar o esquema da CDD, nota que as disciplinas (Filosofia - 100, Química - 540 e História - 900) não possuem classe geral imediata que as reúna harmoniosamente. Segundo as orientações da CDD para o tratamento de três ou mais disciplinas amplas não conexas, a obra deve ser classificada:",
     options: {
-      A: "Fazer 3 números CDD unidos pelo sinal de +.",
-      B: "Aplicar a Regra de 3 e jogá-lo na classe mais abrangente que comporte os três ou em Obras Gerais (000).",
-      C: "Mandar para a Tabela 1 (Subdivisão Padrão).",
-      D: "Aplicar a Regra do Zero.",
-      E: "Puxar a classe do primeiro autor."
+      A: "Na classe de Obras Gerais (000 - Ciência da Computação, Informação e Obras Gerais), por abarcar múltiplas grandes áreas.",
+      B: "Na classe de História (900), sob a justificativa de que a história cronológica precede o surgimento de todas as ciências.",
+      C: "Na classe de Química (540), priorizando as ciências exatas e experimentais em razão do maior prestígio acadêmico no campus.",
+      D: "Na classe da disciplina cujo autor faleceu há mais tempo, de acordo com as regras de direitos autorais de domínio público.",
+      E: "Criando-se uma notação cruzada com barra dupla (//) conforme facultado no manual de catalogação cooperativa da OCLC."
     },
-    correctAnswer: "B",
-    justification: "Sempre que 3 ou mais áreas (Filosofia 100, História 900, Química 500) se unem sem um termo genérico, o livro voa para a Classe Geral 000. Regra de três da CDD."
+    correctAnswer: "A",
+    justification: "Pela 'Regra de Três' da CDD: se o documento trata de 3 ou mais disciplinas que não se subordinam a uma classe superior comum (como 100, 500 e 900), a obra deve ser classificada na classe 000 (Obras Gerais), pois ultrapassa os limites de qualquer divisão decimal isolada."
   },
   {
     id: "q62",
     moduleId: "m19",
-    text: "Uma das maiores inovações introduzidas por Melvil Dewey na Classificação Decimal de Dewey (CDD) foi o 'Índice Relativo' (Relative Index). A função essencial do Índice Relativo na CDD é:",
+    text: "Uma das contribuições metodológicas mais brilhantes concebidas por Melvil Dewey para o sistema de Classificação Decimal de Dewey (CDD) foi a criação do 'Índice Relativo' (Relative Index). A função precípua do Índice Relativo na dinâmica da CDD consiste em:",
     options: {
-      A: "Listar os livros em ordem cronológica de publicação na biblioteca.",
-      B: "Reunir em ordem alfabética os múltiplos aspectos e contextos disciplinares sob os quais um mesmo assunto pode ser tratado no esquema decimal.",
-      C: "Indicar a localização física fixa dos livros nas estantes.",
-      D: "Calcular a probabilidade de empréstimo de cada exemplar.",
-      E: "Traduzir automaticamente os termos do inglês para o latim."
+      A: "Indicar a posição milimétrica exata da estante em que o livro deve ser localizado no depósito fechado da biblioteca.",
+      B: "Reunir em ordem alfabética os múltiplos aspectos e contextos disciplinares sob os quais um mesmo assunto é tratado no esquema.",
+      C: "Substituir o catálogo de autores da biblioteca, agrupando as publicações por ordem estritamente cronológica de edição.",
+      D: "Calcular o fator de impacto bibliométrico da literatura para subsidiar o descarte e o desbastamento anual do acervo.",
+      E: "Definir os códigos numéricos de países e línguas que compõem com exclusividade as tabelas auxiliares da CDU."
     },
     correctAnswer: "B",
-    justification: "O Índice Relativo é o coração prático da CDD: reúne alfabeticamente um conceito (ex: 'Tabaco') e mostra todos os seus desdobramentos nas disciplinas (como planta 580, na agricultura 630, na economia 330, na medicina 610), evitando a dispersão disciplinar."
+    justification: "O Índice Relativo é genial porque organiza os assuntos em ordem alfabética, mas mostra como um mesmo conceito (ex: 'Casamento') dispersa-se por várias disciplinas (no Direito 340, na Religião 200, na Sociologia 301, nos Costumes 392), relacionando o termo às suas diversas facetas."
   },
   {
     id: "q63",
     moduleId: "m21",
-    text: "Durante a elaboração de um Tesauro, o bibliotecário percebe a necessidade de ligar as palavras 'Hospital' e 'Médico', pois embora não haja relação hierárquica entre elas (o médico não é 'filho' do hospital no sentido animal x cão), um conceito lembra imediatamente o outro. O termo técnico para essa ligação e sua sigla são:",
+    text: "No desenvolvimento de um Tesauro para uma biblioteca universitária da área médica, o bibliotecário constata a conveniência de conectar os descritores 'Hospital' e 'Equipe de Enfermagem'. Embora não haja subordinação hierárquica gênero-espécie entre eles (a enfermagem não é uma classe do hospital), existe uma evidente afinidade conceitual e contextual. No padrão internacional de tesauros, essa conexão é formalizada pela:",
     options: {
-      A: "Relação Hierárquica (TG).",
-      B: "Relação de Equivalência (USE).",
-      C: "Relação Polissêmica (SN).",
-      D: "Relação Associativa (TR - Termo Relacionado).",
-      E: "Relação Ortográfica (ND)."
+      A: "Relação de Equivalência (USE / UP), que proíbe o uso do termo enfermagem nas rotinas de busca no catálogo automatizado.",
+      B: "Relação Hierárquica (TG / TE), indicando que o termo Hospital é o gênero taxonômico e Enfermagem é a sua subclasse estrita.",
+      C: "Relação Associativa (TR / RT - Termo Relacionado), que vincula conceitos de domínios afins que evocam um ao outro.",
+      D: "Nota de Escopo (NE / SN), que restringe o emprego das palavras unicamente aos registros de dissertações em saúde coletiva.",
+      E: "Subdivisão Cronológica, que limita a indexação do termo a estudos históricos realizados a partir do século XXI."
     },
-    correctAnswer: "D",
-    justification: "A Relação Associativa (TR/RT) liga termos que têm afinidade semântica, mas não são classe-subclasse."
+    correctAnswer: "C",
+    justification: "A Relação Associativa (representada por TR / RT - Termo Relacionado) vincula conceitos que possuem forte afinidade temática ou contextual, mas que não se enquadram na relação hierárquica (gênero/espécie) nem na relação de equivalência (sinonímia)."
   },
   {
     id: "q64",
     moduleId: "m22",
-    text: "O Plágio Acadêmico, crime de Direitos Autorais fortemente combatido nas bibliotecas das universidades, se configura juridicamente como a:",
+    text: "O Plágio Acadêmico, conduta ilícita que fere os padrões éticos da pesquisa científica e a Lei de Direitos Autorais (Lei nº 9.610/1998), tipifica-se juridicamente e tecnicamente pela:",
     options: {
-      A: "Cópia parcial de trechos sem citar a fonte, fazendo-se passar pelo autor original da ideia.",
-      B: "Tradução livre e amadora de textos fechados.",
-      C: "Digitalização de livros em braille.",
-      D: "Revisão e leitura crítica (resenha) sem avisar a editora.",
-      E: "Impressão da Via Verde de Acesso Aberto."
+      A: "Tradução comentada de artigo estrangeiro com citação expressa do autor e da editora original nas notas de rodapé.",
+      B: "Digitalização e disponibilização aberta de livros que já atingiram o domínio público após setenta anos da morte do autor.",
+      C: "Elaboração de uma resenha crítica contendo a opinião pessoal desfavorável do leitor sobre obra recentemente lançada.",
+      D: "Apropriação indevida de ideias, textos ou dados de outrem, apresentando-os como se fossem de criação intelectual própria.",
+      E: "Citação direta devidamente demarcada entre aspas com indicação formal de autor, ano da publicação e página de origem."
     },
-    correctAnswer: "A",
-    justification: "O plágio ocorre quando a autoria moral de uma ideia/texto é usurpada e usada como se fosse do fraudador, não citando o verdadeiro autor e violando normas éticas e legais de citação e autoria."
+    correctAnswer: "D",
+    justification: "O plágio consiste na usurpação da autoria alheia: o indivíduo copia integral ou parcialmente ideias, formulações verbais ou dados gerados por outro pesquisador e os apresenta como de sua própria autoria, omitindo dolosamente o verdadeiro criador."
   },
   {
     id: "q65",
     moduleId: "m23",
-    text: "O International Standard Book Number (ISBN) é o RG do livro. No contexto da biblioteconomia e editoração, a atribuição do ISBN no Brasil, desde 2020, deixou de ser de exclusividade da Biblioteca Nacional e passou a ser gerenciada pela:",
+    text: "O padrão internacional ISBN (International Standard Book Number) atua como código identificador persistente e unívoco para monografias e livros. No Brasil, após décadas de gestão centralizada pela Fundação Biblioteca Nacional (FBN), a agência oficial responsável pelo registro e emissão do prefixo editorial do ISBN passou a ser, desde 2020, a:",
     options: {
-      A: "Febraban.",
-      B: "IBICT.",
-      C: "Câmara Brasileira do Livro (CBL).",
-      D: "CAPES.",
-      E: "SNEL (Sindicato Nacional dos Editores)."
+      A: "Coordenação de Aperfeiçoamento de Pessoal de Nível Superior (CAPES), ligada ao Ministério da Educação.",
+      B: "Fundação de Amparo à Pesquisa do Estado de São Paulo (FAPESP), responsável pelo financiamento de bolsas.",
+      C: "Associação Brasileira de Normas Técnicas (ABNT), que normatiza a confecção de fichas catalográficas.",
+      D: "Sindicato Nacional dos Editores de Livros (SNEL), que atua na defesa dos interesses sindicais das gráficas.",
+      E: "Câmara Brasileira do Livro (CBL), entidade que assumiu a representação oficial da Agência Internacional do ISBN no país."
     },
-    correctAnswer: "C",
-    justification: "Atualização vital de 2020: A Fundação Biblioteca Nacional (FBN) perdeu o contrato de agência do ISBN no Brasil para a Câmara Brasileira do Livro (CBL)."
+    correctAnswer: "E",
+    justification: "Em março de 2020, a Agência Internacional do ISBN transferiu a responsabilidade da emissão e gestão do ISBN no Brasil para a Câmara Brasileira do Livro (CBL), encerrando a histórica gestão pela Fundação Biblioteca Nacional (FBN)."
   },
   {
     id: "q66",
     moduleId: "m10",
-    text: "Na Base de Dados Scopus e Web of Science, para refinar e estreitar rigorosamente uma busca avançada (exigindo que o termo A e o termo B apareçam JUNTOS obrigatoriamente no resumo do documento, excluindo os que têm apenas um deles), deve-se empregar o Operador Booleano:",
+    text: "Nas bases de dados científicas referenciais (como Web of Science, Scopus e PubMed), a formulação de estratégias de busca requer o domínio dos Operadores Booleanos. Se o pesquisador pretende realizar uma busca que resulte na intersecção estrita de dois conjuntos conceituais, exigindo que o termo 'Automação' e o termo 'Bibliotecas' estejam SIMULTANEAMENTE presentes no documento, ele deve empregar o operador:",
     options: {
-      A: "OR (OU).",
-      B: "AND (E).",
-      C: "NOT (NÃO).",
-      D: "XOR.",
-      E: "ADJ."
+      A: "AND (E), operador de intersecção lógica que reduz o ruído e eleva a precisão do conjunto recuperado.",
+      B: "OR (OU), operador de união lógica que expande o volume de resultados reunindo sinônimos e variantes linguísticas.",
+      C: "NOT (NÃO), operador de exclusão lógica que expurga da busca determinados termos indesejados pelo usuário.",
+      D: "XOR (OU Exclusivo), operador que recupera documentos que contenham um ou outro termo, mas nunca ambos reunidos.",
+      E: "SAME (Mesmo Campo), operador de proximidade contextual que exige que as palavras figurem na mesma frase da introdução."
     },
-    correctAnswer: "B",
-    justification: "O AND (Intersecção) restringe a busca e diminui a recuperação de ruído (Aumentando a Precisão). O OR (União) expande, e o NOT (Exclusão) remove termos não desejados."
+    correctAnswer: "A",
+    justification: "O operador booleano AND representa a intersecção lógica de conjuntos. Ele restringe a pesquisa, pois somente os documentos que contiverem ambos os termos simultaneamente serão recuperados, aumentando a precisão da estratégia."
   },
   {
     id: "q67",
     moduleId: "m09",
-    text: "Diferenciando 'Dado', 'Informação' e 'Conhecimento', o ato de um especialista analisar os gráficos de empréstimos da biblioteca, juntar sua experiência empírica acumulada e inferir que 'os calouros precisam de treinamento intensivo em outubro', é a representação máxima do(a):",
+    text: "Na epistemologia da Ciência da Informação e na gestão do conhecimento (Pirâmide DIKW: Dado, Informação, Conhecimento e Sabedoria), o processo pelo qual um bibliotecário avalia relatórios estatísticos de empréstimos, contextualiza essas métricas com seu aprendizado empírico e internaliza uma compreensão que o capacita a agir e tomar decisões estratégicas no acervo caracteriza o nível do(a):",
     options: {
-      A: "Dado Bruto.",
-      B: "Informação Estruturada.",
-      C: "Conhecimento.",
-      D: "Ruído.",
-      E: "Sabedoria (Wisdom / W)."
+      A: "Dado Bruto (Data), conjunto de signos desprovidos de contextualização semântica e sem significado isolado.",
+      B: "Conhecimento (Knowledge), estrutura cognitiva internalizada que agrega valor, experiência e capacidade de ação decisória.",
+      C: "Informação Estruturada (Information), mero dado organizado em tabelas estatísticas sem juízo crítico reflexivo.",
+      D: "Ruído Informacional (Noise), distorção semântica provocada pela má calibragem dos algoritmos de recuperação da base.",
+      E: "Silêncio Documentário (Silence), ausência de evidências quantitativas nos registros de circulação de materiais físicos."
     },
-    correctAnswer: "C",
-    justification: "Dado = '10 empréstimos'. Info = '10 empréstimos de matemática'. Conhecimento = O entendimento mental internalizado humano capaz de gerar Ação (Treinar os calouros em outubro)."
+    correctAnswer: "B",
+    justification: "Na hierarquia informacional: Dado é o elemento bruto sem contexto ('100 empréstimos'); Informação é o dado contextualizado ('100 empréstimos de livros de cálculo por calouros'); Conhecimento é a compreensão integrada na mente humana que permite tomar uma atitude preventiva ou corretiva (capacidade de ação)."
   },
   {
     id: "q68",
     moduleId: "m08",
-    text: "Fontes de Informação que contêm a pesquisa bruta não refinada ou literatura não convencional (não publicadas por editoras comerciais tradicionais, de acesso restrito, como memorandos secretos de laboratório, relatórios internos governamentais e até teses não-comerciais) são classificadas tecnicamente como:",
+    text: "No ecossistema de produção acadêmica e técnica, determinadas publicações — tais como teses não comercializadas, relatórios de pesquisa governamentais, documentos de trabalho de circulação interna e memorandos de laboratórios — caracterizam-se por não circularem nos canais convencionais do mercado editorial livreiro. No jargão da biblioteconomia, essa modalidade de acervo denomina-se:",
     options: {
-      A: "Literatura Cinzenta (Grey Literature).",
-      B: "Literatura Branca.",
-      C: "Obras Raras.",
-      D: "Fontes Quaternárias.",
-      E: "Deep Web."
+      A: "Obras Raras, publicações de valor bibliofílico histórico secular que exigem custódia em cofres climatizados.",
+      B: "Literatura Branca, composta exclusivamente por romances e livros de ficção comercializados em livrarias de shopping.",
+      C: "Literatura Cinzenta (Grey Literature), produção semipublicada ou não convencional que escapa aos canais formais de venda.",
+      D: "Documentação Primária Sigilosa, protegida por segredo de Estado e inacessível à comunidade acadêmica em geral.",
+      E: "Depósito Epistemológico Restrito, materiais catalogados sem permissão de cópia reprográfica ou empréstimo entre bibliotecas."
     },
-    correctAnswer: "A",
-    justification: "Literatura Cinzenta (Grey Literature) é toda produção intelectual que não passa pelos canais abertos e mercadológicos comerciais (livrarias/editoras macro)."
+    correctAnswer: "C",
+    justification: "Literatura Cinzenta (Grey Literature) é o termo técnico para a produção científica, técnica e institucional que não é publicada comercialmente por editoras mercadológicas regulares (ex: relatórios técnicos, teses, atas de reuniões, preprints, apostilas internas)."
   },
   {
     id: "q69",
     moduleId: "m02",
-    text: "Qual destas afirmações sobre o PREMIS (Preservation Metadata: Implementation Strategies) está correta?",
+    text: "O padrão internacional de metadados PREMIS (Preservation Metadata: Implementation Strategies), mantido pela Library of Congress e amplamente adotado em repositórios digitais confiáveis (RDC-Arq e DSpace), tem como escopo e missão primordial:",
     options: {
-      A: "É um formato de arquivamento focado na codificação sonora, como o MP3.",
-      B: "Substitui o formato MARC na catalogação de livros impressos antigos.",
-      C: "Foca em metadados vitais de preservação digital de longo prazo, registrando eventos como a mudança de formato (migração) e assinaturas digitais.",
-      D: "É o sistema operacional adotado pela IFLA.",
-      E: "Foi criado no século XIX por Charles Ammi Cutter."
+      A: "Substituir o formato MARC 21 e o AACR2 na descrição de obras bibliográficas impressas nas estantes das bibliotecas.",
+      B: "Codificar arquivos de streaming de áudio e vídeo de alta fidelidade para distribuição comercial em plataformas digitais.",
+      C: "Controlar a arrecadação de royalties e o pagamento de direitos autorais patrimoniais a compositores e escritores vivos.",
+      D: "Registrar e gerenciar metadados de preservação digital de longo prazo (proveniência, autenticidade, eventos e direitos técnicos).",
+      E: "Padronizar o vocabulário de assuntos em bibliotecas escolares segundo os esquemas de classificação decimal de Dewey."
     },
-    correctAnswer: "C",
-    justification: "O PREMIS é a 'caixa preta' do arquivo. Ele anota proveniência: se o sistema converteu de .DOC pra .PDF, o PREMIS grava quem converteu e que dia, para garantir a autenticidade."
+    correctAnswer: "D",
+    justification: "O PREMIS é o padrão de referência mundial para metadados de preservação digital. Ele atua na 'caixa preta' do repositório, documentando as entidades fundamentais: Objetos, Eventos (como migrações de formato e checagens de checksum), Agentes e Direitos de preservação."
   },
   {
     id: "q70",
     moduleId: "m15",
-    text: "Segundo a ISBD e ratificado na Parte 1 do AACR2, a área da Imprenta (Local, Editora, Data) deve ser separada da área anterior (geralmente Edição) por um sinal de pontuação padronizado internacionalmente:",
+    text: "De acordo com os princípios de pontuação padronizada internacionalmente prescritos pela ISBD (International Standard Bibliographic Description) e consolidados no AACR2R (Parte 1), a Área da Publicação, Distribuição, etc. (Área 4 / Imprenta) deve ser separada da área imediatamente anterior por meio do sinal de pontuação:",
     options: {
-      A: "Vírgula (,).",
-      B: "Ponto e traço (. - ).",
-      C: "Dois pontos (:).",
-      D: "Barra diagonal (/).",
-      E: "Ponto e vírgula (;)."
+      A: "Vírgula seguida de espaço simples (, ), delimitadora de elementos intra-área.",
+      B: "Barra oblíqua simples com espaços bilaterais ( / ), introdutora da indicação de responsabilidade.",
+      C: "Dois-pontos antecedidos e sucedidos por espaço em branco ( : ), introdutores do subtítulo.",
+      D: "Ponto e vírgula precedido e seguido de espaço ( ; ), separador de autores de funções distintas.",
+      E: "Ponto, espaço, travessão e espaço (. - ), sinalizador formal de mudança de área descritiva."
     },
-    correctAnswer: "B",
-    justification: "No bloco AACR2/ISBD, as 8 Áreas principais da descrição são isoladas umas das outras obrigatoriamente pelo famigerado Ponto, Espaço, Traço, Espaço (. - )."
+    correctAnswer: "E",
+    justification: "Na ISBD e no AACR2R, a pontuação padronizada para separar uma área descritiva da outra (a menos que a nova área se inicie em parágrafo novo) é rigorosamente o 'ponto, espaço, travessão, espaço' (. - )."
   },
   {
     id: "q71",
     moduleId: "m11",
-    text: "O Serviço de Referência passou por três fases teóricas: Conservadora, Liberal e Moderada. A teoria Liberal (Máxima) de S. Rothstein prega que:",
+    text: "A literatura clássica de Serviços de Referência em Bibliotecas, especialmente a tipologia formulada por Samuel Rothstein, identifica três posturas teóricas principais: Conservadora (Mínima), Moderada (Média) e Liberal (Máxima). A Teoria Liberal (Máxima) caracteriza-se por defender que:",
     options: {
-      A: "O bibliotecário deve apenas mostrar o caminho para o usuário, não entregando o trabalho pronto.",
-      B: "O bibliotecário deve fornecer a resposta exata ou a informação mastigada diretamente ao usuário, substituindo o esforço do leitor (Foco total no provimento final).",
-      C: "O serviço deve ser extinto, deixando tudo para os catálogos (self-service).",
-      D: "As cobranças em dinheiro pelos serviços de busca online (Fees).",
-      E: "O foco em alfabetização isolada das massas."
+      A: "O bibliotecário deve entregar a resposta exata e a informação refinada ao usuário, assumindo integralmente a busca por ele.",
+      B: "O bibliotecário deve apenas indicar as estantes e ensinar o usuário a utilizar os índices, sem fazer a busca em seu lugar.",
+      C: "O serviço de balcão deve ser extinto, deixando o consulente em regime de autoatendimento exclusivo por meio do catálogo online.",
+      D: "O acesso ao serviço de referência deve ser tarifado com cobrança de emolumentos para remunerar o pessoal de atendimento.",
+      E: "As consultas devem ser restritas aos acadêmicos que possuam projeto de pesquisa formalmente aprovado pelo comitê institucional."
     },
-    correctAnswer: "B",
-    justification: "Na Teoria Liberal (Rothstein), o bibliotecário faz o trabalho do leitor e lhe entrega a 'Fórmula da Química pronta', o artigo lido e traduzido. Na Conservadora, ele só ensina a usar a ficha."
+    correctAnswer: "A",
+    justification: "Na teoria Liberal (ou Máxima) de Rothstein, o profissional de referência não se limita a instruir ou apontar caminhos (como na Conservadora): ele atua como assistente ativo de pesquisa, localizando, traduzindo e fornecendo a informação final pronta para o consulente."
   },
   {
     id: "q72",
     moduleId: "m18",
-    text: "Dentro do ecossistema RDA e LRM, a prática de incluir identificadores persistentes e links da web (URIs) no lugar de apenas palavras em texto (ex: colocar o link ORCID do autor em vez do nome por extenso 'Silva, J.') impulsiona a filosofia de:",
+    text: "No contexto da catalogação contemporânea sob os padrões RDA e IFLA LRM, a substituição de sequências de texto estático por identificadores persistentes globais (URIs) que apontam para dados abertos na web (por exemplo, conectar o link persistente do ORCID de um docente em vez de transcrever seu nome por extenso) insere as bibliotecas no paradigma do(a):",
     options: {
-      A: "Isolamento Bibliográfico.",
-      B: "Desbastamento (Weeding).",
-      C: "Linked Data (Dados Conectados) e Web Semântica.",
-      D: "Indexação Automática de Texto Falso.",
-      E: "Catalogação Analítica em Fichas."
+      A: "Isolamento Bibliográfico Tradicional, que veda o compartilhamento de metadados com ferramentas externas da internet.",
+      B: "Linked Data (Dados Conectados) e Web Semântica, permitindo a navegação e interoperabilidade global entre repositórios.",
+      C: "Desbastamento Compulsório de Coleções, que elimina registros digitais que não receberam consultas nos últimos dois anos.",
+      D: "Indexação por Texto Integral Automático, que dispensa o preenchimento de pontos de acesso de autoridade por bibliotecários.",
+      E: "Catalogação Restritiva Fechada, que impede que robôs de busca indexem o conteúdo científico das teses da universidade."
     },
-    correctAnswer: "C",
-    justification: "O Linked Data transforma strings (palavras) em Things (coisas/links/URIs), permitindo a conexão hiperlinkada semântica entre catálogos mundiais."
+    correctAnswer: "B",
+    justification: "O RDA e o LRM foram projetados para a era do Linked Data (Dados Conectados). Ao substituir meras strings (cadeias de caracteres isoladas) por URIs (identificadores persistentes web), o catálogo torna-se parte ativa da Web Semântica, permitindo que máquinas e humanos conectem dados bibliográficos de diferentes sistemas globais."
   },
   {
     id: "q73",
     moduleId: "m16",
-    text: "Uma característica técnica cruel e inviolável dos Campos Variáveis (010 até 999) do formato MARC 21 é:",
+    text: "Na arquitetura técnica do formato MARC 21 para Dados Bibliográficos, os Campos de Dados Variáveis (compreendidos a partir da etiqueta 010 até 999) possuem uma exigência posicional inviolável que consiste em:",
     options: {
-      A: "Eles obrigatoriamente precisam de DOIS Indicadores, mesmo que o sistema de Catalogação informe que eles estão em branco (Blank / '#').",
-      B: "Eles possuem limite rígido de 50 caracteres.",
-      C: "Eles não podem usar códigos de subcampos (ex: $a).",
-      D: "Eles começam a partir do byte 24 e terminam no Líder.",
-      E: "Eles são gerados inteiramente por inteligência artificial."
+      A: "Possuir comprimento fixo e invariável limitado a exatamente cinquenta caracteres alfanuméricos em cada linha de registro.",
+      B: "Conter compulsoriamente pelo menos quatro subcampos delimitados por cifrão ($), sob pena de exclusão automática do lote.",
+      C: "Reservar obrigatoriamente duas posições de caracteres para os Indicadores, ainda que estejam preenchidas por espaços em branco (#).",
+      D: "Serem preenchidos com o nome do catalogador responsável em seu primeiro byte para fins de auditoria deontológica e ética.",
+      E: "Restringirem-se unicamente ao registro de dados numéricos e códigos de barras legíveis por leitores óticos de balcão."
     },
-    correctAnswer: "A",
-    justification: "No MARC21 (a partir da tag 010), TODO campo TEM que reservar duas posições de indicador. Se a regra não pede, eles não somem, ficam em branco (' _ ' ou '#')."
+    correctAnswer: "C",
+    justification: "Todo campo de dados variável no MARC 21 (tags 010-999) possui compulsoriamente duas posições reservadas para indicadores logo após a etiqueta (Tag). Mesmo quando um ou ambos os indicadores não são utilizados pela norma para aquele campo, as posições permanecem reservadas como 'espaço em branco' (blank / '#')."
   },
   {
     id: "q74",
     moduleId: "m05",
-    text: "Em um consórcio bibliotecário nacional, a Rede Universitária decide utilizar o protocolo de Autenticação Federada para permitir que o professor em sua casa consiga ler artigos fechados (paywall). No Brasil, o principal serviço de Federação (gerido pela RNP) chama-se:",
+    text: "No ambiente de cooperação acadêmica no Brasil, os consórcios de bibliotecas universitárias e centros de pesquisa utilizam serviços de autenticação federada para viabilizar que pesquisadores e alunos acessem remotamente bases de dados restritas e periódicos assinados (como o Portal CAPES). O principal serviço de gestão de identidade e federação acadêmica do país, gerenciado pela RNP, é a:",
     options: {
-      A: "Moodle.",
-      B: "CAFe (Comunidade Acadêmica Federada).",
-      C: "Lattes Extrator.",
-      D: "Plataforma Sucupira.",
-      E: "Eduroam."
+      A: "Plataforma Sucupira, voltada ao acompanhamento e avaliação dos programas de pós-graduação stricto sensu nacionais.",
+      B: "Plataforma Brasil, sistema eletrônico de controle de submissão de protocolos de pesquisa a comitês de ética em seres humanos.",
+      C: "Rede Carcará de Pesquisa, direcionada ao compartilhamento de infraestrutura computacional de alto desempenho para física.",
+      D: "CAFe (Comunidade Acadêmica Federada), que unifica o acesso remoto seguro a serviços e coleções digitais de pesquisa.",
+      E: "Rede SciELO, consórcio internacional de cooperação científica voltado ao depósito e avaliação de preprints abertos."
     },
-    correctAnswer: "B",
-    justification: "A CAFe é o portal de autenticação da RNP. É ela que faz a 'VPN' da Universidade para acessar o Portal CAPES pelo mundo afora."
+    correctAnswer: "D",
+    justification: "A CAFe (Comunidade Acadêmica Federada), operada pela Rede Nacional de Ensino e Pesquisa (RNP), é a rede de autenticação federada que permite aos membros das universidades brasileiras (como a Unicamp) acessar remotamente serviços digitais e bases de dados do Portal CAPES com um único login institucional seguro."
   },
   {
     id: "q75",
     moduleId: "m03",
-    text: "Se uma revista não cobra nada do leitor, nem do pesquisador, caracterizando a Via Diamante do Acesso Aberto (Open Access), a flexibilização do copyright (Permissão) geralmente é dada de forma clara utilizando licenças do tipo:",
+    text: "No âmbito do movimento de Acesso Aberto (Open Access) e da Ciência Aberta, a superação da chamada 'Barreira da Permissão' — garantindo ao leitor o direito de reutilizar, distribuir e transformar artigos científicos sem infringir os direitos autorais morais dos criadores — é formalizada de modo transparente e internacional mediante a adoção de licenças do tipo:",
     options: {
-      A: "Copyleft Total de Software Livre.",
-      B: "DRM (Digital Rights Management).",
-      C: "Creative Commons (Ex: CC-BY).",
-      D: "Copyright de Domínio Fechado (Todos os direitos reservados).",
-      E: "Patentes Ocultas."
+      A: "DRM (Digital Rights Management) proprietário, com proteção anticópia por criptografia de hardware no leitor eletrônico.",
+      B: "Copyright Clássico Fechado com reserva total de todos os direitos patrimoniais e proibição expressa de citação acadêmica.",
+      C: "Patente de Invenção Industrial com prazo de exclusividade comercial assegurado perante o Instituto Nacional de Propriedade Industrial.",
+      D: "Acordo de Confidencialidade Bilateral (NDA), restrito aos membros de laboratórios associados a projetos com a iniciativa privada.",
+      E: "Creative Commons (como a licença CC-BY), que autoriza a reutilização e compartilhamento sob a condição de atribuição de autoria."
     },
-    correctAnswer: "C",
-    justification: "O Creative Commons (CC) resolve o segundo pilar do Open Access (a Barreira da Permissão). A licença mais amada é a CC-BY, que libera o reuso desde que o autor seja citado."
+    correctAnswer: "E",
+    justification: "As licenças Creative Commons (em especial a licença aberta CC-BY) são a espinha dorsal jurídica do Acesso Aberto e da Ciência Aberta: elas removem a barreira da permissão, facultando a leitura, download, cópia e reuso do material por qualquer indivíduo, desde que conferido o devido crédito autoral ao pesquisador original."
   }
 ];
